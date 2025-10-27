@@ -1,0 +1,36 @@
+PARSFILE
+#FullDataName Generic VS Commands`OPT_I_GEAR_IN = 1 for Rack & Pin.`Miscellaneous Vehicle Model Extensions
+#VehCode VS Commands
+
+#MiscYellow0
+! Turn on the optional unsprung-mass-contribution to the steering gear inertia:
+  OPT_I_GEAR_IN 1
+
+! The steering gear inertia now consists of the value given on the steering screen, I_GEAR_IN,
+! plus the value calculated for the unsprung masses. The total value is output with IstrGear.
+
+! The increase in inertia means the steering system is likely now underdamped. One way to
+! resolve this issue is to update the steering system damping to produce the same damping ratio,
+! given the increase in inertia. In particular, the damping should increase by the factor
+!
+!   sqrt( (new inertia) / (old inertia) ).
+
+DEFINE_PARAMETER D_RACK_OLD = D_RACK(1)
+EQ_IN D_RACK(1) = D_RACK_OLD*sqrt(IstrGear/I_GEAR_IN)
+
+DEFINE_OUTPUT DrackOut = D_RACK(1); N-s/mm
+#ENDMYellow
+
+PARSFILE Plot\Setup\Plot_1932130c-0382-4913-91c4-a4c5426328ed.par
+#BlueLink3 Plot: Setup`DrackOut` User-Defined Variables` , Plot`Plot_1932130c-0382-4913-91c4-a4c5426328ed
+
+
+LOG_ENTRY Used Dataset: Generic VS Commands; { Miscellaneous Vehicle Model Extensions } OPT_I_GEAR_IN = 1 for Rack & Pin.
+#Library : Generic VS Commands
+#DataSet : OPT_I_GEAR_IN = 1 for Rack & Pin.
+#Category: Miscellaneous Vehicle Model Extensions
+#FileID  : GenVS_23023f79-41f8-485f-ba58-ba445d9a8f41
+#Product : CarSim 2021.0
+#VehCode VS Commands
+
+END

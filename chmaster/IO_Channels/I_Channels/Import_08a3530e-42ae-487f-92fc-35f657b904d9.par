@@ -1,0 +1,42 @@
+PARSFILE
+#FullDataName I/O Channels: Import`Position and Orientation (1 Target)`Parallel Solvers
+#RingCtrl0 0
+#RingCtrl1 1
+*README_FILE Results\Run_e8d52382-b2c9-4fdb-91f1-63d7c1788b3f\Run_imp_tab.txt
+
+#MiscYellow0
+IMP_CAR1_X Add 0.0! 0
+IMP_CAR1_Y Add 0.0! 0
+IMP_CAR1_Z Add 0.0! 0
+IMP_CAR1_ROLL Add 0.0! 0
+IMP_CAR1_PITCH Add 0.0! 0
+IMP_CAR1_YAW Add 0.0! 0
+#ENDMYellow
+
+#MiscYellow1
+DEFINE_IMPORT IMP_Car1_X
+DEFINE_IMPORT IMP_Car1_Y
+DEFINE_IMPORT IMP_Car1_Z
+DEFINE_IMPORT IMP_Car1_Roll = 0;deg;Roll from external vehicle
+DEFINE_IMPORT IMP_Car1_Pitch = 0;deg;Pitch from external vehicle
+DEFINE_IMPORT IMP_Car1_Yaw = 0;deg;Yaw from external vehicle
+#ENDMYellow
+
+#BlueLink0 CarSim Run Control`City (2 Parallel Solvers): Car 1` Parallel Solvers` , example run`Run_e8d52382-b2c9-4fdb-91f1-63d7c1788b3f
+
+
+#EMBEDDED_NOTES
+#Change for 2021.0: set units for new imports.
+#
+#Use browser to activate the imports.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: I/O Channels: Import; { Parallel Solvers } Position and Orientation (1 Target)
+#Library : I/O Channels: Import
+#DataSet : Position and Orientation (1 Target)
+#Category: Parallel Solvers
+#FileID  : Import_08a3530e-42ae-487f-92fc-35f657b904d9
+#Product : CarSim 2021.0
+#VehCode Import Channels
+
+END

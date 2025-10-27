@@ -1,0 +1,153 @@
+PARSFILE
+#FullDataName Animator: HUD`DK`Copied 11-17-2023 16:45:14
+#CheckBox1 1    
+#CheckBox2 1    
+#CheckBox4 1    
+#CheckBox7 1    
+#CheckBox8 1    
+#CheckBox10 0    
+#CheckBox13 1    
+#CheckBox14 1    
+
+#RingCtrl0 5
+#RingCtrl1 18
+#RingCtrl2 0
+#RingCtrl3 0
+#RingCtrl4 1
+#RingCtrl5 0
+#RingCtrl6 0
+#RingCtrl7 2
+#RingCtrl8 3
+#RingCtrl9 18
+#RingCtrl10 0
+#RingCtrl11 0
+#RingCtrl12 1
+#RingCtrl13 0
+#RingCtrl14 1
+#RingCtrl15 0
+#RingCtrl16 2
+#RingCtrl17 18
+#RingCtrl18 0
+#RingCtrl19 0
+#RingCtrl20 1
+*TITLE_1 radius
+*LOCX_1 2
+*LOCY_1 7
+*VAR_NAME_1 1/Rho_Road
+*COLOR_1 1 1 1
+*TITLE_2 Distance(m)
+*LOCX_2 5
+*LOCY_2 12
+*SCALE_2 2
+*VAR_NAME_2 DisS1_1
+*COLOR_2 1 1 1
+*TITLE_3 curvature*1000
+*LOCX_3 2
+*LOCY_3 5.5
+*VAR_NAME_3 Rho_Road*1000
+*COLOR_3 1 1 1
+*LOCX_4 0
+*LOCY_4 5
+*TITLE_5 Speed(km/h)
+*LOCX_5 2
+*LOCY_5 3.5
+*SCALE_5 2
+*VAR_NAME_5 Vx
+*COLOR_5 1 1 1
+
+
+#MiscYellow0
+ADD_ENTITY Cameraman fixed
+  NAME Rear View Camera33
+  !BASE_REFERENCE_FRAME 
+  SET_FIELD_OF_VIEW 33
+END_ENTITY Cameraman fixed
+#ENDMYellow
+
+#Selection 18 for Icon 0
+#Selection_1 18 for Icon
+#Selection_2 Title: radius AlX 0 AlY 0
+#Selection_3 Scale 1.000000 locX 40 locY 70
+#Selection_4 Fixed: 1 VarName: 1/Rho_Road  ColorStr: 1 1 1
+#Selection_5 ImgName: 
+ANI_1/Rho_Road
+WRT_1/Rho_Road
+ADD_ENTITY hud_text Text Output
+location 40 70 18 18
+align_x left
+align_y top
+size_mode absolute
+place_mode absolute
+# var name is 1/Rho_Road
+prefix radius
+min_width_prefix 20
+value 1/Rho_Road
+precision 0
+color 1 1 1 1.0
+END_ENTITY hud_text Text Output
+#Selection 0 for Icon 1
+#Selection_1 0 for Icon
+#Selection_2 Title: Distance(m) AlX 0 AlY 2
+#Selection_3 Scale 2.000000 locX 100 locY 120
+#Selection_4 Fixed: 1 VarName: DisS1_1  ColorStr: 0 0 0
+#Selection_5 ImgName: 
+! No HUD Object Selected
+#Selection 18 for Icon 2
+#Selection_1 18 for Icon
+#Selection_2 Title: curvature*1000 AlX 0 AlY 0
+#Selection_3 Scale 1.000000 locX 40 locY 55
+#Selection_4 Fixed: 1 VarName: Rho_Road*1000  ColorStr: 1 1 1
+#Selection_5 ImgName: 
+ANI_Rho_Road*1000
+WRT_Rho_Road*1000
+ADD_ENTITY hud_text Text Output
+location 40 55 18 18
+align_x left
+align_y top
+size_mode absolute
+place_mode absolute
+# var name is Rho_Road*1000
+prefix curvature*1000
+min_width_prefix 20
+value Rho_Road*1000
+precision 0
+color 1 1 1 1.0
+END_ENTITY hud_text Text Output
+#Selection 0 for Icon 3
+#Selection_1 0 for Icon
+#Selection_2 Title:  AlX 1 AlY 0
+#Selection_3 Scale 1.333333 locX 0 locY 50
+#Selection_4 Fixed: 1 VarName: NULL  ColorStr: 0 0 0
+#Selection_5 ImgName: 
+! No HUD Object Selected
+#Selection 18 for Icon 4
+#Selection_1 18 for Icon
+#Selection_2 Title: Speed(km/h) AlX 0 AlY 0
+#Selection_3 Scale 1.000000 locX 40 locY 35
+#Selection_4 Fixed: 1 VarName: Vx  ColorStr: 1 1 1
+#Selection_5 ImgName: 
+ANI_Vx
+WRT_Vx
+ADD_ENTITY hud_text Text Output
+location 40 35 18 18
+align_x left
+align_y top
+size_mode absolute
+place_mode absolute
+# var name is Vx
+prefix Speed(km/h)
+min_width_prefix 20
+value Vx
+precision 0
+color 1 1 1 1.0
+END_ENTITY hud_text Text Output
+
+LOG_ENTRY Used Dataset: Animator: HUD; { Copied 11-17-2023 16:45:14 } DK
+#Library : Animator: HUD
+#DataSet : DK
+#Category: Copied 11-17-2023 16:45:14
+#FileID  : HUD_c2e4b254-3927-4dff-b7b4-112ad64d01ba
+#Product : CarSim 2021.0
+#VehCode HUD
+
+END

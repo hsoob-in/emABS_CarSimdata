@@ -1,0 +1,90 @@
+PARSFILE
+#FullDataName CarSim Run Control`Imported Target Points`Custom Forces and Motion Sensors
+#VEHICLECODE Ind_Ind
+symbol_push  <<vehicle>> 0
+symbol_push  <<unit>> 0
+symbol_push  <<axle>> 0
+symbol_push  <<s>> 0
+symbol_push  <<o>> 0
+symbol_push  <<id_run>> Run_2ddf03c4-31be-4892-9c90-57a8bdb24a55
+
+OPT_ALL_WRITE 0
+IOBJECT 0
+IUNIT 0
+IVEHICLE 0
+OPT_INT_METHOD 0
+OPT_VS_FILETYPE 2
+PARSFILE Animator\Cameras\Camera_7fd93935-5e80-4d39-bf60-d7ff5dbaa0af.par
+#BlueLink0 Animator: Camera Setup`180 Azm, 10 El, 36 m` Vehicle Reference` , Animator camera`Camera_7fd93935-5e80-4d39-bf60-d7ff5dbaa0af
+
+#CheckBox0 1    
+#CheckBox1 1    
+#CheckBox2 0    
+#CheckBox3 0    
+#CheckBox4 1    
+#CheckBox5 0    
+#CheckBox6 0    
+#CheckBox7 0    
+#CheckBox8 1    
+#CheckBox9 0    
+#CheckBox10 0    
+#CheckBox11 0    
+
+#RingCtrl0 4
+#RingCtrl1 0
+#RingCtrl2 3
+#RingCtrl3 0
+#RingCtrl6 0
+#RingCtrl7 -1
+*RUN_COLOR 0.8 0 0
+SET_RUN_COLOR 0.8 0 0
+#RingCtrl4 off
+RT_WINDOW_CLOSE off
+#RingCtrl5 0
+LIVE_SERVER_MAX_CONNECTIONS 0
+PARSFILE Vehicles\Assembly\Vehicle_b976c570-0e0b-4b78-827d-fa6a24ef9fb3.par
+#BlueLink2 Vehicle: Assembly`B-Class, Sports Car (6-speed AT)` B-Class` , Math Model`Vehicle_b976c570-0e0b-4b78-827d-fa6a24ef9fb3
+
+PARSFILE Procedures\Proc_ae1dc2ed-a4d3-48c4-b7ea-56a219556cb7.par
+#BlueLink28 Procedures`S-Turn w/ Clothoids` Road Networks` , Procedure`Proc_ae1dc2ed-a4d3-48c4-b7ea-56a219556cb7
+
+PARSFILE Output\PathDetectors\PathDet_62d14385-59b2-441c-a244-5b280d7c8a0d.par
+#BlueLink9 Path Detectors for External Driver Control`Imported Target Points` ` , Miscellaneous`PathDet_62d14385-59b2-441c-a244-5b280d7c8a0d
+
+PARSFILE Generic\VS_commands\GenVS_1575121f-24bb-4a9c-b62b-3d69320195f2.par
+#BlueLink10 Generic VS Commands`LKAS Example` Path Detection` , Miscellaneous`GenVS_1575121f-24bb-4a9c-b62b-3d69320195f2
+
+
+SPECIAL_PARSFILE Runs\Run_b541e8aa-4539-42ac-9e97-b7e8b218783d.par
+#BlueLink23 CarSim Run Control`Lane Keeping Assist System` ADAS and Active Safety` , Overlay run or ERD file`Run_b541e8aa-4539-42ac-9e97-b7e8b218783d
+
+
+*IMAGE_TYPE PASS_THROUGH
+*IMAGE_PASS_THROUGH Animator\Vehicles\AniVeh_4986d2bf-e6a5-4076-b5cc-94a288fa5a6d.png
+WRITE_SENSOR_DETECT
+Title Imported Target Points <Custom Forces and Motion Sensors>
+CATEGORY Custom Forces and Motion Sensors 
+DATASET_TITLE Imported Target Points
+#RingCtrl8 1
+NUM_CACHED_RUNS 1
+#RingCtrl9 
+
+#EMBEDDED_NOTES
+#In this example, the path detector is used to detect a path from three imported target points.
+#
+#However, the target points are calculcated using the same reference path as the "Lane Keeping Assist System" example, so the results are essentially identical.
+#
+#The intent here is simply to show how to activate and use the target point import variables.
+#
+#For more on the Path Detector, see Help > Model Extensions and RT > Path Detectors.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: CarSim Run Control; { Custom Forces and Motion Sensors } Imported Target Points
+#Library : CarSim Run Control
+#DataSet : Imported Target Points
+#Category: Custom Forces and Motion Sensors
+#FileID  : Run_2ddf03c4-31be-4892-9c90-57a8bdb24a55
+#Product : CarSim 2021.0
+#VehCode Run
+
+END

@@ -1,0 +1,25 @@
+PARSFILE
+#FullDataName I/O Channels: Import`EV Wheel Motors Command (4WD)`Powertrain Control and Ext. Models
+#RingCtrl0 0
+#RingCtrl1 1
+*README_FILE Results\Run_603d4f3f-9007-41b1-bae5-701150f302fe\Run_imp_tab.txt
+
+#MiscYellow0
+IMP_M_MOTOR_CMD_D1_L Add 0.0! 1
+IMP_M_MOTOR_CMD_D1_R Add 0.0! 1
+IMP_M_MOTOR_CMD_D2_L Add 0.0! 1
+IMP_M_MOTOR_CMD_D2_R Add 0.0! 1
+#ENDMYellow
+
+#BlueLink0 CarSim Run Control`Electric AWD/4Mot: Yaw Con. w/ Low Mu` * CS 2021.0 - Electrically Driven Wheels` , example run`Run_603d4f3f-9007-41b1-bae5-701150f302fe
+
+
+LOG_ENTRY Used Dataset: I/O Channels: Import; { Powertrain Control and Ext. Models } EV Wheel Motors Command (4WD)
+#Library : I/O Channels: Import
+#DataSet : EV Wheel Motors Command (4WD)
+#Category: Powertrain Control and Ext. Models
+#FileID  : Import_ec4c0cd0-f601-41b0-bf35-48ebc8f48696
+#Product : CarSim 2021.0
+#VehCode Import Channels
+
+END

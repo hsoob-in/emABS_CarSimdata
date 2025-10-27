@@ -1,0 +1,103 @@
+PARSFILE
+#FullDataName CarSim Run Control`Braking - Split Mu: No ABS_WCRC`Copied 08-11-2025 15:34:57
+#VEHICLECODE Ind_Ind
+symbol_push  <<vehicle>> 0
+symbol_push  <<unit>> 0
+symbol_push  <<axle>> 0
+symbol_push  <<s>> 0
+symbol_push  <<o>> 0
+symbol_push  <<id_run>> Run_46cad77c-dded-40df-a9dd-744d6e457340
+
+OPT_ALL_WRITE 0
+IOBJECT 0
+IUNIT 0
+IVEHICLE 0
+OPT_INT_METHOD 0
+OPT_VS_FILETYPE 2
+PARSFILE Models\Simulink\Simlink_5a3a038e-332a-44b5-bc3c-2a3d000efc6c.par
+#BlueLink12 Models: Simulink`WCRC_0810` Copied 03-19-2025 17:17:21` , Models`Simlink_5a3a038e-332a-44b5-bc3c-2a3d000efc6c
+
+PARSFILE Animator\Cameras\Camera_8f7a3057-cb7d-444e-8cf2-c6f46989b6a4.par
+#BlueLink0 Animator: Camera Setup`0 Azm, 5 El, 27 m` Copied 08-11-2025 15:34:57` , Animator camera`Camera_8f7a3057-cb7d-444e-8cf2-c6f46989b6a4
+
+#CheckBox0 1    
+#CheckBox1 0    
+#CheckBox2 0    
+#CheckBox3 1    
+#CheckBox4 1    
+#CheckBox5 1    
+#CheckBox6 1    
+#CheckBox7 0    
+#CheckBox8 1    
+#CheckBox9 0    
+#CheckBox10 0    
+#CheckBox11 0    
+
+#RingCtrl0 0
+#RingCtrl1 0
+#RingCtrl2 0
+#RingCtrl3 0
+#RingCtrl6 2
+#RingCtrl7 -1
+*RUN_COLOR 0 0 0.773
+SET_RUN_COLOR 0 0 0.773
+#RingCtrl4 off
+RT_WINDOW_CLOSE off
+#RingCtrl5 0
+LIVE_SERVER_MAX_CONNECTIONS 0
+PARSFILE Vehicles\Assembly\Vehicle_d43acacb-0c00-4a31-955e-f74d6aa2cddf.par
+#BlueLink2 Vehicle: Assembly`B-Class, Hatchback, No ABS` Copied 08-11-2025 15:34:57` , Math Model`Vehicle_d43acacb-0c00-4a31-955e-f74d6aa2cddf
+
+PARSFILE Procedures\Proc_af7b7a9d-340b-49a4-ae1a-008e5c2b5b38.par
+#BlueLink28 Procedures`Split Mu from 65 km/h` Copied 08-11-2025 15:34:57` , Procedure`Proc_af7b7a9d-340b-49a4-ae1a-008e5c2b5b38
+
+Opt_SC 0
+SV_VXS 65
+PARSFILE Control\Throttle\Throttle_e052e4a3-6197-4845-ba44-12f56adbd72c.par
+#BlueLink5 Control: Throttle (Open Loop)`Constant: 1 (Full Throttle)` Constant` , Speed from path preview`Throttle_e052e4a3-6197-4845-ba44-12f56adbd72c
+
+*TSTEP 0.001
+*FREQ_MODEL 1000
+*TSTEP_OUT 0.025
+*FREQ_OUT 40
+tstep 0.001
+iprint 25
+OPT_STOP 0
+TSTOP 50
+OPT_DIRECTION 1
+*SPEED 65
+*TSTOP 50
+PARSFILE Plot\Setup\Plot_eb50101f-6615-4617-8639-ca7693556ca3.par
+#BlueLink15 Plot: Setup`Locked Brake Status (Axle 1)` Copied 08-11-2025 15:34:57` , Plot`Plot_eb50101f-6615-4617-8639-ca7693556ca3
+
+PARSFILE Plot\Setup\Plot_3adb6053-15ab-44c1-adf9-64e31969b810.par
+#BlueLink16 Plot: Setup`Locked Brake Status (Axle 2)` Copied 08-11-2025 15:34:57` , Plot`Plot_3adb6053-15ab-44c1-adf9-64e31969b810
+
+#BlueLink23 CarSim Run Control`Braking - Split Mu: ABS` Copied 08-11-2025 15:34:57` , Overlay run or ERD file`Run_963baaf9-0eae-44ca-b359-c11aefcfbe02
+
+
+*IMAGE_TYPE PASS_THROUGH
+*IMAGE_PASS_THROUGH Vehicles\Assembly\Vehicle_d43acacb-0c00-4a31-955e-f74d6aa2cddf.png
+WRITE_SENSOR_DETECT
+Title Braking - Split Mu: No ABS_WCRC <Copied 08-11-2025 15:34:57>
+CATEGORY Copied 08-11-2025 15:34:57 
+DATASET_TITLE Braking - Split Mu: No ABS_WCRC
+#RingCtrl8 1
+NUM_CACHED_RUNS 1
+#RingCtrl9 
+
+#EMBEDDED_NOTES
+#A B-Class Hatchback performs a split mu stopping test from an initial speed of 65 km/h. The CarSim internal ABS model is disabled on the Brake System screen, meaning this vehicle is not equipped with any ABS control.
+#
+#The Closed-Loop Driver Model tries to control the vehicle's lateral position along the center of the road. However, since the wheels lock very quickly due to the lack of ABS, the vehicle spins around and fails to maintain its original path.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: CarSim Run Control; { Copied 08-11-2025 15:34:57 } Braking - Split Mu: No ABS_WCRC
+#Library : CarSim Run Control
+#DataSet : Braking - Split Mu: No ABS_WCRC
+#Category: Copied 08-11-2025 15:34:57
+#FileID  : Run_46cad77c-dded-40df-a9dd-744d6e457340
+#Product : CarSim 2021.0
+#VehCode Run
+
+END

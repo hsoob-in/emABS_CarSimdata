@@ -1,0 +1,25 @@
+PARSFILE
+#FullDataName I/O Channels: Import`ABS: Wheel Cylinder Pressures #1`Brake System Control
+#RingCtrl0 0
+#RingCtrl1 1
+*README_FILE Results\Run_5e81f9ea-d87c-454c-b0b1-6e419e5a1788\Run_imp_tab.txt
+
+#MiscYellow0
+IMP_PBK_L1 Replace 0 ! 1
+IMP_PBK_R1 Replace 0 ! 1
+IMP_PBK_L2 Replace 0 ! 1
+IMP_PBK_R2 Replace 0 ! 1
+#ENDMYellow
+
+#BlueLink0 CarSim Run Control`C_ABS_100to0` Brake Tests` , example run`Run_5e81f9ea-d87c-454c-b0b1-6e419e5a1788
+
+
+LOG_ENTRY Used Dataset: I/O Channels: Import; { Brake System Control } ABS: Wheel Cylinder Pressures #1
+#Library : I/O Channels: Import
+#DataSet : ABS: Wheel Cylinder Pressures #1
+#Category: Brake System Control
+#FileID  : Import_f995a48c-88ce-4c26-b554-2fcfb605a139
+#Product : CarSim 2021.0
+#VehCode Import Channels
+
+END

@@ -1,0 +1,34 @@
+PARSFILE
+#FullDataName Powertrain: Engine`Base 125 kW Engine for VS Table`43 kW - 125 kW Engines
+#RingCtrl0 CARPET
+#CheckBox0 0    
+OPT_THROTTLE_DELAY 0
+
+*3D_XLabel Throttle (-)
+*3D_YLabel Engine speed (rpm)
+*3D_ZLabel Engine torque (N-m)
+
+#DiagramTwo0
+*3D_DATA 2, 2 ! columns x rows
+MENGINE_CARPET 2D_LINEAR
+0, 0, 1
+0, 0, 0
+1, 0, 0
+ENDTABLE
+
+#RadioCtrl0 0    
+#RadioCtrl1 0    
+
+PARSFILE Generic\VS_commands\GenVS_991b42e6-5285-44fb-a02f-86796d9782b1.par
+#BlueLink1 Generic VS Commands`VS Table : 125kW Engine Map` Loaded Tables` , Miscellaneous`GenVS_991b42e6-5285-44fb-a02f-86796d9782b1
+
+
+LOG_ENTRY Used Dataset: Powertrain: Engine; { 43 kW - 125 kW Engines } Base 125 kW Engine for VS Table
+#Library : Powertrain: Engine
+#DataSet : Base 125 kW Engine for VS Table
+#Category: 43 kW - 125 kW Engines
+#FileID  : Engine_1520265f-a798-49de-a877-60c3c209f206
+#Product : CarSim 2021.0
+#VehCode 2D Table 
+
+END

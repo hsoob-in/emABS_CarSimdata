@@ -1,0 +1,53 @@
+PARSFILE
+#FullDataName Generic Data Group (More)`Child Pedestrian w/sensor`Pedestrian Euro NCAP
+#VehCode Generic Group (More)
+PARSFILE Sensors_Traffic\Targets\Target_a1304dc1-ea77-49aa-9b51-5ca85c8f3756.par
+#BlueLink0 Single Moving Object (Custom)`Euro NCAP Child: Near CPNC` Pedestrians and Bicyclists` , Link 1`Target_a1304dc1-ea77-49aa-9b51-5ca85c8f3756
+
+
+#MiscYellow1
+DEFINE_PARAMETER PED_HT_PERC = 25; % ; ...
+Percent below total ped. height for sensor origin
+DEFINE_PARAMETER PED_SENS_HT = ...
+-(PED_HT_PERC)*PED_OBJ_HT; mm ; height of pedestrian sensor
+#ENDMYellow
+
+PARSFILE Sensors_Traffic\Radar\Radar_b6f6d3b9-2545-4335-bebc-89d298082457.par
+#BlueLink1 ADAS Sensors for Range and Tracking`Child Collision Detect (Left Side)` Collision Sensor for Target` , Link 2`Radar_b6f6d3b9-2545-4335-bebc-89d298082457
+
+
+#MiscYellow2
+DEFINE_PARAMETER COLLIDE_THRESH = 0.05 ...
+; m; threshold for defining a collision
+
+define_output Collided =  DisS<<s>>_1 ...
+< COLLIDE_THRESH &  MagS<<s>>_1; - ; Bool. for if collision occured
+DEFINE_PARAMETER ID_PED = ISENSOR; - ;ID of pedestrian sensor
+DEFINE_PARAMETER CLOSEST = 1;-;ID of closest object
+#ENDMYellow
+
+PARSFILE Generic\VS_commands\GenVS_fbf7a990-c0c3-49be-94ed-f6c1321c933c.par
+#BlueLink2 Generic VS Commands`Pedestrian Sensor Outputs` Pedestrian Euro NCAP` , Link 3`GenVS_fbf7a990-c0c3-49be-94ed-f6c1321c933c
+
+
+
+
+
+
+
+
+
+#EMBEDDED_NOTES
+#The z-height of the sensor embedded in the Pedestrian Moving Target is set to a percentage (PED_HT_PERC) below the Total pedestrian object height
+#- this affects the origin of the sensor embedded in the moving object
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Generic Data Group (More); { Pedestrian Euro NCAP } Child Pedestrian w/sensor
+#Library : Generic Data Group (More)
+#DataSet : Child Pedestrian w/sensor
+#Category: Pedestrian Euro NCAP
+#FileID  : GenGrpM_47eeec5e-9e27-48b0-8f1d-c3265ab8e81c
+#Product : CarSim 2021.0
+#VehCode Generic Group (More)
+
+END

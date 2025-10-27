@@ -1,0 +1,31 @@
+PARSFILE
+#FullDataName Control: Steering (Open Loop)`Step: 0 to 45 deg at 10 s`Step
+OPT_DM 0
+OPT_STR_BY_TRQ 0
+#CheckBox0 0    
+
+#RingCtrl0 LINEAR
+#RadioCtrl0 0    
+
+#DiagramOne0
+STEER_SW_TABLE LINEAR
+0, 0
+10, 0
+10.1, 45
+11, 45
+ENDTABLE
+
+
+#EMBEDDED_NOTES
+#The step is not instantaneous, to better represent the response time of a human driver or actuator.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Control: Steering (Open Loop); { Step } Step: 0 to 45 deg at 10 s
+#Library : Control: Steering (Open Loop)
+#DataSet : Step: 0 to 45 deg at 10 s
+#Category: Step
+#FileID  : StrSW_63b9d11f-583e-4ed8-980a-87cb7d573e96
+#Product : CarSim 2021.0
+#VehCode Open-Loop Steering
+
+END

@@ -1,0 +1,22 @@
+PARSFILE
+#FullDataName I/O Channels: Import`L2 (Left Rear) Twin Clutch`Powertrain Control and Ext. Models
+#RingCtrl0 1
+#RingCtrl1 1
+*README_FILE Results\Run_fb3eab9c-06f6-4605-b5d6-6cae46cc875a\Run_imp_tab.txt
+
+#MiscYellow0
+IMP_CLUTCH_L2 Add 0.0! 0
+#ENDMYellow
+
+#BlueLink0 CarSim Run Control`Active Transfer Case Control - Multi-Port` Simulink and LabVIEW Models` , example run`Run_fb3eab9c-06f6-4605-b5d6-6cae46cc875a
+
+
+LOG_ENTRY Used Dataset: I/O Channels: Import; { Powertrain Control and Ext. Models } L2 (Left Rear) Twin Clutch
+#Library : I/O Channels: Import
+#DataSet : L2 (Left Rear) Twin Clutch
+#Category: Powertrain Control and Ext. Models
+#FileID  : Import_b0a23ae4-ad03-4e7f-aff3-adb71d5e079d
+#Product : CarSim 2021.0
+#VehCode Import Channels
+
+END

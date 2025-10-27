@@ -1,0 +1,115 @@
+PARSFILE
+#FullDataName Animator: HUD`Throttle and Speed #1`Vehicle Status Indicators
+#CheckBox1 0    
+#CheckBox2 1    
+#CheckBox4 1    
+#CheckBox5 1    
+
+#RingCtrl0 2
+#RingCtrl1 19
+#RingCtrl2 0
+#RingCtrl3 0
+#RingCtrl4 0
+#RingCtrl5 18
+#RingCtrl6 0
+#RingCtrl7 2
+#RingCtrl8 2
+*TITLE_1 Throttle
+*LOCX_1 1
+*LOCY_1 19
+*COLOR_1 1 1 0
+*TITLE_2 Speed
+*LOCX_2 3
+*LOCY_2 12
+*VAR_NAME_2 Vxz_Fwd
+*COLOR_2 1 1 1
+*TITLE_3 Brake
+*LOCX_3 7
+*LOCY_3 25
+*LOCX_4 .625
+*LOCY_4 1.25
+*LOCX_5 13.5
+*LOCY_5 1.25
+
+
+#Selection 19 for Icon 0
+#Selection_1 19 for Icon
+#Selection_2 Title: Throttle AlX 0 AlY 0
+#Selection_3 Scale 0.666667 locX 20 locY 190
+#Selection_4 Fixed: 1 VarName: NULL  ColorStr: 1 1 0
+#Selection_5 ImgName: 
+ADD_ENTITY hud_image Throttle Fill BG
+location 20 190 66 133
+align_x left
+align_y top
+size_mode absolute
+place_mode absolute
+image_file Resources\Animator\2D_HUD_Icons\Throttle_Bar\0_100.dds
+END_ENTITY hud_image Throttle Fill BG
+ADD_ENTITY hud_text Icon Text for Type #19
+prefix Throttle
+location 13 165 100 18
+align_x left
+align_y top
+size_mode absolute
+place_mode absolute
+color 1.0 1.0 1.0 1.0
+outline_color .3 .3 .3 0.5
+font VeraMono.ttf
+END_ENTITY hud_text Icon Text for Type #19
+ANI_Throttle
+WRT_Throttle
+ADD_ENTITY hud_image Throttle Fill Bar
+location 34 206 22 99
+red 1
+green 1
+blue 0
+opacity Throttle
+align_x left
+align_y top
+size_mode absolute
+place_mode absolute
+scale_y Throttle
+center_location 0.0 -0.5
+image_file Resources\Animator\2D_HUD_Icons\Throttle_Bar\Bar_Fade.dds
+END_ENTITY hud_image Throttle Fill Bar
+#Selection 18 for Icon 1
+#Selection_1 18 for Icon
+#Selection_2 Title: Speed AlX 0 AlY 2
+#Selection_3 Scale 1.333333 locX 60 locY 120
+#Selection_4 Fixed: 1 VarName: Vxz_Fwd  ColorStr: 1 1 1
+#Selection_5 ImgName: 
+ANI_Vxz_Fwd
+WRT_Vxz_Fwd
+ADD_ENTITY hud_text Text Output
+location 60 120 24 24
+align_x left
+align_y bottom
+size_mode absolute
+place_mode absolute
+# var name is Vxz_Fwd
+prefix Speed
+min_width_prefix 20
+value Vxz_Fwd
+precision 0
+color 1 1 1 1.0
+END_ENTITY hud_text Text Output
+
+#EMBEDDED_NOTES
+#This dataset provides 2 common indicators for showing vehicle state. SIzed small to work with smaller areas.
+#
+#Throttle
+#Speedometer w/Gear
+#
+#The speed used for speedometer is the true vehicle speed, not based on wheel spin
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Animator: HUD; { Vehicle Status Indicators } Throttle and Speed #1
+#Library : Animator: HUD
+#DataSet : Throttle and Speed #1
+#Category: Vehicle Status Indicators
+#FileID  : HUD_3978acd2-7aee-486d-b4a7-f07dc083d947
+#Product : CarSim 2021.0
+#VehCode HUD
+
+END

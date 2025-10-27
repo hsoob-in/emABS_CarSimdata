@@ -1,0 +1,73 @@
+PARSFILE
+#FullDataName Path Detectors for External Driver Control`Three Detected Paths 2m Ln Cntr`
+#RingCtrl0 3
+INSTALL_PATH_DETECTOR 3
+
+IDETECTOR 1
+symbol_push  <<detector>> 1
+X_DETECTOR_SM(1) 0
+Y_DETECTOR_SM(1) 0
+#CheckBox0 0    
+OPT_PATH_PD(1) 1
+PATH_ID_PD(1) 1
+PARSFILE Control\Driver\StrDM_d66e0709-ec6a-464a-8ab6-8c76dae9acb6.par
+#BlueLink0 Control: Steering by the Closed-loop Driver Model`Left Lane Marking LKAS` Path Detections` , lateral target`StrDM_d66e0709-ec6a-464a-8ab6-8c76dae9acb6
+
+LTARG_ID_PD(1) = LTARG_ID
+PARSFILE Sensors_Traffic\Traffic\TMotion_523c3271-260f-415d-95af-efbcee2dd9db.par
+#BlueLink5 Multiple Moving Objects`Detected Path Visual` Path Detection` , multiple moving objects`TMotion_523c3271-260f-415d-95af-efbcee2dd9db
+
+
+IDETECTOR 2
+symbol_add  <<detector>> 1
+X_DETECTOR_SM(2) 0
+Y_DETECTOR_SM(2) 0
+#CheckBox1 0    
+OPT_PATH_PD(2) 1
+PATH_ID_PD(2) 1
+PARSFILE Control\Driver\StrDM_f507fe80-e540-4758-a856-64242934629f.par
+#BlueLink1 Control: Steering by the Closed-loop Driver Model`Right Lane Marking LKAS` Path Detections` , lateral target`StrDM_f507fe80-e540-4758-a856-64242934629f
+
+LTARG_ID_PD(2) = LTARG_ID
+PARSFILE Sensors_Traffic\Traffic\TMotion_523c3271-260f-415d-95af-efbcee2dd9db.par
+#BlueLink6 Multiple Moving Objects`Detected Path Visual` Path Detection` , multiple moving objects`TMotion_523c3271-260f-415d-95af-efbcee2dd9db
+
+
+IDETECTOR 3
+symbol_add  <<detector>> 1
+X_DETECTOR_SM(3) 0
+Y_DETECTOR_SM(3) 0
+#CheckBox2 0    
+OPT_PATH_PD(3) 1
+PATH_ID_PD(3) 1
+PARSFILE Control\Driver\StrDM_fda8b3d7-c471-4d2c-a0d1-777765cc3dc0.par
+#BlueLink2 Control: Steering by the Closed-loop Driver Model`Center of Lane` Path Detections` , lateral target`StrDM_fda8b3d7-c471-4d2c-a0d1-777765cc3dc0
+
+LTARG_ID_PD(3) = LTARG_ID
+#MiscYellow0
+EQ_IN L_PVW_PD(1) = Vxz_Fwd*1.5 ! Left Lane Marker Path Detector Preview Distance, based on speed
+EQ_IN L_PVW_PD(2) = Vxz_Fwd*1.5 ! Right Lane Marker Path Detector Preview Distance, based on speed
+EQ_IN L_PVW_PD(3) = Vxz_Fwd*1.5 ! Right Lane Marker Path Detector Preview Distance, based on speed
+#ENDMYellow
+
+PARSFILE Generic\Links\GenLink_7fb0bf7d-263b-4e3b-ab51-4c468187e231.par
+#BlueLink16 Generic Group of Links`Path Detector Plots` Path Detectors` , Miscellaneous`GenLink_7fb0bf7d-263b-4e3b-ab51-4c468187e231
+
+
+#EMBEDDED_NOTES
+#Three instances of the Path Detector are installed
+#
+#All instances refer to the same Path ID, but each has a unique LTARG specification, allowing one to represent the left lane marking (detected curve), right lane marking (detected curve), and center of the two lane markings.
+#
+#The calculated preview distances are proportional to the vehicle speed
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Path Detectors for External Driver Control; Three Detected Paths 2m Ln Cntr
+#Library : Path Detectors for External Driver Control
+#DataSet : Three Detected Paths 2m Ln Cntr
+#Category: 
+#FileID  : PathDet_174310ec-162a-43ee-af3b-c981cc605c43
+#Product : CarSim 2021.0
+#VehCode Path Detectors
+
+END

@@ -1,0 +1,15 @@
+# Shape file for lane 10
+v 0 1 0
+vt 0 0
+v 0 0 0
+vt 1 0
+mtllib Roads\3D_Road\Road_7324f401-cedb-488e-a2c3-b5f20b854d64_10.mtl
+usemtl No Texture
+g g1
+s 1
+g g2
+s 2
+g g3
+s 3
+g g4
+s 4

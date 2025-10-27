@@ -1,0 +1,34 @@
+PARSFILE
+#FullDataName Road: 3D Surface (All Properties)`Proving Ground`VS Scene Builder
+*IMAGE_TYPE PASTED
+*IMAGE_PASTED Roads\3D_Road\Road_9a4c072a-6444-47c0-a973-4d46fefa890d.png
+#CheckBox0 0    
+
+PARSFILE Roads\ExScene\SceneImp_2f733da1-8c3a-4605-9c39-d1e08bb73eed.par
+#BlueLink0 Scene: External Import`Proving Ground` VS Scene Builder` , Reference Path`SceneImp_2f733da1-8c3a-4605-9c39-d1e08bb73eed
+
+L_CAMERA_FRONT 1
+L_CAMERA_REAR 1
+add_reference_frame road_stuff_6_Partly_Cloudy_Sky_with_Light_Grass,_No_Z
+reference_frame_ghosts off
+PARSFILE Animator\Groups\Group_de5fb57b-4140-40ee-8652-0c72f4276b2f.par
+#BlueLink6 Animator: Group`Partly Cloudy Sky with Light Grass, No Z` Environment Spheres` , 3D Shapes`Group_de5fb57b-4140-40ee-8652-0c72f4276b2f
+
+
+SPECIAL_PARSFILE Animator\Cameras\Camera_3e6fbc3d-a27e-4fc3-a398-20dbd1be9dfd.par
+#BlueLink5 Animator: Camera Setup`180 Azm, 5 El, 50 m` Road Reference` , Camera`Camera_3e6fbc3d-a27e-4fc3-a398-20dbd1be9dfd
+
+
+#EMBEDDED_NOTES
+#Proving ground created from VS Scene Builder standalone tile introduced in version 2021.0. Road elevation, friction, and rolling resistance are given via VS Terrain.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Road: 3D Surface (All Properties); { VS Scene Builder } Proving Ground
+#Library : Road: 3D Surface (All Properties)
+#DataSet : Proving Ground
+#Category: VS Scene Builder
+#FileID  : Road_9a4c072a-6444-47c0-a973-4d46fefa890d
+#Product : CarSim 2021.0
+#VehCode 3D Road
+
+END

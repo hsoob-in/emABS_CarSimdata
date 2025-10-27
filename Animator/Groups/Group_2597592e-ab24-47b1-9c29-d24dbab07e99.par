@@ -1,0 +1,27 @@
+PARSFILE
+#FullDataName Animator: Group`HUD Text Displays`
+PARSFILE Animator\HUD\HUD_c2fbf11d-df7b-4c89-a15c-4481962442ec.par
+#BlueLink0 Animator: HUD`Speed Output Text` Vehicle Status Indicators` , Miscellaneous`HUD_c2fbf11d-df7b-4c89-a15c-4481962442ec
+
+PARSFILE Animator\HUD\HUD_045a1772-0d49-4836-8ba5-975cdcefeed7.par
+#BlueLink1 Animator: HUD`P/T and Brakes Text` Vehicle Status Indicators` , Miscellaneous`HUD_045a1772-0d49-4836-8ba5-975cdcefeed7
+
+PARSFILE Animator\HUD\HUD_9d0084f1-a433-4611-bf43-5b880b3962d4.par
+#BlueLink2 Animator: HUD`Acceleration Text` Vehicle Status Indicators` , Miscellaneous`HUD_9d0084f1-a433-4611-bf43-5b880b3962d4
+
+PARSFILE Animator\HUD\HUD_8fe88881-13a6-41eb-9dd0-3ae55d233a64.par
+#BlueLink3 Animator: HUD`CS Opaque Image` ` , Miscellaneous`HUD_8fe88881-13a6-41eb-9dd0-3ae55d233a64
+
+
+#CheckBox0 0    
+
+
+LOG_ENTRY Used Dataset: Animator: Group; HUD Text Displays
+#Library : Animator: Group
+#DataSet : HUD Text Displays
+#Category: 
+#FileID  : Group_2597592e-ab24-47b1-9c29-d24dbab07e99
+#Product : CarSim 2021.0
+#VehCode Animator Group
+
+END

@@ -1,0 +1,27 @@
+PARSFILE
+#FullDataName Events`Monitor speed`Split Mu Brake Test
+#CheckBox1 0    
+#CheckBox6 0    
+#CheckBox7 0    
+#CheckBox9 0    
+#CheckBox10 0    
+
+#RingCtrl0 <=
+#RingCtrl10 1
+#RingCtrl11 4
+*NAME1 Vxz_Fwd
+*VALUE1 0.01
+MAKE_EVENT Vxz_Fwd <= 0.01 ; Events\Events_b5af09b5-d8ad-4e81-ae24-eebce691780e.par
+#BlueLink0 Events`End Events` ` , Events`Events_b5af09b5-d8ad-4e81-ae24-eebce691780e
+
+SET_EVENT_ID 0 ! reset to default
+
+LOG_ENTRY Used Dataset: Events; { Split Mu Brake Test } Monitor speed
+#Library : Events
+#DataSet : Monitor speed
+#Category: Split Mu Brake Test
+#FileID  : Events_0a9e6750-6318-4d52-93e9-5527cf5b8dcd
+#Product : CarSim 2021.0
+#VehCode Events
+
+END

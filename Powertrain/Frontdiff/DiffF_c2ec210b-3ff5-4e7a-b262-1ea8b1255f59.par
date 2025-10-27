@@ -1,0 +1,47 @@
+PARSFILE
+#FullDataName Powertrain: Front Differential`Open Differential: Gear Ratio 4.1:1_WCRC`Open
+#CheckBox0 0    
+LOCKED_FD_OPT 0
+
+#RingCtrl0 CONSTANT
+#RingCtrl1 0
+*EV_CONTROL 0
+OPT_LOCKED_DIFF 0
+M_DIFF_VISC_CONSTANT 0
+#RadioCtrl0 0    
+
+M_DIFF_FD_CONSTANT 0
+R_GEAR_FD 4.1
+R_EFF_F_FD 0.99
+R_EFF_R_FD 0.99
+LOCKED_FD_DAMP 0.8
+LOCKED_FD_K 80
+IDS_F 0.013
+IHS_LF 0.009
+IHS_RF 0.009
+*SCALAR 0
+
+OPT_MOTOR_ON_WHEEL 0
+
+ISIDE 1
+PARSFILE Powertrain\Motor\MMotor_299ad95f-8e21-4744-9fe7-270ae97bc67a.par
+#BlueLink0 Powertrain: Electric Motor Torque`Max. Output 298 N-m` Electric Motor` , Differential Clutch`MMotor_299ad95f-8e21-4744-9fe7-270ae97bc67a
+
+R_GEAR_DIFF 4.1
+R_EFF_F_DIFF 0.99
+R_EFF_R_DIFF 0.99
+LOCKED_DIFF_DAMP 0.8
+LOCKED_DIFF_K 80
+IDS 0.013
+IHS_L 0.009
+IHS_R 0.009
+
+LOG_ENTRY Used Dataset: Powertrain: Front Differential; { Open } Open Differential: Gear Ratio 4.1:1_WCRC
+#Library : Powertrain: Front Differential
+#DataSet : Open Differential: Gear Ratio 4.1:1_WCRC
+#Category: Open
+#FileID  : DiffF_c2ec210b-3ff5-4e7a-b262-1ea8b1255f59
+#Product : CarSim 2021.0
+#VehCode Front Differential
+
+END

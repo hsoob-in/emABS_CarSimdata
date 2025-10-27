@@ -1,0 +1,53 @@
+PARSFILE
+#FullDataName Generic Data Group`C-Class Hatch. General AEB System`Euro NCAP Pedestrian
+#VehCode Sensor Parameters
+PARSFILE Generic\VS_commands\GenVS_1e8ad3b0-1a91-411f-9fae-9d45476b06b1.par
+#BlueLink0 Generic VS Commands`Obstacle Parameters CPNA` Pedestrian Euro NCAP` , Link 1`GenVS_1e8ad3b0-1a91-411f-9fae-9d45476b06b1
+
+
+PARSFILE Sensors_Traffic\Radar\Radar_2ed5a2e9-17eb-462a-a97d-4068ea6f56a6.par
+#BlueLink1 ADAS Sensors for Range and Tracking`Pedestrian Camera General AEB` Forward Facing Sensors: FCW and ACC` , Link 2`Radar_2ed5a2e9-17eb-462a-a97d-4068ea6f56a6
+
+
+#MiscYellow2
+! the first sensor is the vehicle camera
+DEFINE_PARAMETER ID_CAM = ISENSOR; - ; ...
+number assigned to the camera sensor
+define_output LxBumper =  LX_F_SM - X_SENSOR ; ...
+  m; Bumper dist from camera
+#ENDMYellow
+
+PARSFILE Sensors_Traffic\Targets\Target_f62876b6-df3b-4f31-8993-1d719aaf2145.par
+#BlueLink2 Single Moving Object (Custom)`IUNIT_OBJ (Polygonal)` Multi-Vehicle` , Link 3`Target_f62876b6-df3b-4f31-8993-1d719aaf2145
+
+
+PARSFILE Generic\VS_commands\GenVS_e2b31cce-86e4-45c9-acf2-08a8843c933d.par
+#BlueLink3 Generic VS Commands`FCW-AEB Tuning Params.` Pedestrian Euro NCAP` , Link 4`GenVS_e2b31cce-86e4-45c9-acf2-08a8843c933d
+
+
+
+
+
+
+
+*MODELCODE Sensor Parameters
+
+#EMBEDDED_NOTES
+#This generic group provides the following:
+#
+#- Camera sensor setup
+#- Ego vehicle front bumper boundary available for moving object detection
+#- AEB control logic and tuning parameters
+#* Modification of the tuning parameters within, will cause various types of AEB performance changes
+#- Other parameters necessary for the Pedestrian Euro NCAP testing Events
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Generic Data Group; { Euro NCAP Pedestrian } C-Class Hatch. General AEB System
+#Library : Generic Data Group
+#DataSet : C-Class Hatch. General AEB System
+#Category: Euro NCAP Pedestrian
+#FileID  : GenGrp_9f2939f3-511d-49fb-bbd2-9e9c2b145432
+#Product : CarSim 2021.0
+#VehCode Sensor Parameters
+
+END

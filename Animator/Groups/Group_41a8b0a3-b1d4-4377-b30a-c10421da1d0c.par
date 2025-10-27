@@ -1,0 +1,22 @@
+PARSFILE
+#FullDataName Animator: Group`Euro NCAP Child`Pedestrians
+PARSFILE Animator\Frames\Frame_cd2c604c-d4e0-44e2-8b4b-436d0421839d.par
+#BlueLink11 Animator: Reference Frame`Euro NCAP Child` Pedestrians` , Miscellaneous`Frame_cd2c604c-d4e0-44e2-8b4b-436d0421839d
+
+
+#CheckBox0 0    
+
+
+#EMBEDDED_NOTES
+#Two reference frames attached to variables from the current moving object <<o>> including speed. Each has the same position variables but different visibility. The waiting pedestrian uses one animation asset; the walking pedestrian uses another.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Animator: Group; { Pedestrians } Euro NCAP Child
+#Library : Animator: Group
+#DataSet : Euro NCAP Child
+#Category: Pedestrians
+#FileID  : Group_41a8b0a3-b1d4-4377-b30a-c10421da1d0c
+#Product : CarSim 2021.0
+#VehCode Animator Group
+
+END

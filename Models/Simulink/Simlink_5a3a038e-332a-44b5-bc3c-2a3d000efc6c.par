@@ -1,0 +1,31 @@
+PARSFILE
+#FullDataName Models: Simulink`WCRC_0810`Copied 03-19-2025 17:17:21
+#RunMdlFile WCRC_mu_test.slx
+SIMULINK_MODEL_FILE WCRC_mu_test.slx
+#RingCtrl0 -1
+#CheckBox0 0    
+*USE_ALT_DIR 0
+#CheckBox1 0    
+*USE_DIFF_SOLVERS 0
+#CheckBox3 0    
+#CheckBox4 0    
+OPT_IO_SYNC_FM 0
+#CheckBox5 0    
+*MULTI_SOLVERS 0
+*ALTERNATE_PATH C:\Users\Public\Documents\CarSim2021.0_Data (1)
+PARSFILE IO_Channels\I_Channels\Import_4f3e29f7-1cd5-4511-a3ae-8a7809620ae0.par
+#BlueLink0 I/O Channels: Import`SRS_carsim_to_simulink` Copied 03-19-2025 17:17:21` , Import`Import_4f3e29f7-1cd5-4511-a3ae-8a7809620ae0
+
+PARSFILE IO_Channels\O_Channels\Export_b51b321f-e9f3-4a40-9bbe-e33099db4d48.par
+#BlueLink1 I/O Channels: Export`SRS_simulink_to_carsim` Copied 03-19-2025 17:17:21` , Import/Export`Export_b51b321f-e9f3-4a40-9bbe-e33099db4d48
+
+
+LOG_ENTRY Used Dataset: Models: Simulink; { Copied 03-19-2025 17:17:21 } WCRC_0810
+#Library : Models: Simulink
+#DataSet : WCRC_0810
+#Category: Copied 03-19-2025 17:17:21
+#FileID  : Simlink_5a3a038e-332a-44b5-bc3c-2a3d000efc6c
+#Product : CarSim 2021.0
+#VehCode 
+
+END

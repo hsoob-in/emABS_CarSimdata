@@ -1,0 +1,67 @@
+PARSFILE
+#FullDataName Road: Animator Surface Shapes`Long Road #1`Copied 03-19-2025 17:17:21
+NLANES 3
+OPTTHRESHOLD 1
+#MiscYellow0
+# 1 1 1, Road (Medium), 1, 20, 1, -4, m, 4, m, 5, , -100, 20000, 5, , , Road
+# 1 1 1, Road Transition (Light), 1, 10, 1, 4, m, 7.1, m, 1, , -100, 20000, 5, , , Foliage
+# 1 1 1, Road Transition (Light), 1, 10, -1, -4, m, -7.1, m, 1, , -100, 20000, 5, , , Foliage
+#ENDMYellow
+
+#CheckBox0 0    
+MIRROR 0
+
+COLOR(1) 1 1 1
+MATERIAL(1) Road (Medium)
+SPECULAR(1) 1
+SCALE(1) 20
+LTILES(1) 1
+LIN(1) -4
+LINUNITS(1) m
+LOUT(1) 4
+LOUTUNITS(1) m
+LDIV(1) 5
+S_START(1) -100
+S_STOP(1) 20000
+SINT(1) 5
+AUTODETAIL(1) Road
+COLOR(2) 1 1 1
+MATERIAL(2) Road Transition (Light)
+SPECULAR(2) 1
+SCALE(2) 10
+LTILES(2) 1
+LIN(2) 4
+LINUNITS(2) m
+LOUT(2) 7.1
+LOUTUNITS(2) m
+LDIV(2) 1
+S_START(2) -100
+S_STOP(2) 20000
+SINT(2) 5
+AUTODETAIL(2) Foliage
+COLOR(3) 1 1 1
+MATERIAL(3) Road Transition (Light)
+SPECULAR(3) 1
+SCALE(3) 10
+LTILES(3) -1
+LIN(3) -4
+LINUNITS(3) m
+LOUT(3) -7.1
+LOUTUNITS(3) m
+LDIV(3) 1
+S_START(3) -100
+S_STOP(3) 20000
+SINT(3) 5
+AUTODETAIL(3) Foliage
+MTL_FILE Animator\Road_Materials\road.mtl
+
+
+LOG_ENTRY Used Dataset: Road: Animator Surface Shapes; { Copied 03-19-2025 17:17:21 } Long Road #1
+#Library : Road: Animator Surface Shapes
+#DataSet : Long Road #1
+#Category: Copied 03-19-2025 17:17:21
+#FileID  : RdShape_5acb16fa-5d4b-43ce-9b3d-d1ce73575147
+#Product : CarSim 2021.0
+#VehCode Road Shapes
+
+END

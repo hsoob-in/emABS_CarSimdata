@@ -1,0 +1,58 @@
+PARSFILE
+#FullDataName Procedures`SRS_pro`Copied 03-19-2025 17:17:21
+#CheckBox1 1    
+OPT_INIT_PATH 1
+
+#RingCtrl0 4
+#RingCtrl1 -1
+#RingCtrl2 0
+OPT_STOP -1
+SSTART 0
+TSTART 0
+TSTART_WRITE = 0;
+SSTOP = SSTART + 1 ;
+OPT_DIRECTION 1
+TSTOP -1
+*SPEED 130
+*TSTOP -1
+*TSTART 0
+*SSTART 0
+*SSTOP 2234.
+
+PARSFILE Control\Driver\StrDM_6bec9717-49f4-4c9c-8644-b5e0a402a44d.par
+#BlueLink27 Control: Steering by the Closed-loop Driver Model`0.4 sec. Single Preview` Copied 03-19-2025 17:17:21` , Steering`StrDM_6bec9717-49f4-4c9c-8644-b5e0a402a44d
+
+#MiscYellow0
+LTARG_CONSTANT -5.75
+#ENDMYellow
+
+PARSFILE Roads\3D_Road\Road_d4f12d69-183a-4aa7-ab57-981b2c95e7df.par
+#BlueLink0 Road: 3D Surface (All Properties)`SRS_3D` Copied 03-19-2025 17:17:21` , Miscellaneous`Road_d4f12d69-183a-4aa7-ab57-981b2c95e7df
+
+#BlueLink1 ` , Miscellaneous` , Miscellaneous` , Miscellaneous`
+
+PARSFILE Events\Events_f69d433a-b23c-4fb6-b221-9dd0be417728.par
+#BlueLink4 Events`Stop After Number of Laps` Copied 03-19-2025 17:17:21` , Miscellaneous`Events_f69d433a-b23c-4fb6-b221-9dd0be417728
+
+#MiscYellow1
+! reduce frequency to make a smaller file
+iprint = 80 ! 12.5 Hz
+#ENDMYellow
+
+
+#EMBEDDED_NOTES
+#This Procedure demonstrates the use of the Target speed from path preview combined with the 3D road dataset "Handling Course."
+#
+#Rather than define a stop time or station, Events are used to record the number of laps the vehicle makes on the handling course. Once the vehicle has completed the specified number of laps, the simulation ends.
+#
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Procedures; { Copied 03-19-2025 17:17:21 } SRS_pro
+#Library : Procedures
+#DataSet : SRS_pro
+#Category: Copied 03-19-2025 17:17:21
+#FileID  : Proc_94f3d353-1fa8-47b3-a6e6-2be2e05152cd
+#Product : CarSim 2021.0
+#VehCode Procedure
+
+END

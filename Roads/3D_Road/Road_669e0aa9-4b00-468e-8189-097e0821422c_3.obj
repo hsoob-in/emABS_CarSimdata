@@ -1,0 +1,20 @@
+# Shape file for lane 3
+v -95 161.936562 0.4
+vt 0 0
+v -95 159.156562 0.4
+vt 1 0
+v 95.00001 -167.157891 0.4
+vt 0 47.5000025
+v 95.00001 -169.937891 0.4
+vt 1 47.5000025
+mtllib Roads\3D_Road\Road_669e0aa9-4b00-468e-8189-097e0821422c_3.mtl
+usemtl Pavement
+g g1
+s 1
+f  1/1 2/2 4/4 3/3
+g g2
+s 2
+g g3
+s 3
+g g4
+s 4

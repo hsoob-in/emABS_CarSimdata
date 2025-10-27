@@ -1,0 +1,148 @@
+Run made by CarSim 2021.0 at 19:59 on October 31, 2024.
+
+Started with simfile: simfile.sim
+
+Include PARSFILE "Results\Run_1a0fbe35-08c3-441f-90b6-ac4b57331481\Run_all.par"
+Installed keywords into VS Solver for MODEL_LAYOUT I_I
+Used Dataset: I/O Channels: Import; { Copied 10-29-2024 20:42:59 } SRS_carsim_to_simulink
+Used Dataset: I/O Channels: Export; { Copied 10-29-2024 20:42:59 } SRS_simulink_to_carsim
+Used Dataset: Models: Simulink; { Copied 10-29-2024 20:42:59 } SRS_24
+Used Dataset: Animator: Reference Frame; { Copied 10-29-2024 20:42:59 } Vehicle X-Y-Z-Yaw
+Used Dataset: Animator: Camera Setup; { Copied 10-29-2024 20:42:59 } 180 Azm, 10 El, 36 m
+Used Dataset: Steering System: Compliance; { Copied 10-29-2024 20:42:59 } Constant: Zero
+Used Dataset: Steering System: Kinematics for 2 Wheels (Rack & Pinion); { Copied 10-29-2024 20:42:59 } B-Class, Hatchback
+Used Dataset: Steering: Power Assist Force; { Copied 10-29-2024 20:42:59 } B-Class Hatchback, Not Spd Sens
+Used Dataset: Steering System: Compliance; { Copied 10-29-2024 20:42:59 } 0.001 deg/N-m
+Used Dataset: Steering: Parking Torque for 2 Wheels; { Copied 10-29-2024 20:42:59 } B-Class Hatchback
+Used Dataset: Steering; { Copied 10-29-2024 20:42:59 } B-Class, Hbk: Power, R&P
+Used Dataset: Suspension: Dive Angle (Caster Change); { Copied 10-29-2024 20:42:59 } Front Strut - Front Dive Angle
+Used Dataset: Suspension: Longitudinal Movement; { Copied 10-29-2024 20:42:59 } Front Strut -  Longitudinal Movement
+Used Dataset: Suspension: Camber Angle; { Copied 10-29-2024 20:42:59 } Front Strut - Camber
+Used Dataset: Suspension: Lateral Movement Due to Jounce; { Copied 10-29-2024 20:42:59 } Strut - Front
+Used Dataset: Suspension: Toe Angle; { Copied 10-29-2024 20:42:59 } Strut - Front
+Used Dataset: Suspension: Dive Angle (Caster Change); { Copied 10-29-2024 20:42:59 } Front Strut - Front Dive Angle
+Used Dataset: Suspension: Longitudinal Movement; { Copied 10-29-2024 20:42:59 } Front Strut -  Longitudinal Movement
+Used Dataset: Suspension: Camber Angle; { Copied 10-29-2024 20:42:59 } Front Strut - Camber
+Used Dataset: Suspension: Lateral Movement Due to Jounce; { Copied 10-29-2024 20:42:59 } Strut - Front
+Used Dataset: Suspension: Toe Angle; { Copied 10-29-2024 20:42:59 } Strut - Front
+Used Dataset: Suspension: Independent System Kinematics; { Copied 10-29-2024 20:42:59 } B-Class, Hatchback - Front
+Used Dataset: Suspension: Shock Absorber; { Copied 10-29-2024 20:42:59 } Big Car
+Used Dataset: Suspension: Jounce and Rebound Stops; { Copied 10-29-2024 20:42:59 } +70 mm / -50 mm
+Used Dataset: Suspension: Shock Absorber; { Copied 10-29-2024 20:42:59 } Big Car
+Used Dataset: Suspension: Jounce and Rebound Stops; { Copied 10-29-2024 20:42:59 } +70 mm / -50 mm
+Used Dataset: Suspension: Auxiliary Roll Moment; { Copied 10-29-2024 20:42:59 } Linear: 384 N-m/deg
+Used Dataset: Suspension: Independent Compliance, Springs, and Dampers; { Copied 10-29-2024 20:42:59 } B-Class, Hatchback - Front
+Used Dataset: Animator: Shape File Link; { Copied 10-29-2024 20:42:59 } 145/80 R13: Tire
+Used Dataset: Animator: Shape File Link; { Copied 10-29-2024 20:42:59 } 145/80 R13: Wheel
+Used Dataset: Animator: Shape File Link; { Copied 10-29-2024 20:42:59 } 145/80 R13: Stripe
+Used Dataset: Animator: Shape Assembly; { Copied 10-29-2024 20:42:59 } 145/80 R13
+Used Dataset: Tire: Aligning Moment; { Copied 10-29-2024 20:42:59 } 185/65 R15 (SAE)
+Used Dataset: Tire: Lateral Force; { Copied 10-29-2024 20:42:59 } 185/65 R15
+Used Dataset: Tire: Longitudinal Force; { Copied 10-29-2024 20:42:59 } 185/65 R15
+Used Dataset: Tire: Camber Thrust Coefficient; { Copied 10-29-2024 20:42:59 } 185/65 R15
+Used Dataset: Tire; { Copied 10-29-2024 20:42:59 } R=287mm for Hybrid Evaluation
+Used Dataset: Animator: Shape File Link; { Copied 10-29-2024 20:42:59 } 145/80 R13: Tire
+Used Dataset: Animator: Shape File Link; { Copied 10-29-2024 20:42:59 } 145/80 R13: Wheel
+Used Dataset: Animator: Shape File Link; { Copied 10-29-2024 20:42:59 } 145/80 R13: Stripe
+Used Dataset: Animator: Shape Assembly; { Copied 10-29-2024 20:42:59 } 145/80 R13
+Used Dataset: Tire: Aligning Moment; { Copied 10-29-2024 20:42:59 } 185/65 R15 (SAE)
+Used Dataset: Tire: Lateral Force; { Copied 10-29-2024 20:42:59 } 185/65 R15
+Used Dataset: Tire: Longitudinal Force; { Copied 10-29-2024 20:42:59 } 185/65 R15
+Used Dataset: Tire: Camber Thrust Coefficient; { Copied 10-29-2024 20:42:59 } 185/65 R15
+Used Dataset: Tire; { Copied 10-29-2024 20:42:59 } R=287mm for Hybrid Evaluation
+Used Dataset: Suspension: Longitudinal Movement; { Copied 10-29-2024 20:42:59 } Rear 5-Link - Longitudinal Movement
+Used Dataset: Suspension: Camber Angle; { Copied 10-29-2024 20:42:59 } Rear 5-Link - Camber Change
+Used Dataset: Suspension: Lateral Movement Due to Jounce; { Copied 10-29-2024 20:42:59 } Rear 5-Link - Lateral Movement
+Used Dataset: Suspension: Toe Angle; { Copied 10-29-2024 20:42:59 } Rear 5-Link - Toe Change
+Used Dataset: Suspension: Longitudinal Movement; { Copied 10-29-2024 20:42:59 } Rear 5-Link - Longitudinal Movement
+Used Dataset: Suspension: Camber Angle; { Copied 10-29-2024 20:42:59 } Rear 5-Link - Camber Change
+Used Dataset: Suspension: Lateral Movement Due to Jounce; { Copied 10-29-2024 20:42:59 } Rear 5-Link - Lateral Movement
+Used Dataset: Suspension: Toe Angle; { Copied 10-29-2024 20:42:59 } Rear 5-Link - Toe Change
+Used Dataset: Suspension: Independent System Kinematics; { Copied 10-29-2024 20:42:59 } B-Class, Hatchback - Rear
+Used Dataset: Suspension: Shock Absorber; { Copied 10-29-2024 20:42:59 } Big Car
+Used Dataset: Suspension: Jounce and Rebound Stops; { Copied 10-29-2024 20:42:59 } +60 mm / -40 mm
+Used Dataset: Suspension: Shock Absorber; { Copied 10-29-2024 20:42:59 } Big Car
+Used Dataset: Suspension: Jounce and Rebound Stops; { Copied 10-29-2024 20:42:59 } +60 mm / -40 mm
+Used Dataset: Suspension: Auxiliary Roll Moment; { Copied 10-29-2024 20:42:59 } Linear: 251 N-m/deg
+Used Dataset: Suspension: Independent Compliance, Springs, and Dampers; { Copied 10-29-2024 20:42:59 } B-Class, Hatchback - Rear
+Used Dataset: Animator: Shape File Link; { Copied 10-29-2024 20:42:59 } 145/80 R13: Tire
+Used Dataset: Animator: Shape File Link; { Copied 10-29-2024 20:42:59 } 145/80 R13: Wheel
+Used Dataset: Animator: Shape File Link; { Copied 10-29-2024 20:42:59 } 145/80 R13: Stripe
+Used Dataset: Animator: Shape Assembly; { Copied 10-29-2024 20:42:59 } 145/80 R13
+Used Dataset: Tire: Aligning Moment; { Copied 10-29-2024 20:42:59 } 185/65 R15 (SAE)
+Used Dataset: Tire: Lateral Force; { Copied 10-29-2024 20:42:59 } 185/65 R15
+Used Dataset: Tire: Longitudinal Force; { Copied 10-29-2024 20:42:59 } 185/65 R15
+Used Dataset: Tire: Camber Thrust Coefficient; { Copied 10-29-2024 20:42:59 } 185/65 R15
+Used Dataset: Tire; { Copied 10-29-2024 20:42:59 } R=287mm for Hybrid Evaluation
+Used Dataset: Animator: Shape File Link; { Copied 10-29-2024 20:42:59 } 145/80 R13: Tire
+Used Dataset: Animator: Shape File Link; { Copied 10-29-2024 20:42:59 } 145/80 R13: Wheel
+Used Dataset: Animator: Shape File Link; { Copied 10-29-2024 20:42:59 } 145/80 R13: Stripe
+Used Dataset: Animator: Shape Assembly; { Copied 10-29-2024 20:42:59 } 145/80 R13
+Used Dataset: Tire: Aligning Moment; { Copied 10-29-2024 20:42:59 } 185/65 R15 (SAE)
+Used Dataset: Tire: Lateral Force; { Copied 10-29-2024 20:42:59 } 185/65 R15
+Used Dataset: Tire: Longitudinal Force; { Copied 10-29-2024 20:42:59 } 185/65 R15
+Used Dataset: Tire: Camber Thrust Coefficient; { Copied 10-29-2024 20:42:59 } 185/65 R15
+Used Dataset: Tire; { Copied 10-29-2024 20:42:59 } R=287mm for Hybrid Evaluation
+Used Dataset: Vehicle: Sprung Mass; { Copied 10-29-2024 20:42:59 } B-Class, Hatchback w/Hybrid Powertrain
+Used Dataset: Aerodynamics: Fx (Drag) Coef. vs. Aero Slip; { Copied 10-29-2024 20:42:59 } Spline: 0.30 at 0 deg.
+Used Dataset: Aerodynamics: Fy (Side Force) Coef. vs. Aero Slip; { Copied 10-29-2024 20:42:59 } Spline: 2 at 90 deg.
+Used Dataset: Aerodynamics: Fz (Lift) Coef. vs. Aero Slip; { Copied 10-29-2024 20:42:59 } Spline: 0.18 at 0 deg.
+Used Dataset: Aerodynamics: Mx (Roll Moment) Coef. vs. Aero Slip; { Copied 10-29-2024 20:42:59 } Spline: 0.3 at 90 deg.
+Used Dataset: Aerodynamics: My (Pitch Moment) Coef. vs. Aero Slip; { Copied 10-29-2024 20:42:59 } Spline: 0.15 at 0 deg.
+Used Dataset: Aerodynamics: Mz (Yaw Moment) Coef. vs. Aero Slip; { Copied 10-29-2024 20:42:59 } Spline: 0.2 at 35 deg.
+Used Dataset: Aerodynamics: Basic; { Copied 10-29-2024 20:42:59 } B-Class, Hatchback Aero
+Used Dataset: Generic Table; { Copied 10-29-2024 20:42:59 } Battery charged resistance
+Used Dataset: Generic Table; { Copied 10-29-2024 20:42:59 } Battery discharged resistance
+Used Dataset: Generic Table; { Copied 10-29-2024 20:42:59 } Battery Open-Circuit Voltage
+Used Dataset: Generic Table; { Copied 10-29-2024 20:42:59 } Battery Max Capacity (Pure Electric)
+Used Dataset: Powertrain: Hybrid/Electric System; { Copied 10-29-2024 20:42:59 } Electric Motors on Axles Powertrain Assy
+Used Dataset: Generic Table; { Copied 10-29-2024 20:42:59 } Driver Demand Power: Full Load 168 kW #1
+Used Dataset: Powertrain: Hybrid/Electric Power Management Control; { Copied 10-29-2024 20:42:59 } Electric Power Manage.: Full Load 168kW #1
+Used Dataset: Generic Table; { Copied 10-29-2024 20:42:59 } Motor efficiency
+Used Dataset: Powertrain: Electric Motor Torque; { Copied 10-29-2024 20:42:59 } Max. Output 350 N-m #1
+Used Dataset: Powertrain: Rear Differential; { Copied 10-29-2024 20:42:59 } EV Open Diff.: Gear Ratio 3.905:1
+Used Dataset: Powertrain: Rear-Wheel Drive; { Copied 10-29-2024 20:42:59 } 40 kW, Electric (Hi-Power), 3.905 Ratio
+Used Dataset: Brakes: Proportioning / Limiting Valve; { Copied 10-29-2024 20:42:59 } Unity until 2.0 MPa then 30%
+Used Dataset: Brakes: Proportioning / Limiting Valve; { Copied 10-29-2024 20:42:59 } Unity until 2.0 MPa then 30%
+Used Dataset: Brakes: Four-Wheel System; { Copied 10-29-2024 20:42:59 } (Hbk): MC Press, No ABS
+Used Dataset: Animator: Shape File Link; { Copied 10-29-2024 20:42:59 } Hatchback: Body
+Used Dataset: Animator: Shape File Link; { Copied 10-29-2024 20:42:59 } Hatchback: Driver (Caucasian Male)
+Used Dataset: Animator: Shape Assembly; { Copied 10-29-2024 20:42:59 } B-Class Hatchback
+Used Dataset: Animator: Shape File Link; { Copied 10-29-2024 20:42:59 } Hatchback: Brake Lights
+Used Dataset: Animator: Shape File Link; { Copied 10-29-2024 20:42:59 } Hatchback: Reverse Lights
+Used Dataset: Animator: Vehicles and Sensor Targets; { Copied 10-29-2024 20:42:59 } B-Class, Hatchback
+Used Dataset: Vehicle: Assembly; { Copied 10-29-2024 20:42:59 } IONIC_RWD
+Used Dataset: Control: Steering by the Closed-loop Driver Model; { Copied 10-29-2024 20:42:59 } 0.4 sec. Single Preview
+ straight_for_slope <Copied 10-29-2024 20:42:59>
+Used Dataset: Path: Segment Builder; { Copied 10-29-2024 20:42:59 } straight_for_slope
+Used Dataset: Road: Reference Line Elevation; { Copied 10-29-2024 20:42:59 } slope_1031
+Used Dataset: Road: Reference Line Elevation; { Copied 10-29-2024 20:42:59 } slope_1031
+Used Dataset: Road: Friction Map, S-L Grid; { Copied 10-29-2024 20:42:59 } Constant: 0.9
+Used Dataset: Road: Animator Surface Shapes; { Copied 10-29-2024 20:42:59 } Long Road #1
+Used Dataset: Road: Boundaries; { Copied 10-29-2024 20:42:59 } Circle Test Boundaries
+Used Dataset: Animator: Reference Frame; { Copied 10-29-2024 20:42:59 } Skybox (Vehicle X-Y-Z)
+Used Dataset: Animator: Shape File Link; { Copied 10-29-2024 20:42:59 } Partly Cloudy Sky
+Used Dataset: Animator: Group; { Copied 10-29-2024 20:42:59 } Partly Cloudy Sky with Light Grass
+Used Dataset: Road: 3D Surface (All Properties); { Copied 10-29-2024 20:42:59 } SRS_3D
+Used Dataset: Events; { Copied 10-29-2024 20:42:59 } Stop After Number of Laps
+Used Dataset: Procedures; { Copied 10-29-2024 20:42:59 } SRS_pro
+ straight_for_slope <Copied 10-29-2024 20:42:59>
+Used Dataset: Path: Segment Builder; { Copied 10-29-2024 20:42:59 } straight_for_slope
+ straight_for_slope <Copied 10-29-2024 20:42:59>
+Used Dataset: Path: Segment Builder; { Copied 10-29-2024 20:42:59 } straight_for_slope
+Used Dataset: Road: Reference Line Elevation; { Copied 10-29-2024 20:42:59 } slope_1031
+Used Dataset: Road: Reference Line Elevation; { Copied 10-29-2024 20:42:59 } slope_1031
+Used Dataset: Road: Friction Map, S-L Grid; { Copied 10-29-2024 20:42:59 } Constant: 0.9
+Used Dataset: Road: Animator Surface Shapes; { Copied 10-29-2024 20:42:59 } Long Road #1
+WARNING: DEFINE_PARAMETER was used for the keyword "R", which was already installed.
+Used Dataset: Road: Boundaries; { Copied 10-29-2024 20:42:59 } Circle Test Boundaries
+Used Dataset: Animator: Reference Frame; { Copied 10-29-2024 20:42:59 } Skybox (Vehicle X-Y-Z)
+Used Dataset: Animator: Shape File Link; { Copied 10-29-2024 20:42:59 } Partly Cloudy Sky
+Used Dataset: Animator: Group; { Copied 10-29-2024 20:42:59 } Partly Cloudy Sky with Light Grass
+Used Dataset: Road: 3D Surface (All Properties); { Copied 10-29-2024 20:42:59 } SRS_3D
+Used Dataset: Animator: HUD; { Copied 10-29-2024 20:42:59 } Speed Output Text
+Used Dataset: Control: Steering by the Closed-loop Driver Model; { Copied 10-29-2024 20:42:59 } 0.4 sec. Single Preview
+ slope_1022 <Copied 10-29-2024 20:42:59>
+Used Dataset: CarSim Run Control; { Copied 10-29-2024 20:42:59 } slope_1022
+
+Time to read input = 0.070175

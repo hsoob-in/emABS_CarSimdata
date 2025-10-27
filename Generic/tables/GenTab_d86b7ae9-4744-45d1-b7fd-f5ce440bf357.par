@@ -1,0 +1,40 @@
+PARSFILE
+#FullDataName Generic Table`Rear Damper Comp vs Jounce`B-Class, Sports Car (VSA)
+#RingCtrl0 SPLINE
+#CheckBox0 0    
+
+#DiagramOne0
+CMP_DAMP_TABLE SPLINE
+-70, -52.38134766
+-60, -44.79259872
+-50, -37.25465393
+-40, -29.76395798
+-30, -22.31740379
+-20, -14.91228676
+-10, -7.546272278
+-1.41e-15, -0.217389405
+10, 7.075986862
+20, 14.33514023
+30, 21.56100655
+40, 28.75417328
+50, 35.91485596
+60, 43.04288101
+70, 50.13765335
+ENDTABLE
+#RadioCtrl0 0    
+#RadioCtrl1 0    
+
+*KEYWORD CMP_DAMP
+*X_LABEL Jounce
+*Y_LABEL Damper compression
+
+
+LOG_ENTRY Used Dataset: Generic Table; { B-Class, Sports Car (VSA) } Rear Damper Comp vs Jounce
+#Library : Generic Table
+#DataSet : Rear Damper Comp vs Jounce
+#Category: B-Class, Sports Car (VSA)
+#FileID  : GenTab_d86b7ae9-4744-45d1-b7fd-f5ce440bf357
+#Product : CarSim 2021.0
+#VehCode table
+
+END

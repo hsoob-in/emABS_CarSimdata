@@ -1,0 +1,62 @@
+PARSFILE
+#FullDataName Generic Table`Score vs. Speed`Pedestrian Euro NCAP
+#RingCtrl0 2D_STEP
+#CheckBox0 1    
+
+#MiscYellow0
+DEFINE_TABLE AEB_MaxScore
+#ENDMYellow
+
+*3D_XLabel CURRENT_TEST
+*3D_YLabel VEH_SPD_INIT
+*3D_ZLabel Maximum Test Score
+
+#DiagramTwo0
+*3D_DATA 14, 17 ! columns x rows
+AEB_MaxScore_CARPET 2D_STEP
+0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14
+4, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0
+8, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0
+10, 1, 1, 1, 1, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0
+15, 1, 1, 1, 1, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0
+20, 1, 1, 1, 1, 1, 0, 1, 0, 0, 0, 1, 1, 1, 0
+25, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0
+30, 2, 2, 2, 2, 1, 0, 0, 0, 0, 0, 1, 1, 1, 0
+35, 3, 3, 3, 3, 2, 0, 0, 0, 0, 0, 2, 2, 2, 0
+40, 3, 3, 3, 3, 2, 0, 0, 0, 0, 0, 2, 2, 2, 0
+45, 3, 3, 3, 3, 3, 0, 0, 0, 0, 0, 3, 3, 3, 0
+50, 2, 2, 2, 2, 3, 3, 0, 0, 0, 0, 3, 3, 3, 3
+55, 2, 2, 2, 2, 3, 3, 0, 0, 0, 0, 3, 3, 3, 3
+60, 1, 1, 1, 1, 2, 2, 0, 0, 0, 0, 2, 2, 2, 2
+65, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1
+70, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1
+75, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1
+80, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1
+ENDTABLE
+
+#RadioCtrl0 0    
+#RadioCtrl1 0    
+
+*KEYWORD AEB_MaxScore
+*X_LABEL VEH_SPD_INIT
+*Y_LABEL Maximum Test Score
+*X_LABEL_2 CURRENT_TEST
+*KEYWORD_2 CurrentTest
+
+
+#EMBEDDED_NOTES
+#This is a generalized function that can be used with to find the maximum allowable points scored per run for a given test type, at a given starting vehicle speed
+#
+#Each column designates a test type (e.g. CPLA), and each row designates an associated test speed
+#- This is based on the euro-ncap-assessment-protocol-vru-v1002 specification documnet
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Generic Table; { Pedestrian Euro NCAP } Score vs. Speed
+#Library : Generic Table
+#DataSet : Score vs. Speed
+#Category: Pedestrian Euro NCAP
+#FileID  : GenTab_7a114341-3cf4-4d0f-aa62-e93cc2e90a01
+#Product : CarSim 2021.0
+#VehCode table
+
+END

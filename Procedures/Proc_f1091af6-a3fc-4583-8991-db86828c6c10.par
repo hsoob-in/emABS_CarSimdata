@@ -1,0 +1,35 @@
+PARSFILE
+#FullDataName Procedures`SRS_DMO #2`Copied 11-17-2023 16:45:14
+#CheckBox1 1    
+OPT_INIT_PATH 1
+
+#RingCtrl0 4
+#RingCtrl1 1
+OPT_STOP 1
+
+PARSFILE Control\Gear_at\GearCL_3f60e7d2-b8c4-4d68-a9c4-d897bb3e2a86.par
+#BlueLink30 Control: Shifting (Closed Loop)`AT (All Available Gears)` Closed-Loop Shifting` , Shifting Control`GearCL_3f60e7d2-b8c4-4d68-a9c4-d897bb3e2a86
+
+#MiscYellow0
+SET_ILTARG_FOR_ID 0
+ltarg_constant = 2
+set_description ltarg_id ...
+  Lateral target for vehicles in the same lane
+#ENDMYellow
+
+PARSFILE Roads\3D_Road\Road_136517b4-eae7-4fb0-95a4-695bdef1dfb8.par
+#BlueLink0 Road: 3D Surface (All Properties)`1200 m, One Lane, Mu = 0.85` Straight` , Miscellaneous`Road_136517b4-eae7-4fb0-95a4-695bdef1dfb8
+
+PARSFILE Generic\VS_commands\GenVS_36300cb6-c974-479d-91e0-c7c6eeb16f5a.par
+#BlueLink5 Generic VS Commands`Euro NCAP: Single CCrb Test #1` Copied 11-17-2023 16:45:14` , Miscellaneous`GenVS_36300cb6-c974-479d-91e0-c7c6eeb16f5a
+
+
+LOG_ENTRY Used Dataset: Procedures; { Copied 11-17-2023 16:45:14 } SRS_DMO #2
+#Library : Procedures
+#DataSet : SRS_DMO #2
+#Category: Copied 11-17-2023 16:45:14
+#FileID  : Proc_f1091af6-a3fc-4583-8991-db86828c6c10
+#Product : CarSim 2021.0
+#VehCode Procedure
+
+END

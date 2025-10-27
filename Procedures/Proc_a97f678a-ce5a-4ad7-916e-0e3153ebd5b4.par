@@ -1,0 +1,82 @@
+PARSFILE
+#FullDataName Procedures`MV & PS: City (Controls, Setup 5-8)`Multi-Vehicle
+#CheckBox1 1    
+OPT_INIT_PATH 1
+
+#RingCtrl0 6
+#RingCtrl1 0
+#RingCtrl2 0
+OPT_STOP 0
+SSTART 0
+TSTART 0
+TSTART_WRITE = 0;
+TSTOP 22
+SSTOP = SSTART + 1 ;
+OPT_DIRECTION 1
+*SPEED 35
+*TSTOP 22
+*TSTART 0
+*SSTART 0
+*SSTOP 2235
+
+PARSFILE Control\Driver\StrDM_d83f93e2-ff10-4aaa-b6f2-29d55db3b32e.par
+#BlueLink27 Control: Steering by the Closed-loop Driver Model`0.5s Preview (No Path Line)` Constant Position: No Offset` , Steering`StrDM_d83f93e2-ff10-4aaa-b6f2-29d55db3b32e
+
+PARSFILE Control\Gear_at\GearCL_3f60e7d2-b8c4-4d68-a9c4-d897bb3e2a86.par
+#BlueLink30 Control: Shifting (Closed Loop)`AT (All Available Gears)` Closed-Loop Shifting` , Shifting Control`GearCL_3f60e7d2-b8c4-4d68-a9c4-d897bb3e2a86
+
+PARSFILE Control\Speed_path\SpdPath_b293dae2-e51e-43b0-93eb-aef4a501d84f.par
+#BlueLink33 Control: Speed (Closed Loop) Using Path Preview`0.15/0.2 G Ax/Ay, SPEED_LIMIT_ID` Miscellaneous` , Speed vs. time`SpdPath_b293dae2-e51e-43b0-93eb-aef4a501d84f
+
+#MiscYellow0
+SPEED_TARGET_CONSTANT 40;km/h
+VS_TERRAIN_FILE Scene_Import\VS_Scene_Builder\City_Advanced_Intersection.vsterrain
+#ENDMYellow
+
+PARSFILE Generic\Links\GenLink_1febc398-73e0-4b69-bfba-c5d04174f2b9.par
+#BlueLink0 Generic Group of Links`City Advanced Intersection` VS Scene Builder Paths` , Miscellaneous`GenLink_1febc398-73e0-4b69-bfba-c5d04174f2b9
+
+PARSFILE Roads\BuilderSegment\RoadSeg_2ba2b3d8-b547-4d13-9aa8-77992451bc9e.par
+#BlueLink1 Path: Segment Builder`Straight North, ID = 9998` Straight` , Miscellaneous`RoadSeg_2ba2b3d8-b547-4d13-9aa8-77992451bc9e
+
+PARSFILE Generic\Group\GenGrp_00397ca3-6af7-412a-94c4-3c0862577b1c.par
+#BlueLink2 Generic Data Group`City: Signs, Pedestrians, Buildings` ADAS: Traffic Scenarios` , Miscellaneous`GenGrp_00397ca3-6af7-412a-94c4-3c0862577b1c
+
+PARSFILE Generic\Links\GenLink_8776780d-86d9-4b9f-bf5d-800da46c65bd.par
+#BlueLink4 Generic Group of Links`4 Other Vehicles` Multiple Vehicles` , Miscellaneous`GenLink_8776780d-86d9-4b9f-bf5d-800da46c65bd
+
+#MiscYellow1
+SSTART -40 ! override settings for vehicle 5
+path_id_dm 1013
+#ENDMYellow
+
+PARSFILE Plot\Setup\Plot_21f6e1cd-f399-4b25-8d21-7b5875fab760.par
+#BlueLink8 Plot: Setup`Steering Wheel Angle vs. t_stamp` Steering` , Plot`Plot_21f6e1cd-f399-4b25-8d21-7b5875fab760
+
+PARSFILE Plot\Setup\Plot_dafae624-d48a-4548-93eb-fa73d080e21a.par
+#BlueLink11 Plot: Setup`Brake Control: M/C Pressure` Braking` , Plot`Plot_dafae624-d48a-4548-93eb-fa73d080e21a
+
+PARSFILE Plot\Setup\Plot_bc05b93e-6d03-4604-b0d8-6aca156e0b63.par
+#BlueLink12 Plot: Setup`Throttle: Control Input vs. t_stamp` Controls: Driver` , Plot`Plot_bc05b93e-6d03-4604-b0d8-6aca156e0b63
+
+PARSFILE Plot\Setup\Plot_59f74859-7f34-4878-a9b5-3ba45cf252ae.par
+#BlueLink14 Plot: Setup`Event Count` Event Control` , Plot`Plot_59f74859-7f34-4878-a9b5-3ba45cf252ae
+
+
+#EMBEDDED_NOTES
+#The Speed Control dataset uses path preview to adjust speed when turning  corners. The maximum speed is identified with an ID SPEED_LIMIT_ID to possibly change the speed based on a sign.
+#
+#As the setup Procedure, this includes the City intersection that was created in VS Scene Builder (terrain + animatror assets + paths).
+#
+#This also includes a set of signs, a pedestrian,  a bicyclist, and four buildings.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Procedures; { Multi-Vehicle } MV & PS: City (Controls, Setup 5-8)
+#Library : Procedures
+#DataSet : MV & PS: City (Controls, Setup 5-8)
+#Category: Multi-Vehicle
+#FileID  : Proc_a97f678a-ce5a-4ad7-916e-0e3153ebd5b4
+#Product : CarSim 2021.0
+#VehCode Procedure
+
+END

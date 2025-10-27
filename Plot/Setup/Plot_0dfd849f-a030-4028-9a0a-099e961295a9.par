@@ -1,0 +1,37 @@
+PARSFILE
+#FullDataName Plot: Setup`Bumper Strike Percentage`Pedestrian Euro NCAP
+
+ADD_ENTITY Plot
+
+#CheckBox1 0    
+
+
+#MiscYellow0
+PLOTCHANNELS BumperStrike, Time
+PLOTCHANNELS StrikePercentDiff, Time
+PLOTCHANNELS Lat_Ped_Rel, Time
+
+#ENDMYellow
+
+
+#RingCtrl2 Auto
+YMaxmin Auto
+#RingCtrl3 Auto
+XMaxmin Auto
+#RingCtrl8 1
+
+
+PTITLE Bumper Strike Percentage
+
+END_ENTITY Plot
+
+
+LOG_ENTRY Used Dataset: Plot: Setup; { Pedestrian Euro NCAP } Bumper Strike Percentage
+#Library : Plot: Setup
+#DataSet : Bumper Strike Percentage
+#Category: Pedestrian Euro NCAP
+#FileID  : Plot_0dfd849f-a030-4028-9a0a-099e961295a9
+#Product : CarSim 2021.0
+#VehCode Plot Setup
+
+END

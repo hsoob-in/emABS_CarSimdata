@@ -1,0 +1,35 @@
+PARSFILE
+#FullDataName I/O Channels: Export`Vehicle Position and Orientation`Parallel Solvers
+#RingCtrl0 0
+#RingCtrl1 1
+*README_FILE Results\Run_aa76dce2-630c-47c0-84c8-275a1975d306\Run_out_tab.txt
+
+
+EXPORT Xo
+EXPORT Yo
+EXPORT Zo
+EXPORT Roll_E
+EXPORT Pitch
+EXPORT Yaw
+#MiscYellow0
+#Number of Selected Channels: 6
+#CHN_NAME: Xo
+#CHN_NAME: Yo
+#CHN_NAME: Zo
+#CHN_NAME: Roll_E
+#CHN_NAME: Pitch
+#CHN_NAME: Yaw
+#ENDMYellow
+
+#BlueLink0 CarSim Run Control`City (4 Parallel Solvers): Car 1` Parallel Solvers` , example run`Run_aa76dce2-630c-47c0-84c8-275a1975d306
+
+
+LOG_ENTRY Used Dataset: I/O Channels: Export; { Parallel Solvers } Vehicle Position and Orientation
+#Library : I/O Channels: Export
+#DataSet : Vehicle Position and Orientation
+#Category: Parallel Solvers
+#FileID  : Export_280ad38e-4053-4b74-bcc6-4dd24ed16bf9
+#Product : CarSim 2021.0
+#VehCode Export Channels
+
+END

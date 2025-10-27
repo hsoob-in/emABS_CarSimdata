@@ -1,0 +1,22 @@
+PARSFILE
+#FullDataName I/O Channels: Import`CHO ABS import`emABS_0911
+#RingCtrl1 1
+
+#MiscYellow0
+IMP_BK_STAT Replace 0.0! 1
+IMP_PBK_L1 Replace 0.0! 1
+IMP_PBK_R1 Replace 0.0! 1
+IMP_PBK_L2 Replace 0.0! 1
+IMP_PBK_R2 Replace 0.0! 1
+#ENDMYellow
+
+
+LOG_ENTRY Used Dataset: I/O Channels: Import; { emABS_0911 } CHO ABS import
+#Library : I/O Channels: Import
+#DataSet : CHO ABS import
+#Category: emABS_0911
+#FileID  : Import_382033f5-5670-42fe-b47e-8b11e6840eb5
+#Product : CarSim 2021.0
+#VehCode Import Channels
+
+END

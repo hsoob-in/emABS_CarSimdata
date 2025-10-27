@@ -1,0 +1,108 @@
+PARSFILE
+#FullDataName CarSim Run Control`yaw stability test`RSC
+#VEHICLECODE Ind_Ind
+symbol_push  <<vehicle>> 0
+symbol_push  <<unit>> 0
+symbol_push  <<axle>> 0
+symbol_push  <<s>> 0
+symbol_push  <<o>> 0
+symbol_push  <<id_run>> Run_a7a7e1eb-c7ef-4cc7-ae15-8d9aebea92a2
+
+OPT_ALL_WRITE 0
+IOBJECT 0
+IUNIT 0
+IVEHICLE 0
+OPT_INT_METHOD 0
+OPT_VS_FILETYPE 2
+PARSFILE Models\Simulink\Simlink_b9bd7da3-3edf-4b56-93d4-023c3c202fee.par
+#BlueLink12 Models: Simulink`SM brake control #1` control_all` , Models`Simlink_b9bd7da3-3edf-4b56-93d4-023c3c202fee
+
+PARSFILE Animator\Cameras\Camera_7fd93935-5e80-4d39-bf60-d7ff5dbaa0af.par
+#BlueLink0 Animator: Camera Setup`180 Azm, 10 El, 36 m` Vehicle Reference` , Animator camera`Camera_7fd93935-5e80-4d39-bf60-d7ff5dbaa0af
+
+#CheckBox0 1    
+#CheckBox1 0    
+#CheckBox2 0    
+#CheckBox3 0    
+#CheckBox4 1    
+#CheckBox5 1    
+#CheckBox6 0    
+#CheckBox7 0    
+#CheckBox8 1    
+#CheckBox9 0    
+#CheckBox10 0    
+#CheckBox11 0    
+
+#RingCtrl0 0
+#RingCtrl1 0
+#RingCtrl2 0
+#RingCtrl3 0
+#RingCtrl6 8
+#RingCtrl7 -1
+*RUN_COLOR 0 0 1
+SET_RUN_COLOR 0 0 1
+#RingCtrl4 off
+RT_WINDOW_CLOSE off
+#RingCtrl5 0
+LIVE_SERVER_MAX_CONNECTIONS 0
+PARSFILE Vehicles\Assembly\Vehicle_4b5c6467-f55b-4e5f-a50d-79e0cae1a18d.par
+#BlueLink2 Vehicle: Assembly`IONIC5_1004` Hyundai N` , Math Model`Vehicle_4b5c6467-f55b-4e5f-a50d-79e0cae1a18d
+
+PARSFILE Procedures\Proc_c0e5e3c3-18e5-4695-83c1-a0e1fd6c2497.par
+#BlueLink28 Procedures`RSC` VD#3` , Procedure`Proc_c0e5e3c3-18e5-4695-83c1-a0e1fd6c2497
+
+PARSFILE Animator\HUD\HUD_3978acd2-7aee-486d-b4a7-f07dc083d947.par
+#BlueLink11 Animator: HUD`Throttle and Speed #1` Vehicle Status Indicators` , Miscellaneous`HUD_3978acd2-7aee-486d-b4a7-f07dc083d947
+
+OPT_STOP 0
+SSTART 0
+TSTOP 20
+SSTOP =  SSTART + 1 ;
+OPT_DIRECTION 1
+*SPEED 80
+*TSTOP 20
+*SSTART 0
+PARSFILE Plot\Setup\Plot_7251a722-18c9-43db-a324-bd380d275618.par
+#BlueLink15 Plot: Setup`Throttle: Control Input` Controls: Driver` , Plot`Plot_7251a722-18c9-43db-a324-bd380d275618
+
+PARSFILE Plot\Setup\Plot_5ead09bd-2b8f-470e-af04-1a232741844f.par
+#BlueLink16 Plot: Setup`Fy vs. Alpha` Tire Tester` , Plot`Plot_5ead09bd-2b8f-470e-af04-1a232741844f
+
+PARSFILE Plot\Setup\Plot_19310881-e0f6-4f37-af13-994798cd606c.par
+#BlueLink17 Plot: Setup`Slip Ratios: Lagged - Rear` Tire Kinematics` , Plot`Plot_19310881-e0f6-4f37-af13-994798cd606c
+
+PARSFILE Plot\Setup\Plot_8b77a420-77c9-46d9-97b2-68be7648867a.par
+#BlueLink18 Plot: Setup`Yaw Angle: YawO_1` ADAS Sensor Target Properties` , Plot`Plot_8b77a420-77c9-46d9-97b2-68be7648867a
+
+PARSFILE Plot\Setup\Plot_6f0c0125-1c0c-4b0a-a06b-529aada16a53.par
+#BlueLink19 Plot: Setup`Brake Torque` Braking` , Plot`Plot_6f0c0125-1c0c-4b0a-a06b-529aada16a53
+
+PARSFILE Plot\Setup\Plot_0773e087-151d-42db-a308-f02b7b6ee48d.par
+#BlueLink20 Plot: Setup`Lateral Forces` Tire Forces and Moments` , Plot`Plot_0773e087-151d-42db-a308-f02b7b6ee48d
+
+PARSFILE Plot\Setup\Plot_e7487d45-296c-4d2a-9d47-4552f8ffea09.par
+#BlueLink21 Plot: Setup`electric motor` VD#3` , Plot`Plot_e7487d45-296c-4d2a-9d47-4552f8ffea09
+
+PARSFILE Plot\Setup\Plot_7d7354f2-805d-47b7-941f-a754374367b6.par
+#BlueLink22 Plot: Setup`yaw rate` VD#3` , Plot`Plot_7d7354f2-805d-47b7-941f-a754374367b6
+
+
+*IMAGE_TYPE PASS_THROUGH
+*IMAGE_PASS_THROUGH Animator\Vehicles\AniVeh_744dc54f-cca9-4d31-8bee-3535b6477b13.png
+WRITE_SENSOR_DETECT
+Title yaw stability test <RSC>
+CATEGORY RSC 
+DATASET_TITLE yaw stability test
+#RingCtrl8 1
+NUM_CACHED_RUNS 1
+#RingCtrl9 
+
+LOG_ENTRY Used Dataset: CarSim Run Control; { RSC } yaw stability test
+#Library : CarSim Run Control
+#DataSet : yaw stability test
+#Category: RSC
+#FileID  : Run_a7a7e1eb-c7ef-4cc7-ae15-8d9aebea92a2
+#Product : CarSim 2021.0
+#VehCode Run
+
+END

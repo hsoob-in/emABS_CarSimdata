@@ -1,0 +1,72 @@
+PARSFILE
+#FullDataName Powertrain: 4-Wheel Drive`IONIC5`IONIC5
+INSTALL_ENGINE
+
+OPT_PT 3
+R_REAR_DRIVE_SC 0.5
+
+OPT_ENGINE_PITCH_REACTION(1) 0
+OPT_ENGINE_PITCH_REACTION(2) 0
+
+#RingCtrl0 1
+R_MDRIVE 1
+#RingCtrl4 1
+#RingCtrl5 1
+#RingCtrl6 1
+#RingCtrl7 2
+OPT_HEV 2
+DRIVELINE_FREQ 9
+DRIVELINE_ZETA 0.9
+
+#CheckBox0 0    
+#CheckBox1 0    
+
+OPT_ENGINE_INTERNAL 0
+OPT_PWR_CPL_INTERNAL 0
+OPT_TRANS_INTERNAL 0
+OPT_SHIFT_INTERNAL 0
+OPT_TR_GEAR_INTERNAL 0
+IDIFF 1
+OPT_DIFF_INTERNAL 1
+IDIFF 2
+OPT_DIFF_INTERNAL 1
+IDIFF 3
+OPT_DIFF_INTERNAL 1
+
+PARSFILE Powertrain\HEV\HEV_d85b4cba-5206-4048-9418-d11f80dfd1d3.par
+#BlueLink11 Powertrain: Hybrid/Electric System`Electric Motors on Axles Powertrain Assy` IONIC5` , Hybrid system`HEV_d85b4cba-5206-4048-9418-d11f80dfd1d3
+
+PARSFILE Powertrain\HEV_PMC\PMC_3180d8a7-e49e-41aa-a9e0-67330de9bced.par
+#BlueLink12 Powertrain: Hybrid/Electric Power Management Control`Electric Power Manage.: Max 272kW` IONIC_RWD` , Transmission`PMC_3180d8a7-e49e-41aa-a9e0-67330de9bced
+
+
+IDIFF 3
+PARSFILE Powertrain\Centerdiff\XC_5b09b60f-239a-468d-b714-046e2f8d7af9.par
+#BlueLink3 Powertrain: Transfer Case`EV eTransfer Case: 50/50, Gr. 1.0` IONIC5` , Transfer case`XC_5b09b60f-239a-468d-b714-046e2f8d7af9
+
+
+IDIFF 1
+PARSFILE Powertrain\Frontdiff\DiffF_82aa3724-8dea-4697-ae00-57382ac9c56e.par
+#BlueLink4 Powertrain: Front Differential`EV Open Diff.: Gear Ratio 10.65` IONIC5` , Differential front`DiffF_82aa3724-8dea-4697-ae00-57382ac9c56e
+
+
+IDIFF 2
+PARSFILE Powertrain\Reardiff\DiffR_9daaf759-2ad5-4b9c-99c5-9055bb458074.par
+#BlueLink5 Powertrain: Rear Differential`EV Open Diff.: Gear Ratio 10.65` IONIC5` , Differential rear`DiffR_9daaf759-2ad5-4b9c-99c5-9055bb458074
+
+
+#EMBEDDED_NOTES
+#Generic two 20 kW electric motors are equipped on each of front and rear drive axles.
+#
+#Power manegement range is 165kW with full loaded throttle pedal.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Powertrain: 4-Wheel Drive; { IONIC5 } IONIC5
+#Library : Powertrain: 4-Wheel Drive
+#DataSet : IONIC5
+#Category: IONIC5
+#FileID  : 4WD_3cb9792e-5ff8-454e-81a0-28c127993cc3
+#Product : CarSim 2021.0
+#VehCode 4WD
+
+END

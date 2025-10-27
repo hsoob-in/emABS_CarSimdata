@@ -1,0 +1,151 @@
+2025-10-22T18:52:14 Logfile initialized.
+2025-10-22T18:52:14 (Info):    CarSim 2021.0
+2025-10-22T18:52:14 (Info):    -
+2025-10-22T18:52:14 (Info):    command-line: 
+2025-10-22T18:52:14 (Info):    -
+2025-10-22T18:52:14 (Info):    Working Dir: C:\Users\Public\Documents\CarSim2021.0_Data (1)\
+2025-10-22T18:52:14 (Info):    Program Dir: C:\Program Files (x86)\CarSim2021.0_Prog\
+2025-10-22T18:52:14 (Info):    -
+2025-10-22T18:52:14 (Info):    OS Version:        6.2 (build 9200)
+2025-10-22T18:52:14 (Info):    CPU Architecture:  x64
+2025-10-22T18:52:14 (Info):    CPU Count:         12
+2025-10-22T18:52:14 (Info):    CPU Level/Rev:     6/38658
+2025-10-22T18:52:14 (Info):    Start Mem Total:   16099 MB
+2025-10-22T18:52:14 (Info):    Start Mem Used:    59%
+2025-10-22T18:52:14 (Info):    -
+2025-10-22T18:52:14 (Info):    Loaded dataset index cache in 0.05s, 22.3 megabytes.
+2025-10-22T18:52:15 (Info):    Feature                  Source                       Version  Acquired  Count
+2025-10-22T18:52:15 (Info):    -----------------        -----------------            -------  --------  -----
+2025-10-22T18:52:15 (Info):    bikesimsguiKR            ...21.0_Prog\MSCLIC_SSQ.dat  2021     [   ]          
+2025-10-22T18:52:15 (Info):    bikesimKR                ...21.0_Prog\MSCLIC_SSQ.dat  2021     [   ]          
+2025-10-22T18:52:15 (Info):    bikesimtKR               ...21.0_Prog\MSCLIC_SSQ.dat  2021     [   ]          
+2025-10-22T18:52:15 (Info):    bikesimsmoKR             ...21.0_Prog\MSCLIC_SSQ.dat  2021     [   ]          
+2025-10-22T18:52:15 (Info):    bikesimsmortKR           ...21.0_Prog\MSCLIC_SSQ.dat  2021     [   ]          
+2025-10-22T18:52:15 (Info):    bikesimsrcKR             ...21.0_Prog\MSCLIC_SSQ.dat  2021     [   ]          
+2025-10-22T18:52:15 (Info):    bikesimsrctKR            ...21.0_Prog\MSCLIC_SSQ.dat  2021     [   ]          
+2025-10-22T18:52:15 (Info):    bikesimopalKR            ...21.0_Prog\MSCLIC_SSQ.dat  2021     [   ]          
+2025-10-22T18:52:15 (Info):    bikesimopaltKR           ...21.0_Prog\MSCLIC_SSQ.dat  2021     [   ]          
+2025-10-22T18:52:15 (Info):    bikesimlinuxKR           ...21.0_Prog\MSCLIC_SSQ.dat  2021     [   ]          
+2025-10-22T18:52:15 (Info):    bikesimlinuxtKR          ...21.0_Prog\MSCLIC_SSQ.dat  2021     [   ]          
+2025-10-22T18:52:15 (Info):    bikesimdspaceKR          ...21.0_Prog\MSCLIC_SSQ.dat  2021     [   ]          
+2025-10-22T18:52:15 (Info):    bikesimdspacetKR         ...21.0_Prog\MSCLIC_SSQ.dat  2021     [   ]          
+2025-10-22T18:52:15 (Info):    bikesimadiKR             ...21.0_Prog\MSCLIC_SSQ.dat  2021     [   ]          
+2025-10-22T18:52:15 (Info):    bikesimaditKR            ...21.0_Prog\MSCLIC_SSQ.dat  2021     [   ]          
+2025-10-22T18:52:15 (Info):    bikesimlabviewKR         ...21.0_Prog\MSCLIC_SSQ.dat  2021     [   ]          
+2025-10-22T18:52:15 (Info):    bikesimlabviewtKR        ...21.0_Prog\MSCLIC_SSQ.dat  2021     [   ]          
+2025-10-22T18:52:15 (Info):    bikesimwdsKR             ...21.0_Prog\MSCLIC_SSQ.dat  2021     [   ]          
+2025-10-22T18:52:15 (Info):    bikesimwdstKR            ...21.0_Prog\MSCLIC_SSQ.dat  2021     [   ]          
+2025-10-22T18:52:15 (Info):    bikesimfrtKR             ...21.0_Prog\MSCLIC_SSQ.dat  2021     [   ]          
+2025-10-22T18:52:15 (Info):    bikesimfKR               ...21.0_Prog\MSCLIC_SSQ.dat  2021     [   ]          
+2025-10-22T18:52:15 (Info):    bikesimlabcarKR          ...21.0_Prog\MSCLIC_SSQ.dat  2021     [   ]          
+2025-10-22T18:52:15 (Info):    bikesimlabcartKR         ...21.0_Prog\MSCLIC_SSQ.dat  2021     [   ]          
+2025-10-22T18:52:15 (Info):    bikesimaniKR             ...21.0_Prog\MSCLIC_SSQ.dat  2021     [   ]          
+2025-10-22T18:52:15 (Info):    bikesimrtsvrKR           ...21.0_Prog\MSCLIC_SSQ.dat  2021     [   ]          
+2025-10-22T18:52:15 (Info):    bikesimrtsvrtKR          ...21.0_Prog\MSCLIC_SSQ.dat  2021     [   ]          
+2025-10-22T18:52:15 (Info):    bikesimartelabKR         ...21.0_Prog\MSCLIC_SSQ.dat  2021     [   ]          
+2025-10-22T18:52:15 (Info):    bikesimartelabtKR        ...21.0_Prog\MSCLIC_SSQ.dat  2021     [   ]          
+2025-10-22T18:52:15 (Info):    bikesimepiKR             ...21.0_Prog\MSCLIC_SSQ.dat  2021     [   ]          
+2025-10-22T18:52:15 (Info):    bikesimengmtKR           ...21.0_Prog\MSCLIC_SSQ.dat  2021     [   ]          
+2025-10-22T18:52:15 (Info):    bikesimengmtrtKR         ...21.0_Prog\MSCLIC_SSQ.dat  2021     [   ]          
+2025-10-22T18:52:15 (Info):    trucksimsguiKR           ...21.0_Prog\MSCLIC_SSQ.dat  2021     [   ]          
+2025-10-22T18:52:15 (Info):    trucksimKR               ...21.0_Prog\MSCLIC_SSQ.dat  2021     [   ]          
+2025-10-22T18:52:15 (Info):    trucksimsmoKR            ...21.0_Prog\MSCLIC_SSQ.dat  2021     [   ]          
+2025-10-22T18:52:15 (Info):    trucksimsmortKR          ...21.0_Prog\MSCLIC_SSQ.dat  2021     [   ]          
+2025-10-22T18:52:15 (Info):    trucksimtKR              ...21.0_Prog\MSCLIC_SSQ.dat  2021     [   ]          
+2025-10-22T18:52:15 (Info):    trucksimsrcKR            ...21.0_Prog\MSCLIC_SSQ.dat  2021     [   ]          
+2025-10-22T18:52:15 (Info):    trucksimsrctKR           ...21.0_Prog\MSCLIC_SSQ.dat  2021     [   ]          
+2025-10-22T18:52:15 (Info):    trucksimopalKR           ...21.0_Prog\MSCLIC_SSQ.dat  2021     [   ]          
+2025-10-22T18:52:15 (Info):    trucksimopaltKR          ...21.0_Prog\MSCLIC_SSQ.dat  2021     [   ]          
+2025-10-22T18:52:15 (Info):    trucksimlinuxKR          ...21.0_Prog\MSCLIC_SSQ.dat  2021     [   ]          
+2025-10-22T18:52:15 (Info):    trucksimlinuxtKR         ...21.0_Prog\MSCLIC_SSQ.dat  2021     [   ]          
+2025-10-22T18:52:15 (Info):    trucksimdspaceKR         ...21.0_Prog\MSCLIC_SSQ.dat  2021     [   ]          
+2025-10-22T18:52:15 (Info):    trucksimdspacetKR        ...21.0_Prog\MSCLIC_SSQ.dat  2021     [   ]          
+2025-10-22T18:52:15 (Info):    trucksimadiKR            ...21.0_Prog\MSCLIC_SSQ.dat  2021     [   ]          
+2025-10-22T18:52:15 (Info):    trucksimaditKR           ...21.0_Prog\MSCLIC_SSQ.dat  2021     [   ]          
+2025-10-22T18:52:15 (Info):    trucksimlabviewKR        ...21.0_Prog\MSCLIC_SSQ.dat  2021     [   ]          
+2025-10-22T18:52:15 (Info):    trucksimlabviewtKR       ...21.0_Prog\MSCLIC_SSQ.dat  2021     [   ]          
+2025-10-22T18:52:15 (Info):    trucksimwdsKR            ...21.0_Prog\MSCLIC_SSQ.dat  2021     [   ]          
+2025-10-22T18:52:15 (Info):    trucksimwdstKR           ...21.0_Prog\MSCLIC_SSQ.dat  2021     [   ]          
+2025-10-22T18:52:15 (Info):    trucksimfrtKR            ...21.0_Prog\MSCLIC_SSQ.dat  2021     [   ]          
+2025-10-22T18:52:15 (Info):    trucksimfKR              ...21.0_Prog\MSCLIC_SSQ.dat  2021     [   ]          
+2025-10-22T18:52:15 (Info):    trucksimlabtruckKR       ...21.0_Prog\MSCLIC_SSQ.dat  2021     [   ]          
+2025-10-22T18:52:15 (Info):    trucksimlabtrucktKR      ...21.0_Prog\MSCLIC_SSQ.dat  2021     [   ]          
+2025-10-22T18:52:15 (Info):    trucksimaniKR            ...21.0_Prog\MSCLIC_SSQ.dat  2021     [   ]          
+2025-10-22T18:52:15 (Info):    trucksimrtsvrKR          ...21.0_Prog\MSCLIC_SSQ.dat  2021     [   ]          
+2025-10-22T18:52:15 (Info):    trucksimrtsvrtKR         ...21.0_Prog\MSCLIC_SSQ.dat  2021     [   ]          
+2025-10-22T18:52:15 (Info):    trucksimartelabKR        ...21.0_Prog\MSCLIC_SSQ.dat  2021     [   ]          
+2025-10-22T18:52:15 (Info):    trucksimartelabtKR       ...21.0_Prog\MSCLIC_SSQ.dat  2021     [   ]          
+2025-10-22T18:52:15 (Info):    trucksimepiKR            ...21.0_Prog\MSCLIC_SSQ.dat  2021     [   ]          
+2025-10-22T18:52:15 (Info):    trucksimengmtKR          ...21.0_Prog\MSCLIC_SSQ.dat  2021     [   ]          
+2025-10-22T18:52:15 (Info):    trucksimengmtrtKR        ...21.0_Prog\MSCLIC_SSQ.dat  2021     [   ]          
+2025-10-22T18:52:15 (Info):    carsimsguiKR             ...21.0_Prog\MSCLIC_SSQ.dat  2021     [   ]          
+2025-10-22T18:52:15 (Info):    carsimKR                 ...21.0_Prog\MSCLIC_SSQ.dat  2021     [   ]          
+2025-10-22T18:52:15 (Info):    carsimtKR                ...21.0_Prog\MSCLIC_SSQ.dat  2021     [   ]          
+2025-10-22T18:52:15 (Info):    carsimsmoKR              ...21.0_Prog\MSCLIC_SSQ.dat  2021     [   ]          
+2025-10-22T18:52:15 (Info):    carsimsmortKR            ...21.0_Prog\MSCLIC_SSQ.dat  2021     [   ]          
+2025-10-22T18:52:15 (Info):    carsimsrcKR              ...21.0_Prog\MSCLIC_SSQ.dat  2021     [   ]          
+2025-10-22T18:52:15 (Info):    carsimsrctKR             ...21.0_Prog\MSCLIC_SSQ.dat  2021     [   ]          
+2025-10-22T18:52:15 (Info):    carsimopalKR             ...21.0_Prog\MSCLIC_SSQ.dat  2021     [   ]          
+2025-10-22T18:52:15 (Info):    carsimopaltKR            ...21.0_Prog\MSCLIC_SSQ.dat  2021     [   ]          
+2025-10-22T18:52:15 (Info):    carsimlinuxKR            ...21.0_Prog\MSCLIC_SSQ.dat  2021     [   ]          
+2025-10-22T18:52:15 (Info):    carsimlinuxtKR           ...21.0_Prog\MSCLIC_SSQ.dat  2021     [   ]          
+2025-10-22T18:52:15 (Info):    carsimdspaceKR           ...21.0_Prog\MSCLIC_SSQ.dat  2021     [   ]          
+2025-10-22T18:52:15 (Info):    carsimdspacetKR          ...21.0_Prog\MSCLIC_SSQ.dat  2021     [   ]          
+2025-10-22T18:52:15 (Info):    carsimadiKR              ...21.0_Prog\MSCLIC_SSQ.dat  2021     [   ]          
+2025-10-22T18:52:15 (Info):    carsimaditKR             ...21.0_Prog\MSCLIC_SSQ.dat  2021     [   ]          
+2025-10-22T18:52:15 (Info):    carsimlabviewKR          ...21.0_Prog\MSCLIC_SSQ.dat  2021     [   ]          
+2025-10-22T18:52:15 (Info):    carsimlabviewtKR         ...21.0_Prog\MSCLIC_SSQ.dat  2021     [   ]          
+2025-10-22T18:52:15 (Info):    carsimwdsKR              ...21.0_Prog\MSCLIC_SSQ.dat  2021     [   ]          
+2025-10-22T18:52:15 (Info):    carsimwdstKR             ...21.0_Prog\MSCLIC_SSQ.dat  2021     [   ]          
+2025-10-22T18:52:15 (Info):    carsimfrtKR              ...21.0_Prog\MSCLIC_SSQ.dat  2021     [   ]          
+2025-10-22T18:52:15 (Info):    carsimfKR                ...21.0_Prog\MSCLIC_SSQ.dat  2021     [   ]          
+2025-10-22T18:52:15 (Info):    carsimlabcarKR           ...21.0_Prog\MSCLIC_SSQ.dat  2021     [   ]          
+2025-10-22T18:52:15 (Info):    carsimlabcartKR          ...21.0_Prog\MSCLIC_SSQ.dat  2021     [   ]          
+2025-10-22T18:52:15 (Info):    carsimaniKR              ...21.0_Prog\MSCLIC_SSQ.dat  2021     [   ]          
+2025-10-22T18:52:15 (Info):    carsimrtsvrKR            ...21.0_Prog\MSCLIC_SSQ.dat  2021     [   ]          
+2025-10-22T18:52:15 (Info):    carsimrtsvrtKR           ...21.0_Prog\MSCLIC_SSQ.dat  2021     [   ]          
+2025-10-22T18:52:15 (Info):    carsimartelabKR          ...21.0_Prog\MSCLIC_SSQ.dat  2021     [   ]          
+2025-10-22T18:52:15 (Info):    carsimartelabtKR         ...21.0_Prog\MSCLIC_SSQ.dat  2021     [   ]          
+2025-10-22T18:52:15 (Info):    carsimepiKR              ...21.0_Prog\MSCLIC_SSQ.dat  2021     [   ]          
+2025-10-22T18:52:15 (Info):    carsimengmtKR            ...21.0_Prog\MSCLIC_SSQ.dat  2021     [   ]          
+2025-10-22T18:52:15 (Info):    carsimengmtrtKR          ...21.0_Prog\MSCLIC_SSQ.dat  2021     [   ]          
+2025-10-22T18:52:15 (Info):    sussimKR                 ...21.0_Prog\MSCLIC_SSQ.dat  2021     [   ]          
+2025-10-22T18:52:16 (Info):    Acquired [1] license for carsimsguiKR
+2025-10-22T18:52:16 (Info):    Acquired [1] license for carsimKR
+2025-10-22T18:52:16 (Info):    Acquired [1] license for carsimwdsKR
+2025-10-22T18:52:16 (Info):    Acquired [1] license for carsimopalKR
+2025-10-22T18:52:16 (Info):    Acquired [1] license for carsimlinuxKR
+2025-10-22T18:52:16 (Info):    Acquired [1] license for carsimdspaceKR
+2025-10-22T18:52:16 (Info):    Acquired [1] license for carsimlabviewKR
+2025-10-22T18:52:16 (Info):    Acquired [1] license for carsimlabcarKR
+2025-10-22T18:52:16 (Info):    Acquired [1] license for carsimrtsvrKR
+2025-10-22T18:52:16 (Info):    Acquired [1] license for carsimartelabKR
+2025-10-22T18:52:16 (Info):    Acquired [1] license for carsimepiKR
+2025-10-22T18:52:16 (Info):    Acquired [1] license for carsimtKR
+2025-10-22T18:52:16 (Info):    Acquired [1] license for carsimengmtKR
+2025-10-22T18:52:16 (Info):    Acquired [1] license for carsimfKR
+2025-10-22T18:52:16 (Info):    Acquired [1] license for carsimsmoKR
+2025-10-22T18:52:16 (Info):    Acquired [1] license for carsimaniKR
+2025-10-22T18:52:16 (Info):    License check took 1.34 seconds.
+2025-10-22T18:52:18 (Info):    Initial setup took 1.75 seconds.
+2025-10-22T18:52:18 (Info):    Auto updates took 0.00 seconds.
+2025-10-22T18:52:19 (Info):    Loaded last screen in 1.14 seconds.
+2025-10-22T18:52:19 (Info):    Total init time 4.62 seconds.
+2025-10-22T19:07:19 (Info):    5371 index cache entries written in 0.000s
+2025-10-22T19:07:19 (Info):    Released [1] license for carsimsguiKR
+2025-10-22T19:07:19 (Info):    Released [1] license for carsimKR
+2025-10-22T19:07:19 (Info):    Released [1] license for carsimwdsKR
+2025-10-22T19:07:19 (Info):    Released [1] license for carsimopalKR
+2025-10-22T19:07:19 (Info):    Released [1] license for carsimlinuxKR
+2025-10-22T19:07:19 (Info):    Released [1] license for carsimdspaceKR
+2025-10-22T19:07:19 (Info):    Released [1] license for carsimlabviewKR
+2025-10-22T19:07:19 (Info):    Released [1] license for carsimlabcarKR
+2025-10-22T19:07:19 (Info):    Released [1] license for carsimrtsvrKR
+2025-10-22T19:07:19 (Info):    Released [1] license for carsimartelabKR
+2025-10-22T19:07:19 (Info):    Released [1] license for carsimepiKR
+2025-10-22T19:07:19 (Info):    Released [1] license for carsimtKR
+2025-10-22T19:07:19 (Info):    Released [1] license for carsimengmtKR
+2025-10-22T19:07:19 (Info):    Released [1] license for carsimfKR
+2025-10-22T19:07:19 (Info):    Released [1] license for carsimsmoKR
+2025-10-22T19:07:19 (Info):    Released [1] license for carsimaniKR
+2025-10-22T19:07:19 (Info):    Exiting application...

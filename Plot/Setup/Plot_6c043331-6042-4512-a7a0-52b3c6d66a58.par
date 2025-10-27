@@ -1,0 +1,41 @@
+PARSFILE
+#FullDataName Plot: Setup`Z Coord.: Wheel Centers`Vehicle Motion
+
+ADD_ENTITY Plot
+
+PARSFILE Plot\Format\PlotFmt_33e2becb-9fc8-474d-a6bb-685bf100d862.par
+#BlueLink0 Plot: Format`Default Plot Settings` ` , Plot format`PlotFmt_33e2becb-9fc8-474d-a6bb-685bf100d862
+
+#CheckBox1 0    
+
+
+#MiscYellow0
+PLOTCHANNELS Z_L1, Time
+PLOTCHANNELS Z_R1, Time
+PLOTCHANNELS Z_L2, Time
+PLOTCHANNELS Z_R2, Time
+
+#ENDMYellow
+
+
+#RingCtrl2 Auto
+YMaxmin Auto
+#RingCtrl3 Auto
+XMaxmin Auto
+#RingCtrl8 1
+
+
+PTITLE Z Coord.: Wheel Centers
+
+END_ENTITY Plot
+
+
+LOG_ENTRY Used Dataset: Plot: Setup; { Vehicle Motion } Z Coord.: Wheel Centers
+#Library : Plot: Setup
+#DataSet : Z Coord.: Wheel Centers
+#Category: Vehicle Motion
+#FileID  : Plot_6c043331-6042-4512-a7a0-52b3c6d66a58
+#Product : CarSim 2021.0
+#VehCode Plot Setup
+
+END

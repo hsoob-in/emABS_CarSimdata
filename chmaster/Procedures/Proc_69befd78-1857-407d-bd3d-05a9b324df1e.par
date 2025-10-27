@@ -1,0 +1,82 @@
+PARSFILE
+#FullDataName Procedures`Speed: 120km/h, 2m Left, No DM, 3 Fw Ln`Driver Controls
+#CheckBox1 0    
+OPT_INIT_PATH 0
+
+#RingCtrl0 2
+#RingCtrl1 0
+#RingCtrl2 0
+OPT_STOP 0
+TSTART 0
+TSTART_WRITE = 0;
+TSTOP 40
+SSTOP = SSTART + 1 ;
+OPT_DIRECTION 1
+*SPEED 100
+*TSTOP 40
+*TSTART 0
+*SSTART 0
+*SSTOP 500
+
+OPT_SC 2
+PARSFILE Control\Gear_at\GearCL_3f60e7d2-b8c4-4d68-a9c4-d897bb3e2a86.par
+#BlueLink30 Control: Shifting (Closed Loop)`AT (All Available Gears)` Closed-Loop Shifting` , Shifting Control`GearCL_3f60e7d2-b8c4-4d68-a9c4-d897bb3e2a86
+
+PARSFILE Control\Speed_t\SpdTime_9c8429af-3d89-4f4c-986b-90deb4e2777b.par
+#BlueLink31 Control: Speed (Closed Loop) Using Target Speed`Constant: 120 km/h` Constant` , Speed vs. time`SpdTime_9c8429af-3d89-4f4c-986b-90deb4e2777b
+
+PARSFILE Roads\3D_Road\Road_3ffd4401-007b-490b-b434-fd682b3d08ed.par
+#BlueLink0 Road: 3D Surface (All Properties)`5-Lane Section` Many Lanes` , Miscellaneous`Road_3ffd4401-007b-490b-b434-fd682b3d08ed
+
+PARSFILE Generic\Group\GenGrp_4481684a-a43b-411b-83c7-ad0c2b42d532.par
+#BlueLink1 Generic Data Group`3 Fwd. Lns. 3 Traffic Groups:ACC,AEB` ADAS: Traffic for ACC & FCW` , Miscellaneous`GenGrp_4481684a-a43b-411b-83c7-ad0c2b42d532
+
+PARSFILE Events\Events_4423b9db-d291-4ffe-ad7c-3eae776e1f53.par
+#BlueLink2 Events`0. Start Straight` Combined ADAS - LDW` , Miscellaneous`Events_4423b9db-d291-4ffe-ad7c-3eae776e1f53
+
+PARSFILE Animator\Groups\Group_987909e3-e71c-4249-ad23-03cee3b6c4ff.par
+#BlueLink3 Animator: Group`Time-To-Collision HUD General AEB` Roads and Environment` , Miscellaneous`Group_987909e3-e71c-4249-ad23-03cee3b6c4ff
+
+#BlueLink4 ` , Miscellaneous` , Miscellaneous` , Miscellaneous`
+
+#BlueLink6 ` , Miscellaneous` , Miscellaneous` , Miscellaneous`
+
+#MiscYellow1
+! Unchecked box for "Set vehicle x,y,&yaw based on path?
+! Locate vehicle 2m to the left of the road center
+Xo  = 0
+Yo = 2
+Yaw = 0
+#ENDMYellow
+
+#BlueLink7 ` , Miscellaneous` , Miscellaneous` , Miscellaneous`
+
+#BlueLink34 ` , Miscellaneous` , Miscellaneous` , Miscellaneous`
+
+PARSFILE Generic\VS_commands\GenVS_aec8d12c-ea50-4614-babd-3631ce40b8a3.par
+#BlueLink8 Generic VS Commands`Velocity and Position` Plot Groups` , Plot`GenVS_aec8d12c-ea50-4614-babd-3631ce40b8a3
+
+PARSFILE Generic\VS_commands\GenVS_9adae0f9-c659-4690-8e88-e92525112141.par
+#BlueLink9 Generic VS Commands`Driver Controls` Plot Groups` , Plot`GenVS_9adae0f9-c659-4690-8e88-e92525112141
+
+PARSFILE Generic\VS_commands\GenVS_8f7411b8-c46e-45ca-8259-b31bc7af7dd3.par
+#BlueLink10 Generic VS Commands`Acceleration` Plot Groups` , Plot`GenVS_8f7411b8-c46e-45ca-8259-b31bc7af7dd3
+
+
+#EMBEDDED_NOTES
+#This is a fairly generic procedure that defines driver controls and little else.
+#
+#It is used for some ADAS examples where the road is set on the Run Control screen.
+#
+#
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Procedures; { Driver Controls } Speed: 120km/h, 2m Left, No DM, 3 Fw Ln
+#Library : Procedures
+#DataSet : Speed: 120km/h, 2m Left, No DM, 3 Fw Ln
+#Category: Driver Controls
+#FileID  : Proc_69befd78-1857-407d-bd3d-05a9b324df1e
+#Product : CarSim 2021.0
+#VehCode Procedure
+
+END

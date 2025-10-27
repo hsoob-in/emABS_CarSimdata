@@ -1,0 +1,25 @@
+Run made by VS Road Calculator at 22:49 on October 23, 2024.
+Utility to calculate road and path coordinates for visualization
+Started with simfile: Roads\3D_Road\simfile_road
+
+Include PARSFILE "Roads\3D_Road\Road_e0c333f3-ebc4-4d93-91c4-2a5161b9fd20.par"
+Include PARSFILE "Roads\BuilderSegment\RoadSeg_d01c3af3-a99a-4d27-b9a7-7d2b9ad6a010.par"
+ 100 m Radius <Circles>
+Used Dataset: Path: Segment Builder; { Circles } 100 m Radius
+Include PARSFILE "Roads\Friction\RdMu_3b0c5b27-b912-4170-9439-b5397fef112d.par"
+Used Dataset: Road: Friction Map, S-L Grid; { Constant } Constant: 0.5
+Include PARSFILE "Roads\Shapes\RdShape_9d177f95-6fc2-46cf-b88c-334516f75fc9.par"
+Used Dataset: Road: Animator Surface Shapes; { Roads } Looped Road + 100 m Light Grass
+Include PARSFILE "Roads\Boundaries\RdBnd_443e1da0-3328-4cc0-a76d-7a1f7a62fc75.par"
+Used Dataset: Road: Boundaries; { Road Boundary Stop Conditions } Circle Test Boundaries
+ 100-m Radius Circle, Mu = 0.5 <Circular Roads>
+Used Dataset: Road: 3D Surface (All Properties); { Circular Roads } 100-m Radius Circle, Mu = 0.5
+
+Time to read input = 0.000959
+
+Run stopped at t = 10.04. Stop time reached.
+
+Run started: VS output file = Roads\3D_Road\Road_e0c333f3-ebc4-4d93-91c4-2a5161b9fd20.vsb
+
+Computational time ratio: RTIME = inf (real time)/(simulation time)
+

@@ -1,0 +1,51 @@
+PARSFILE
+#FullDataName Powertrain: Rear Differential`EV Open Diff.: Gear Ratio 10.65`IONIC5
+#CheckBox0 0    
+LOCKED_RD_OPT 0
+
+#RingCtrl0 CONSTANT
+#RingCtrl1 0
+*EV_CONTROL 0
+OPT_LOCKED_DIFF 0
+M_DIFF_VISC_CONSTANT 0
+#RadioCtrl0 0    
+
+M_DIFF_RD_CONSTANT 0
+R_GEAR_RD 10.65
+R_EFF_F_RD 0.99
+R_EFF_R_RD 0.99
+LOCKED_RD_DAMP 0.8
+LOCKED_RD_K 80
+IDS_R 0.013
+IHS_LR 0.009
+IHS_RR 0.009
+*SCALAR 0
+
+OPT_MOTOR_ON_WHEEL 0
+
+ISIDE 1
+PARSFILE Powertrain\Motor\MMotor_c33ddec6-ad58-42b1-89af-02b675663a74.par
+#BlueLink1 Powertrain: Electric Motor Torque`Max. Output 605` IONIC5` , Electric Motor Center/Left`MMotor_c33ddec6-ad58-42b1-89af-02b675663a74
+
+R_GEAR_DIFF 10.65
+R_EFF_F_DIFF 0.99
+R_EFF_R_DIFF 0.99
+LOCKED_DIFF_DAMP 0.8
+LOCKED_DIFF_K 80
+IDS 0.013
+IHS_L 0.009
+IHS_R 0.009
+
+#EMBEDDED_NOTES
+#Generic a 20 kW electric motor is equipped.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Powertrain: Rear Differential; { IONIC5 } EV Open Diff.: Gear Ratio 10.65
+#Library : Powertrain: Rear Differential
+#DataSet : EV Open Diff.: Gear Ratio 10.65
+#Category: IONIC5
+#FileID  : DiffR_9daaf759-2ad5-4b9c-99c5-9055bb458074
+#Product : CarSim 2021.0
+#VehCode Rear Differential
+
+END

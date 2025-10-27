@@ -1,0 +1,52 @@
+PARSFILE
+#FullDataName Vehicle: Sprung Mass`B-Class, Hatchback w/Hybrid Powertrain #1`IONIC5
+#VehCode Rigid sprung mass
+#RingCtrl0 0
+#CheckBox2 0    
+X_LENGTH 3000
+Y_LENGTH 1500
+iaxle 2
+iside 1
+LX_AXLE 3000
+LX_CG_SU 1440
+M_SU 1908
+IXX_SU 525
+IYY_SU 11460
+IZZ_SU 11460
+IXZ_SU 0
+*RX 0.525
+*RY 2.451
+*RZ 2.451
+Y_CG_SU 0
+H_CG_SU 540
+IXY_SU 0
+IYZ_SU 0
+Z_LENGTH CKFID
+Y_LENGTH 1890
+*HWC_LF 356
+*HWC_RF 356
+*HWC_LR 356
+*HWC_RR 356
+LEN_SM 4655
+H_WC 356
+iside 2
+H_WC 356
+iaxle 1
+iside 1
+H_WC 356
+iside 2
+H_WC 356
+iaxle 2
+iside 1
+HT_SM CKFID
+WID_SM 1890
+
+LOG_ENTRY Used Dataset: Vehicle: Sprung Mass; { IONIC5 } B-Class, Hatchback w/Hybrid Powertrain #1
+#Library : Vehicle: Sprung Mass
+#DataSet : B-Class, Hatchback w/Hybrid Powertrain #1
+#Category: IONIC5
+#FileID  : SprMass_252e6a3e-a8fc-44b4-b326-f3f39a77c395
+#Product : CarSim 2021.0
+#VehCode Rigid sprung mass
+
+END

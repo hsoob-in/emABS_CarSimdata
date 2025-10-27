@@ -1,0 +1,75 @@
+PARSFILE
+#FullDataName Animator: HUD`FCW Alert (small, rt. side, high)`Euro NCAP
+#CheckBox1 1    
+#CheckBox3 1    
+#CheckBox4 1    
+#CheckBox6 1    
+
+#RingCtrl0 2
+#RingCtrl1 9
+#RingCtrl2 2
+#RingCtrl3 0
+#RingCtrl4 1
+#RingCtrl5 9
+#RingCtrl6 2
+#RingCtrl7 0
+#RingCtrl8 1
+*LOCX_1 0
+*SCALE_1 .6
+*VAR_NAME_1 Show_FCW
+*LOCX_2 0
+*VAR_NAME_2 if(Show_FCW, 0, 0.5)
+
+*IMG_NAME_1 Animator\2D_HUD_Icons\Distance_Warning\Distance_Warning.png
+*IMG_NAME_2 Animator\2D_HUD_Icons\Distance_Warning\Distance_Warning1.png
+
+#Selection 9 for Icon 0
+#Selection_1 9 for Icon
+#Selection_2 Title:  AlX 2 AlY 0
+#Selection_3 Scale 1.000000 locX 0 locY 0
+#Selection_4 Fixed: 1 VarName: Show_FCW  ColorStr: 0 0 0
+#Selection_5 ImgName: Animator\2D_HUD_Icons\Distance_Warning\Distance_Warning.png
+! General Icon
+ANI_Show_FCW
+WRT_Show_FCW
+ADD_ENTITY hud_image General Icon
+location 0 0 128 128
+align_x right
+align_y top
+size_mode absolute
+place_mode absolute
+opacity Show_FCW
+image_file Animator\2D_HUD_Icons\Distance_Warning\Distance_Warning.png
+END_ENTITY hud_image General Icon
+#Selection 9 for Icon 1
+#Selection_1 9 for Icon
+#Selection_2 Title:  AlX 2 AlY 0
+#Selection_3 Scale 1.000000 locX 0 locY 0
+#Selection_4 Fixed: 1 VarName: if(Show_FCW, 0, 0.5)  ColorStr: 0 0 0
+#Selection_5 ImgName: Animator\2D_HUD_Icons\Distance_Warning\Distance_Warning1.png
+! General Icon
+ANI_if(Show_FCW, 0, 0.5)
+WRT_if(Show_FCW, 0, 0.5)
+ADD_ENTITY hud_image General Icon
+location 0 0 128 128
+align_x right
+align_y top
+size_mode absolute
+place_mode absolute
+opacity if(Show_FCW, 0, 0.5)
+image_file Animator\2D_HUD_Icons\Distance_Warning\Distance_Warning1.png
+END_ENTITY hud_image General Icon
+
+#EMBEDDED_NOTES
+#Forward collision warning, located on the left edge of the window.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Animator: HUD; { Euro NCAP } FCW Alert (small, rt. side, high)
+#Library : Animator: HUD
+#DataSet : FCW Alert (small, rt. side, high)
+#Category: Euro NCAP
+#FileID  : HUD_d8963bf4-9227-4eb0-ac1d-84731e4c2a09
+#Product : CarSim 2021.0
+#VehCode HUD
+
+END

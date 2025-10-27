@@ -1,0 +1,68 @@
+PARSFILE
+#FullDataName Single Moving Object (Custom)`Man: City Environment`Pedestrians and Bicyclists
+DEFINE_MOVING_OBJECTS 1
+IOBJECT_INCREMENT
+symbol_add <<o>> 1
+SET_DESCRIPTION OBJECT_NAME Man: City Environment
+OPT_SPEED_OBJ 0
+PATH_ID_OBJ 9998
+ROAD_ID_OBJ 1
+#CheckBox0 0    
+#CheckBox1 0    
+OPT_RECYCLE_OBJ 0
+#CheckBox2 0    
+#CheckBox3 0    
+#CheckBox5 1    
+#CheckBox6 0    
+#CheckBox7 0    
+#CheckBox8 1    
+
+#RingCtrl0 3
+#RingCtrl1 0
+H_OBJ -1
+*COLOR 1 1 1
+*S_INIT 141
+*L_INIT -178
+OPT_SHAPE_OBJ 1
+SHAPE_TYPE_OBJ 0
+DZ_OBJECT 0
+*SIZE .4
+DIAMETER_OBJ .4
+*REFLECT 1
+MATERIAL_TYPE_OBJ 0
+REFLECT_OBJ 1
+*SPEED 1.30
+*HEADING_VEL pi/2
+EQ_INIT HeadO_<<o>> pi/2
+WRITE_ADD_REFERENCE_FRAME_OBJECT
+PARSFILE Animator\Groups\Group_3afb99a4-dc0e-4dee-affd-1951e46a2bd4.par
+#BlueLink0 Animator: Group`Animated Pedestrian (Asian Male)` Pedestrians` , 3D Shape for Video`Group_3afb99a4-dc0e-4dee-affd-1951e46a2bd4
+
+EQ_INIT S_Obj_<<o>> 141
+EQ_INIT LatO_<<o>> -178
+DEFINE_VARIABLE V_CMD_OBJ_<<o>>;KM/H; Speed command
+DEFINE_VARIABLE HeadV_O_<<o>> pi/2;-; Heading vector for ODEs
+EQ_INIT V_CMD_OBJ_<<o>> = 1.30;
+EQ_DIFFERENTIAL LatO_<<o>> = sin(HeadV_O_<<o>>)*V_CMD_OBJ_<<o>>
+EQ_DIFFERENTIAL S_Obj_<<o>> = cos(HeadV_O_<<o>>)*V_CMD_OBJ_<<o>>
+#MiscYellow1
+TypeO_<<o>> = PEDESTRIAN
+opt_road_pitch = 0
+opt_road_roll = 0
+MsgObj_<<o>> = 3 ! where to stop
+#ENDMYellow
+
+
+#EMBEDDED_NOTES
+#The symbol PEDESTRIAN is defined in the VS Command dataset "Define Target Messages"
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Single Moving Object (Custom); { Pedestrians and Bicyclists } Man: City Environment
+#Library : Single Moving Object (Custom)
+#DataSet : Man: City Environment
+#Category: Pedestrians and Bicyclists
+#FileID  : Target_1361ec6b-ad61-4eef-8dc0-29da9eb6f8a0
+#Product : CarSim 2021.0
+#VehCode Moving Object (Custom)
+
+END

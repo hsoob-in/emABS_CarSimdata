@@ -1,0 +1,59 @@
+PARSFILE
+
+! EXPANDED_PARSFILE for Math models and animator
+
+! This is an expansion of the Parsfile: "Animator\STL\Shape_9ed0881d-f31e-4a87-9ea1-8bf68d266c20.par"
+! It contains the contents of that file plus the contents of any files linked
+! with the "PARSFILE" keyword.
+
+! File created by CarSim 2021.0
+
+PRODUCT_NAME CarSim
+MODEL_LAYOUT i_i
+
+ENTER_PARSFILE Animator\STL\Shape_9ed0881d-f31e-4a87-9ea1-8bf68d266c20.par
+#FullDataName Animator: Shape File Link`Hatchback: Driver (Caucasian Male)`emABS_0911
+add_obj Animator\3D_Shape_Files\Cars\B_Class_Hatchback\Drivers\Asian_Female\Asian_Female.obj
+SET_COLOR 1 1 1
+SET_SCALE_X 1.01
+SET_SCALE_Y 1.02
+SET_SCALE_Z 1
+SET_OFFSET_X 0.30
+SET_OFFSET_Y 0
+SET_OFFSET_Z 0.32
+set_lighting on
+set_fogging on
+SET_SPECULAR 0.75 0.75 0.75
+vsv_enable_shadows_recursive
+ENTER_PARSFILE Animator\Cameras\Camera_aad9f5dd-7a61-4319-88b3-b90a1214f577.par
+#FullDataName Animator: Camera Setup`Vehicles and Drivers - Cars`emABS_0911
+SET_CAMERA_REFERENCE_FRAME Frame_02b47476-96e6-474b-919e-07d03b43f1ec
+ENTER_PARSFILE Animator\Frames\Frame_02b47476-96e6-474b-919e-07d03b43f1ec.par
+#FullDataName Animator: Reference Frame`Yaw for Shape Preview`emABS_0911
+ADD_REFERENCE_FRAME Frame_02b47476-96e6-474b-919e-07d03b43f1ec
+SET_EULER_ANGLES yaw_pitch_roll
+SET_YAW_NAME Yaw
+WRT_Yaw
+ANI_Yaw
+LOG_ENTRY Used Dataset: Animator: Reference Frame; { emABS_0911 } Yaw for Shape Preview
+EXIT_PARSFILE Animator\Frames\Frame_02b47476-96e6-474b-919e-07d03b43f1ec.par
+
+SET_LOOKPOINT_REFERENCE_FRAME Frame_02b47476-96e6-474b-919e-07d03b43f1ec
+SET_LOOKPOINT_X -1.25
+SET_LOOKPOINT_Y 0
+SET_LOOKPOINT_Z 0.75
+SET_AZIMUTH 50
+SET_ELEVATION 6
+SET_DISTANCE 12
+SET_CAMERAMAN_NAME External camera
+FOG_SCALE 0
+SET_FIELD_OF_VIEW 21.1
+LOG_ENTRY Used Dataset: Animator: Camera Setup; { emABS_0911 } Vehicles and Drivers - Cars
+EXIT_PARSFILE Animator\Cameras\Camera_aad9f5dd-7a61-4319-88b3-b90a1214f577.par
+
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { emABS_0911 } Hatchback: Driver (Caucasian Male)
+EXIT_PARSFILE Animator\STL\Shape_9ed0881d-f31e-4a87-9ea1-8bf68d266c20.par
+
+
+
+END

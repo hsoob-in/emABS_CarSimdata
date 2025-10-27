@@ -1,0 +1,31 @@
+PARSFILE
+#FullDataName I/O Channels: Export`Velocity, Position, and Orientation`Parallel Solvers
+#RingCtrl0 0
+#RingCtrl1 1
+*README_FILE Results\Run_87ece132-df4b-4285-b10a-244fbda604cb\Run_out_tab.txt
+
+
+EXPORT Vx
+EXPORT Xo
+EXPORT Yo
+EXPORT Yaw
+#MiscYellow0
+#Number of Selected Channels: 4
+#CHN_NAME: Vx
+#CHN_NAME: Xo
+#CHN_NAME: Yo
+#CHN_NAME: Yaw
+#ENDMYellow
+
+#BlueLink0 CarSim Run Control`ACC: Ext Sensor, Ext Control (Car 1)` Parallel Solvers` , example run`Run_87ece132-df4b-4285-b10a-244fbda604cb
+
+
+LOG_ENTRY Used Dataset: I/O Channels: Export; { Parallel Solvers } Velocity, Position, and Orientation
+#Library : I/O Channels: Export
+#DataSet : Velocity, Position, and Orientation
+#Category: Parallel Solvers
+#FileID  : Export_cd46af09-813a-451b-b6bb-def0b4b3623a
+#Product : CarSim 2021.0
+#VehCode Export Channels
+
+END

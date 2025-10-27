@@ -1,0 +1,46 @@
+PARSFILE
+#FullDataName Generic VS Commands`VS Table : 125kW Engine Map`Loaded Tables
+#VehCode VS Commands
+
+#MiscYellow0
+! Load 125 kW Engine Data for 4.1 Ratio, 6-speed, w/visc. diff.
+
+! Binary file from VS Table Tool is loaded to memory 
+LOAD_TABLE_FILE Extensions\VsTableTool\EngineTable_125kw.vstb
+
+! Create data carpet from loaded VS Table data
+FILE_TO_CARPET MENGINE_CARPET
+
+! Load VS Table (carpet) data in the Echo file
+ECHO_LOADED_TABLE MENGINE_CARPET 
+
+! Used to make files copy to Consolidated Pars File Export
+*CPAR_INCLUDE Extensions\VsTableTool\EngineTable_125kw.vstb
+*CPAR_INCLUDE Extensions\VsTableTable\EngineTable_125kw.vsb
+
+!Engine idle speed
+AV_ENG_IDLE = 750;
+!Crankshaft spin inertia
+IENG = 0.16;
+#ENDMYellow
+
+#BlueLink4 Plot: Setup`Sensor Vx -- Rear Blind Spot` Object Sensors` , Plot`
+
+#BlueLink5 Plot: Setup`Sensor Dist -- Rear Blind Spot` Object Sensors` , Plot`
+
+
+#EMBEDDED_NOTES
+#This screen loads the data found in Rough Road
+#
+#This screen is in support of the Loaded Tables example.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Generic VS Commands; { Loaded Tables } VS Table : 125kW Engine Map
+#Library : Generic VS Commands
+#DataSet : VS Table : 125kW Engine Map
+#Category: Loaded Tables
+#FileID  : GenVS_991b42e6-5285-44fb-a02f-86796d9782b1
+#Product : CarSim 2021.0
+#VehCode VS Commands
+
+END

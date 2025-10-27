@@ -1,0 +1,29 @@
+PARSFILE
+#FullDataName Road: Reference Line Elevation`slope`Copied 10-08-2024 15:45:42
+#CheckBox0 0    
+
+#RingCtrl0 LINEAR_FLAT
+#RadioCtrl0 0    
+
+#DiagramOne0
+ROAD_ZS_TABLE LINEAR_FLAT
+0, 0
+100, 0.5
+333, 1.05
+426.5, -7.2
+449, -6.8
+479, -7.4
+766.5, 0
+1911, 0
+ENDTABLE
+
+
+LOG_ENTRY Used Dataset: Road: Reference Line Elevation; { Copied 10-08-2024 15:45:42 } slope
+#Library : Road: Reference Line Elevation
+#DataSet : slope
+#Category: Copied 10-08-2024 15:45:42
+#FileID  : RdRefZ_f85a6f94-9dc4-4842-b78e-e7fcf263a436
+#Product : CarSim 2021.0
+#VehCode Zs vs S
+
+END

@@ -1,0 +1,46 @@
+PARSFILE
+#FullDataName Generic Data Group (More)`Vehicle 3 (Green), Solo`Multiple Vehicles (Running Solo)
+#VehCode I_I
+#MiscYellow0
+SET_RUN_COLOR Green
+#ENDMYellow
+
+PARSFILE Vehicles\Assembly\Vehicle_3b948136-1e34-4e97-8fd6-8cb5e8346ccf.par
+#BlueLink0 Vehicle: Assembly`D-Class, Minivan` D-Class` , Link 1`Vehicle_3b948136-1e34-4e97-8fd6-8cb5e8346ccf
+
+
+PARSFILE Sensors_Traffic\Radar\Radar_e9be9c68-f35a-41a0-a5d4-eb029b633f41.par
+#BlueLink1 ADAS Sensors for Range and Tracking`160 Deg Sensor` Front Facing` , Link 2`Radar_e9be9c68-f35a-41a0-a5d4-eb029b633f41
+
+
+#MiscYellow2
+SENSOR_DETECT_COLOR Green
+#ENDMYellow
+
+PARSFILE Generic\Links\GenLink_195052a3-4217-4f30-9c92-7070995b06ff.par
+#BlueLink2 Generic Group of Links`Parameters and Functions` ADAS Setups` , Link 3`GenLink_195052a3-4217-4f30-9c92-7070995b06ff
+
+
+
+
+
+
+
+
+*MODELCODE I_I
+
+#EMBEDDED_NOTES
+#This is a setup for a vehicle with a sensor  to run with other vehicles in Simulink, using the Parallel Solvers screen accessed from the Tools menu.
+#
+#Feel free to change the vehicle dataset used with the first link. However, be sure the dataset code for this dataset matches that of the vehicle.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Generic Data Group (More); { Multiple Vehicles (Running Solo) } Vehicle 3 (Green), Solo
+#Library : Generic Data Group (More)
+#DataSet : Vehicle 3 (Green), Solo
+#Category: Multiple Vehicles (Running Solo)
+#FileID  : GenGrpM_b4b84891-205e-4430-85b1-cfd6ade59c35
+#Product : CarSim 2021.0
+#VehCode I_I
+
+END

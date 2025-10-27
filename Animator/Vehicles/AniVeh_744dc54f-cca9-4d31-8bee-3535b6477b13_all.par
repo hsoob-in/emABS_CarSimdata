@@ -1,0 +1,248 @@
+PARSFILE
+
+! EXPANDED_PARSFILE for Math models and animator
+
+! This is an expansion of the Parsfile: "Animator\Vehicles\AniVeh_744dc54f-cca9-4d31-8bee-3535b6477b13.par"
+! It contains the contents of that file plus the contents of any files linked
+! with the "PARSFILE" keyword.
+
+! File created by CarSim 2021.0
+
+PRODUCT_NAME CarSim
+MODEL_LAYOUT i_i
+
+ENTER_PARSFILE Animator\Vehicles\AniVeh_744dc54f-cca9-4d31-8bee-3535b6477b13.par
+#FullDataName Animator: Vehicles and Sensor Targets`B-Class, Hatchback`emABS_0911
+OBJ_X_LENGTH 4655
+OBJ_Y_LENGTH 1890
+OBJ_Z_LENGTH 1605
+DZ_OBJECT 0
+WRITE_ADD_REFERENCE_FRAME_OBJECT
+ADD_REFERENCE_FRAME object_-1
+SET_EULER_ANGLES YAW_PITCH_ROLL
+SET_OFFSET_VAR_Z 0
+ENTER_PARSFILE Animator\STL\Shape_8583d59f-acbe-4278-a2f5-d247f399fbba.par
+#FullDataName Animator: Shape File Link`Blurred Tire: Car - Width 185 mm`emABS_0911
+add_obj Animator\3D_Shape_Files\Common_Vehicle_Assets\Tires\Blurred_Single_Car\blurred_tire.obj
+SET_COLOR 1 1 1
+SET_SCALE_X 1
+SET_SCALE_Y 0.944
+SET_SCALE_Z 1
+set_lighting on
+set_fogging on
+SET_SPECULAR 0.3 0.3 0.3
+vsv_enable_shadows_recursive
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { emABS_0911 } Blurred Tire: Car - Width 185 mm
+EXIT_PARSFILE Animator\STL\Shape_8583d59f-acbe-4278-a2f5-d247f399fbba.par
+
+SET_SCALE_X 1.07
+SET_SCALE_Y 1.07
+SET_SCALE_Z 1.07
+SET_OFFSET_X 0
+SET_OFFSET_Y 0.74
+SET_OFFSET_Z 0.3382
+ENTER_PARSFILE Animator\STL\Shape_8583d59f-acbe-4278-a2f5-d247f399fbba.par
+#FullDataName Animator: Shape File Link`Blurred Tire: Car - Width 185 mm`emABS_0911
+add_obj Animator\3D_Shape_Files\Common_Vehicle_Assets\Tires\Blurred_Single_Car\blurred_tire.obj
+SET_COLOR 1 1 1
+SET_SCALE_X 1
+SET_SCALE_Y 0.944
+SET_SCALE_Z 1
+set_lighting on
+set_fogging on
+SET_SPECULAR 0.3 0.3 0.3
+vsv_enable_shadows_recursive
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { emABS_0911 } Blurred Tire: Car - Width 185 mm
+EXIT_PARSFILE Animator\STL\Shape_8583d59f-acbe-4278-a2f5-d247f399fbba.par
+
+SET_SCALE_X 1.07
+SET_SCALE_Y 1.07
+SET_SCALE_Z 1.07
+SET_ANGLE_X 180
+SET_OFFSET_X 0
+SET_OFFSET_Y -0.74
+SET_OFFSET_Z 0.3382
+ENTER_PARSFILE Animator\STL\Shape_8583d59f-acbe-4278-a2f5-d247f399fbba.par
+#FullDataName Animator: Shape File Link`Blurred Tire: Car - Width 185 mm`emABS_0911
+add_obj Animator\3D_Shape_Files\Common_Vehicle_Assets\Tires\Blurred_Single_Car\blurred_tire.obj
+SET_COLOR 1 1 1
+SET_SCALE_X 1
+SET_SCALE_Y 0.944
+SET_SCALE_Z 1
+set_lighting on
+set_fogging on
+SET_SPECULAR 0.3 0.3 0.3
+vsv_enable_shadows_recursive
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { emABS_0911 } Blurred Tire: Car - Width 185 mm
+EXIT_PARSFILE Animator\STL\Shape_8583d59f-acbe-4278-a2f5-d247f399fbba.par
+
+SET_SCALE_X 1.07
+SET_SCALE_Y 1.07
+SET_SCALE_Z 1.07
+SET_OFFSET_X -4.655
+SET_OFFSET_Y 0.7425
+SET_OFFSET_Z 0.3382
+ENTER_PARSFILE Animator\STL\Shape_8583d59f-acbe-4278-a2f5-d247f399fbba.par
+#FullDataName Animator: Shape File Link`Blurred Tire: Car - Width 185 mm`emABS_0911
+add_obj Animator\3D_Shape_Files\Common_Vehicle_Assets\Tires\Blurred_Single_Car\blurred_tire.obj
+SET_COLOR 1 1 1
+SET_SCALE_X 1
+SET_SCALE_Y 0.944
+SET_SCALE_Z 1
+set_lighting on
+set_fogging on
+SET_SPECULAR 0.3 0.3 0.3
+vsv_enable_shadows_recursive
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { emABS_0911 } Blurred Tire: Car - Width 185 mm
+EXIT_PARSFILE Animator\STL\Shape_8583d59f-acbe-4278-a2f5-d247f399fbba.par
+
+SET_SCALE_X 1.07
+SET_SCALE_Y 1.07
+SET_SCALE_Z 1.07
+SET_ANGLE_X 180
+SET_OFFSET_X -4.655
+SET_OFFSET_Y -0.7425
+SET_OFFSET_Z 0.3382
+DZ_OBJECT 0
+WRITE_ADD_REFERENCE_FRAME_OBJECT
+ADD_REFERENCE_FRAME object_-1a
+SET_EULER_ANGLES YAW_PITCH_ROLL
+SET_OFFSET_VAR_Z 0
+ENTER_PARSFILE Animator\STL_Groups\ShpGrp_c1d67987-6215-467c-8aa3-50de109bb2e0.par
+#FullDataName Animator: Shape Assembly`B-Class Hatchback`emABS_0911
+ENTER_PARSFILE Animator\STL\Shape_41641ba7-b7ec-4d71-9c10-0b2647da8d42.par
+#FullDataName Animator: Shape File Link`Hatchback: Body`emABS_0911
+add_obj Animator\3D_Shape_Files\Cars\B_Class_Hatchback\ClassB_Hatchback.OSG
+SET_COLOR 1 0 0
+SET_SCALE_X 1.01
+SET_SCALE_Y 1.02
+SET_SCALE_Z 1
+SET_OFFSET_X 0.01
+SET_OFFSET_Y 0
+SET_OFFSET_Z 0.27
+set_lighting off
+set_fogging on
+USE_RUN_COLOR
+vsv_enable_shadows_recursive
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { emABS_0911 } Hatchback: Body
+EXIT_PARSFILE Animator\STL\Shape_41641ba7-b7ec-4d71-9c10-0b2647da8d42.par
+
+ENTER_PARSFILE Animator\STL\Shape_9ed0881d-f31e-4a87-9ea1-8bf68d266c20.par
+#FullDataName Animator: Shape File Link`Hatchback: Driver (Caucasian Male)`emABS_0911
+add_obj Animator\3D_Shape_Files\Cars\B_Class_Hatchback\Drivers\Caucasian_Male\Caucasian_Male.obj
+SET_COLOR 1 1 1
+SET_SCALE_X 1.01
+SET_SCALE_Y 1.02
+SET_SCALE_Z 1
+SET_OFFSET_X 0.30
+SET_OFFSET_Y 0
+SET_OFFSET_Z 0.32
+set_lighting on
+set_fogging on
+SET_SPECULAR 0.75 0.75 0.75
+vsv_enable_shadows_recursive
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { emABS_0911 } Hatchback: Driver (Caucasian Male)
+EXIT_PARSFILE Animator\STL\Shape_9ed0881d-f31e-4a87-9ea1-8bf68d266c20.par
+
+x_ref_length 2600
+y_ref_length 1889
+z_ref_length 1314
+LOG_ENTRY Used Dataset: Animator: Shape Assembly; { emABS_0911 } B-Class Hatchback
+EXIT_PARSFILE Animator\STL_Groups\ShpGrp_c1d67987-6215-467c-8aa3-50de109bb2e0.par
+
+WRITE_REFERENCE_FRAME_SIZE
+X_LENGTH 4655
+Y_LENGTH 1890
+Z_LENGTH 1605
+WRITE_ADD_REFERENCE_FRAME_BRAKES
+ADD_REFERENCE_FRAME object_-1b
+SET_EULER_ANGLES YAW_PITCH_ROLL
+SET_FRAME_VISIBLE_NAME 0.0
+WRT_0.0
+ANI_0.0
+ENTER_PARSFILE Animator\STL\Shape_3aeeb897-9a31-4505-b8c1-8da3543bbedb.par
+#FullDataName Animator: Shape File Link`Hatchback: Brake Lights`emABS_0911
+add_obj Animator\3D_Shape_Files\Cars\B_Class_Hatchback\ClassB_Hatchback_Brakes_ON.obj
+SET_COLOR 1 1 1
+SET_SCALE_X 1.01
+SET_SCALE_Y 1.02
+SET_SCALE_Z 1
+SET_OFFSET_X 0.01
+SET_OFFSET_Y 0
+SET_OFFSET_Z 0.27
+X_REF_LENGTH 2600
+Y_REF_LENGTH 1889
+Z_REF_LENGTH 1314
+set_lighting on
+set_fogging on
+SET_SPECULAR 1 1 1
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { emABS_0911 } Hatchback: Brake Lights
+EXIT_PARSFILE Animator\STL\Shape_3aeeb897-9a31-4505-b8c1-8da3543bbedb.par
+
+set_lighting on
+set_fogging on
+WRITE_REFERENCE_FRAME_SIZE
+X_LENGTH 4655
+Y_LENGTH 1890
+Z_LENGTH 1605
+WRITE_ADD_REFERENCE_FRAME_REVERSE_LIGHTS
+ADD_REFERENCE_FRAME object_-1c
+SET_EULER_ANGLES YAW_PITCH_ROLL
+SET_FRAME_VISIBLE_NAME 0.0
+ENTER_PARSFILE Animator\STL\Shape_7edc5cc8-42f0-4737-b50a-18c55783dc28.par
+#FullDataName Animator: Shape File Link`Hatchback: Reverse Lights`emABS_0911
+add_obj Animator\3D_Shape_Files\Cars\B_Class_Hatchback\ClassB_Hatchback_reverse.obj
+SET_COLOR 1 1 1
+SET_SCALE_X 1.01
+SET_SCALE_Y 1.02
+SET_SCALE_Z 1
+SET_OFFSET_X 0.01
+SET_OFFSET_Y 0
+SET_OFFSET_Z 0.27
+X_REF_LENGTH 2600
+Y_REF_LENGTH 1889
+Z_REF_LENGTH 1314
+set_lighting on
+set_fogging on
+SET_SPECULAR 1 1 1
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { emABS_0911 } Hatchback: Reverse Lights
+EXIT_PARSFILE Animator\STL\Shape_7edc5cc8-42f0-4737-b50a-18c55783dc28.par
+
+set_lighting on
+set_fogging on
+WRITE_REFERENCE_FRAME_SIZE
+X_LENGTH 4655
+Y_LENGTH 1890
+Z_LENGTH 1605
+ENTER_PARSFILE Animator\Cameras\Camera_aad9f5dd-7a61-4319-88b3-b90a1214f577.par
+#FullDataName Animator: Camera Setup`Vehicles and Drivers - Cars`emABS_0911
+SET_CAMERA_REFERENCE_FRAME Frame_02b47476-96e6-474b-919e-07d03b43f1ec
+ENTER_PARSFILE Animator\Frames\Frame_02b47476-96e6-474b-919e-07d03b43f1ec.par
+#FullDataName Animator: Reference Frame`Yaw for Shape Preview`emABS_0911
+ADD_REFERENCE_FRAME Frame_02b47476-96e6-474b-919e-07d03b43f1ec
+SET_EULER_ANGLES yaw_pitch_roll
+SET_YAW_NAME Yaw
+WRT_Yaw
+ANI_Yaw
+LOG_ENTRY Used Dataset: Animator: Reference Frame; { emABS_0911 } Yaw for Shape Preview
+EXIT_PARSFILE Animator\Frames\Frame_02b47476-96e6-474b-919e-07d03b43f1ec.par
+
+SET_LOOKPOINT_REFERENCE_FRAME Frame_02b47476-96e6-474b-919e-07d03b43f1ec
+SET_LOOKPOINT_X -1.25
+SET_LOOKPOINT_Y 0
+SET_LOOKPOINT_Z 0.75
+SET_AZIMUTH 50
+SET_ELEVATION 6
+SET_DISTANCE 12
+SET_CAMERAMAN_NAME External camera
+FOG_SCALE 0
+SET_FIELD_OF_VIEW 21.1
+LOG_ENTRY Used Dataset: Animator: Camera Setup; { emABS_0911 } Vehicles and Drivers - Cars
+EXIT_PARSFILE Animator\Cameras\Camera_aad9f5dd-7a61-4319-88b3-b90a1214f577.par
+
+LOG_ENTRY Used Dataset: Animator: Vehicles and Sensor Targets; { emABS_0911 } B-Class, Hatchback
+EXIT_PARSFILE Animator\Vehicles\AniVeh_744dc54f-cca9-4d31-8bee-3535b6477b13.par
+
+
+
+END

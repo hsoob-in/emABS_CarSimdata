@@ -1,0 +1,74 @@
+PARSFILE
+#FullDataName ADAS Sensors for Range and Tracking`Adult Collision Detect (Left Side)`Collision Sensor for Target
+DEFINE_SENSORS 1
+ISENSOR = NSENSOR
+NSENSORS_INCREMENT
+symbol_add <<s>> 1
+SET_DESCRIPTION SENSOR_NAME Adult Collision Detect (Left Side)
+#CheckBox0 1    
+#CheckBox1 1    
+OPT_BLOCK_SENSOR 1
+#CheckBox2 1    
+OPT_SORT_OUTPUTS_SENSOR 1
+#CheckBox3 1    
+#CheckBox5 0    
+OPT_EXPORT_SENSOR 0
+#CheckBox6 1    
+
+#RingCtrl0 2
+#RingCtrl1 1
+SENSOR_DETECT_TRANSLUCENCY 1
+#RingCtrl2 ZERO
+IUNIT_SENSOR ZERO
+#RingCtrl3 3
+TYPE_SENSOR 3
+IOBJECT_SENSOR IOBJECT
+PARSFILE Sensors_Traffic\Radar_Range\Range_a2b3441e-db94-43f3-9e08-0067abdf6f97.par
+#BlueLink0 Sensor Range and Bearing Sensitivity`4-m Range` Limit from Range` , Range & Bearing Sensitivity`Range_a2b3441e-db94-43f3-9e08-0067abdf6f97
+
+PARSFILE Sensors_Traffic\Radar_Elevation\SenElev_c66981cb-e94b-4fb4-bfd8-9a51215edb7b.par
+#BlueLink1 Sensor Elevation Sensitivity`Unity Gain` ` , Elevation Sensitivity`SenElev_c66981cb-e94b-4fb4-bfd8-9a51215edb7b
+
+X_SENSOR 0
+Y_SENSOR 250
+Z_SENSOR PED_SENS_HT
+YAW_AIM_SENSOR 90
+PITCH_AIM_SENSOR 0
+ROLL_AIM_SENSOR 0
+SENSOR_DETECT_COLOR 1 0.6 0
+*SET_TRANSPARENCY 0.15
+*SET_COLOR_FIELD 1 0 0
+BEARING_MIN_SENSOR -90
+BEARING_MAX_SENSOR 90
+
+SPECIAL_PARSFILE Animator\STL\Shape_a83c927a-af50-4b45-9a13-ad040d8e2cfc.par
+#BlueLink3 Animator: Shape File Link`Cube: 1m X, 0.1 Y, Z (Sensor Vector)` Geometric Shapes` , Shape for vector`Shape_a83c927a-af50-4b45-9a13-ad040d8e2cfc
+
+SENSOR_DETECT_OBJ Animator\STL\Shape_a83c927a-af50-4b45-9a13-ad040d8e2cfc.par
+#MiscYellow0
+ani_global_interpolation off
+#ENDMYellow
+
+PARSFILE Plot\Setup\Plot_0c2be909-3bbc-48dd-8145-aba6a949df4e.par
+#BlueLink4 Plot: Setup`ID and Message of Closest Object` ADAS Sensor Target Properties` , Plot`Plot_0c2be909-3bbc-48dd-8145-aba6a949df4e
+
+PARSFILE Plot\Setup\Plot_57592fbc-0ecb-40bc-8190-dc2f6162700d.par
+#BlueLink5 Plot: Setup`Distance for Closest Object` ADAS Sensor Detections` , Plot`Plot_57592fbc-0ecb-40bc-8190-dc2f6162700d
+
+
+#EMBEDDED_NOTES
+#Sensor embeded in the Adult pedestrian target, which is defined as a moving object
+#
+#The z-height of the sensor is set to a percentage below the total pedestrian object height
+#- this affects the origin of the sensor embedded in the moving object
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: ADAS Sensors for Range and Tracking; { Collision Sensor for Target } Adult Collision Detect (Left Side)
+#Library : ADAS Sensors for Range and Tracking
+#DataSet : Adult Collision Detect (Left Side)
+#Category: Collision Sensor for Target
+#FileID  : Radar_f45ad3ca-78d8-47c3-9b56-0e598a7e151b
+#Product : CarSim 2021.0
+#VehCode ADAS Sensor
+
+END

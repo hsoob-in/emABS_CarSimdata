@@ -1,0 +1,61 @@
+PARSFILE
+#FullDataName Models: Simulink`Autonomous (Detect 3 Other Vehicles)`Parallel Solvers
+#RunMdlFile Extensions\Simulink\Parallel_Solver\City_Environment_CS2020.mdl
+SIMULINK_MODEL_FILE Extensions\Simulink\Parallel_Solver\City_Environment_CS2020.mdl
+#RingCtrl0 -1
+#CheckBox0 1    
+*USE_ALT_DIR 1
+#CheckBox1 0    
+*USE_DIFF_SOLVERS 0
+#CheckBox3 1    
+#CheckBox4 0    
+OPT_IO_SYNC_FM 0
+#RingCtrl1 2
+OPT_INT_METHOD 2
+#CheckBox2 0    
+OPT_IO_UPDATE 0
+#CheckBox4 0    
+OPT_IO_SYNC_FM 0
+*TSTEP 0.001
+*FREQ_MODEL 1000
+*TSTEP_OUT 0.025
+*FREQ_OUT 40
+tstep 0.001
+iprint 25
+#CheckBox5 0    
+*MULTI_SOLVERS 0
+#AltPath Extensions\Simulink\Parallel_Solver
+*ALTERNATE_PATH Extensions\Simulink\Parallel_Solver
+PARSFILE IO_Channels\I_Channels\Import_3f8126fb-9036-4ca8-83af-2aa7dd22e3c6.par
+#BlueLink0 I/O Channels: Import`Position and Orientation (3 Targets)` Parallel Solvers` , Import`Import_3f8126fb-9036-4ca8-83af-2aa7dd22e3c6
+
+PARSFILE IO_Channels\O_Channels\Export_280ad38e-4053-4b74-bcc6-4dd24ed16bf9.par
+#BlueLink1 I/O Channels: Export`Vehicle Position and Orientation` Parallel Solvers` , Import/Export`Export_280ad38e-4053-4b74-bcc6-4dd24ed16bf9
+
+LIVE_SERVER_UPDATE_FREQ_MAX 60
+
+#EMBEDDED_NOTES
+#Models: Simulink dataset for use with the Parallel Solvers example: City Environment (4 Cars).
+#
+# -When using the Parallel Solvers library for this example the Models: Simulink dataset attached to each vehicle must:
+#  a) use the same Simulink model file,
+#  b) use identical settings for the working directory (which should also contain the Simulink .mdl or .slx file), and
+#  c) adhere to the following Import/Export configuration guidelines:
+#     - Each vehicle should export its:
+#         * X, Y, and Z position in global coordinates
+#         * Roll, Pitch, and Yaw orientation
+#     - Each vehicle should import (for each additional vehicle):
+#         * X, Y and Z position
+#         * Roll, Pitch, and Yaw orientation
+#
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Models: Simulink; { Parallel Solvers } Autonomous (Detect 3 Other Vehicles)
+#Library : Models: Simulink
+#DataSet : Autonomous (Detect 3 Other Vehicles)
+#Category: Parallel Solvers
+#FileID  : Simlink_667c238e-34b1-4bb0-b864-3e428deaeae0
+#Product : CarSim 2021.0
+#VehCode 
+
+END

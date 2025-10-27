@@ -1,0 +1,43 @@
+PARSFILE
+#FullDataName Events`Check AEB Final Run`Pedestrian Euro NCAP
+#CheckBox1 1    
+*CLEAR
+#CheckBox6 0    
+#CheckBox7 0    
+#CheckBox9 0    
+#CheckBox10 0    
+
+#RingCtrl0 >=
+#RingCtrl1 <
+#RingCtrl10 2
+#RingCtrl11 4
+RESET_EVENTS
+*NAME1 EndFinalRun
+*NAME2 EndFinalRun
+*VALUE1 1
+*VALUE2 1
+#MiscYellow0
+EndFinalRun = if ( (FINAL_AEB_TEST & AEB_OnTestSuccess) | (FINAL_AEB_TEST & AEB_ON_COLLIDE), 1, 0)
+#ENDMYellow
+
+MAKE_EVENT EndFinalRun >= 1 ; Events\Events_ea969e12-443d-4590-84d1-e4d34c5706fc.par
+#BlueLink0 Events`End Last Run` Pedestrian Euro NCAP` , Events`Events_ea969e12-443d-4590-84d1-e4d34c5706fc
+
+MAKE_EVENT EndFinalRun < 1 ; Events\Events_bafc00f0-7a8b-4661-9a45-dc5b840608ed.par
+#BlueLink1 Events`AEB Run Success` Pedestrian Euro NCAP` , Events`Events_bafc00f0-7a8b-4661-9a45-dc5b840608ed
+
+SET_EVENT_ID 0 ! reset to default
+
+#EMBEDDED_NOTES
+#Once the AEB test run has completed, check to see if it is the final run in the test, or if there are more runs left to complete
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Events; { Pedestrian Euro NCAP } Check AEB Final Run
+#Library : Events
+#DataSet : Check AEB Final Run
+#Category: Pedestrian Euro NCAP
+#FileID  : Events_61708849-0680-413e-991e-472ad0e02135
+#Product : CarSim 2021.0
+#VehCode Events
+
+END

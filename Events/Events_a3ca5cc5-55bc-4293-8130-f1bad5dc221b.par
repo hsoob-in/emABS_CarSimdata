@@ -1,0 +1,43 @@
+PARSFILE
+#FullDataName Events`Check AEB Final Run Collide`Pedestrian Euro NCAP
+#CheckBox1 1    
+*CLEAR
+#CheckBox6 0    
+#CheckBox7 0    
+#CheckBox9 0    
+#CheckBox10 0    
+
+#RingCtrl0 >=
+#RingCtrl1 <
+#RingCtrl10 2
+#RingCtrl11 4
+RESET_EVENTS
+*NAME1 EndFinalRun
+*NAME2 EndFinalRun
+*VALUE1 1
+*VALUE2 1
+#MiscYellow0
+EndFinalRun = if ( (FINAL_AEB_TEST & AEB_OnTestSuccess) | (FINAL_AEB_TEST & AEB_ON_COLLIDE ), 1, 0)
+#ENDMYellow
+
+MAKE_EVENT EndFinalRun >= 1 ; Events\Events_ea969e12-443d-4590-84d1-e4d34c5706fc.par
+#BlueLink0 Events`End Last Run` Pedestrian Euro NCAP` , Events`Events_ea969e12-443d-4590-84d1-e4d34c5706fc
+
+MAKE_EVENT EndFinalRun < 1 ; Events\Events_509b793f-f9e7-44e2-9f81-74ae6373513e.par
+#BlueLink1 Events`Note Collision` Pedestrian Euro NCAP` , Events`Events_509b793f-f9e7-44e2-9f81-74ae6373513e
+
+SET_EVENT_ID 0 ! reset to default
+
+#EMBEDDED_NOTES
+#Clear existing events here, so that Check AEB Final Run isn't triggered twice at the end of the entire test
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Events; { Pedestrian Euro NCAP } Check AEB Final Run Collide
+#Library : Events
+#DataSet : Check AEB Final Run Collide
+#Category: Pedestrian Euro NCAP
+#FileID  : Events_a3ca5cc5-55bc-4293-8130-f1bad5dc221b
+#Product : CarSim 2021.0
+#VehCode Events
+
+END

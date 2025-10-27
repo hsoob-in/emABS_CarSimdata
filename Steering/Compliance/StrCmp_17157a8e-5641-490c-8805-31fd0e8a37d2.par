@@ -1,0 +1,21 @@
+PARSFILE
+#FullDataName Steering System: Compliance`Constant: Zero`emABS_0911
+#CheckBox0 0    
+
+#RingCtrl0 CONSTANT
+#RadioCtrl0 0    
+
+STEER_COMP_CONSTANT 0
+*SCALAR 0
+
+
+
+LOG_ENTRY Used Dataset: Steering System: Compliance; { emABS_0911 } Constant: Zero
+#Library : Steering System: Compliance
+#DataSet : Constant: Zero
+#Category: emABS_0911
+#FileID  : StrCmp_17157a8e-5641-490c-8805-31fd0e8a37d2
+#Product : CarSim 2021.0
+#VehCode Steering Compliance
+
+END

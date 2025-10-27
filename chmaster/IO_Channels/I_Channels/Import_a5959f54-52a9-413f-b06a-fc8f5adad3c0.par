@@ -1,0 +1,25 @@
+PARSFILE
+#FullDataName I/O Channels: Import`Regen. Brk Torque control`Brake System Control
+#RingCtrl0 2
+#RingCtrl1 1
+*README_FILE Results\Run_7b1bd328-5d57-4e5a-8993-8607ebb7d807\Run_imp_tab.txt
+
+#MiscYellow0
+IMP_MYBK_L1 Replace 0.0 ! 1
+IMP_MYBK_L2 Replace 0.0 ! 1
+IMP_MYBK_R1 Replace 0.0 ! 1
+IMP_MYBK_R2 Replace 0.0 ! 1
+#ENDMYellow
+
+#BlueLink0 CarSim Run Control`Electric: OL, Regen. Brk.100% RABS` Brake Tests` , example run`Run_7b1bd328-5d57-4e5a-8993-8607ebb7d807
+
+
+LOG_ENTRY Used Dataset: I/O Channels: Import; { Brake System Control } Regen. Brk Torque control
+#Library : I/O Channels: Import
+#DataSet : Regen. Brk Torque control
+#Category: Brake System Control
+#FileID  : Import_a5959f54-52a9-413f-b06a-fc8f5adad3c0
+#Product : CarSim 2021.0
+#VehCode Import Channels
+
+END

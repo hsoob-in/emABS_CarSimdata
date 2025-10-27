@@ -1,0 +1,58 @@
+PARSFILE
+#FullDataName Models: Simulink`Autonomous (Export 4 Cars' Positions)`Parallel Solvers
+#RunMdlFile Extensions\Simulink\Parallel_Solver\City_Environment_8_Cars_CS2021.mdl
+SIMULINK_MODEL_FILE Extensions\Simulink\Parallel_Solver\City_Environment_8_Cars_CS2021.mdl
+#RingCtrl0 -1
+#CheckBox0 1    
+*USE_ALT_DIR 1
+#CheckBox1 0    
+*USE_DIFF_SOLVERS 0
+#CheckBox3 1    
+#CheckBox4 0    
+OPT_IO_SYNC_FM 0
+#RingCtrl1 2
+OPT_INT_METHOD 2
+#CheckBox2 0    
+OPT_IO_UPDATE 0
+#CheckBox4 0    
+OPT_IO_SYNC_FM 0
+*TSTEP 0.001
+*FREQ_MODEL 1000
+*TSTEP_OUT 0.025
+*FREQ_OUT 40
+tstep 0.001
+iprint 25
+#CheckBox5 0    
+*MULTI_SOLVERS 0
+#AltPath Extensions\Simulink\Parallel_Solver
+*ALTERNATE_PATH Extensions\Simulink\Parallel_Solver
+PARSFILE IO_Channels\O_Channels\Export_30c1a62b-9dd4-4adb-955d-faf4ca47e1c8.par
+#BlueLink1 I/O Channels: Export`Position and Orientation (4 Cars)` Parallel Solvers` , Import/Export`Export_30c1a62b-9dd4-4adb-955d-faf4ca47e1c8
+
+LIVE_SERVER_UPDATE_FREQ_MAX 60
+
+#EMBEDDED_NOTES
+#Models: Simulink dataset for use with the Parallel Solvers example: City Environment (8 Cars).
+#
+# -When using the Parallel Solvers library for this example the Models: Simulink dataset attached to each vehicle must:
+#  a) use the same Simulink model file,
+#  b) use identical settings for the working directory (which should also contain the Simulink .mdl or .slx file), and
+#  c) adhere to the following Import/Export configuration guidelines:
+#     - Each vehicle should export its:
+#         * X, Y, and Z position in global coordinates
+#         * Roll, Pitch, and Yaw orientation
+#     - Each vehicle should import (for each additional vehicle):
+#         * X, Y and Z position
+#         * Roll, Pitch, and Yaw orientation
+#
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Models: Simulink; { Parallel Solvers } Autonomous (Export 4 Cars' Positions)
+#Library : Models: Simulink
+#DataSet : Autonomous (Export 4 Cars' Positions)
+#Category: Parallel Solvers
+#FileID  : Simlink_e1bf2cf7-890b-4a48-9e55-dbf889defbf8
+#Product : CarSim 2021.0
+#VehCode 
+
+END

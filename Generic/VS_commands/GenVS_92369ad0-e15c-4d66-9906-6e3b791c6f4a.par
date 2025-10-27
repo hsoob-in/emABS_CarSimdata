@@ -1,0 +1,47 @@
+PARSFILE
+#FullDataName Generic VS Commands`Reload Key Parameters`Pedestrian Euro NCAP
+#VehCode VS Commands
+
+#MiscYellow0
+!removed all of the definitions and just updated the values
+
+VEH_SPD_INIT = VEH_SPD_INIT+ PrevRunSpeedIncr; km/h;
+
+********** updated depeding on percentage of vehicle to stike the pedestrian **********
+TARG_STRIKE = 25; %; 
+STRIKE_THRESH = 2; %; 
+
+VEH_WID = WID_SM - 0.1;m ; vehicle width - 100 mm
+PED_DIST_CROSS = PED_L_BASE - (0.25 -TARG_STRIKE)*VEH_WID; m; 
+
+T_PED_BASELINE = -PED_L_BASE/(PED_SPEED_5); s;
+T_PED_STRIKE = -PED_DIST_CROSS/(PED_SPEED_5); s;
+VEH_DIST_INIT = VEH_SPD_INIT*T_PED_BASELINE + LxBumper; m;
+VEH_S_START = PED_S_START -VEH_DIST_INIT; m;
+
+SIM_TIME_BUFFER = 5; s;
+TOT_SIM_TIME = VEH_DIST_INIT/VEH_SPD_INIT + SIM_TIME_BUFFER; s;
+
+PED_L_START = PED_DIST_CROSS + LTARG_CONSTANT;m ;
+
+********************** Update Procedure Initial Conditions **********************
+SSTART = VEH_S_START; m;
+TSTOP = TSTOP+ TOT_SIM_TIME; s;
+SPEED_TARGET_CONSTANT = VEH_SPD_INIT; s;
+#ENDMYellow
+
+
+#EMBEDDED_NOTES
+#Modify the first five parameters, based on the test being run.
+#- The rest of the values remain unchanged
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Generic VS Commands; { Pedestrian Euro NCAP } Reload Key Parameters
+#Library : Generic VS Commands
+#DataSet : Reload Key Parameters
+#Category: Pedestrian Euro NCAP
+#FileID  : GenVS_92369ad0-e15c-4d66-9906-6e3b791c6f4a
+#Product : CarSim 2021.0
+#VehCode VS Commands
+
+END

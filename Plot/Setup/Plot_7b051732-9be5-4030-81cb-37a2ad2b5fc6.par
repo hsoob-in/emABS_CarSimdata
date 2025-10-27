@@ -1,0 +1,36 @@
+PARSFILE
+#FullDataName Plot: Setup`VehStartStation`Pedestrian Euro NCAP
+
+ADD_ENTITY Plot
+
+#CheckBox1 0    
+
+
+#MiscYellow0
+PLOTCHANNELS VehStartS_Request, Time
+PLOTCHANNELS Station, Time
+
+#ENDMYellow
+
+
+#RingCtrl2 Auto
+YMaxmin Auto
+#RingCtrl3 Auto
+XMaxmin Auto
+#RingCtrl8 1
+
+
+PTITLE VehStartStation
+
+END_ENTITY Plot
+
+
+LOG_ENTRY Used Dataset: Plot: Setup; { Pedestrian Euro NCAP } VehStartStation
+#Library : Plot: Setup
+#DataSet : VehStartStation
+#Category: Pedestrian Euro NCAP
+#FileID  : Plot_7b051732-9be5-4030-81cb-37a2ad2b5fc6
+#Product : CarSim 2021.0
+#VehCode Plot Setup
+
+END

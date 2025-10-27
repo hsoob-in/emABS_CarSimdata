@@ -1,0 +1,12 @@
+PARSFILE
+search_path_append .
+search_path_append C:\Users\Public\Documents\CarSim2021.0_Data (1)\
+search_path_append C:\Program Files (x86)\CarSim2021.0_Prog\Resources\
+search_path_append C:\Program Files (x86)\CarSim2021.0_Prog\
+search_path_append C:\Program Files (x86)\CarSim2021.0_Prog\Resources\Animator\Deprecated_Assets\
+DATASET Roads\3D_Road\Road_aba52117-cb38-4893-a1f1-f315a3b6c851.vs
+PARSFILE Animator\Cameras\Camera_36b2ee7b-54ec-4c39-9781-51b289ab39c0.par
+#BlueLink5 Animator: Camera Setup`180 Azm, 5 El, 49 m` emABS_0911` , Camera`Camera_36b2ee7b-54ec-4c39-9781-51b289ab39c0
+
+PARSFILE Roads\3D_Road\Road_aba52117-cb38-4893-a1f1-f315a3b6c851.par
+END

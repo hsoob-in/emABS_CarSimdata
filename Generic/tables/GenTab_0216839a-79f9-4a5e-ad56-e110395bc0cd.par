@@ -1,0 +1,25 @@
+PARSFILE
+#FullDataName Generic Table`Driver Demand Power: Full Load 168 kW #1`Copied 03-19-2025 17:17:21
+#RingCtrl0 COEFFICIENT
+#CheckBox0 0    
+
+PWR_DRV_THROTTLE_COEFFICIENT 168
+#RadioCtrl0 0    
+#RadioCtrl1 0    
+
+*KEYWORD PWR_DRV_THROTTLE
+*X_LABEL Throttle pedal position (-)
+*Y_LABEL Driving power (kW)
+*SCALAR 168
+*X_LABEL_2 Temperature (C)
+
+
+LOG_ENTRY Used Dataset: Generic Table; { Copied 03-19-2025 17:17:21 } Driver Demand Power: Full Load 168 kW #1
+#Library : Generic Table
+#DataSet : Driver Demand Power: Full Load 168 kW #1
+#Category: Copied 03-19-2025 17:17:21
+#FileID  : GenTab_0216839a-79f9-4a5e-ad56-e110395bc0cd
+#Product : CarSim 2021.0
+#VehCode table
+
+END

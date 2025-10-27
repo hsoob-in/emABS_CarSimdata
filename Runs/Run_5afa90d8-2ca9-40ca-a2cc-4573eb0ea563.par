@@ -1,0 +1,102 @@
+PARSFILE
+#FullDataName CarSim Run Control`Hybrid eAWD/3Mot: Handling Course`* CS 2021.0 - Electrically Driven Wheels
+#VEHICLECODE Ind_Ind
+symbol_push  <<vehicle>> 0
+symbol_push  <<unit>> 0
+symbol_push  <<axle>> 0
+symbol_push  <<s>> 0
+symbol_push  <<o>> 0
+symbol_push  <<id_run>> Run_5afa90d8-2ca9-40ca-a2cc-4573eb0ea563
+
+OPT_ALL_WRITE 0
+IOBJECT 0
+IUNIT 0
+IVEHICLE 0
+OPT_INT_METHOD 0
+OPT_VS_FILETYPE 2
+PARSFILE Animator\Cameras\Camera_ecdefc4d-7cad-4145-8e71-fe30ae738fd5.par
+#BlueLink0 Animator: Camera Setup`254 Azm, 8 El, 15 m, No Yaw` Vehicle Reference` , Animator camera`Camera_ecdefc4d-7cad-4145-8e71-fe30ae738fd5
+
+#CheckBox0 1    
+#CheckBox1 0    
+#CheckBox2 0    
+#CheckBox3 0    
+#CheckBox4 0    
+#CheckBox5 0    
+#CheckBox6 0    
+#CheckBox7 0    
+#CheckBox8 1    
+#CheckBox9 0    
+#CheckBox10 0    
+#CheckBox11 0    
+
+#RingCtrl0 4
+#RingCtrl1 1
+#RingCtrl2 3
+#RingCtrl3 0
+#RingCtrl6 4
+#RingCtrl7 -1
+*RUN_COLOR 1 1 0
+#RingCtrl4 off
+RT_WINDOW_CLOSE off
+#RingCtrl5 0
+LIVE_SERVER_MAX_CONNECTIONS 0
+PARSFILE Vehicles\Assembly\Vehicle_f9cda2b1-bd57-4d06-9689-ab4da48d3a4d.par
+#BlueLink2 Vehicle: Assembly`B-Class, Hbk: Hybrid eAWD/3 Motors` B-Class` , Math Model`Vehicle_f9cda2b1-bd57-4d06-9689-ab4da48d3a4d
+
+PARSFILE Procedures\Proc_53562665-cea0-4dd2-9a77-1ce1e3ee9532.par
+#BlueLink28 Procedures`Handling Course, HEV/BEV Economy` Driver Controls` , Procedure`Proc_53562665-cea0-4dd2-9a77-1ce1e3ee9532
+
+PARSFILE Generic\VS_commands\GenVS_82b7f6ca-dd47-4c75-8be1-1bd33951ba49.par
+#BlueLink9 Generic VS Commands`EV motor torque distribution (3 Motors)` Powertrain` , Miscellaneous`GenVS_82b7f6ca-dd47-4c75-8be1-1bd33951ba49
+
+*TSTOP 30
+*TSTART 0
+*SSTART 0
+PARSFILE Plot\Setup\Plot_99e48c5c-b21e-4b39-b8ec-6aa8f61b800b.par
+#BlueLink15 Plot: Setup`Fuel Consumed (gallon)` Powertrain (Hybrid)` , Plot`Plot_99e48c5c-b21e-4b39-b8ec-6aa8f61b800b
+
+PARSFILE Plot\Setup\Plot_033b13aa-a635-4ea4-a1b3-cebbfea1b76b.par
+#BlueLink16 Plot: Setup`Miles per gallon` Powertrain (Hybrid)` , Plot`Plot_033b13aa-a635-4ea4-a1b3-cebbfea1b76b
+
+PARSFILE Plot\Setup\Plot_8077fc50-941c-45ed-a470-23f6069121a5.par
+#BlueLink17 Plot: Setup`Wheel Drive Torques` Powertrain` , Plot`Plot_8077fc50-941c-45ed-a470-23f6069121a5
+
+PARSFILE Plot\Setup\Plot_55af1489-6b5d-4c72-9db8-6018c686d9fc.par
+#BlueLink18 Plot: Setup`Motor efficiency` Powertrain (Hybrid)` , Plot`Plot_55af1489-6b5d-4c72-9db8-6018c686d9fc
+
+
+*IMAGE_TYPE PASS_THROUGH
+*IMAGE_PASS_THROUGH Animator\Vehicles\AniVeh_744dc54f-cca9-4d31-8bee-3535b6477b13.png
+WRITE_SENSOR_DETECT
+Title Hybrid eAWD/3Mot: Handling Course <* CS 2021.0 - Electrically Driven Wheels>
+CATEGORY * CS 2021.0 - Electrically Driven Wheels 
+DATASET_TITLE Hybrid eAWD/3Mot: Handling Course
+#RingCtrl8 1
+NUM_CACHED_RUNS 1
+#RingCtrl9 
+
+#EMBEDDED_NOTES
+#CarSim support for electric powertrains includes an electric motor, electric powertrain assembly, and power management control.
+#
+#The vehicle has total 3 motors: the front axle has a motor, while the rear axle is Twin-Motor, in which each side of wheel is electrically driven.
+#
+#Particularly, this example uses VS commands to control an electric motor torque distribution between front and rear axles depending on the hybrid power mode:
+#
+#Brake mode -> AWD (50/50)
+#Motor mode -> RWD (0/100)
+#Engine mode -> FWD (100/0)
+#Assist mode -> AWD (50/50)
+#
+#The procedure demonstrates fuel/battery economy testing on a handling course.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: CarSim Run Control; { * CS 2021.0 - Electrically Driven Wheels } Hybrid eAWD/3Mot: Handling Course
+#Library : CarSim Run Control
+#DataSet : Hybrid eAWD/3Mot: Handling Course
+#Category: * CS 2021.0 - Electrically Driven Wheels
+#FileID  : Run_5afa90d8-2ca9-40ca-a2cc-4573eb0ea563
+#Product : CarSim 2021.0
+#VehCode Run
+
+END

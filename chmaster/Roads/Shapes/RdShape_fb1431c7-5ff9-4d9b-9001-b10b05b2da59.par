@@ -1,0 +1,36 @@
+PARSFILE
+#FullDataName Road: Animator Surface Shapes`1 km Square Low`Roads
+NLANES 1
+#MiscYellow0
+# 1 1 1, Road (No Lines), 1, 10, 100, -500, m, 500, m, 100, , -500, 500, , , -0.001, Road
+#ENDMYellow
+
+#CheckBox0 0    
+MIRROR 0
+
+COLOR(1) 1 1 1
+MATERIAL(1) Road (No Lines)
+SPECULAR(1) 1
+SCALE(1) 10
+LTILES(1) 100
+LIN(1) -500
+LINUNITS(1) m
+LOUT(1) 500
+LOUTUNITS(1) m
+LDIV(1) 100
+S_START(1) -500
+S_STOP(1) 500
+DZ(1) -0.001
+AUTODETAIL(1) Road
+MTL_FILE Animator\Road_Materials\road.mtl
+
+
+LOG_ENTRY Used Dataset: Road: Animator Surface Shapes; { Roads } 1 km Square Low
+#Library : Road: Animator Surface Shapes
+#DataSet : 1 km Square Low
+#Category: Roads
+#FileID  : RdShape_fb1431c7-5ff9-4d9b-9001-b10b05b2da59
+#Product : CarSim 2021.0
+#VehCode Road Shapes
+
+END

@@ -1,0 +1,26 @@
+PARSFILE
+#FullDataName I/O Channels: Import`SM backward import_1007`backward driving
+#RingCtrl0 1
+#RingCtrl1 1
+*README_FILE Results\Run_95b32a23-ebde-4623-b2cb-4f7f63052a4a\Run_imp_tab.txt
+
+#MiscYellow0
+IMP_BK_STAT Replace 0.0 ! 1
+IMP_PBK_L1 Replace 0.0 ! 1
+IMP_PBK_R1 Replace 0.0 ! 1
+IMP_M_MOTOR_CMD_D1 Replace 0.0 ! 1
+IMP_M_MOTOR_CMD_D2 Replace 0.0 ! 1
+#ENDMYellow
+
+#BlueLink0 CarSim Run Control`emABS_withall` emABS` , example run`Run_95b32a23-ebde-4623-b2cb-4f7f63052a4a
+
+
+LOG_ENTRY Used Dataset: I/O Channels: Import; { backward driving } SM backward import_1007
+#Library : I/O Channels: Import
+#DataSet : SM backward import_1007
+#Category: backward driving
+#FileID  : Import_e97da295-0007-4208-9681-cb256a63587c
+#Product : CarSim 2021.0
+#VehCode Import Channels
+
+END

@@ -1,0 +1,69 @@
+PARSFILE
+#FullDataName Single Moving Object (Custom)`Euro NCAP Adult: Near CPNA`Pedestrians and Bicyclists
+DEFINE_MOVING_OBJECTS 1
+IOBJECT_INCREMENT
+symbol_add <<o>> 1
+SET_DESCRIPTION OBJECT_NAME Euro NCAP Adult: Near CPNA
+OPT_SPEED_OBJ 0
+PATH_ID_OBJ 1005
+ROAD_ID_OBJ 1005
+#CheckBox0 0    
+#CheckBox1 0    
+OPT_RECYCLE_OBJ 0
+#CheckBox2 0    
+#CheckBox3 0    
+#CheckBox5 0    
+#CheckBox6 0    
+#CheckBox7 0    
+#CheckBox8 1    
+
+#RingCtrl0 1
+#RingCtrl1 0
+H_OBJ 0.85
+*COLOR 1 0 0
+*S_INIT PED_S_START
+*L_INIT PED_L_START
+OPT_SHAPE_OBJ 1
+SHAPE_TYPE_OBJ 0
+DZ_OBJECT 0
+*SIZE 0.5
+DIAMETER_OBJ 0.5
+*REFLECT 2
+MATERIAL_TYPE_OBJ 0
+REFLECT_OBJ 2
+*SPEED PED_SPEED_5
+EQ_INIT HeadO_<<o>> 90/DR
+WRITE_ADD_REFERENCE_FRAME_OBJECT
+PARSFILE Animator\STL\Shape_ac8d1fdc-7ece-4140-89f7-18054d965750.par
+#BlueLink0 Animator: Shape File Link`Euro NCAP Adult Walking` Environment: Pedestrians (Animated)` , 3D Shape for Video`Shape_ac8d1fdc-7ece-4140-89f7-18054d965750
+
+EQ_INIT S_Obj_<<o>> PED_S_START
+EQ_INIT LatO_<<o>> PED_L_START
+DEFINE_VARIABLE V_CMD_OBJ_<<o>>;KM/H; Speed command
+DEFINE_VARIABLE HeadV_O_<<o>> 90/DR;-; Heading vector for ODEs
+EQ_OUT V_CMD_OBJ_<<o>> = PED_SPEED_5;
+EQ_DIFFERENTIAL LatO_<<o>> = V_CMD_OBJ_<<o>>
+#MiscYellow1
+TypeO_<<o>> = PEDESTRIAN
+opt_road_pitch = 0
+opt_road_roll = 0
+define_output LTARG_PED = LatO_<<o>>;m;Lateral coordinate of pedestrian
+DEFINE_PARAMETER PED_OBJ_HT = H_OBJ(2); m; Height of pedestrian
+#ENDMYellow
+
+
+#EMBEDDED_NOTES
+#Initial parameters for the pedestrian target are set in the Initial Setup Dataset
+#
+#This Adult pedestrian target is defined by the European Automobile Manufacturers' Association (ACEA) articulated pedestrian specifications
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Single Moving Object (Custom); { Pedestrians and Bicyclists } Euro NCAP Adult: Near CPNA
+#Library : Single Moving Object (Custom)
+#DataSet : Euro NCAP Adult: Near CPNA
+#Category: Pedestrians and Bicyclists
+#FileID  : Target_9e601a5e-4ce9-4db7-bc25-50c115816ee0
+#Product : CarSim 2021.0
+#VehCode Moving Object (Custom)
+
+END

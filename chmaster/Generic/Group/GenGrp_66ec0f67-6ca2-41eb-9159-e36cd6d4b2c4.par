@@ -1,0 +1,37 @@
+PARSFILE
+#FullDataName Generic Data Group`Ped. Euro NCAP Setup One Run`Euro NCAP Pedestrian
+#VehCode AEB Sensor Setup
+PARSFILE Generic\VS_commands\GenVS_1563a7dd-12d3-4589-89aa-dfb6e0a4fc5c.par
+#BlueLink0 Generic VS Commands`AEB CPNA 25 Tuning Setup` Pedestrian Euro NCAP` , Link 1`GenVS_1563a7dd-12d3-4589-89aa-dfb6e0a4fc5c
+
+
+PARSFILE Generic\GroupMore\GenGrpM_30a58a4f-3118-4e52-843a-cbdcdbca14b2.par
+#BlueLink1 Generic Data Group (More)`Adult Pedestrian w/sensor` Pedestrian Euro NCAP` , Link 2`GenGrpM_30a58a4f-3118-4e52-843a-cbdcdbca14b2
+
+
+#MiscYellow2
+define_output RelLtargVehPed = LTARGPED - Lat_Veh; m;...
+ Ped. ltarg w/r to vehicle
+define_output BumperStrike = if( PedSensMag > 0, ( (VEH_WID/2 - abs(yDistAct) )/VEH_WID), 0); ...
+  % ; strike perc. of bumper width
+define_output StrikePercentDiff = abs(BumperStrike-TARG_STRIKE);%; target vs. strike perc. diff
+#ENDMYellow
+
+
+
+
+
+
+
+
+*MODELCODE AEB Sensor Setup
+
+LOG_ENTRY Used Dataset: Generic Data Group; { Euro NCAP Pedestrian } Ped. Euro NCAP Setup One Run
+#Library : Generic Data Group
+#DataSet : Ped. Euro NCAP Setup One Run
+#Category: Euro NCAP Pedestrian
+#FileID  : GenGrp_66ec0f67-6ca2-41eb-9159-e36cd6d4b2c4
+#Product : CarSim 2021.0
+#VehCode AEB Sensor Setup
+
+END

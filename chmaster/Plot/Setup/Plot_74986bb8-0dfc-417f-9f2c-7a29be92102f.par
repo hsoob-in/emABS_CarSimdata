@@ -1,0 +1,46 @@
+PARSFILE
+#FullDataName Plot: Setup`Rack Mass from Vir. Steer Axis Susp.`Steering
+
+ADD_ENTITY Plot
+
+PARSFILE Plot\Format\PlotFmt_33e2becb-9fc8-474d-a6bb-685bf100d862.par
+#BlueLink0 Plot: Format`Default Plot Settings` ` , Plot format`PlotFmt_33e2becb-9fc8-474d-a6bb-685bf100d862
+
+#CheckBox1 0    
+
+
+#MiscYellow0
+PLOTCHANNELS MassVir1, Time
+
+#ENDMYellow
+
+
+#RingCtrl2 Auto
+YMaxmin Auto
+#RingCtrl3 Auto
+XMaxmin Auto
+#RingCtrl8 1
+
+
+PTITLE Rack Mass from Vir. Steer Axis Susp.
+
+END_ENTITY Plot
+
+
+#EMBEDDED_NOTES
+#The virtual steering axis suspension's unsprung masses contribute inertia to the steering system. This inertia is part of the total gear inertia IstrGear, and can also be thought of as a mass acting on the steering rack.
+#
+#MassVir1 = unsprung mass inertia as referenced to the rack
+#
+#IstrGear = steering gear inertia I_GEAR_IN + MassVir1 as referenced to the pinion
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Plot: Setup; { Steering } Rack Mass from Vir. Steer Axis Susp.
+#Library : Plot: Setup
+#DataSet : Rack Mass from Vir. Steer Axis Susp.
+#Category: Steering
+#FileID  : Plot_74986bb8-0dfc-417f-9f2c-7a29be92102f
+#Product : CarSim 2021.0
+#VehCode Plot Setup
+
+END

@@ -1,0 +1,80 @@
+PARSFILE
+#FullDataName CarSim Run Control`Top Speed Test`* CS 2021.0 - New Proving Ground
+#VEHICLECODE Ind_Ind
+symbol_push  <<vehicle>> 0
+symbol_push  <<unit>> 0
+symbol_push  <<axle>> 0
+symbol_push  <<s>> 0
+symbol_push  <<o>> 0
+symbol_push  <<id_run>> Run_4e16b4a6-8f6d-42a9-a5b3-5c10c0ef93c7
+
+OPT_ALL_WRITE 0
+IOBJECT 0
+IUNIT 0
+IVEHICLE 0
+OPT_INT_METHOD 0
+OPT_VS_FILETYPE 2
+#BlueLink12 ` , Models` , Models` , Models`
+
+PARSFILE Animator\Cameras\Camera_8eb08baf-478b-4574-8772-fb6308e8fbd6.par
+#BlueLink0 Animator: Camera Setup`35 Azm, 5 El, 13.5 m` Vehicle Reference` , Animator camera`Camera_8eb08baf-478b-4574-8772-fb6308e8fbd6
+
+#CheckBox0 1    
+#CheckBox1 0    
+#CheckBox2 0    
+#CheckBox3 0    
+#CheckBox4 0    
+#CheckBox5 1    
+#CheckBox6 0    
+#CheckBox7 0    
+#CheckBox8 0    
+#CheckBox9 0    
+#CheckBox10 0    
+#CheckBox11 0    
+
+#RingCtrl0 4
+#RingCtrl1 3
+#RingCtrl2 0
+#RingCtrl3 0
+#RingCtrl6 0
+#RingCtrl7 -1
+*RUN_COLOR 1 0.6 1
+#RingCtrl4 off
+RT_WINDOW_CLOSE off
+#RingCtrl5 0
+LIVE_SERVER_MAX_CONNECTIONS 0
+PARSFILE Vehicles\Assembly\Vehicle_527cca93-c21c-4e44-9484-2a30a25b6ce6.par
+#BlueLink2 Vehicle: Assembly`F-Class, Sedan w/ 8-spd. Transmission` F-Class` , Math Model`Vehicle_527cca93-c21c-4e44-9484-2a30a25b6ce6
+
+PARSFILE Procedures\Proc_049bb693-c376-436f-aba6-0810c6f2ba9d.par
+#BlueLink28 Procedures`Top Speed Test` Proving Ground` , Procedure`Proc_049bb693-c376-436f-aba6-0810c6f2ba9d
+
+*TSTOP 28
+*TSTART 0
+*SSTART 0
+
+*IMAGE_TYPE PASS_THROUGH
+*IMAGE_PASS_THROUGH Animator\Vehicles\AniVeh_ecb4bc00-731a-4eec-9e10-b0fa5a9a76b7.png
+WRITE_SENSOR_DETECT
+Title Top Speed Test <* CS 2021.0 - New Proving Ground>
+CATEGORY * CS 2021.0 - New Proving Ground 
+DATASET_TITLE Top Speed Test
+#RingCtrl8 1
+NUM_CACHED_RUNS 1
+#RingCtrl9 
+
+#EMBEDDED_NOTES
+#The proving ground introduced in version 2021.0 is demonstrated with a top speed test performed on the high speed test circle, which has a circumference of five miles (~8050 m).
+#
+#The vehicle used here is a high power (300 kW/400 hp) AWD sedan with low (2.65)  final drive ratios, capable of very high speed.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: CarSim Run Control; { * CS 2021.0 - New Proving Ground } Top Speed Test
+#Library : CarSim Run Control
+#DataSet : Top Speed Test
+#Category: * CS 2021.0 - New Proving Ground
+#FileID  : Run_4e16b4a6-8f6d-42a9-a5b3-5c10c0ef93c7
+#Product : CarSim 2021.0
+#VehCode Run
+
+END

@@ -1,0 +1,39 @@
+PARSFILE
+#FullDataName Plot: Setup`Longitudinal Forces (Axle 2)`Tire Forces and Moments
+
+ADD_ENTITY Plot
+
+PARSFILE Plot\Format\PlotFmt_33e2becb-9fc8-474d-a6bb-685bf100d862.par
+#BlueLink0 Plot: Format`Default Plot Settings` ` , Plot format`PlotFmt_33e2becb-9fc8-474d-a6bb-685bf100d862
+
+#CheckBox1 0    
+
+
+#MiscYellow0
+PLOTCHANNELS Fx_L2, Time
+PLOTCHANNELS Fx_R2, Time
+
+#ENDMYellow
+
+
+#RingCtrl2 Auto
+YMaxmin Auto
+#RingCtrl3 Auto
+XMaxmin Auto
+#RingCtrl8 1
+
+
+PTITLE Longitudinal Forces (Axle 2)
+
+END_ENTITY Plot
+
+
+LOG_ENTRY Used Dataset: Plot: Setup; { Tire Forces and Moments } Longitudinal Forces (Axle 2)
+#Library : Plot: Setup
+#DataSet : Longitudinal Forces (Axle 2)
+#Category: Tire Forces and Moments
+#FileID  : Plot_b9d7a69c-1af1-46d3-be25-ca3a9a3b515a
+#Product : CarSim 2021.0
+#VehCode Plot Setup
+
+END

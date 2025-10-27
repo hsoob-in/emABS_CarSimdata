@@ -1,0 +1,799 @@
+Run made by CarSim 2021.0 at 08:43 on December 15, 2020.
+
+Started with simfile: simfile.sim
+
+Include PARSFILE "Results\Run_e8a9a357-268d-417a-b7cb-b2b5bf06be37\Run_all.par"
+Installed keywords into VS Solver for MODEL_LAYOUT I_I
+Used Dataset: Animator: Reference Frame; { Tracking: Vehicle } Vehicle X-Y-Z-Yaw
+Used Dataset: Animator: Camera Setup; { Vehicle Reference } 180 Azm, 15 El, 30 m
+Used Dataset: Steering System: Compliance; Constant: Zero
+Used Dataset: Steering System: Kinematics for 2 Wheels (Rack & Pinion); { CS C-Class } C-Class, Hatchback
+Used Dataset: Steering: Power Assist Force; { C-Class } C-Class Hatchback, Not Spd Sens
+Used Dataset: Steering System: Compliance; { Linear } 0.001 deg/N-m
+Used Dataset: Steering: Parking Torque for 2 Wheels; { C-Class } C-Class Hatchback
+Used Dataset: Steering; { CS C-Class } C-Class, Hbk: Power, R&P
+Used Dataset: Suspension: Dive Angle (Caster Change); { Strut } Front Strut - Front Dive Angle
+Used Dataset: Suspension: Longitudinal Movement; { Strut } Front Strut -  Longitudinal Movement
+Used Dataset: Suspension: Camber Angle; { Strut } Front Strut - Camber
+Used Dataset: Suspension: Lateral Movement Due to Jounce; { Strut } Strut - Front
+Used Dataset: Suspension: Toe Angle; { Strut } Strut - Front
+Used Dataset: Suspension: Dive Angle (Caster Change); { Strut } Front Strut - Front Dive Angle
+Used Dataset: Suspension: Longitudinal Movement; { Strut } Front Strut -  Longitudinal Movement
+Used Dataset: Suspension: Camber Angle; { Strut } Front Strut - Camber
+Used Dataset: Suspension: Lateral Movement Due to Jounce; { Strut } Strut - Front
+Used Dataset: Suspension: Toe Angle; { Strut } Strut - Front
+Used Dataset: Suspension: Independent System Kinematics; { C-Class } C-Class, Hatchback - Front
+Used Dataset: Suspension: Shock Absorber; { Passenger Car } Big Car
+Used Dataset: Suspension: Jounce and Rebound Stops; { Jounce Range: 50 mm to 99 mm } +60 mm / -40 mm
+Used Dataset: Suspension: Shock Absorber; { Passenger Car } Big Car
+Used Dataset: Suspension: Jounce and Rebound Stops; { Jounce Range: 50 mm to 99 mm } +60 mm / -40 mm
+Used Dataset: Suspension: Auxiliary Roll Moment; { Linear } Linear: 384 N-m/deg
+Used Dataset: Suspension: Independent Compliance, Springs, and Dampers; { C-Class } C-Class, Hatchback - Front
+Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } 195/45 R16: Tire
+Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } 195/45 R16: Wheel
+Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } 195/45 R16: Stripe
+Used Dataset: Animator: Shape Assembly; { Tires } 195/45 R16
+Used Dataset: Generic Table; { Tire Relaxation Length } Lx Variable, Scaled to Tire
+Used Dataset: Generic Table; { Tire Relaxation Length } Ly Variable, Scaled to Tire
+Used Dataset: Tire: Aligning Moment; { Touring Tires } 215/55 R17 (SAE)
+Used Dataset: Tire: Lateral Force; { Touring Tires } 215/55 R17
+Used Dataset: Tire: Longitudinal Force; { Touring Tires } 215/55 R17
+Used Dataset: Tire: Camber Thrust Coefficient; { Touring Tires } 215/55 R17
+Used Dataset: Tire; { Touring Tires } 215/55 R17
+Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } 195/45 R16: Tire
+Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } 195/45 R16: Wheel
+Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } 195/45 R16: Stripe
+Used Dataset: Animator: Shape Assembly; { Tires } 195/45 R16
+Used Dataset: Generic Table; { Tire Relaxation Length } Lx Variable, Scaled to Tire
+Used Dataset: Generic Table; { Tire Relaxation Length } Ly Variable, Scaled to Tire
+Used Dataset: Tire: Aligning Moment; { Touring Tires } 215/55 R17 (SAE)
+Used Dataset: Tire: Lateral Force; { Touring Tires } 215/55 R17
+Used Dataset: Tire: Longitudinal Force; { Touring Tires } 215/55 R17
+Used Dataset: Tire: Camber Thrust Coefficient; { Touring Tires } 215/55 R17
+Used Dataset: Tire; { Touring Tires } 215/55 R17
+Used Dataset: Suspension: Longitudinal Movement; { 5-Link Rear } Rear 5-Link - Longitudinal Movement
+Used Dataset: Suspension: Camber Angle; { 5-Link Rear } Rear 5-Link - Camber Change
+Used Dataset: Suspension: Lateral Movement Due to Jounce; { 5-Link Rear } Rear 5-Link - Lateral Movement
+Used Dataset: Suspension: Toe Angle; { 5-Link Rear } Rear 5-Link - Toe Change
+Used Dataset: Suspension: Longitudinal Movement; { 5-Link Rear } Rear 5-Link - Longitudinal Movement
+Used Dataset: Suspension: Camber Angle; { 5-Link Rear } Rear 5-Link - Camber Change
+Used Dataset: Suspension: Lateral Movement Due to Jounce; { 5-Link Rear } Rear 5-Link - Lateral Movement
+Used Dataset: Suspension: Toe Angle; { 5-Link Rear } Rear 5-Link - Toe Change
+Used Dataset: Suspension: Independent System Kinematics; { C-Class } C-Class, Hatchback - Rear
+Used Dataset: Suspension: Spring; 30 N/mm
+Used Dataset: Suspension: Shock Absorber; { Passenger Car } Big Car
+Used Dataset: Suspension: Jounce and Rebound Stops; { Jounce Range: 50 mm to 99 mm } +60 mm / -40 mm
+Used Dataset: Suspension: Spring; 30 N/mm
+Used Dataset: Suspension: Shock Absorber; { Passenger Car } Big Car
+Used Dataset: Suspension: Jounce and Rebound Stops; { Jounce Range: 50 mm to 99 mm } +60 mm / -40 mm
+Used Dataset: Suspension: Auxiliary Roll Moment; { Non-Linear } Non-linear: 344 N-m/deg
+Used Dataset: Suspension: Independent Compliance, Springs, and Dampers; { C-Class } C-Class, Hatchback - Rear
+Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } 195/45 R16: Tire
+Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } 195/45 R16: Wheel
+Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } 195/45 R16: Stripe
+Used Dataset: Animator: Shape Assembly; { Tires } 195/45 R16
+Used Dataset: Generic Table; { Tire Relaxation Length } Lx Variable, Scaled to Tire
+Used Dataset: Generic Table; { Tire Relaxation Length } Ly Variable, Scaled to Tire
+Used Dataset: Tire: Aligning Moment; { Touring Tires } 215/55 R17 (SAE)
+Used Dataset: Tire: Lateral Force; { Touring Tires } 215/55 R17
+Used Dataset: Tire: Longitudinal Force; { Touring Tires } 215/55 R17
+Used Dataset: Tire: Camber Thrust Coefficient; { Touring Tires } 215/55 R17
+Used Dataset: Tire; { Touring Tires } 215/55 R17
+Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } 195/45 R16: Tire
+Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } 195/45 R16: Wheel
+Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } 195/45 R16: Stripe
+Used Dataset: Animator: Shape Assembly; { Tires } 195/45 R16
+Used Dataset: Generic Table; { Tire Relaxation Length } Lx Variable, Scaled to Tire
+Used Dataset: Generic Table; { Tire Relaxation Length } Ly Variable, Scaled to Tire
+Used Dataset: Tire: Aligning Moment; { Touring Tires } 215/55 R17 (SAE)
+Used Dataset: Tire: Lateral Force; { Touring Tires } 215/55 R17
+Used Dataset: Tire: Longitudinal Force; { Touring Tires } 215/55 R17
+Used Dataset: Tire: Camber Thrust Coefficient; { Touring Tires } 215/55 R17
+Used Dataset: Tire; { Touring Tires } 215/55 R17
+Used Dataset: Vehicle: Sprung Mass; { C-Class } C-Class, Hatchback
+Used Dataset: Aerodynamics: Fx (Drag) Coef. vs. Aero Slip; { Spline Interpolation } Spline: 0.30 at 0 deg.
+Used Dataset: Aerodynamics: Fy (Side Force) Coef. vs. Aero Slip; { Spline Interpolation } Spline: 2 at 90 deg.
+Used Dataset: Aerodynamics: Fz (Lift) Coef. vs. Aero Slip; { Spline Interpolation } Spline: 0.18 at 0 deg.
+Used Dataset: Aerodynamics: Mx (Roll Moment) Coef. vs. Aero Slip; { Spline Interpolation } Spline: 0.3 at 90 deg.
+Used Dataset: Aerodynamics: My (Pitch Moment) Coef. vs. Aero Slip; { Spline Interpolation } Spline: 0.15 at 0 deg.
+Used Dataset: Aerodynamics: Mz (Yaw Moment) Coef. vs. Aero Slip; { Spline Interpolation } Spline: 0.2 at 35 deg.
+Used Dataset: Aerodynamics: Basic; { C-Class } C-Class, Hatchback Aero
+Used Dataset: Powertrain: Engine; { 43 kW - 125 kW Engines } 125 kW Engine
+Used Dataset: Powertrain: Torque Converter; { Torque Converters: 75 kW to 150 kW } Torque Converter: 125 kW Engine
+Used Dataset: Powertrain: Shift Schedule; { 6-speed } 6-speed, 1-2 Shift
+Used Dataset: Powertrain: Shift Schedule; { 6-speed } 6-speed, 2-3 Shift
+Used Dataset: Powertrain: Shift Schedule; { 6-speed } 6-speed, 3-4 Shift
+Used Dataset: Powertrain: Shift Schedule; { 6-speed } 6-speed, 4-5 Shift
+Used Dataset: Powertrain: Shift Schedule; { 6-speed } 6-speed, 5-6 Shift
+Used Dataset: Powertrain: Transmission (18 Gears or CVT); { 6-Speed Transmissions } 6-Speed
+Used Dataset: Powertrain: Front Differential; { Limited Slip and Viscous Coupling } Viscous Coupling: Gear Ratio 4.1:1
+Used Dataset: Powertrain: Front-Wheel Drive; { 75 kW - 125 kW Powertrains } 125 kW, 6-spd., 4.1 Ratio w/ Visc. Diff.
+Used Dataset: Brakes: Proportioning / Limiting Valve; Unity until 1.5MPa then 30%
+Used Dataset: Brakes: Proportioning / Limiting Valve; Unity until 1.5MPa then 30%
+Used Dataset: Brakes: Four-Wheel System; { C-Class } (Hbk): MC Press, ABS
+Used Dataset: Generic Data Lists; Rear View Mirror (C -Class Example)
+Used Dataset: Animator: Shape File Link; { Cars: C-Class } Hatchback
+Used Dataset: Animator: Shape File Link; { Cars: C-Class } Hatchback: Driver (Caucasian Male)
+Used Dataset: Animator: Shape Assembly; { Passenger Cars } C-Class Hatchback
+Used Dataset: Animator: Shape File Link; { Cars: C-Class } Hatchback: Brake Lights
+Used Dataset: Animator: Shape File Link; { Cars: C-Class } C-Class Hatchback Reverse Lights
+Used Dataset: Animator: Vehicles and Sensor Targets; { C-Class } C-Class, Hatchback
+Used Dataset: Vehicle: Assembly; { C-Class } C-Class, Hatchback
+Used Dataset: Sensor Range and Bearing Sensitivity; { Limit from Range } 50-m Range
+Used Dataset: Sensor Elevation Sensitivity; Unity Gain
+Used Dataset: Animator: Shape File Link; { Common Vehicle Assets } Sensor Fields: 20 deg FOV
+Used Dataset: Animator: HUD; { ACC - Adaptive Cruise Control } ACC Icon
+Used Dataset: Animator: HUD; { ACC - Adaptive Cruise Control } ACC Bars
+Used Dataset: Generic VS Commands; { ADAS Support } ACC w/AEB with HUD
+Used Dataset: ADAS Sensors for Range and Tracking; { Forward Facing Sensors: FCW and ACC } FCWw/AEB and ACC
+Used Dataset: Sensor Range and Bearing Sensitivity; { Blind Spot Detection } Blind Spot, Left Side, Passing
+Used Dataset: Sensor Elevation Sensitivity; Unity Gain
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Cube: 1m (For Left Blind-Spot Sensor)
+Used Dataset: Plot: Format; Lines without Symbols
+Used Dataset: Plot: Setup; { ADAS Sensor Detections, Symbol Stack } Magnitude from Sensor on One Side
+Used Dataset: Plot: Format; Lines without Symbols
+Used Dataset: Plot: Setup; { ADAS Sensor Detections, Symbol Stack } Y from Sensor on One Side
+Used Dataset: Plot: Format; Lines without Symbols
+Used Dataset: Plot: Setup; { ADAS Sensor Detections, Symbol Stack } Vy from Sensor on One Side
+Used Dataset: Plot: Format; Default Plot Settings
+Used Dataset: Plot: Setup; { ADAS and AEB Alerts and Commands } Alerts: Blind Spot Passing
+Used Dataset: Generic VS Commands; { ADAS Support } Blind Spot Detection, Either Side, Passing
+Used Dataset: ADAS Sensors for Range and Tracking; { Blind-Spot Sensors } Left Blind-Spot, Forward Vx
+Used Dataset: Sensor Range and Bearing Sensitivity; { Blind Spot Detection } Blind Spot, Right Side, Passing
+Used Dataset: Sensor Elevation Sensitivity; Unity Gain
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Cube: 1m (For Right Blind-Spot Sensor)
+Used Dataset: Plot: Format; Lines without Symbols
+Used Dataset: Plot: Setup; { ADAS Sensor Detections, Symbol Stack } Magnitude from Sensor on One Side
+Used Dataset: Plot: Format; Lines without Symbols
+Used Dataset: Plot: Setup; { ADAS Sensor Detections, Symbol Stack } Y from Sensor on One Side
+Used Dataset: Plot: Format; Lines without Symbols
+Used Dataset: Plot: Setup; { ADAS Sensor Detections, Symbol Stack } Vy from Sensor on One Side
+Used Dataset: Plot: Format; Default Plot Settings
+Used Dataset: Plot: Setup; { ADAS and AEB Alerts and Commands } Alerts: Blind Spot Passing
+Used Dataset: Generic VS Commands; { ADAS Support } Blind Spot Detection, Either Side, Passing
+Used Dataset: ADAS Sensors for Range and Tracking; { Blind-Spot Sensors } Right Blind-Spot, Forward Vx
+Used Dataset: Animator: HUD; { ADAS Alerts } Blind Spots
+Used Dataset: Generic VS Commands; { Pedestrian Euro NCAP } Obstacle Parameters CPNA
+Used Dataset: Sensor Range and Bearing Sensitivity; { Sensor Range w/ Equations } Pedestrian Detec. Camera General AEB
+Used Dataset: Sensor Elevation Sensitivity; Unity Gain
+Used Dataset: Plot: Format; Default Plot Settings
+Used Dataset: Plot: Setup; { ADAS Sensor Target Properties } ID and Message of Closest Object
+Used Dataset: Plot: Format; Default Plot Settings
+Used Dataset: Plot: Setup; { ADAS Sensor Target Properties } Sensor Y for Closest Pedestrian
+Used Dataset: ADAS Sensors for Range and Tracking; { Forward Facing Sensors: FCW and ACC } Pedestrian Camera General AEB
+Used Dataset: Polygonal Shape Coordinates; { Pedestrian Euro NCAP } Front of Car
+Used Dataset: Single Moving Object (Custom); { Multi-Vehicle } IUNIT_OBJ (Polygonal)
+WARNING: The keyword OPT_VMIN has been deprecated
+Used Dataset: Animator: HUD; { Euro NCAP } FCW Alert (small, rt. side, high)
+Used Dataset: Generic VS Commands; { Pedestrian Euro NCAP } General FCW-AEB Tuning Params.
+Used Dataset: Generic Data Group; { Euro NCAP Pedestrian } C-Class Hatch. AEB Sensor Setup
+Used Dataset: Control: Steering by the Closed-loop Driver Model; { Path Detections } Left Lane Marking LKAS
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Sphere: 0.1m Radius (Red)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Sphere: 0.1m Radius (Red)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Sphere: 0.1m Radius (Red)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Sphere: 0.1m Radius (Red)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Sphere: 0.1m Radius (Red)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Sphere: 0.1m Radius (Red)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Sphere: 0.1m Radius (Red)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Sphere: 0.1m Radius (Red)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Sphere: 0.1m Radius (Red)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Sphere: 0.1m Radius (Red)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Sphere: 0.1m Radius (Red)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Sphere: 0.1m Radius (Red)
+Used Dataset: Multiple Moving Objects; { Path Detection } Detected Path Visual
+Used Dataset: Control: Steering by the Closed-loop Driver Model; { Path Detections } Right Lane Marking LKAS
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Sphere: 0.1m Radius (Red)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Sphere: 0.1m Radius (Red)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Sphere: 0.1m Radius (Red)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Sphere: 0.1m Radius (Red)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Sphere: 0.1m Radius (Red)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Sphere: 0.1m Radius (Red)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Sphere: 0.1m Radius (Red)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Sphere: 0.1m Radius (Red)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Sphere: 0.1m Radius (Red)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Sphere: 0.1m Radius (Red)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Sphere: 0.1m Radius (Red)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Sphere: 0.1m Radius (Red)
+Used Dataset: Multiple Moving Objects; { Path Detection } Detected Path Visual
+Used Dataset: Control: Steering by the Closed-loop Driver Model; { Path Detections } Center of Lane
+Used Dataset: Plot: Format; Default Plot Settings
+Used Dataset: Plot: Setup; { Path Detector } Path Detector Origin
+Used Dataset: Plot: Format; Default Plot Settings
+Used Dataset: Plot: Setup; { Path Detector } Target Points
+Used Dataset: Plot: Format; Default Plot Settings
+Used Dataset: Plot: Setup; { Path Detector } Detected Curvature at PD Origin
+Used Dataset: Plot: Format; Default Plot Settings
+Used Dataset: Plot: Setup; { Path Detector } Detected Curvature Rate
+Used Dataset: Plot: Format; Default Plot Settings
+Used Dataset: Plot: Setup; { Path Detector } Detected Path Offset at PD Origin
+Used Dataset: Generic Group of Links; { Path Detectors } Path Detector Plots
+Used Dataset: Path Detectors for External Driver Control; Three Detected Paths 2m Ln Cntr
+Used Dataset: Generic VS Commands; { Path Detection } LKAS Strong Control.: LDW + RDM
+Used Dataset: Animator: HUD; { ADAS Alerts } Lane Departures
+Used Dataset: Plot: Format; Default Plot Settings
+Used Dataset: Plot: Setup; { ADAS and AEB Alerts and Commands } Lane Detection Alerts: LDW From LKAS
+Used Dataset: Generic VS Commands; { ADAS Support } Lane Departure Warning, from Path Det.
+Used Dataset: Generic Data Group; { LKAS, LDW, RDM } LKAS Strong: w/LDW and RDM
+Used Dataset: Generic Group of Links; { ADAS Setups } ADAS Suite, C-Class Hatch: Strong LKAS
+Used Dataset: Vehicle with Loads, Sensors, Trailer, etc.; { C-Class } C-Class Hatch: ADAS Suite: LKAS-Strong
+Used Dataset: Control: Shifting (Closed Loop); { Closed-Loop Shifting } AT (All Available Gears)
+Used Dataset: Control: Speed (Closed Loop) Using Target Speed; { Constant } Constant: 120 km/h
+ Single Curve, R = 1000 m <Curves>
+Used Dataset: Path: Segment Builder; { Curves } Single Curve, R = 1000 m
+Used Dataset: Road: Reference Line Elevation; { Hills and Valleys } 1.5 km with Hills
+Used Dataset: Road: Friction Map, S-L Grid; { Constant } Constant: 0.85
+Used Dataset: Road: Animator Surface Shapes; { Lane-Keeping Assist Roads } Five Lanes
+Used Dataset: Animator: Reference Frame; { Tracking: Vehicle } Skybox (Vehicle X-Y-Z)
+Used Dataset: Animator: Shape File Link; { Environment: Sky Boxes } Partly Cloudy Sky
+Used Dataset: Animator: Shape File Link; { Environment: Land Bowls } Light Grass
+Used Dataset: Animator: Group; { Environment Spheres } Partly Cloudy Sky with Light Grass
+Used Dataset: Road: Animator Repeated Object; { Forests } Mixed Forest (-100, 2000)
+Used Dataset: Road: Animator Repeated Object; { Trees } Trees (-100, 2000)
+Used Dataset: Road: Animator Repeated Object; { Large Structures } Wind Turbine Bases
+Used Dataset: Road: Animator Repeated Object; { Large Structures } Wind Turbine Blades
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Mixed Forest
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Mixed Forest
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Mixed Forest
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Mixed Forest
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Mixed Forest
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Mixed Forest
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Mixed Forest
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Mixed Forest
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Mixed Forest
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Mixed Forest
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Mixed Forest
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Mixed Forest
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Mixed Forest
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Mixed Forest
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Mixed Forest
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Mixed Forest
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Mixed Forest
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Mixed Forest
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Mixed Forest
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Mixed Forest
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Mixed Forest
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Mixed Forest
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Mixed Forest
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Mixed Forest
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Mixed Forest
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Mixed Forest
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Mixed Forest
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Mixed Forest
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Mixed Forest
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Mixed Forest
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Mixed Forest
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Mixed Forest
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Mixed Forest
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Mixed Forest
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Mixed Forest
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Mixed Forest
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Mixed Forest
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Mixed Forest
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Mixed Forest
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Mixed Forest
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Mixed Forest
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Mixed Forest
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Mixed Forest
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Mixed Forest
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Mixed Forest
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Mixed Forest
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Mixed Forest
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Mixed Forest
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Mixed Forest
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Mixed Forest
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Used Dataset: Animator: Shape File Link; { Environment: Props (Animated) } Wind Turbine: Base
+Used Dataset: Animator: Shape File Link; { Environment: Props (Animated) } Wind Turbine: Base
+Used Dataset: Animator: Shape File Link; { Environment: Props (Animated) } Wind Turbine: Base
+Used Dataset: Animator: Shape File Link; { Environment: Props (Animated) } Wind Turbine: Blades
+Used Dataset: Animator: Shape File Link; { Environment: Props (Animated) } Wind Turbine: Blades
+Used Dataset: Animator: Shape File Link; { Environment: Props (Animated) } Wind Turbine: Blades
+Used Dataset: Road: 3D Surface (All Properties); { Many Lanes } 5-Lane Section
+Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } Blurred Tire: Car
+Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } Blurred Tire: Car
+Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } Blurred Tire: Car
+Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } Blurred Tire: Car
+Used Dataset: Animator: Shape File Link; { Cars: European Vehicles } Sedan: Body
+Used Dataset: Animator: Shape File Link; { Cars: European Vehicles } Sedan: Details
+Used Dataset: Animator: Shape File Link; { Cars: European Vehicles } Sedan: Windows
+Used Dataset: Animator: Shape File Link; { Cars: European Vehicles } Sedan: Interior Trim
+Used Dataset: Animator: Shape File Link; { Cars: European Vehicles } Sedan: Steering Wheel
+Used Dataset: Animator: Shape File Link; { Cars: European Vehicles } Sedan: Seats
+Used Dataset: Animator: Shape File Link; { Cars: European Vehicles } Sedan: Driver (Caucasian Male)
+Used Dataset: Animator: Shape Assembly; { Passenger Cars } European Sedan
+Used Dataset: Animator: Shape File Link; { Cars: European Vehicles } Sedan: Brake Lights (F-Class)
+Used Dataset: Animator: Shape File Link; { Cars: European Vehicles } Sedan: Reverse Lights (F-Class)
+Used Dataset: Animator: Vehicles and Sensor Targets; { F-Class } F-Class, Sedan
+Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } Blurred Tire: Car - Width 175 mm
+Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } Blurred Tire: Car - Width 175 mm
+Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } Blurred Tire: Car - Width 175 mm
+Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } Blurred Tire: Car - Width 175 mm
+Used Dataset: Animator: Shape File Link; { Cars: A-Class } Hatchback
+Used Dataset: Animator: Shape File Link; { Cars: A-Class } Hatchback: Driver (Asian Female)
+Used Dataset: Animator: Shape Assembly; { Passenger Cars } A-Class Sub Compact
+Used Dataset: Animator: Shape File Link; { Cars: A-Class } Hatchback: Brake Lights
+Used Dataset: Animator: Shape File Link; { Cars: A-Class } Subcompact: Reverse Lights
+Used Dataset: Animator: Vehicles and Sensor Targets; { A-Class } A-Class, Subcompact
+Used Dataset: Multiple Moving Objects; { Traffic Vehicles (Forward) } 2 Vehicles, Variable Speed for AAC
+Used Dataset: Generic Data Lists; Rear View Mirror (D -Class Example)
+Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } Blurred Tire: Car - Width 185 mm
+Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } Blurred Tire: Car - Width 185 mm
+Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } Blurred Tire: Car - Width 185 mm
+Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } Blurred Tire: Car - Width 185 mm
+Used Dataset: Animator: Shape File Link; { Cars: D-Class } Sedan
+Used Dataset: Animator: Shape File Link; { Cars: D-Class } Sedan: Driver (Caucasian Female)
+Used Dataset: Animator: Shape Assembly; { Passenger Cars } D-Class Sedan
+Used Dataset: Animator: Shape File Link; { Cars: D-Class } Sedan: Brake Lights
+Used Dataset: Animator: Shape File Link; { Cars: D-Class } Sedan: Reverse Lights
+Used Dataset: Animator: Vehicles and Sensor Targets; { D-Class } D-Class, Sedan
+Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } Blurred Tire: Car
+Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } Blurred Tire: Car
+Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } Blurred Tire: Car
+Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } Blurred Tire: Car
+Used Dataset: Animator: Shape File Link; { Cars: E-Class } SUV: Body
+Used Dataset: Animator: Shape File Link; { Cars: E-Class } SUV: Details
+Used Dataset: Animator: Shape File Link; { Cars: E-Class } SUV: Interior
+Used Dataset: Animator: Shape File Link; { Cars: E-Class } SUV: Windows
+Used Dataset: Animator: Shape File Link; { Cars: E-Class } SUV: Body Trim
+Used Dataset: Animator: Shape File Link; { Cars: E-Class } SUV: Seats
+Used Dataset: Animator: Shape File Link; { Cars: E-Class } SUV: Steering Wheel
+Used Dataset: Animator: Shape File Link; { Cars: E-Class } SUV: Driver (Caucasian Male)
+Used Dataset: Animator: Shape Assembly; { Passenger Cars } E-Class SUV
+Used Dataset: Animator: Shape File Link; { Cars: E-Class } SUV: Brake Lights
+Used Dataset: Animator: Shape File Link; { Cars: E-Class } SUV: Reverse Lights
+Used Dataset: Animator: Vehicles and Sensor Targets; { E-Class } E-Class, SUV
+Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } Blurred Tire: Car
+Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } Blurred Tire: Car
+Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } Blurred Tire: Car
+Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } Blurred Tire: Car
+Used Dataset: Animator: Shape File Link; { Cars: European Vehicles } Sedan: Body
+Used Dataset: Animator: Shape File Link; { Cars: European Vehicles } Sedan: Details
+Used Dataset: Animator: Shape File Link; { Cars: European Vehicles } Sedan: Windows
+Used Dataset: Animator: Shape File Link; { Cars: European Vehicles } Sedan: Interior Trim
+Used Dataset: Animator: Shape File Link; { Cars: European Vehicles } Sedan: Steering Wheel
+Used Dataset: Animator: Shape File Link; { Cars: European Vehicles } Sedan: Seats
+Used Dataset: Animator: Shape File Link; { Cars: European Vehicles } Sedan: Driver (Caucasian Male)
+Used Dataset: Animator: Shape Assembly; { Passenger Cars } European Sedan
+Used Dataset: Animator: Shape File Link; { Cars: European Vehicles } Sedan: Brake Lights (F-Class)
+Used Dataset: Animator: Shape File Link; { Cars: European Vehicles } Sedan: Reverse Lights (F-Class)
+Used Dataset: Animator: Vehicles and Sensor Targets; { F-Class } F-Class, Sedan
+Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } Blurred Tire: Car - Width 175 mm
+Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } Blurred Tire: Car - Width 175 mm
+Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } Blurred Tire: Car - Width 175 mm
+Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } Blurred Tire: Car - Width 175 mm
+Used Dataset: Animator: Shape File Link; { Cars: A-Class } Hatchback
+Used Dataset: Animator: Shape File Link; { Cars: A-Class } Hatchback: Driver (Asian Female)
+Used Dataset: Animator: Shape Assembly; { Passenger Cars } A-Class Sub Compact
+Used Dataset: Animator: Shape File Link; { Cars: A-Class } Hatchback: Brake Lights
+Used Dataset: Animator: Shape File Link; { Cars: A-Class } Subcompact: Reverse Lights
+Used Dataset: Animator: Vehicles and Sensor Targets; { A-Class } A-Class, Subcompact
+Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } Blurred Tire: Car
+Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } Blurred Tire: Car
+Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } Blurred Tire: Car
+Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } Blurred Tire: Car
+Used Dataset: Animator: Shape File Link; { Cars: D-Class } Minivan
+Used Dataset: Animator: Shape File Link; { Cars: D-Class } Minivan: Driver (Caucasian Male)
+Used Dataset: Animator: Shape Assembly; { Passenger Cars } D-Class Minivan
+Used Dataset: Animator: Shape File Link; { Cars: D-Class } Minivan: Brake Lights
+Used Dataset: Animator: Shape File Link; { Cars: D-Class } Minivan: Reverse Lights
+Used Dataset: Animator: Vehicles and Sensor Targets; { D-Class } D-Class, Minivan
+Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } Blurred Tire: Car
+Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } Blurred Tire: Car
+Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } Blurred Tire: Car
+Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } Blurred Tire: Car
+Used Dataset: Animator: Shape File Link; { Cars: European Vehicles } Sedan: Body
+Used Dataset: Animator: Shape File Link; { Cars: European Vehicles } Sedan: Details
+Used Dataset: Animator: Shape File Link; { Cars: European Vehicles } Sedan: Windows
+Used Dataset: Animator: Shape File Link; { Cars: European Vehicles } Sedan: Interior Trim
+Used Dataset: Animator: Shape File Link; { Cars: European Vehicles } Sedan: Steering Wheel
+Used Dataset: Animator: Shape File Link; { Cars: European Vehicles } Sedan: Seats
+Used Dataset: Animator: Shape File Link; { Cars: European Vehicles } Sedan: Driver (Caucasian Male)
+Used Dataset: Animator: Shape Assembly; { Passenger Cars } European Sedan
+Used Dataset: Animator: Shape File Link; { Cars: European Vehicles } Sedan: Brake Lights (F-Class)
+Used Dataset: Animator: Shape File Link; { Cars: European Vehicles } Sedan: Reverse Lights (F-Class)
+Used Dataset: Animator: Vehicles and Sensor Targets; { F-Class } F-Class, Sedan
+Used Dataset: Multiple Moving Objects; { Traffic Vehicles (Forward) } 6 Vehicles, Vx * 0.95, w/ Specs
+Used Dataset: Generic Data Lists; Rear View Mirror (D -Class Example)
+Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } Blurred Tire: Car - Width 185 mm
+Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } Blurred Tire: Car - Width 185 mm
+Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } Blurred Tire: Car - Width 185 mm
+Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } Blurred Tire: Car - Width 185 mm
+Used Dataset: Animator: Shape File Link; { Cars: D-Class } Sedan
+Used Dataset: Animator: Shape File Link; { Cars: D-Class } Sedan: Driver (Caucasian Female)
+Used Dataset: Animator: Shape Assembly; { Passenger Cars } D-Class Sedan
+Used Dataset: Animator: Shape File Link; { Cars: D-Class } Sedan: Brake Lights
+Used Dataset: Animator: Shape File Link; { Cars: D-Class } Sedan: Reverse Lights
+Used Dataset: Animator: Vehicles and Sensor Targets; { D-Class } D-Class, Sedan
+Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } Blurred Tire: Car
+Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } Blurred Tire: Car
+Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } Blurred Tire: Car
+Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } Blurred Tire: Car
+Used Dataset: Animator: Shape File Link; { Cars: E-Class } SUV: Body
+Used Dataset: Animator: Shape File Link; { Cars: E-Class } SUV: Details
+Used Dataset: Animator: Shape File Link; { Cars: E-Class } SUV: Interior
+Used Dataset: Animator: Shape File Link; { Cars: E-Class } SUV: Windows
+Used Dataset: Animator: Shape File Link; { Cars: E-Class } SUV: Body Trim
+Used Dataset: Animator: Shape File Link; { Cars: E-Class } SUV: Seats
+Used Dataset: Animator: Shape File Link; { Cars: E-Class } SUV: Steering Wheel
+Used Dataset: Animator: Shape File Link; { Cars: E-Class } SUV: Driver (Caucasian Male)
+Used Dataset: Animator: Shape Assembly; { Passenger Cars } E-Class SUV
+Used Dataset: Animator: Shape File Link; { Cars: E-Class } SUV: Brake Lights
+Used Dataset: Animator: Shape File Link; { Cars: E-Class } SUV: Reverse Lights
+Used Dataset: Animator: Vehicles and Sensor Targets; { E-Class } E-Class, SUV
+Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } Blurred Tire: Car
+Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } Blurred Tire: Car
+Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } Blurred Tire: Car
+Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } Blurred Tire: Car
+Used Dataset: Animator: Shape File Link; { Cars: European Vehicles } Sedan: Body
+Used Dataset: Animator: Shape File Link; { Cars: European Vehicles } Sedan: Details
+Used Dataset: Animator: Shape File Link; { Cars: European Vehicles } Sedan: Windows
+Used Dataset: Animator: Shape File Link; { Cars: European Vehicles } Sedan: Interior Trim
+Used Dataset: Animator: Shape File Link; { Cars: European Vehicles } Sedan: Steering Wheel
+Used Dataset: Animator: Shape File Link; { Cars: European Vehicles } Sedan: Seats
+Used Dataset: Animator: Shape File Link; { Cars: European Vehicles } Sedan: Driver (Caucasian Male)
+Used Dataset: Animator: Shape Assembly; { Passenger Cars } European Sedan
+Used Dataset: Animator: Shape File Link; { Cars: European Vehicles } Sedan: Brake Lights (F-Class)
+Used Dataset: Animator: Shape File Link; { Cars: European Vehicles } Sedan: Reverse Lights (F-Class)
+Used Dataset: Animator: Vehicles and Sensor Targets; { F-Class } F-Class, Sedan
+Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } Blurred Tire: Car - Width 175 mm
+Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } Blurred Tire: Car - Width 175 mm
+Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } Blurred Tire: Car - Width 175 mm
+Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } Blurred Tire: Car - Width 175 mm
+Used Dataset: Animator: Shape File Link; { Cars: A-Class } Hatchback
+Used Dataset: Animator: Shape File Link; { Cars: A-Class } Hatchback: Driver (Asian Female)
+Used Dataset: Animator: Shape Assembly; { Passenger Cars } A-Class Sub Compact
+Used Dataset: Animator: Shape File Link; { Cars: A-Class } Hatchback: Brake Lights
+Used Dataset: Animator: Shape File Link; { Cars: A-Class } Subcompact: Reverse Lights
+Used Dataset: Animator: Vehicles and Sensor Targets; { A-Class } A-Class, Subcompact
+Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } Blurred Tire: Car
+Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } Blurred Tire: Car
+Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } Blurred Tire: Car
+Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } Blurred Tire: Car
+Used Dataset: Animator: Shape File Link; { Cars: D-Class } Minivan
+Used Dataset: Animator: Shape File Link; { Cars: D-Class } Minivan: Driver (Caucasian Male)
+Used Dataset: Animator: Shape Assembly; { Passenger Cars } D-Class Minivan
+Used Dataset: Animator: Shape File Link; { Cars: D-Class } Minivan: Brake Lights
+Used Dataset: Animator: Shape File Link; { Cars: D-Class } Minivan: Reverse Lights
+Used Dataset: Animator: Vehicles and Sensor Targets; { D-Class } D-Class, Minivan
+Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } Blurred Tire: Car
+Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } Blurred Tire: Car
+Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } Blurred Tire: Car
+Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } Blurred Tire: Car
+Used Dataset: Animator: Shape File Link; { Cars: European Vehicles } Sedan: Body
+Used Dataset: Animator: Shape File Link; { Cars: European Vehicles } Sedan: Details
+Used Dataset: Animator: Shape File Link; { Cars: European Vehicles } Sedan: Windows
+Used Dataset: Animator: Shape File Link; { Cars: European Vehicles } Sedan: Interior Trim
+Used Dataset: Animator: Shape File Link; { Cars: European Vehicles } Sedan: Steering Wheel
+Used Dataset: Animator: Shape File Link; { Cars: European Vehicles } Sedan: Seats
+Used Dataset: Animator: Shape File Link; { Cars: European Vehicles } Sedan: Driver (Caucasian Male)
+Used Dataset: Animator: Shape Assembly; { Passenger Cars } European Sedan
+Used Dataset: Animator: Shape File Link; { Cars: European Vehicles } Sedan: Brake Lights (F-Class)
+Used Dataset: Animator: Shape File Link; { Cars: European Vehicles } Sedan: Reverse Lights (F-Class)
+Used Dataset: Animator: Vehicles and Sensor Targets; { F-Class } F-Class, Sedan
+Used Dataset: Multiple Moving Objects; { Traffic Vehicles (Forward) } 6 Vehicles, Vx * 1.1, ILTARG
+Used Dataset: Control: Speed (Closed Loop) Using Target Speed; { Traffic Vehicles and Sensor Targets } Traffic Speed for ACC  w/AEB
+Used Dataset: Generic Data Group; { ADAS: Traffic for ACC & FCW } 3 Fwd. Lns. 3 Traffic Groups:ACC,AEB
+Used Dataset: Events; { Combined ADAS - LDW } 0. Start Straight
+Used Dataset: Generic VS Commands; { Pedestrian Euro NCAP } Background Boxes: Upper TTC, Large
+Used Dataset: Animator: HUD; { Euro NCAP } Time To Collision General AEB
+Used Dataset: Plot: Setup; { Pedestrian Euro NCAP } AEB On Conditions, General AEB
+Used Dataset: Plot: Format; Default Plot Settings
+Used Dataset: Plot: Setup; { ADAS and AEB Alerts and Commands } Ped AEB: Booleans
+Used Dataset: Plot: Format; Lines without Symbols
+Used Dataset: Plot: Setup; { Pedestrian Euro NCAP } AEB: TTC
+Used Dataset: Plot: Format; Lines without Symbols
+Used Dataset: Plot: Setup; { Braking } Brake Control: M/C Pressure
+Used Dataset: Plot: Setup; { Pedestrian Euro NCAP } Pedestrian Y_Start
+Used Dataset: Plot: Setup; { Pedestrian Euro NCAP } Vehicle Start Vxz
+Used Dataset: Generic VS Commands; { Pedestrian Euro NCAP } Plot and HUD Outputs General AEB
+Used Dataset: Generic VS Commands; { Pedestrian Euro NCAP } Background Boxes: Upper TTC, Large
+Used Dataset: Animator: HUD; { Euro NCAP } Time To Collision General AEB
+Used Dataset: Animator: Group; { Roads and Environment } Time-To-Collision HUD General AEB
+Used Dataset: Plot: Format; Default Plot Settings
+Used Dataset: Plot: Setup; { Vehicle Motion } Longitudinal Speed (Vxz_Fwd) vs. Time
+Used Dataset: Plot: Format; Lines without Symbols
+Used Dataset: Plot: Setup; { Tracking } GPS Trajectory: Lat vs Long
+Used Dataset: Plot: Format; Default Plot Settings
+Used Dataset: Plot: Setup; { Tracking } Y vs X - Trajectory
+Used Dataset: Plot: Format; Lines without Symbols
+Used Dataset: Plot: Setup; { Tracking } Station vs. t_stamp
+Used Dataset: Plot: Format; Default Plot Settings
+Used Dataset: Plot: Setup; { Vehicle Motion } Longitudinal Speed (Vxz_Fwd) vs. Station
+Used Dataset: Generic VS Commands; { Plot Groups } Velocity and Position
+Used Dataset: Plot: Format; Default Plot Settings
+Used Dataset: Plot: Setup; { Controls: Driver } Throttle: Control Input
+Used Dataset: Plot: Format; Lines without Symbols
+Used Dataset: Plot: Setup; { Braking } Brake Control: M/C Pressure
+Used Dataset: Plot: Format; Lines without Symbols
+Used Dataset: Plot: Setup; { Steering } Steering: Handwheel Angle
+Used Dataset: Plot: Format; Lines without Symbols
+Used Dataset: Plot: Setup; { Controls: Driver } Trans. Control: Gear Selected
+Used Dataset: Generic VS Commands; { Plot Groups } Driver Controls
+Used Dataset: Plot: Format; Lines without Symbols
+Used Dataset: Plot: Setup; { Vehicle Motion } Lateral Accel. of CG's vs. Time
+Used Dataset: Plot: Format; Lines without Symbols
+Used Dataset: Plot: Setup; { Vehicle Motion } Lateral Accel. of CG's vs. Station
+Used Dataset: Plot: Format; Lines without Symbols
+Used Dataset: Plot: Setup; { Vehicle Motion } Longitudinal Accel. of CG's vs. Station
+Used Dataset: Plot: Format; Lines without Symbols
+Used Dataset: Plot: Setup; { Vehicle Motion } Longitudinal Accel. of CG's vs. Time
+Used Dataset: Plot: Format; Lines without Symbols
+Used Dataset: Plot: Setup; { Vehicle Motion } Longitudinal vs. Lateral Accel.
+Used Dataset: Generic VS Commands; { Plot Groups } Acceleration
+Used Dataset: Procedures; { Driver Controls } Speed: 120km/h, 2m Left, No DM, 3 Fw Ln
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Square: 1m (Scale: Y = 0.1)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Square: 1m (Scale: Y = 0.1)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Square: 1m (Scale: Y = 0.1)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Square: 1m (Scale: Y = 0.1)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Square: 1m (Scale: Y = 0.1)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Square: 1m (Scale: Y = 0.1)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Square: 1m (Scale: Y = 0.1)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Square: 1m (Scale: Y = 0.1)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Square: 1m (Scale: Y = 0.1)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Square: 1m (Scale: Y = 0.1)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Square: 1m (Scale: Y = 0.1)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Square: 1m (Scale: Y = 0.1)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Square: 1m (Scale: Y = 0.1)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Square: 1m (Scale: Y = 0.1)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Square: 1m (Scale: Y = 0.1)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Square: 1m (Scale: Y = 0.1)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Square: 1m (Scale: Y = 0.1)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Square: 1m (Scale: Y = 0.1)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Square: 1m (Scale: Y = 0.1)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Square: 1m (Scale: Y = 0.1)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Square: 1m (Scale: Y = 0.1)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Square: 1m (Scale: Y = 0.1)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Square: 1m (Scale: Y = 0.1)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Square: 1m (Scale: Y = 0.1)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Square: 1m (Scale: Y = 0.1)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Square: 1m (Scale: Y = 0.1)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Square: 1m (Scale: Y = 0.1)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Square: 1m (Scale: Y = 0.1)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Square: 1m (Scale: Y = 0.1)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Square: 1m (Scale: Y = 0.1)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Square: 1m (Scale: Y = 0.1)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Square: 1m (Scale: Y = 0.1)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Square: 1m (Scale: Y = 0.1)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Square: 1m (Scale: Y = 0.1)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Square: 1m (Scale: Y = 0.1)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Square: 1m (Scale: Y = 0.1)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Square: 1m (Scale: Y = 0.1)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Square: 1m (Scale: Y = 0.1)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Square: 1m (Scale: Y = 0.1)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Cube: 1m X, 0.1 Y, Z (Sensor Vector)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Cube: 1m X, 0.1 Y, Z (Sensor Vector)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Cube: 1m X, 0.1 Y, Z (Sensor Vector)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Cube: 1m X, 0.1 Y, Z (Sensor Vector)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Cube: 1m X, 0.1 Y, Z (Sensor Vector)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Cube: 1m X, 0.1 Y, Z (Sensor Vector)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Cube: 1m X, 0.1 Y, Z (Sensor Vector)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Cube: 1m X, 0.1 Y, Z (Sensor Vector)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Cube: 1m X, 0.1 Y, Z (Sensor Vector)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Cube: 1m X, 0.1 Y, Z (Sensor Vector)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Cube: 1m X, 0.1 Y, Z (Sensor Vector)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Cube: 1m X, 0.1 Y, Z (Sensor Vector)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Cube: 1m X, 0.1 Y, Z (Sensor Vector)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Cube: 1m X, 0.1 Y, Z (Sensor Vector)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Cube: 1m X, 0.1 Y, Z (Sensor Vector)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Cube: 1m X, 0.1 Y, Z (Sensor Vector)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Cube: 1m X, 0.1 Y, Z (Sensor Vector)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Cube: 1m X, 0.1 Y, Z (Sensor Vector)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Cube: 1m X, 0.1 Y, Z (Sensor Vector)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Cube: 1m X, 0.1 Y, Z (Sensor Vector)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Cube: 1m X, 0.1 Y, Z (Sensor Vector)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Cube: 1m X, 0.1 Y, Z (Sensor Vector)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Cube: 1m X, 0.1 Y, Z (Sensor Vector)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Cube: 1m X, 0.1 Y, Z (Sensor Vector)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Cube: 1m X, 0.1 Y, Z (Sensor Vector)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Cube: 1m X, 0.1 Y, Z (Sensor Vector)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Cube: 1m X, 0.1 Y, Z (Sensor Vector)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Cube: 1m X, 0.1 Y, Z (Sensor Vector)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Cube: 1m X, 0.1 Y, Z (Sensor Vector)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Cube: 1m X, 0.1 Y, Z (Sensor Vector)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Cube: 1m X, 0.1 Y, Z (Sensor Vector)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Cube: 1m X, 0.1 Y, Z (Sensor Vector)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Cube: 1m X, 0.1 Y, Z (Sensor Vector)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Cube: 1m X, 0.1 Y, Z (Sensor Vector)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Cube: 1m X, 0.1 Y, Z (Sensor Vector)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Cube: 1m X, 0.1 Y, Z (Sensor Vector)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Cube: 1m X, 0.1 Y, Z (Sensor Vector)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Cube: 1m X, 0.1 Y, Z (Sensor Vector)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Cube: 1m X, 0.1 Y, Z (Sensor Vector)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Cube: 1m X, 0.1 Y, Z (Sensor Vector)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Cube: 1m X, 0.1 Y, Z (Sensor Vector)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Cube: 1m X, 0.1 Y, Z (Sensor Vector)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Cube: 1m X, 0.1 Y, Z (Sensor Vector)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Cube: 1m X, 0.1 Y, Z (Sensor Vector)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Cube: 1m X, 0.1 Y, Z (Sensor Vector)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Cube: 1m X, 0.1 Y, Z (Sensor Vector)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Cube: 1m X, 0.1 Y, Z (Sensor Vector)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Cube: 1m X, 0.1 Y, Z (Sensor Vector)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Cube: 1m X, 0.1 Y, Z (Sensor Vector)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Cube: 1m X, 0.1 Y, Z (Sensor Vector)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Cube: 1m X, 0.1 Y, Z (Sensor Vector)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Cube: 1m X, 0.1 Y, Z (Sensor Vector)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Cube: 1m X, 0.1 Y, Z (Sensor Vector)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Cube: 1m X, 0.1 Y, Z (Sensor Vector)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Cube: 1m X, 0.1 Y, Z (Sensor Vector)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Cube: 1m X, 0.1 Y, Z (Sensor Vector)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Cube: 1m X, 0.1 Y, Z (Sensor Vector)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Cube: 1m X, 0.1 Y, Z (Sensor Vector)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Cube: 1m X, 0.1 Y, Z (Sensor Vector)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Cube: 1m X, 0.1 Y, Z (Sensor Vector)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Cube: 1m X, 0.1 Y, Z (Sensor Vector)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Cube: 1m X, 0.1 Y, Z (Sensor Vector)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Cube: 1m X, 0.1 Y, Z (Sensor Vector)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Cube: 1m X, 0.1 Y, Z (Sensor Vector)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Cube: 1m X, 0.1 Y, Z (Sensor Vector)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Cube: 1m X, 0.1 Y, Z (Sensor Vector)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Cube: 1m X, 0.1 Y, Z (Sensor Vector)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Cube: 1m X, 0.1 Y, Z (Sensor Vector)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Cube: 1m X, 0.1 Y, Z (Sensor Vector)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Cube: 1m X, 0.1 Y, Z (Sensor Vector)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Cube: 1m X, 0.1 Y, Z (Sensor Vector)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Cube: 1m X, 0.1 Y, Z (Sensor Vector)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Cube: 1m X, 0.1 Y, Z (Sensor Vector)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Cube: 1m X, 0.1 Y, Z (Sensor Vector)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Cube: 1m X, 0.1 Y, Z (Sensor Vector)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Cube: 1m X, 0.1 Y, Z (Sensor Vector)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Cube: 1m X, 0.1 Y, Z (Sensor Vector)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Cube: 1m X, 0.1 Y, Z (Sensor Vector)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Cube: 1m X, 0.1 Y, Z (Sensor Vector)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Cube: 1m X, 0.1 Y, Z (Sensor Vector)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Cube: 1m X, 0.1 Y, Z (Sensor Vector)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Cube: 1m X, 0.1 Y, Z (Sensor Vector)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Cube: 1m X, 0.1 Y, Z (Sensor Vector)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Cube: 1m X, 0.1 Y, Z (Sensor Vector)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Cube: 1m X, 0.1 Y, Z (Sensor Vector)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Cube: 1m X, 0.1 Y, Z (Sensor Vector)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Cube: 1m X, 0.1 Y, Z (Sensor Vector)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Cube: 1m X, 0.1 Y, Z (Sensor Vector)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Cube: 1m X, 0.1 Y, Z (Sensor Vector)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Cube: 1m X, 0.1 Y, Z (Sensor Vector)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Cube: 1m X, 0.1 Y, Z (Sensor Vector)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Cube: 1m X, 0.1 Y, Z (Sensor Vector)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Cube: 1m X, 0.1 Y, Z (Sensor Vector)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Cube: 1m X, 0.1 Y, Z (Sensor Vector)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Cube: 1m X, 0.1 Y, Z (Sensor Vector)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Cube: 1m X, 0.1 Y, Z (Sensor Vector)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Cube: 1m X, 0.1 Y, Z (Sensor Vector)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Cube: 1m X, 0.1 Y, Z (Sensor Vector)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Cube: 1m X, 0.1 Y, Z (Sensor Vector)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Cube: 1m X, 0.1 Y, Z (Sensor Vector)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Cube: 1m X, 0.1 Y, Z (Sensor Vector)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Cube: 1m X, 0.1 Y, Z (Sensor Vector)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Cube: 1m X, 0.1 Y, Z (Sensor Vector)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Cube: 1m X, 0.1 Y, Z (Sensor Vector)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Cube: 1m X, 0.1 Y, Z (Sensor Vector)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Cube: 1m X, 0.1 Y, Z (Sensor Vector)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Cube: 1m X, 0.1 Y, Z (Sensor Vector)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Cube: 1m X, 0.1 Y, Z (Sensor Vector)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Cube: 1m X, 0.1 Y, Z (Sensor Vector)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Cube: 1m X, 0.1 Y, Z (Sensor Vector)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Cube: 1m X, 0.1 Y, Z (Sensor Vector)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Cube: 1m X, 0.1 Y, Z (Sensor Vector)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Cube: 1m X, 0.1 Y, Z (Sensor Vector)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Cube: 1m X, 0.1 Y, Z (Sensor Vector)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Cube: 1m X, 0.1 Y, Z (Sensor Vector)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Cube: 1m X, 0.1 Y, Z (Sensor Vector)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Cube: 1m X, 0.1 Y, Z (Sensor Vector)
+ Comb. ADAS: Hwy. w/Traffic, Strong LKAS <* CS 2021.0 - Combined ADAS Features>
+Used Dataset: CarSim Run Control; { * CS 2021.0 - Combined ADAS Features } Comb. ADAS: Hwy. w/Traffic, Strong LKAS
+
+Time to read input = 0.13404
+Function F_REB_STOP_TABLE(1,1) extrapolated (out of range HIGH) for X = 0 mm at T = 0
+Function F_JNC_STOP_TABLE(1,1) extrapolated (out of range LOW) for X = 0 mm at T = 0
+Function F_REB_STOP_TABLE(1,2) extrapolated (out of range HIGH) for X = 0 mm at T = 0
+Function F_JNC_STOP_TABLE(1,2) extrapolated (out of range LOW) for X = 0 mm at T = 0
+Function F_REB_STOP_TABLE(2,1) extrapolated (out of range HIGH) for X = 0 mm at T = 0
+Function F_JNC_STOP_TABLE(2,1) extrapolated (out of range LOW) for X = 0 mm at T = 0
+Function F_REB_STOP_TABLE(2,2) extrapolated (out of range HIGH) for X = 0 mm at T = 0
+Function F_JNC_STOP_TABLE(2,2) extrapolated (out of range LOW) for X = 0 mm at T = 0
+
+Run started: VS output file = Results\Run_e8a9a357-268d-417a-b7cb-b2b5bf06be37\LastRun.vsb
+
+Event #1 occurred at t = 1.0005: T_EVENT > 1
+Include PARSFILE "D:\mech_sim\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_c5fb307e-d725-45d5-aa2c-6e913d2b1ae3.par"
+Used Dataset: Events; { Combined ADAS - LDW } 1. Allow Drift
+
+Event #2 occurred at t = 1.251: T_EVENT > 0.25
+Include PARSFILE "D:\mech_sim\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_37162365-5899-4d48-9c3b-ac0ddd93833a.par"
+Used Dataset: Events; { Combined ADAS - LDW } 2. Indicate LDW
+Function PBK_DL_TABLE(2,1) extrapolated (out of range HIGH) for X = 5.28975 MPa at T = 6.1265
+Function PBK_DL_TABLE(2,2) extrapolated (out of range HIGH) for X = 5.28975 MPa at T = 6.1265
+Function FS_EXT_TABLE(2,1) extrapolated (out of range LOW) for X = -50.0106 mm at T = 8.054
+Function FS_COMP_TABLE(2,1) extrapolated (out of range LOW) for X = -50.0106 mm at T = 8.054
+Function FY_TIRE_CARPET(1,1) extrapolated (out of range HIGH) for X = 26.0047 deg at T = 13.191
+Function MZ_TIRE_CARPET(1,1) extrapolated (out of range HIGH) for X = 26.0047 deg at T = 13.191
+Function FY_TIRE_CARPET(1,2) extrapolated (out of range HIGH) for X = 26.0028 deg at T = 13.2175
+Function MZ_TIRE_CARPET(1,2) extrapolated (out of range HIGH) for X = 26.0028 deg at T = 13.2175
+
+Run stopped at t = 40. Stop time reached.
+
+Computational time ratio: RTIME = 0.174748 (real time)/(simulation time)
+

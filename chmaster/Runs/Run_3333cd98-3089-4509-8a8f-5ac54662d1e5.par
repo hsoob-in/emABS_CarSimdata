@@ -1,0 +1,108 @@
+PARSFILE
+#FullDataName CarSim Run Control`ABS in curve`MS2024(ABS)
+#VEHICLECODE Ind_Ind
+symbol_push  <<vehicle>> 0
+symbol_push  <<unit>> 0
+symbol_push  <<axle>> 0
+symbol_push  <<s>> 0
+symbol_push  <<o>> 0
+symbol_push  <<id_run>> Run_3333cd98-3089-4509-8a8f-5ac54662d1e5
+
+OPT_ALL_WRITE 0
+IOBJECT 0
+IUNIT 0
+IVEHICLE 0
+OPT_INT_METHOD 0
+OPT_VS_FILETYPE 2
+PARSFILE Models\Simulink\Simlink_da09fc76-609c-43fe-a663-d8390ebfbcee.par
+#BlueLink12 Models: Simulink`ABS_CHO in Curve` MS2024(ABS)` , Models`Simlink_da09fc76-609c-43fe-a663-d8390ebfbcee
+
+PARSFILE Animator\Cameras\Camera_7fd93935-5e80-4d39-bf60-d7ff5dbaa0af.par
+#BlueLink0 Animator: Camera Setup`180 Azm, 10 El, 36 m` Vehicle Reference` , Animator camera`Camera_7fd93935-5e80-4d39-bf60-d7ff5dbaa0af
+
+#CheckBox0 1    
+#CheckBox1 0    
+#CheckBox2 0    
+#CheckBox3 0    
+#CheckBox4 1    
+#CheckBox5 1    
+#CheckBox6 0    
+#CheckBox7 0    
+#CheckBox8 1    
+#CheckBox9 0    
+#CheckBox10 0    
+#CheckBox11 0    
+
+#RingCtrl0 0
+#RingCtrl1 0
+#RingCtrl2 0
+#RingCtrl3 0
+#RingCtrl6 8
+#RingCtrl7 -1
+*RUN_COLOR 0 0 1
+SET_RUN_COLOR 0 0 1
+#RingCtrl4 off
+RT_WINDOW_CLOSE off
+#RingCtrl5 0
+LIVE_SERVER_MAX_CONNECTIONS 0
+PARSFILE Vehicles\Assembly\Vehicle_e8e7f4c3-0129-418b-a8cf-edc2a7c7e68e.par
+#BlueLink2 Vehicle: Assembly`B-Class, Hbk: Electric AWD, Regen Brk` B-Class` , Math Model`Vehicle_e8e7f4c3-0129-418b-a8cf-edc2a7c7e68e
+
+PARSFILE Procedures\Proc_2f9987b3-9f1f-43a9-8e71-1c32d7dd235f.par
+#BlueLink28 Procedures`Curve(mu=0.5)` MS2024(ABS)` , Procedure`Proc_2f9987b3-9f1f-43a9-8e71-1c32d7dd235f
+
+PARSFILE Animator\HUD\HUD_3978acd2-7aee-486d-b4a7-f07dc083d947.par
+#BlueLink11 Animator: HUD`Throttle and Speed #1` Vehicle Status Indicators` , Miscellaneous`HUD_3978acd2-7aee-486d-b4a7-f07dc083d947
+
+OPT_STOP 0
+SSTART 0
+TSTOP 20
+SSTOP =  SSTART + 1 ;
+OPT_DIRECTION 1
+*SPEED 80
+*TSTOP 20
+*SSTART 0
+PARSFILE Plot\Setup\Plot_7251a722-18c9-43db-a324-bd380d275618.par
+#BlueLink15 Plot: Setup`Throttle: Control Input` Controls: Driver` , Plot`Plot_7251a722-18c9-43db-a324-bd380d275618
+
+PARSFILE Plot\Setup\Plot_5ead09bd-2b8f-470e-af04-1a232741844f.par
+#BlueLink16 Plot: Setup`Fy vs. Alpha` Tire Tester` , Plot`Plot_5ead09bd-2b8f-470e-af04-1a232741844f
+
+PARSFILE Plot\Setup\Plot_19310881-e0f6-4f37-af13-994798cd606c.par
+#BlueLink17 Plot: Setup`Slip Ratios: Lagged - Rear` Tire Kinematics` , Plot`Plot_19310881-e0f6-4f37-af13-994798cd606c
+
+PARSFILE Plot\Setup\Plot_8b77a420-77c9-46d9-97b2-68be7648867a.par
+#BlueLink18 Plot: Setup`Yaw Angle: YawO_1` ADAS Sensor Target Properties` , Plot`Plot_8b77a420-77c9-46d9-97b2-68be7648867a
+
+PARSFILE Plot\Setup\Plot_6f0c0125-1c0c-4b0a-a06b-529aada16a53.par
+#BlueLink19 Plot: Setup`Brake Torque` Braking` , Plot`Plot_6f0c0125-1c0c-4b0a-a06b-529aada16a53
+
+PARSFILE Plot\Setup\Plot_3c5f8bac-e2f6-4ebc-ab48-a1828a269fd4.par
+#BlueLink20 Plot: Setup`Slip Angles: Instant` Tire Kinematics` , Plot`Plot_3c5f8bac-e2f6-4ebc-ab48-a1828a269fd4
+
+PARSFILE Plot\Setup\Plot_21f6e1cd-f399-4b25-8d21-7b5875fab760.par
+#BlueLink21 Plot: Setup`Steering Wheel Angle vs. t_stamp` Steering` , Plot`Plot_21f6e1cd-f399-4b25-8d21-7b5875fab760
+
+PARSFILE Plot\Setup\Plot_c6f23fbc-2707-41af-a3cd-715e42a84da4.par
+#BlueLink22 Plot: Setup`Fx vs. Slip` Tire Forces and Moments` , Plot`Plot_c6f23fbc-2707-41af-a3cd-715e42a84da4
+
+
+*IMAGE_TYPE PASS_THROUGH
+*IMAGE_PASS_THROUGH Animator\Vehicles\AniVeh_744dc54f-cca9-4d31-8bee-3535b6477b13.png
+WRITE_SENSOR_DETECT
+Title ABS in curve <MS2024(ABS)>
+CATEGORY MS2024(ABS) 
+DATASET_TITLE ABS in curve
+#RingCtrl8 1
+NUM_CACHED_RUNS 1
+#RingCtrl9 
+
+LOG_ENTRY Used Dataset: CarSim Run Control; { MS2024(ABS) } ABS in curve
+#Library : CarSim Run Control
+#DataSet : ABS in curve
+#Category: MS2024(ABS)
+#FileID  : Run_3333cd98-3089-4509-8a8f-5ac54662d1e5
+#Product : CarSim 2021.0
+#VehCode Run
+
+END

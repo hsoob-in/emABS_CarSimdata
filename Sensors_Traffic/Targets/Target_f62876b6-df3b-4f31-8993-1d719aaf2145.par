@@ -1,0 +1,45 @@
+PARSFILE
+#FullDataName Single Moving Object (Custom)`IUNIT_OBJ (Polygonal)`Multi-Vehicle
+DEFINE_MOVING_OBJECTS 1
+IOBJECT_INCREMENT
+symbol_add <<o>> 1
+SET_DESCRIPTION OBJECT_NAME IUNIT_OBJ (Polygonal)
+OPT_SPEED_OBJ 0
+OPT_POLY_COORD 1
+
+IUNIT_OBJ IUNIT
+#CheckBox3 0    
+#CheckBox6 1    
+#CheckBox7 0    
+#CheckBox8 1    
+
+#RingCtrl0 6
+#RingCtrl1 3
+#RingCtrl2 1
+H_OBJ 1.25
+*COLOR 0 0.2 1
+*S_INIT 0
+*L_INIT 0
+OPT_SHAPE_OBJ 1
+SHAPE_TYPE_OBJ 3
+DZ_OBJECT 0
+*REFLECT 3
+MATERIAL_TYPE_OBJ 3
+PARSFILE Sensors_Traffic\Poly\poly_dbbda570-dd96-4994-b147-31fb62ec066b.par
+#BlueLink1 Polygonal Shape Coordinates`Front of Car` Pedestrian Euro NCAP` , Polygonal Coordinates`poly_dbbda570-dd96-4994-b147-31fb62ec066b
+
+POLY_SHAPE_ID_OBJ = IPOLYGON
+
+#EMBEDDED_NOTES
+#Add an object that is attached to the current vehicle unit IUNIT.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Single Moving Object (Custom); { Multi-Vehicle } IUNIT_OBJ (Polygonal)
+#Library : Single Moving Object (Custom)
+#DataSet : IUNIT_OBJ (Polygonal)
+#Category: Multi-Vehicle
+#FileID  : Target_f62876b6-df3b-4f31-8993-1d719aaf2145
+#Product : CarSim 2021.0
+#VehCode Moving Object (Custom)
+
+END

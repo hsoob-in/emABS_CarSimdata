@@ -1,0 +1,139 @@
+PARSFILE
+#FullDataName Suspension: Virtual Steering Axis Compliance, Springs, and Dampers`B-Class, Sports Car (VSA) - Front`B-Class
+#CheckBox0 1    
+#CheckBox1 0    
+
+#RingCtrl0 0
+*OPT_SPR 0
+#RingCtrl1 1
+#RingCtrl2 1
+#RingCtrl3 2
+#RingCtrl4 2
+#RingCtrl5 1
+#RingCtrl6 1
+#RingCtrl7 2
+#RingCtrl8 2
+#RingCtrl9 1
+#RingCtrl10 1
+#RingCtrl11 1
+#RingCtrl12 1
+#RingCtrl13 1
+*KSPRING_L 50
+*FRICTION_L 10
+*BETA_C_L 1
+*BETA_E_L 1
+*KSPRING_R 50
+*FRICTION_R 10
+*BETA_C_R 1
+*BETA_E_R 1
+*L_SPG_ADJ_L 0
+*L_SPG_ADJ_R 0
+*DAMPER_L 4.4
+*DAMPER_R 4.4
+*R_JOUNCE_L 1
+*R_JOUNCE_R 1
+*R_REBOUND_L 1
+*R_REBOUND_R 1
+*CT_FX_L 1.1e-4
+*CT_FX_R 1.1e-4
+*CS_FY_L -5.0e-4
+*CS_FY_R -5.0e-4
+*CS_MZ_L 2.6e-3
+*CS_MZ_R 2.6e-3
+*CC_FX_L -1.2e-5
+*CC_FX_R -1.2e-5
+*CI_FY_L 2.3e-4
+*CI_FY_R 2.3e-4
+*CI_MZ_L -8.5e-4
+*CI_MZ_R -8.5e-4
+*C_LONG_L 2.8e-3
+*C_LONG_R 2.8e-3
+*C_LAT_L 7.5e-4
+*C_LAT_R 7.5e-4
+DAUX 0
+*CD_MY_L 8.9e-4
+*CD_MY_R 8.9e-4
+
+iside 1
+OPT_EXT_SP 0
+FS_COMP_COEFFICIENT 50
+FS_EXT_COEFFICIENT 50
+FS_COMP_OFFSET 10
+FS_EXT_OFFSET -10
+SPRING_COMP_BETA 1
+SPRING_EXT_BETA 1
+PARSFILE Generic\tables\GenTab_7ebb4649-fbb5-4cb2-80b1-d241a66cdb11.par
+#BlueLink7 Generic Table`Front Left Spring vs Jounce` B-Class, Sports Car (VSA)` , Spring compression`GenTab_7ebb4649-fbb5-4cb2-80b1-d241a66cdb11
+
+L_SPG_ADJ 0
+FS_OFFSET 0
+CMP_OFFSET 0
+FD_COEFFICIENT 4.4
+PARSFILE Generic\tables\GenTab_3d2f5703-050c-490f-adac-b449b17f3d66.par
+#BlueLink9 Generic Table`Front Left Damper vs Jounce` B-Class, Sports Car (VSA)` , Damper compression`GenTab_3d2f5703-050c-490f-adac-b449b17f3d66
+
+PARSFILE Suspensions\Jounce_Rebound\JncReb_2ffa8946-0682-4d5d-98fd-65f848ce56cf.par
+#BlueLink5 Suspension: Jounce and Rebound Stops`+70 mm / -70 mm` Jounce Range: 50 mm to 99 mm` , Jounce / rebound stop force`JncReb_2ffa8946-0682-4d5d-98fd-65f848ce56cf
+
+CMP_JSTOP_COEFFICIENT 1
+CMP_RSTOP_COEFFICIENT 1
+CT_FX_COEFFICIENT 1.1e-4
+CS_FY_COEFFICIENT -5.0e-4
+CS_MZ_COEFFICIENT 2.6e-3
+CC_FX_COEFFICIENT -1.2e-5
+CI_FY_COEFFICIENT 2.3e-4
+CI_MZ_COEFFICIENT -8.5e-4
+C_LONG_COEFFICIENT 2.8e-3
+C_LAT_COEFFICIENT 7.5e-4
+CD_MY_COEFFICIENT 8.9e-4
+
+iside 2
+OPT_EXT_SP 0
+FS_COMP_COEFFICIENT 50
+FS_EXT_COEFFICIENT 50
+FS_COMP_OFFSET 10
+FS_EXT_OFFSET -10
+SPRING_COMP_BETA 1
+SPRING_EXT_BETA 1
+PARSFILE Generic\tables\GenTab_f517c4e0-8eda-469d-8b00-e218ffe0543b.par
+#BlueLink8 Generic Table`Front Right Spring vs Jounce` B-Class, Sports Car (VSA)` , Spring compression`GenTab_f517c4e0-8eda-469d-8b00-e218ffe0543b
+
+L_SPG_ADJ 0
+FS_OFFSET 0
+CMP_OFFSET 0
+FD_COEFFICIENT 4.4
+PARSFILE Generic\tables\GenTab_be7cd4af-0b6d-4920-b611-2f6490c7c93a.par
+#BlueLink10 Generic Table`Front Right Damper vs Jounce` B-Class, Sports Car (VSA)` , Damper compression`GenTab_be7cd4af-0b6d-4920-b611-2f6490c7c93a
+
+PARSFILE Suspensions\Jounce_Rebound\JncReb_2ffa8946-0682-4d5d-98fd-65f848ce56cf.par
+#BlueLink6 Suspension: Jounce and Rebound Stops`+70 mm / -70 mm` Jounce Range: 50 mm to 99 mm` , Jounce / rebound stop force`JncReb_2ffa8946-0682-4d5d-98fd-65f848ce56cf
+
+CMP_JSTOP_COEFFICIENT 1
+CMP_RSTOP_COEFFICIENT 1
+CT_FX_COEFFICIENT 1.1e-4
+CS_FY_COEFFICIENT -5.0e-4
+CS_MZ_COEFFICIENT 2.6e-3
+CC_FX_COEFFICIENT -1.2e-5
+CI_FY_COEFFICIENT 2.3e-4
+CI_MZ_COEFFICIENT -8.5e-4
+C_LONG_COEFFICIENT 2.8e-3
+C_LAT_COEFFICIENT 7.5e-4
+CD_MY_COEFFICIENT 8.9e-4
+
+#EMBEDDED_NOTES
+#When paired with the B-Class, Sports Car (VSA), this front compliance dataset produces a ride frequency of approximately 1.3 Hz. The ride springs provide an acceptable amount of roll stiffness, so no auxiliary roll moment is supplied.
+#
+#The damping coefficient is intended to produce a damping ratio in the 0.4 range.
+#
+#The installation ratios and compliance coefficients were generated using a double ball joint strut susepnsion in SuspensionSim.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Suspension: Virtual Steering Axis Compliance, Springs, and Dampers; { B-Class } B-Class, Sports Car (VSA) - Front
+#Library : Suspension: Virtual Steering Axis Compliance, Springs, and Dampers
+#DataSet : B-Class, Sports Car (VSA) - Front
+#Category: B-Class
+#FileID  : CmpVir_4c595c29-8deb-420b-9471-da9f70a9bb9d
+#Product : CarSim 2021.0
+#VehCode Springs and Dampers
+
+END

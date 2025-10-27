@@ -1,0 +1,33 @@
+PARSFILE
+#FullDataName Events`2. Indicate LDW`Combined ADAS - LDW
+#CheckBox1 1    
+*CLEAR
+#CheckBox6 0    
+#CheckBox7 0    
+#CheckBox9 0    
+#CheckBox10 0    
+
+#RingCtrl0 ZERO ~=
+#RingCtrl1 ZERO ~=
+#RingCtrl10 2
+#RingCtrl11 4
+RESET_EVENTS
+*VALUE1 WARN_L
+*VALUE2 WARN_R
+DEFINE_EVENT WARN_L ; Events\Events_9b472cb3-75fe-4fb7-a880-2c64ea89875a.par
+#BlueLink0 Events`3. Steer Right` Combined ADAS - LDW` , Events`Events_9b472cb3-75fe-4fb7-a880-2c64ea89875a
+
+DEFINE_EVENT WARN_R ; Events\Events_786f948e-d145-4ead-99ba-6c9ac8c26a19.par
+#BlueLink1 Events`3. Steer Left` Combined ADAS - LDW` , Events`Events_786f948e-d145-4ead-99ba-6c9ac8c26a19
+
+SET_EVENT_ID 0 ! reset to default
+
+LOG_ENTRY Used Dataset: Events; { Combined ADAS - LDW } 2. Indicate LDW
+#Library : Events
+#DataSet : 2. Indicate LDW
+#Category: Combined ADAS - LDW
+#FileID  : Events_37162365-5899-4d48-9c3b-ac0ddd93833a
+#Product : CarSim 2021.0
+#VehCode Events
+
+END

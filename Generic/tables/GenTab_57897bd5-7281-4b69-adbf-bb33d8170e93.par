@@ -1,0 +1,25 @@
+PARSFILE
+#FullDataName Generic Table`Battery Max Capacity (Pure Electric)`IONIC5
+#RingCtrl0 CONSTANT
+#CheckBox0 0    
+
+CAP_BATTERY_MAX_CONSTANT 120
+#RadioCtrl0 0    
+#RadioCtrl1 0    
+
+*KEYWORD CAP_BATTERY_MAX
+*X_LABEL Temperature (C)
+*Y_LABEL Capacity (A-h)
+*SCALAR 120
+*X_LABEL_2 Temperature (C)
+
+
+LOG_ENTRY Used Dataset: Generic Table; { IONIC5 } Battery Max Capacity (Pure Electric)
+#Library : Generic Table
+#DataSet : Battery Max Capacity (Pure Electric)
+#Category: IONIC5
+#FileID  : GenTab_57897bd5-7281-4b69-adbf-bb33d8170e93
+#Product : CarSim 2021.0
+#VehCode table
+
+END

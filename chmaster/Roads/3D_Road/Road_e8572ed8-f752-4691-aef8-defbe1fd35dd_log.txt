@@ -1,0 +1,157 @@
+Run made by VS Road Calculator at 00:30 on July 30, 2024.
+Utility to calculate road and path coordinates for visualization
+Started with simfile: Roads\3D_Road\simfile_road
+
+Include PARSFILE "Roads\3D_Road\Road_e8572ed8-f752-4691-aef8-defbe1fd35dd.par"
+Include PARSFILE "Roads\BuilderSegment\RoadSeg_be68d0c1-71c1-42a1-ab69-76cd1295050d.par"
+ 500 ft Radius <Circles>
+Used Dataset: Path: Segment Builder; { Circles } 500 ft Radius
+Include PARSFILE "Roads\Friction\RdMu_25e73395-9471-44b9-9c60-27bd9cc24921.par"
+Used Dataset: Road: Friction Map, S-L Grid; { Constant } Constant: 0.85
+Include PARSFILE "Roads\Shapes\RdShape_c1628bef-a156-4f13-9839-b72d1daeb9c9.par"
+Used Dataset: Road: Animator Surface Shapes; { Roads } Looped Road + 20 m Light Grass
+Include PARSFILE "Animator\Groups\Group_4ccae742-4649-427a-8871-7b3629a730a2.par"
+Include PARSFILE "Animator\Frames\Frame_8761c9b6-c784-4d2d-b8bc-72683578e773.par"
+Used Dataset: Animator: Reference Frame; { Tracking: Vehicle } Skybox (Vehicle X-Y-Z)
+Include PARSFILE "Animator\STL\Shape_6d5f4980-0cdc-4aa2-841c-f127e1b02f97.par"
+Used Dataset: Animator: Shape File Link; { Environment: Sky Boxes } Partly Cloudy Sky
+Include PARSFILE "Animator\STL\Shape_8747e07e-81f8-4899-bd41-ca6921d43beb.par"
+Used Dataset: Animator: Shape File Link; { Environment: Land Bowls } Light Grass
+Used Dataset: Animator: Group; { Environment Spheres } Partly Cloudy Sky with Light Grass
+Include PARSFILE "Roads\AniGroup\AniRep_9e87b837-4bbe-4910-ab33-c5c61a43b20d.par"
+Used Dataset: Road: Animator Repeated Object; { Trees } Trees (0, 1000)
+Include PARSFILE "Roads\3D_Road\Road_e8572ed8-f752-4691-aef8-defbe1fd35dd.ani"
+Include PARSFILE "Animator\STL\Shape_b639c6f4-88ee-4c0a-b131-51a82e79064b.par"
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Include PARSFILE "Animator\STL\Shape_b639c6f4-88ee-4c0a-b131-51a82e79064b.par"
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Include PARSFILE "Animator\STL\Shape_b639c6f4-88ee-4c0a-b131-51a82e79064b.par"
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Include PARSFILE "Animator\STL\Shape_b639c6f4-88ee-4c0a-b131-51a82e79064b.par"
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Include PARSFILE "Animator\STL\Shape_b639c6f4-88ee-4c0a-b131-51a82e79064b.par"
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Include PARSFILE "Animator\STL\Shape_b639c6f4-88ee-4c0a-b131-51a82e79064b.par"
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Include PARSFILE "Animator\STL\Shape_b639c6f4-88ee-4c0a-b131-51a82e79064b.par"
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Include PARSFILE "Animator\STL\Shape_b639c6f4-88ee-4c0a-b131-51a82e79064b.par"
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Include PARSFILE "Animator\STL\Shape_b639c6f4-88ee-4c0a-b131-51a82e79064b.par"
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Include PARSFILE "Animator\STL\Shape_b639c6f4-88ee-4c0a-b131-51a82e79064b.par"
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Include PARSFILE "Animator\STL\Shape_b639c6f4-88ee-4c0a-b131-51a82e79064b.par"
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Include PARSFILE "Animator\STL\Shape_b639c6f4-88ee-4c0a-b131-51a82e79064b.par"
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Include PARSFILE "Animator\STL\Shape_b639c6f4-88ee-4c0a-b131-51a82e79064b.par"
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Include PARSFILE "Animator\STL\Shape_b639c6f4-88ee-4c0a-b131-51a82e79064b.par"
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Include PARSFILE "Animator\STL\Shape_b639c6f4-88ee-4c0a-b131-51a82e79064b.par"
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Include PARSFILE "Animator\STL\Shape_b639c6f4-88ee-4c0a-b131-51a82e79064b.par"
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Include PARSFILE "Animator\STL\Shape_b639c6f4-88ee-4c0a-b131-51a82e79064b.par"
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Include PARSFILE "Animator\STL\Shape_b639c6f4-88ee-4c0a-b131-51a82e79064b.par"
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Include PARSFILE "Animator\STL\Shape_b639c6f4-88ee-4c0a-b131-51a82e79064b.par"
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Include PARSFILE "Animator\STL\Shape_b639c6f4-88ee-4c0a-b131-51a82e79064b.par"
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Include PARSFILE "Animator\STL\Shape_b639c6f4-88ee-4c0a-b131-51a82e79064b.par"
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Include PARSFILE "Animator\STL\Shape_b639c6f4-88ee-4c0a-b131-51a82e79064b.par"
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Include PARSFILE "Animator\STL\Shape_b639c6f4-88ee-4c0a-b131-51a82e79064b.par"
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Include PARSFILE "Animator\STL\Shape_b639c6f4-88ee-4c0a-b131-51a82e79064b.par"
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Include PARSFILE "Animator\STL\Shape_b639c6f4-88ee-4c0a-b131-51a82e79064b.par"
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Include PARSFILE "Animator\STL\Shape_b639c6f4-88ee-4c0a-b131-51a82e79064b.par"
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Include PARSFILE "Animator\STL\Shape_b639c6f4-88ee-4c0a-b131-51a82e79064b.par"
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Include PARSFILE "Animator\STL\Shape_b639c6f4-88ee-4c0a-b131-51a82e79064b.par"
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Include PARSFILE "Animator\STL\Shape_b639c6f4-88ee-4c0a-b131-51a82e79064b.par"
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Include PARSFILE "Animator\STL\Shape_b639c6f4-88ee-4c0a-b131-51a82e79064b.par"
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Include PARSFILE "Animator\STL\Shape_b639c6f4-88ee-4c0a-b131-51a82e79064b.par"
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Include PARSFILE "Animator\STL\Shape_b639c6f4-88ee-4c0a-b131-51a82e79064b.par"
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Include PARSFILE "Animator\STL\Shape_b639c6f4-88ee-4c0a-b131-51a82e79064b.par"
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Include PARSFILE "Animator\STL\Shape_b639c6f4-88ee-4c0a-b131-51a82e79064b.par"
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Include PARSFILE "Animator\STL\Shape_b639c6f4-88ee-4c0a-b131-51a82e79064b.par"
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Include PARSFILE "Animator\STL\Shape_b639c6f4-88ee-4c0a-b131-51a82e79064b.par"
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Include PARSFILE "Animator\STL\Shape_b639c6f4-88ee-4c0a-b131-51a82e79064b.par"
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Include PARSFILE "Animator\STL\Shape_b639c6f4-88ee-4c0a-b131-51a82e79064b.par"
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Include PARSFILE "Animator\STL\Shape_b639c6f4-88ee-4c0a-b131-51a82e79064b.par"
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Include PARSFILE "Animator\STL\Shape_b639c6f4-88ee-4c0a-b131-51a82e79064b.par"
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Include PARSFILE "Animator\STL\Shape_b639c6f4-88ee-4c0a-b131-51a82e79064b.par"
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Include PARSFILE "Animator\STL\Shape_b639c6f4-88ee-4c0a-b131-51a82e79064b.par"
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Include PARSFILE "Animator\STL\Shape_b639c6f4-88ee-4c0a-b131-51a82e79064b.par"
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Include PARSFILE "Animator\STL\Shape_b639c6f4-88ee-4c0a-b131-51a82e79064b.par"
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Include PARSFILE "Animator\STL\Shape_b639c6f4-88ee-4c0a-b131-51a82e79064b.par"
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Include PARSFILE "Animator\STL\Shape_b639c6f4-88ee-4c0a-b131-51a82e79064b.par"
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Include PARSFILE "Animator\STL\Shape_b639c6f4-88ee-4c0a-b131-51a82e79064b.par"
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Include PARSFILE "Animator\STL\Shape_b639c6f4-88ee-4c0a-b131-51a82e79064b.par"
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Include PARSFILE "Animator\STL\Shape_b639c6f4-88ee-4c0a-b131-51a82e79064b.par"
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Include PARSFILE "Animator\STL\Shape_b639c6f4-88ee-4c0a-b131-51a82e79064b.par"
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Include PARSFILE "Animator\STL\Shape_b639c6f4-88ee-4c0a-b131-51a82e79064b.par"
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Include PARSFILE "Animator\STL\Shape_b639c6f4-88ee-4c0a-b131-51a82e79064b.par"
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Include PARSFILE "Animator\STL\Shape_b639c6f4-88ee-4c0a-b131-51a82e79064b.par"
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Include PARSFILE "Animator\STL\Shape_b639c6f4-88ee-4c0a-b131-51a82e79064b.par"
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Include PARSFILE "Animator\STL\Shape_b639c6f4-88ee-4c0a-b131-51a82e79064b.par"
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Include PARSFILE "Animator\STL\Shape_b639c6f4-88ee-4c0a-b131-51a82e79064b.par"
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Include PARSFILE "Animator\STL\Shape_b639c6f4-88ee-4c0a-b131-51a82e79064b.par"
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Include PARSFILE "Animator\STL\Shape_b639c6f4-88ee-4c0a-b131-51a82e79064b.par"
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Include PARSFILE "Animator\STL\Shape_b639c6f4-88ee-4c0a-b131-51a82e79064b.par"
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Include PARSFILE "Animator\STL\Shape_b639c6f4-88ee-4c0a-b131-51a82e79064b.par"
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Include PARSFILE "Animator\STL\Shape_b639c6f4-88ee-4c0a-b131-51a82e79064b.par"
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Include PARSFILE "Animator\STL\Shape_b639c6f4-88ee-4c0a-b131-51a82e79064b.par"
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Used Dataset: Road: 3D Surface (All Properties); { Circular Roads } 500-ft Radius Circle, Mu = 0.85
+
+Time to read input = 0.0061447
+
+Run stopped at t = 12.4. Stop time reached.
+
+Run started: VS output file = Roads\3D_Road\Road_e8572ed8-f752-4691-aef8-defbe1fd35dd.vsb
+
+Computational time ratio: RTIME = inf (real time)/(simulation time)
+

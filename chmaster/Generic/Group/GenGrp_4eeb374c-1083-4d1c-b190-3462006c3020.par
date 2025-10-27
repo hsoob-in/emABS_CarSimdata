@@ -1,0 +1,55 @@
+PARSFILE
+#FullDataName Generic Data Group`C-Class Hatch Sensor Setup AEB Off`Euro NCAP Pedestrian
+#VehCode Sensor Parameters
+PARSFILE Generic\VS_commands\GenVS_1e8ad3b0-1a91-411f-9fae-9d45476b06b1.par
+#BlueLink0 Generic VS Commands`Obstacle Parameters CPNA` Pedestrian Euro NCAP` , Link 1`GenVS_1e8ad3b0-1a91-411f-9fae-9d45476b06b1
+
+
+PARSFILE Sensors_Traffic\Radar\Radar_5b49df95-9c63-4422-b05e-98b5af9a6646.par
+#BlueLink1 ADAS Sensors for Range and Tracking`Pedestrian Camera` Forward Facing Sensors: FCW and ACC` , Link 2`Radar_5b49df95-9c63-4422-b05e-98b5af9a6646
+
+
+#MiscYellow2
+! the first sensor is the vehicle camera
+DEFINE_PARAMETER ID_CAM = ISENSOR; - ; ...
+number assigned to the camera sensor
+define_output LxBumper =  LX_F_SM - X_SENSOR ; ...
+  m; Bumper dist from camera
+#ENDMYellow
+
+PARSFILE Sensors_Traffic\Targets\Target_f62876b6-df3b-4f31-8993-1d719aaf2145.par
+#BlueLink2 Single Moving Object (Custom)`IUNIT_OBJ (Polygonal)` Multi-Vehicle` , Link 3`Target_f62876b6-df3b-4f31-8993-1d719aaf2145
+
+
+PARSFILE Generic\VS_commands\GenVS_fc2fda9a-48af-44b2-9dc7-303db24ac864.par
+#BlueLink3 Generic VS Commands`FCW-AEB Tuning: AEB Off` Pedestrian Euro NCAP` , Link 4`GenVS_fc2fda9a-48af-44b2-9dc7-303db24ac864
+
+
+
+
+
+
+
+*MODELCODE Sensor Parameters
+
+#EMBEDDED_NOTES
+#This generic group provides the following:
+#
+#- Camera sensor setup
+#- Ego vehicle front bumper boundary available for moving object detection
+#- AEB control logic and tuning parameters
+#*AEB is set to Off for this generic group, though the AEB logic exists within
+#- Other parameters necessary for the Pedestrian Euro NCAP testing Events
+#
+#*To apply AEB, set the AEB_On output to 1 in the FCW-AEB VS Commands within the vehicle Sensor Setup (note: for optimized AEB tuning, see the AEB CPNA_25 example)
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Generic Data Group; { Euro NCAP Pedestrian } C-Class Hatch Sensor Setup AEB Off
+#Library : Generic Data Group
+#DataSet : C-Class Hatch Sensor Setup AEB Off
+#Category: Euro NCAP Pedestrian
+#FileID  : GenGrp_4eeb374c-1083-4d1c-b190-3462006c3020
+#Product : CarSim 2021.0
+#VehCode Sensor Parameters
+
+END

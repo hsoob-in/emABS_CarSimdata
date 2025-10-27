@@ -1,0 +1,23 @@
+PARSFILE
+#FullDataName I/O Channels: Export`SRS_DMO #1`Copied 11-17-2023 16:45:14
+#RingCtrl1 1
+
+
+EXPORT Vx
+EXPORT Rho_Road
+#MiscYellow0
+#Number of Selected Channels: 2
+#CHN_NAME: Vx
+#CHN_NAME: Rho_Road
+#ENDMYellow
+
+
+LOG_ENTRY Used Dataset: I/O Channels: Export; { Copied 11-17-2023 16:45:14 } SRS_DMO #1
+#Library : I/O Channels: Export
+#DataSet : SRS_DMO #1
+#Category: Copied 11-17-2023 16:45:14
+#FileID  : Export_2da2efa9-6190-4c03-95c1-e88f83aedbce
+#Product : CarSim 2021.0
+#VehCode Export Channels
+
+END

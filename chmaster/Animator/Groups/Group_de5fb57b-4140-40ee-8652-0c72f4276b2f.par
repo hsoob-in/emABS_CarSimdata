@@ -1,0 +1,28 @@
+PARSFILE
+#FullDataName Animator: Group`Partly Cloudy Sky with Light Grass, No Z`Environment Spheres
+PARSFILE Animator\Frames\Frame_4a84e9d9-bea7-42c9-a041-63f7807b22a9.par
+#BlueLink0 Animator: Reference Frame`Vehicle X-Y` Tracking: Vehicle` , Miscellaneous`Frame_4a84e9d9-bea7-42c9-a041-63f7807b22a9
+
+PARSFILE Animator\STL\Shape_6d5f4980-0cdc-4aa2-841c-f127e1b02f97.par
+#BlueLink1 Animator: Shape File Link`Partly Cloudy Sky` Environment: Sky Boxes` , Miscellaneous`Shape_6d5f4980-0cdc-4aa2-841c-f127e1b02f97
+
+PARSFILE Animator\STL\Shape_8747e07e-81f8-4899-bd41-ca6921d43beb.par
+#BlueLink2 Animator: Shape File Link`Light Grass` Environment: Land Bowls` , Miscellaneous`Shape_8747e07e-81f8-4899-bd41-ca6921d43beb
+
+
+#CheckBox0 0    
+
+
+SPECIAL_PARSFILE Animator\Cameras\Camera_36f7b3ee-b8ff-46b0-8d75-a0bab22adf60.par
+#BlueLink20 Animator: Camera Setup`YZ-Plane, No Offsets (with Yaw)` Shape Preview` , Video Camera`Camera_36f7b3ee-b8ff-46b0-8d75-a0bab22adf60
+
+
+LOG_ENTRY Used Dataset: Animator: Group; { Environment Spheres } Partly Cloudy Sky with Light Grass, No Z
+#Library : Animator: Group
+#DataSet : Partly Cloudy Sky with Light Grass, No Z
+#Category: Environment Spheres
+#FileID  : Group_de5fb57b-4140-40ee-8652-0c72f4276b2f
+#Product : CarSim 2021.0
+#VehCode Animator Group
+
+END

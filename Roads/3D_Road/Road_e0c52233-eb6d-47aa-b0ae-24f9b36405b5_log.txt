@@ -1,0 +1,18 @@
+Run made by VS Road Calculator at 22:46 on September 09, 2025.
+Utility to calculate road and path coordinates for visualization
+Started with simfile: Roads\3D_Road\simfile_road
+
+Include PARSFILE "Roads\3D_Road\Road_e0c52233-eb6d-47aa-b0ae-24f9b36405b5.par"
+Include PARSFILE "Roads\ExScene\SceneImp_4703ebc4-5b85-4d4c-95d4-a0d009cc3061.par"
+Used Dataset: Scene: External Import; { VS Scene Builder } City Intersection, 3-Way_0909
+ 3-Way Intersection in City <VS Scene Builder>
+Used Dataset: Road: 3D Surface (All Properties); { VS Scene Builder } 3-Way Intersection in City
+
+Time to read input = 0.0051058
+
+Run started: VS output file = Roads\3D_Road\Road_e0c52233-eb6d-47aa-b0ae-24f9b36405b5.vsb
+
+Run stopped at t = 0. External control (manual or external model)
+
+Computational time ratio: RTIME = inf (real time)/(simulation time)
+

@@ -1,0 +1,27 @@
+PARSFILE
+#FullDataName Polygonal Shape Coordinates`Front of Car`Pedestrian Euro NCAP
+SET_IPOLYGON_FOR_ID 0
+#DiagramOne0
+POLY_SHAPE_TABLE
+0.3, -0.9
+0.65, -0.9
+0.8, -0.675
+0.87, -0.425
+0.9, 0
+0.87, 0.425
+0.78, 0.675
+0.65, 0.9
+0.3, 0.9
+ENDTABLE
+#RadioCtrl0 0    
+
+
+LOG_ENTRY Used Dataset: Polygonal Shape Coordinates; { Pedestrian Euro NCAP } Front of Car
+#Library : Polygonal Shape Coordinates
+#DataSet : Front of Car
+#Category: Pedestrian Euro NCAP
+#FileID  : poly_dbbda570-dd96-4994-b147-31fb62ec066b
+#Product : CarSim 2021.0
+#VehCode Polygonal Coordinates
+
+END

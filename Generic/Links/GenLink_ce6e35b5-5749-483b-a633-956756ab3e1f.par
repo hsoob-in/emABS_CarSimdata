@@ -1,0 +1,41 @@
+PARSFILE
+#FullDataName Generic Group of Links`ADAS Suite, C-Class Hatch: Strong LKAS`ADAS Setups
+#VehCode Generic Links
+PARSFILE Sensors_Traffic\Radar\Radar_42b61497-fac4-4630-9be6-2e9e62b1a1e4.par
+#BlueLink0 ADAS Sensors for Range and Tracking`FCWw/AEB and ACC` Forward Facing Sensors: FCW and ACC` , Miscellaneous`Radar_42b61497-fac4-4630-9be6-2e9e62b1a1e4
+
+PARSFILE Sensors_Traffic\Radar\Radar_57a31db5-b7af-4675-88ac-0bafd95a07c8.par
+#BlueLink1 ADAS Sensors for Range and Tracking`Left Blind-Spot, Forward Vx` Blind-Spot Sensors` , Miscellaneous`Radar_57a31db5-b7af-4675-88ac-0bafd95a07c8
+
+PARSFILE Sensors_Traffic\Radar\Radar_4f130510-328a-4f29-a328-43628a7b3768.par
+#BlueLink2 ADAS Sensors for Range and Tracking`Right Blind-Spot, Forward Vx` Blind-Spot Sensors` , Miscellaneous`Radar_4f130510-328a-4f29-a328-43628a7b3768
+
+PARSFILE Animator\HUD\HUD_2e2493a8-9b50-4867-8eb4-6060a81a368f.par
+#BlueLink3 Animator: HUD`Blind Spots` ADAS Alerts` , Miscellaneous`HUD_2e2493a8-9b50-4867-8eb4-6060a81a368f
+
+PARSFILE Generic\Group\GenGrp_a2577fb6-a7ac-471d-b6da-90076c9e18b4.par
+#BlueLink4 Generic Data Group`C-Class Hatch. AEB Sensor Setup` Euro NCAP Pedestrian` , Miscellaneous`GenGrp_a2577fb6-a7ac-471d-b6da-90076c9e18b4
+
+PARSFILE Generic\Group\GenGrp_ed29a724-5144-499b-939d-2020aad122ed.par
+#BlueLink5 Generic Data Group`LKAS Strong: w/LDW and RDM` LKAS, LDW, RDM` , Miscellaneous`GenGrp_ed29a724-5144-499b-939d-2020aad122ed
+
+
+#EMBEDDED_NOTES
+#AEB applies quick and large braking input, when the ACC is not braking quickly enough
+#
+#The blind spot detection shows alerts for vehicles in the right lane, while the ACC controls the vehicle speed via throttle and brakes using the built-in CarSim speed closed-loop speed control.
+#
+#The blind spot detection signal includes a low-pass filter that prevents alerts from flashing when oncoming vehicles are detected.
+#
+#The Strong LKAS tuning setup is selcted here.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Generic Group of Links; { ADAS Setups } ADAS Suite, C-Class Hatch: Strong LKAS
+#Library : Generic Group of Links
+#DataSet : ADAS Suite, C-Class Hatch: Strong LKAS
+#Category: ADAS Setups
+#FileID  : GenLink_ce6e35b5-5749-483b-a633-956756ab3e1f
+#Product : CarSim 2021.0
+#VehCode Generic Links
+
+END

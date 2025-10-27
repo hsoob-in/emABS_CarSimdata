@@ -1,0 +1,36 @@
+PARSFILE
+#FullDataName Generic Data Group`LKAS No Traffic`LKAS, LDW, RDM
+#VehCode Generic Group
+#MiscYellow0
+! define lane width value based on values defined in the Road screen
+DEFINE_PARAMETER LANE_WIDTH = 4; m; Lane width, for lane edge calcs
+
+!This value can often be calculated with common 
+!Camera-based lane detection systems
+#ENDMYellow
+
+PARSFILE Output\PathDetectors\PathDet_ced964c0-b528-4efc-adda-0cae39594b68.par
+#BlueLink0 Path Detectors for External Driver Control`Driver Model Path Detection` ` , Link 1`PathDet_ced964c0-b528-4efc-adda-0cae39594b68
+
+
+PARSFILE Generic\VS_commands\GenVS_1575121f-24bb-4a9c-b62b-3d69320195f2.par
+#BlueLink1 Generic VS Commands`LKAS Example` Path Detection` , Link 2`GenVS_1575121f-24bb-4a9c-b62b-3d69320195f2
+
+
+
+
+
+
+
+
+
+
+LOG_ENTRY Used Dataset: Generic Data Group; { LKAS, LDW, RDM } LKAS No Traffic
+#Library : Generic Data Group
+#DataSet : LKAS No Traffic
+#Category: LKAS, LDW, RDM
+#FileID  : GenGrp_94e371e2-422c-4308-bf9e-b013e7781abb
+#Product : CarSim 2021.0
+#VehCode Generic Group
+
+END

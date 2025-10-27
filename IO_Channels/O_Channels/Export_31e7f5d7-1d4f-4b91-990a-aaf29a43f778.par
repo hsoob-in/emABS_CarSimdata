@@ -1,0 +1,39 @@
+PARSFILE
+#FullDataName I/O Channels: Export`AEB Threholds and Sensor Info`ADAS and Active Safety
+#RingCtrl0 0
+#RingCtrl1 1
+*README_FILE Results\Run_488aeba5-31ad-49e3-af11-5d826252f0e9\Run_out_tab.txt
+
+
+EXPORT PedDistDetect
+EXPORT PedSpdDetect
+EXPORT PedBrDetect
+EXPORT ObjHeight
+EXPORT PedMag
+EXPORT Vxz_Fwd
+EXPORT LxBumper
+EXPORT AEB_On
+#MiscYellow0
+#Number of Selected Channels: 8
+#CHN_NAME: PedDistDetect
+#CHN_NAME: PedSpdDetect
+#CHN_NAME: PedBrDetect
+#CHN_NAME: ObjHeight
+#CHN_NAME: PedMag
+#CHN_NAME: Vxz_Fwd
+#CHN_NAME: LxBumper
+#CHN_NAME: AEB_On
+#ENDMYellow
+
+#BlueLink0 CarSim Run Control`AEB CPNA_25 Simulink` Euro NCAP` , example run`Run_488aeba5-31ad-49e3-af11-5d826252f0e9
+
+
+LOG_ENTRY Used Dataset: I/O Channels: Export; { ADAS and Active Safety } AEB Threholds and Sensor Info
+#Library : I/O Channels: Export
+#DataSet : AEB Threholds and Sensor Info
+#Category: ADAS and Active Safety
+#FileID  : Export_31e7f5d7-1d4f-4b91-990a-aaf29a43f778
+#Product : CarSim 2021.0
+#VehCode Export Channels
+
+END

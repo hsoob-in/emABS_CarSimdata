@@ -1,0 +1,38 @@
+PARSFILE
+#FullDataName Plot: Setup`Fx vs kappa`VD#3
+
+ADD_ENTITY Plot
+
+#CheckBox1 0    
+
+
+#MiscYellow0
+PLOTCHANNELS Fx_L1, Kappa_L1
+PLOTCHANNELS Fx_R1, Kappa_R1
+PLOTCHANNELS Fx_L2, Kappa_L2
+PLOTCHANNELS Fx_R2, Kappa_R2
+
+#ENDMYellow
+
+
+#RingCtrl2 Auto
+YMaxmin Auto
+#RingCtrl3 Auto
+XMaxmin Auto
+#RingCtrl8 1
+
+
+PTITLE Fx vs kappa
+
+END_ENTITY Plot
+
+
+LOG_ENTRY Used Dataset: Plot: Setup; { VD#3 } Fx vs kappa
+#Library : Plot: Setup
+#DataSet : Fx vs kappa
+#Category: VD#3
+#FileID  : Plot_ec3364cb-bee7-4c57-b69b-b9719039bdcd
+#Product : CarSim 2021.0
+#VehCode Plot Setup
+
+END

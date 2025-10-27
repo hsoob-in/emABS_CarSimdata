@@ -1,0 +1,51 @@
+PARSFILE
+#FullDataName Models: Simulink`ABS Controller comparison`Braking Controls
+#RunMdlFile Extensions\Simulink\absmdl_Comparison.mdl
+SIMULINK_MODEL_FILE Extensions\Simulink\absmdl_Comparison.mdl
+#RingCtrl0 -1
+#CheckBox0 0    
+*USE_ALT_DIR 0
+#CheckBox1 0    
+*USE_DIFF_SOLVERS 0
+#CheckBox3 1    
+#CheckBox4 1    
+OPT_IO_SYNC_FM 1
+#RingCtrl1 0
+OPT_INT_METHOD 0
+#CheckBox2 0    
+OPT_IO_UPDATE 0
+#CheckBox4 1    
+OPT_IO_SYNC_FM 1
+*TSTEP 0.0005
+*FREQ_MODEL 2000
+*TSTEP_OUT 0.025
+*FREQ_OUT 40
+tstep 0.0005
+iprint 50
+#CheckBox5 0    
+*MULTI_SOLVERS 0
+PARSFILE IO_Channels\I_Channels\Import_f995a48c-88ce-4c26-b554-2fcfb605a139.par
+#BlueLink0 I/O Channels: Import`ABS: Wheel Cylinder Pressures #1` Brake System Control` , Import`Import_f995a48c-88ce-4c26-b554-2fcfb605a139
+
+PARSFILE IO_Channels\O_Channels\Export_ea3b81d6-3bfa-401b-92af-699e467f1917.par
+#BlueLink1 I/O Channels: Export`ABS (A): Veh. Speed, M/C Pressure` Brake System Control` , Import/Export`Export_ea3b81d6-3bfa-401b-92af-699e467f1917
+
+LIVE_SERVER_UPDATE_FREQ_MAX 60
+
+#EMBEDDED_NOTES
+#This “Models: Simulink” dataset links to a Simulink model for an ABS controller and is intended to be used with the CarSim “Type A” ABS Control, a legacy option that allows brake pressure to be imported prior to the brake system proportioning.
+#
+#The “Type A” and corresponding “Type B” Brake System control are part of the legacy Brake System screen that handled thermal properties.
+#
+#All Brake System functions, including the legacy “Type A” and “Type B” controls and thermal properties, are now handled on the screen, “Brakes: Four-Wheel System”.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Models: Simulink; { Braking Controls } ABS Controller comparison
+#Library : Models: Simulink
+#DataSet : ABS Controller comparison
+#Category: Braking Controls
+#FileID  : Simlink_c579e91d-85a1-4436-8c4f-0e86777578a8
+#Product : CarSim 2021.0
+#VehCode 
+
+END

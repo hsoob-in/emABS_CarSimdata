@@ -1,0 +1,16 @@
+PARSFILE
+#FullDataName Animator: Reference Frame`Fixed`emABS_0911
+ADD_REFERENCE_FRAME Frame_8d039c3c-753d-406b-9c28-9406943a988c
+#RingCtrl0 yaw_pitch_roll
+SET_EULER_ANGLES yaw_pitch_roll
+
+
+LOG_ENTRY Used Dataset: Animator: Reference Frame; { emABS_0911 } Fixed
+#Library : Animator: Reference Frame
+#DataSet : Fixed
+#Category: emABS_0911
+#FileID  : Frame_8d039c3c-753d-406b-9c28-9406943a988c
+#Product : CarSim 2021.0
+#VehCode Reference Frame
+
+END

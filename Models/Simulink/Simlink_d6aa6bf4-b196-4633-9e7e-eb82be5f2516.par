@@ -1,0 +1,49 @@
+PARSFILE
+#FullDataName Models: Simulink`SRS_DMO #2`Copied 11-17-2023 16:45:14
+#RunMdlFile Extensions\Simulink\driver_model_b_upd.slx
+SIMULINK_MODEL_FILE Extensions\Simulink\driver_model_b_upd.slx
+#RingCtrl0 -1
+#CheckBox0 0    
+*USE_ALT_DIR 0
+#CheckBox1 1    
+*USE_DIFF_SOLVERS 1
+#CheckBox3 1    
+#CheckBox4 0    
+OPT_IO_SYNC_FM 0
+#RingCtrl1 0
+OPT_INT_METHOD 0
+#CheckBox2 0    
+OPT_IO_UPDATE 0
+#CheckBox4 0    
+OPT_IO_SYNC_FM 0
+*TSTEP 0.001
+*FREQ_MODEL 1000
+*TSTEP_OUT 0.025
+*FREQ_OUT 40
+tstep 0.001
+iprint 25
+#CheckBox5 0    
+*MULTI_SOLVERS 0
+#MiscYellow0
+LIVE_SERVER localhost
+ANI_T_STAMP
+TIME_CHANNEL T_STAMP
+#ENDMYellow
+
+PARSFILE IO_Channels\I_Channels\Import_71be5d17-1a22-4fbc-8cd1-dd2a2a11e3c4.par
+#BlueLink0 I/O Channels: Import`SRS_DMO #1` Copied 11-17-2023 16:45:14` , Import`Import_71be5d17-1a22-4fbc-8cd1-dd2a2a11e3c4
+
+PARSFILE IO_Channels\O_Channels\Export_2da2efa9-6190-4c03-95c1-e88f83aedbce.par
+#BlueLink1 I/O Channels: Export`SRS_DMO #1` Copied 11-17-2023 16:45:14` , Import/Export`Export_2da2efa9-6190-4c03-95c1-e88f83aedbce
+
+LIVE_SERVER_UPDATE_FREQ_MAX 60
+
+LOG_ENTRY Used Dataset: Models: Simulink; { Copied 11-17-2023 16:45:14 } SRS_DMO #2
+#Library : Models: Simulink
+#DataSet : SRS_DMO #2
+#Category: Copied 11-17-2023 16:45:14
+#FileID  : Simlink_d6aa6bf4-b196-4633-9e7e-eb82be5f2516
+#Product : CarSim 2021.0
+#VehCode 
+
+END

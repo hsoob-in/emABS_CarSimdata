@@ -1,0 +1,25 @@
+Run made by VS Road Calculator at 21:52 on September 09, 2025.
+Utility to calculate road and path coordinates for visualization
+Started with simfile: Roads\3D_Road\simfile_road
+
+Include PARSFILE "Roads\3D_Road\Road_f4c98ab7-3e46-4488-8d40-eecf058a83ab.par"
+Include PARSFILE "Roads\ExScene\SceneImp_9424175c-b93a-49b8-9057-ee6b31deb5cb.par"
+Used Dataset: Scene: External Import; { VS Scene Builder } Rural Intersection Scene
+Include PARSFILE "Animator\Groups\Group_4ccae742-4649-427a-8871-7b3629a730a2.par"
+Include PARSFILE "Animator\Frames\Frame_8761c9b6-c784-4d2d-b8bc-72683578e773.par"
+Used Dataset: Animator: Reference Frame; { emABS } Skybox (Vehicle X-Y-Z)
+Include PARSFILE "Animator\STL\Shape_6d5f4980-0cdc-4aa2-841c-f127e1b02f97.par"
+Used Dataset: Animator: Shape File Link; { emABS } Partly Cloudy Sky
+Include PARSFILE "Animator\STL\Shape_8747e07e-81f8-4899-bd41-ca6921d43beb.par"
+Used Dataset: Animator: Shape File Link; { emABS } Light Grass
+Used Dataset: Animator: Group; { emABS } Partly Cloudy Sky with Light Grass
+Used Dataset: Road: 3D Surface (All Properties); { VS Scene Builder } Rural Intersection Scene
+
+Time to read input = 0.0028126
+
+Run started: VS output file = Roads\3D_Road\Road_f4c98ab7-3e46-4488-8d40-eecf058a83ab.vsb
+
+Run stopped at t = 0. External control (manual or external model)
+
+Computational time ratio: RTIME = inf (real time)/(simulation time)
+

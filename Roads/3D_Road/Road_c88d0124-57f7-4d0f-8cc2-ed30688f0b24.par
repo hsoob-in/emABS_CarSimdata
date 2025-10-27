@@ -1,0 +1,56 @@
+PARSFILE
+#FullDataName Road: 3D Surface (All Properties)`1001: Enter South, Exit East No Curb`Intersection, 3D Roads w/out Curbs
+*IMAGE_TYPE PASTED
+*IMAGE_PASTED Roads\3D_Road\Road_c88d0124-57f7-4d0f-8cc2-ed30688f0b24.png
+#RingCtrl0 2
+#CheckBox0 0    
+
+SET_IROAD_FOR_ID 1001
+CURRENT_ROAD_ID = ROAD_ID
+set_description road_id 1001: Enter South, Exit East No Curb
+PARSFILE Roads\BuilderSegment\RoadSeg_a09c2235-681b-48de-a620-d24ab3577bd4.par
+#BlueLink0 Path: Segment Builder`South Entrance, Right Turn, 1001` Crossing with Curbs` , Reference Path`RoadSeg_a09c2235-681b-48de-a620-d24ab3577bd4
+
+ROAD_PATH_ID = PATH_ID
+
+set_description road_path_id PATH_ID for: South Entrance, Right Turn, 1001
+PARSFILE Roads\Friction\RdMu_25e73395-9471-44b9-9c60-27bd9cc24921.par
+#BlueLink3 Road: Friction Map, S-L Grid`Constant: 0.85` Constant` , Friction`RdMu_25e73395-9471-44b9-9c60-27bd9cc24921
+
+PARSFILE Roads\Shapes\RdShape_7c07a2c9-382c-44ca-b53d-5dbbb49ea1f2.par
+#BlueLink4 Road: Animator Surface Shapes`Right Turn, Crosswalk @ 10m` Intersections` , Road shape definitions`RdShape_7c07a2c9-382c-44ca-b53d-5dbbb49ea1f2
+
+RR_SURF_CONSTANT 1
+L_CAMERA_FRONT 0.5
+L_CAMERA_REAR 0.5
+add_reference_frame road_stuff_6__,_3D_Shapes
+reference_frame_ghosts off
+#BlueLink6 ` , 3D Shapes` , 3D Shapes` , 3D Shapes`
+
+add_reference_frame road_stuff_7__,_3D_Shapes
+reference_frame_ghosts off
+#BlueLink7 ` , 3D Shapes` , 3D Shapes` , 3D Shapes`
+
+
+SPECIAL_PARSFILE Animator\Cameras\Camera_36b2ee7b-54ec-4c39-9781-51b289ab39c0.par
+#BlueLink5 Animator: Camera Setup`180 Azm, 5 El, 49 m` Road Reference` , Camera`Camera_36b2ee7b-54ec-4c39-9781-51b289ab39c0
+
+parsfile Roads\3D_Road\Road_c88d0124-57f7-4d0f-8cc2-ed30688f0b24.ani
+
+#EMBEDDED_NOTES
+#This road is shared by the 3- and 4-way intersection examples. It enters from the South and exits East.
+#
+#The lane has cross-slope of about 2.5% when straight, but transitions to flat for the intersection.
+#
+#This includes a pedestrian crosswalk.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Road: 3D Surface (All Properties); { Intersection, 3D Roads w/out Curbs } 1001: Enter South, Exit East No Curb
+#Library : Road: 3D Surface (All Properties)
+#DataSet : 1001: Enter South, Exit East No Curb
+#Category: Intersection, 3D Roads w/out Curbs
+#FileID  : Road_c88d0124-57f7-4d0f-8cc2-ed30688f0b24
+#Product : CarSim 2021.0
+#VehCode 3D Road
+
+END

@@ -1,0 +1,94 @@
+
+
+
+***********  CRUISE  2014.0.1-512 [x32]  *********
+
+**************  AVL-List GmbH 2014    ************
+
+************  Build: Dec  3 2014 14:38:06  *******
+
+***********  Thu, 10.12.2020 18:50:33  ***********
+
+
+
+  ===> ERRORCODE 9: Bad file descriptor
+
+
+  Project-File:    D:\trunk\Image\CarSim\Core\CarSim_Data\Extensions\AVL\Cruise-CarSim_Aut_4WD\ver_0001\Aut_4WD.prj
+
+  Data Manager: Cruise Kernel version 2014.0 not compatible with Cruise Project version 2015. You should save the project with the matching GUI version of AVL CRUISE.
+
+
+  [ERROR D_222 : DM_CheckProjectVersion]
+
+
+  Structure-File:    D:\trunk\Image\CarSim\Core\CarSim_Data\Extensions\AVL\Cruise-CarSim_Aut_4WD\ver_0001\Aut_4WD.stc
+
+  Licensing Warning: The license feature cruise_solver expires in 52 days!
+
+
+  Licensing Warning: The license feature cruise_rk_carsim expires in 52 days!
+
+
+  Data-File:    D:\trunk\Image\CarSim\Core\CarSim_Data\Extensions\AVL\Cruise-CarSim_Aut_4WD\ver_0001\Aut_4WD.dbf
+
+  Used CPU-Time - PREPROCESSING: 6.28 Seconds
+
+  Task-File:    D:\trunk\Image\CarSim\Core\CarSim_Data\Extensions\AVL\Cruise-CarSim_Aut_4WD\ver_0001\folder.001\SAM_Folder.tsk
+
+  library not loaded...
+
+  [ERROR H_102 : MH_LoadOnlineMonitorLib_DP]
+
+
+  Error in opening Online Monitor
+
+  [WARNING H_103 : MH_OpenOnlineMonitor_DP]
+
+
+  Used CPU-Time - PREPROCESSING: 1.91 Seconds
+
+--------------------------------------------------
+
+  Starting Calculation of Task:
+
+  ***     SAM TASK  SAM Task     ***
+
+  Calculation Mode:  SIMULATION
+  Algorithm:       C FSS - Heun
+
+--------------------------------------------------
+
+  Calculation running ..
+  CarSim interface is found.
+
+  .. Calculation of Task Complete
+
+
+--------------------------------------------------
+
+  Used CPU-Time: 6.934000 Seconds
+  Real-Time Factor: 0.230170
+
+--------------------------------------------------
+
+  Number of Extrapolations in 1. Engine ->
+  Soot Emission Map = 224448
+
+  [Engine.1]: Support-Team 6 cylinder engine gasoline inline
+  [WARNING M_116 : PublishPost_04]
+
+
+  PPD-Tree is written by calculation kernel
+
+
+
+*******************  CRUISE  *********************
+
+*************** Program Finished *****************
+
+         Used CPU-Time: 15.569000  Seconds
+
+**************************************************
+
+

@@ -1,0 +1,38 @@
+PARSFILE
+#FullDataName Generic VS Commands`Euro NCAP: Single CCrb Test #1`Copied 11-17-2023 16:45:14
+#VehCode VS Commands
+
+#MiscYellow0
+DEFINE_PARAMETER Start_Distance = 12; m ; Distance to EVT when test starts
+DEFINE_PARAMETER t_bk = 4; s ; Start time of braking event
+
+! This output is used to control the visibility of brake lights shown by VS Visualizer
+!DEFINE_OUTPUT Bk_EVT = GT(t, t_bk);  - ; Brake lights for EVT
+!DEFINE_OUTPUT Bk_EVT2 =1; - ; unit
+#ENDMYellow
+
+PARSFILE Animator\Frames\Frame_a780ddef-4143-41ec-a4a1-913331891f4b.par
+#BlueLink0 Animator: Reference Frame`Brake Light` Copied 11-17-2023 16:45:14` , Miscellaneous`Frame_a780ddef-4143-41ec-a4a1-913331891f4b
+
+PARSFILE Animator\STL\Shape_140fe12e-f346-474d-9acc-6f91e968ae35.par
+#BlueLink1 Animator: Shape File Link`Minivan: Brake Lights` Cars: D-Class` , Miscellaneous`Shape_140fe12e-f346-474d-9acc-6f91e968ae35
+
+PARSFILE Plot\Setup\Plot_096991e2-726a-4c37-b0ec-6bfbcc66e0c9.par
+#BlueLink4 Plot: Setup`Torques in Hybrid Powertrain` Powertrain (Hybrid)` , Plot`Plot_096991e2-726a-4c37-b0ec-6bfbcc66e0c9
+
+
+#EMBEDDED_NOTES
+#Change for 2019.1: Add EQ_INIT Vx_EVT to work with newer moving object screen.
+#
+#This dataset has a few commands to support the CCRb test. The VUT and EVT initially travel at the same speed with a starting distance between them set to the parameter Start_Distance.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Generic VS Commands; { Copied 11-17-2023 16:45:14 } Euro NCAP: Single CCrb Test #1
+#Library : Generic VS Commands
+#DataSet : Euro NCAP: Single CCrb Test #1
+#Category: Copied 11-17-2023 16:45:14
+#FileID  : GenVS_36300cb6-c974-479d-91e0-c7c6eeb16f5a
+#Product : CarSim 2021.0
+#VehCode VS Commands
+
+END

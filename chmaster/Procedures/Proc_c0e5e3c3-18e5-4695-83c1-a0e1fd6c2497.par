@@ -1,0 +1,99 @@
+PARSFILE
+#FullDataName Procedures`RSC`VD#3
+#CheckBox1 1    
+OPT_INIT_PATH 1
+
+#RingCtrl0 0
+#RingCtrl1 0
+#RingCtrl2 0
+OPT_STOP 0
+TSTART 0
+TSTART_WRITE = 0;
+TSTOP 20
+OPT_DIRECTION 1
+*SPEED 70
+*TSTOP 20
+*TSTART 0
+
+OPT_SC 0
+SV_VXS 70
+PARSFILE Control\Driver\StrDM_e7002f00-8b69-4684-9152-fcb498c4ccca.par
+#BlueLink27 Control: Steering by the Closed-loop Driver Model`On-Center Tracking` Vehicle Dynamics Tests` , Steering`StrDM_e7002f00-8b69-4684-9152-fcb498c4ccca
+
+PARSFILE Control\Gear_at\GearCL_3f60e7d2-b8c4-4d68-a9c4-d897bb3e2a86.par
+#BlueLink30 Control: Shifting (Closed Loop)`AT (All Available Gears)` Closed-Loop Shifting` , Shifting Control`GearCL_3f60e7d2-b8c4-4d68-a9c4-d897bb3e2a86
+
+#MiscYellow0
+SET_ILTARG_FOR_ID 0
+ltarg_constant = 2
+set_description ltarg_id ...
+  Lateral target for vehicles in the same lane
+#ENDMYellow
+
+PARSFILE Roads\3D_Road\Road_3ad0fba1-32ab-4701-b5cc-88d39de760e8.par
+#BlueLink0 Road: 3D Surface (All Properties)`Clothoid Segments` Misc. Curved Roads` , Miscellaneous`Road_3ad0fba1-32ab-4701-b5cc-88d39de760e8
+
+PARSFILE Plot\Setup\Plot_7a53fe59-fa92-48d4-a8a6-16440a9fce95.par
+#BlueLink9 Plot: Setup`Ground Mu` Ground` , Plot`Plot_7a53fe59-fa92-48d4-a8a6-16440a9fce95
+
+PARSFILE Plot\Setup\Plot_2265b386-ffdf-44a9-92e9-e0a2a4c8fec0.par
+#BlueLink10 Plot: Setup`Longitudinal Accel. of CG's vs. Time` Vehicle Motion` , Plot`Plot_2265b386-ffdf-44a9-92e9-e0a2a4c8fec0
+
+PARSFILE Plot\Setup\Plot_8b22f20a-1297-43cf-9e59-a0b1d530d136.par
+#BlueLink11 Plot: Setup`Lateral Accel. of CG's vs. Time` Vehicle Motion` , Plot`Plot_8b22f20a-1297-43cf-9e59-a0b1d530d136
+
+PARSFILE Plot\Setup\Plot_98eadcd4-fdee-4dc9-b1a0-537e80c706ea.par
+#BlueLink12 Plot: Setup`Longitudinal Forces (Axle 1)` Tire Forces and Moments` , Plot`Plot_98eadcd4-fdee-4dc9-b1a0-537e80c706ea
+
+PARSFILE Plot\Setup\Plot_b9d7a69c-1af1-46d3-be25-ca3a9a3b515a.par
+#BlueLink13 Plot: Setup`Longitudinal Forces (Axle 2)` Tire Forces and Moments` , Plot`Plot_b9d7a69c-1af1-46d3-be25-ca3a9a3b515a
+
+PARSFILE Plot\Setup\Plot_b3ef8646-beef-4024-9925-3f874e91a76b.par
+#BlueLink14 Plot: Setup`Wheel Speeds` Braking` , Plot`Plot_b3ef8646-beef-4024-9925-3f874e91a76b
+
+PARSFILE Plot\Setup\Plot_7f5b891d-1f1e-41be-ae5a-9a8a00cf48c6.par
+#BlueLink15 Plot: Setup`Slip Ratios: Instant` Tire Kinematics` , Plot`Plot_7f5b891d-1f1e-41be-ae5a-9a8a00cf48c6
+
+PARSFILE Plot\Setup\Plot_3c5f8bac-e2f6-4ebc-ab48-a1828a269fd4.par
+#BlueLink16 Plot: Setup`Slip Angles: Instant` Tire Kinematics` , Plot`Plot_3c5f8bac-e2f6-4ebc-ab48-a1828a269fd4
+
+PARSFILE Plot\Setup\Plot_e7487d45-296c-4d2a-9d47-4552f8ffea09.par
+#BlueLink17 Plot: Setup`electric motor` VD#3` , Plot`Plot_e7487d45-296c-4d2a-9d47-4552f8ffea09
+
+PARSFILE Plot\Setup\Plot_21f6e1cd-f399-4b25-8d21-7b5875fab760.par
+#BlueLink18 Plot: Setup`Steering Wheel Angle vs. t_stamp` Steering` , Plot`Plot_21f6e1cd-f399-4b25-8d21-7b5875fab760
+
+PARSFILE Plot\Setup\Plot_986ce074-9acb-4be0-8bd7-ac8e03eb16ab.par
+#BlueLink19 Plot: Setup`Steer Torque` Steering` , Plot`Plot_986ce074-9acb-4be0-8bd7-ac8e03eb16ab
+
+PARSFILE Plot\Setup\Plot_a146934a-339c-4983-9664-0f9749a0dfd6.par
+#BlueLink20 Plot: Setup`Vertical Forces` Tire Forces and Moments` , Plot`Plot_a146934a-339c-4983-9664-0f9749a0dfd6
+
+PARSFILE Plot\Setup\Plot_0773e087-151d-42db-a308-f02b7b6ee48d.par
+#BlueLink21 Plot: Setup`Lateral Forces` Tire Forces and Moments` , Plot`Plot_0773e087-151d-42db-a308-f02b7b6ee48d
+
+PARSFILE Plot\Setup\Plot_b86d8c49-db4e-400a-a282-322334d38a2e.par
+#BlueLink22 Plot: Setup`Vehicle Sideslip Angle` Vehicle Motion` , Plot`Plot_b86d8c49-db4e-400a-a282-322334d38a2e
+
+PARSFILE Plot\Setup\Plot_d68df6fb-ba67-4ea0-8703-24cc65aa47cc.par
+#BlueLink23 Plot: Setup`Fy vs alpha` VD#3` , Plot`Plot_d68df6fb-ba67-4ea0-8703-24cc65aa47cc
+
+PARSFILE Plot\Setup\Plot_ec3364cb-bee7-4c57-b69b-b9719039bdcd.par
+#BlueLink24 Plot: Setup`Fx vs kappa` VD#3` , Plot`Plot_ec3364cb-bee7-4c57-b69b-b9719039bdcd
+
+PARSFILE Plot\Setup\Plot_07737336-620f-4fa5-baca-5458abaf7d80.par
+#BlueLink25 Plot: Setup`Powers in Hybrid Powertrain` Powertrain (Hybrid)` , Plot`Plot_07737336-620f-4fa5-baca-5458abaf7d80
+
+PARSFILE Plot\Setup\Plot_55af1489-6b5d-4c72-9db8-6018c686d9fc.par
+#BlueLink26 Plot: Setup`Motor efficiency` Powertrain (Hybrid)` , Plot`Plot_55af1489-6b5d-4c72-9db8-6018c686d9fc
+
+
+LOG_ENTRY Used Dataset: Procedures; { VD#3 } RSC
+#Library : Procedures
+#DataSet : RSC
+#Category: VD#3
+#FileID  : Proc_c0e5e3c3-18e5-4695-83c1-a0e1fd6c2497
+#Product : CarSim 2021.0
+#VehCode Procedure
+
+END

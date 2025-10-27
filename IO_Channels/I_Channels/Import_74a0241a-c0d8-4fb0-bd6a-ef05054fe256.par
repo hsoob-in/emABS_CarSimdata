@@ -1,0 +1,46 @@
+PARSFILE
+#FullDataName I/O Channels: Import`AEB and FCW`ADAS and Active Safety
+#RingCtrl0 0
+#RingCtrl1 1
+*README_FILE Results\Run_488aeba5-31ad-49e3-af11-5d826252f0e9\Run_imp_tab.txt
+
+#MiscYellow0
+IMP_AEB_STOP_ACTIVE Add 0.0! 0
+IMP_FCW_ACTIVE Add 0.0! 0
+IMP_PCON_BK Replace 0.0! 1
+IMP_TTC_AEB Add 0.0! 0
+IMP_RELDISTFRBUMPER Add 0.0! 0
+IMP_RELPED_X_DIST Add 0.0! 0
+IMP_RELPED_Y_DIST Add 0.0! 0
+#ENDMYellow
+
+#MiscYellow1
+DEFINE_IMPORT IMP_FCW_ACTIVE;
+DEFINE_OUTPUT Show_FCW = IMP_FCW_ACTIVE; - ; FCW active boolean
+DEFINE_IMPORT IMP_AEB_STOP_ACTIVE;
+DEFINE_OUTPUT ApplyAEB_FullStop = IMP_AEB_STOP_ACTIVE ; -; ...
+AEB active boolean
+! Time to collision is the relative distance / relative speed between the ego vehicle and 
+! the closest detected object
+DEFINE_IMPORT IMP_TTC_AEB; s;
+DEFINE_OUTPUT TTC_AEB =  IMP_TTC_AEB; s; time to collision
+DEFINE_IMPORT IMP_RelDistFrBumper; m;
+DEFINE_OUTPUT RelDistFrontBump =IMP_RelDistFrBumper; m; relateive distanc
+DEFINE_IMPORT IMP_RelPed_X_Dist; m;
+DEFINE_OUTPUT xDistAct = IMP_RelPed_X_Dist; m ; x-rel dist.
+DEFINE_IMPORT IMP_RelPed_Y_Dist; m;
+DEFINE_OUTPUT yDistAct = IMP_RelPed_Y_Dist;  m ; y-rel dist.
+#ENDMYellow
+
+#BlueLink0 CarSim Run Control`AEB CPNA_25 Simulink` Euro NCAP` , example run`Run_488aeba5-31ad-49e3-af11-5d826252f0e9
+
+
+LOG_ENTRY Used Dataset: I/O Channels: Import; { ADAS and Active Safety } AEB and FCW
+#Library : I/O Channels: Import
+#DataSet : AEB and FCW
+#Category: ADAS and Active Safety
+#FileID  : Import_74a0241a-c0d8-4fb0-bd6a-ef05054fe256
+#Product : CarSim 2021.0
+#VehCode Import Channels
+
+END

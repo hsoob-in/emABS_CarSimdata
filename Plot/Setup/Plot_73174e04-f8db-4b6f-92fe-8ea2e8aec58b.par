@@ -1,0 +1,35 @@
+PARSFILE
+#FullDataName Plot: Setup`Event Timing`Pedestrian Euro NCAP
+
+ADD_ENTITY Plot
+
+#CheckBox1 0    
+
+
+#MiscYellow0
+PLOTCHANNELS t_event, time
+
+#ENDMYellow
+
+
+#RingCtrl2 Auto
+YMaxmin Auto
+#RingCtrl3 Auto
+XMaxmin Auto
+#RingCtrl8 1
+
+
+PTITLE Event Timing
+
+END_ENTITY Plot
+
+
+LOG_ENTRY Used Dataset: Plot: Setup; { Pedestrian Euro NCAP } Event Timing
+#Library : Plot: Setup
+#DataSet : Event Timing
+#Category: Pedestrian Euro NCAP
+#FileID  : Plot_73174e04-f8db-4b6f-92fe-8ea2e8aec58b
+#Product : CarSim 2021.0
+#VehCode Plot Setup
+
+END

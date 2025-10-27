@@ -1,0 +1,77 @@
+PARSFILE
+#FullDataName CarSim Run Control`Comb. ADAS: Hwy. w/Traffic, Strong LKAS`* CS 2021.0 - Combined ADAS Features
+#VEHICLECODE Ind_Ind
+symbol_push  <<vehicle>> 0
+symbol_push  <<unit>> 0
+symbol_push  <<axle>> 0
+symbol_push  <<s>> 0
+symbol_push  <<o>> 0
+symbol_push  <<id_run>> Run_e8a9a357-268d-417a-b7cb-b2b5bf06be37
+
+OPT_ALL_WRITE 0
+IOBJECT 0
+IUNIT 0
+IVEHICLE 0
+OPT_INT_METHOD 0
+OPT_VS_FILETYPE 2
+PARSFILE Animator\Cameras\Camera_dc48416e-5207-488c-ac1e-befb81183b3f.par
+#BlueLink0 Animator: Camera Setup`180 Azm, 15 El, 30 m` Vehicle Reference` , Animator camera`Camera_dc48416e-5207-488c-ac1e-befb81183b3f
+
+#CheckBox0 1    
+#CheckBox1 0    
+#CheckBox2 1    
+#CheckBox3 0    
+#CheckBox4 0    
+#CheckBox5 0    
+#CheckBox6 0    
+#CheckBox7 0    
+#CheckBox8 0    
+#CheckBox9 0    
+#CheckBox10 0    
+#CheckBox11 0    
+
+#RingCtrl0 4
+#RingCtrl1 17
+#RingCtrl2 3
+#RingCtrl3 0
+#RingCtrl6 0
+#RingCtrl7 -1
+*RUN_COLOR 0.8 0 0
+#RingCtrl4 off
+RT_WINDOW_CLOSE off
+#RingCtrl5 0
+LIVE_SERVER_MAX_CONNECTIONS 0
+PARSFILE Vehicles\Loaded\VehLoad_1a9aa608-7d54-4214-a3b7-a8d37b8c0244.par
+#BlueLink2 Vehicle with Loads, Sensors, Trailer, etc.`C-Class Hatch: ADAS Suite: LKAS-Strong` C-Class` , Math Model`VehLoad_1a9aa608-7d54-4214-a3b7-a8d37b8c0244
+
+PARSFILE Procedures\Proc_69befd78-1857-407d-bd3d-05a9b324df1e.par
+#BlueLink28 Procedures`Speed: 120km/h, 2m Left, No DM, 3 Fw Ln` Driver Controls` , Procedure`Proc_69befd78-1857-407d-bd3d-05a9b324df1e
+
+
+*IMAGE_TYPE PASS_THROUGH
+*IMAGE_PASS_THROUGH Vehicles\Assembly\Vehicle_9db9b98a-6725-424b-9635-e1ca6e15979d.png
+WRITE_SENSOR_DETECT
+Title Comb. ADAS: Hwy. w/Traffic, Strong LKAS <* CS 2021.0 - Combined ADAS Features>
+CATEGORY * CS 2021.0 - Combined ADAS Features 
+DATASET_TITLE Comb. ADAS: Hwy. w/Traffic, Strong LKAS
+#RingCtrl8 1
+NUM_CACHED_RUNS 1
+#RingCtrl9 
+
+#EMBEDDED_NOTES
+#A C-Class Hatchback with Adaptive Cruise Control (ACC), Autonomous Emergency Braking (AEB), Lane Keeping Assist System (LKAS), Lane Departure Warning (LDW), Road Departure Mitigation (RDM), and Blind Spot Detection (BSD), is traveling on a road with forward traffic in five lanes.
+#
+#Strong LKAS tuning prevents the vehicle from wandering excessively in its lane, for comparison to the Weak LKAS example
+#
+#The BSD shows alerts for vehicles in the adjacent lanes, while the ACC controls the vehicle speed via throttle and brakes. VS Commands are used to model the controllers.  The time gap for the ACC can be set on the ADAS sensor screen.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: CarSim Run Control; { * CS 2021.0 - Combined ADAS Features } Comb. ADAS: Hwy. w/Traffic, Strong LKAS
+#Library : CarSim Run Control
+#DataSet : Comb. ADAS: Hwy. w/Traffic, Strong LKAS
+#Category: * CS 2021.0 - Combined ADAS Features
+#FileID  : Run_e8a9a357-268d-417a-b7cb-b2b5bf06be37
+#Product : CarSim 2021.0
+#VehCode Run
+
+END

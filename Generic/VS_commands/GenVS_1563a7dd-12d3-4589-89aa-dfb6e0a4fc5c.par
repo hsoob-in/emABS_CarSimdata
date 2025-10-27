@@ -1,0 +1,72 @@
+PARSFILE
+#FullDataName Generic VS Commands`AEB CPNA 25 Tuning Setup`Pedestrian Euro NCAP
+#VehCode VS Commands
+
+#MiscYellow0
+********** Setup Values for Particular VRU AEB Test Type **********
+
+DEFINE_UNITS % 100 !unit definition for percent calculations 
+DEFINE_PARAMETER PED_S_START = 48.75; m; Pedestrian start station
+DEFINE_PARAMETER PED_L_BASE = -4; m ; Pedestrian start L
+DEFINE_PARAMETER VEH_SPD_INIT = 10; km/h; ego vehicle init. target speed
+DEFINE_PARAMETER PED_SPEED_5 = 5; km/h; speed of pedestrian dummy walking
+
+********** updated depeding on percentage of vehicle to stike the pedestrian ********** 
+DEFINE_PARAMETER TARG_STRIKE = 25; %; % of the vehicle to strike when no AEB is applied
+DEFINE_PARAMETER STRIKE_THRESH = 2; % ; allowable % diff between target and actual strike
+
+********** common setup equations for all examples ********** 
+DEFINE_PARAMETER VEH_WID = 0; m; width of the vehicle
+EQ_PRE_INIT VEH_WID = WID_SM - 0.1; m; veh. wid - 50mm from each side
+
+!The baseline setup for CPNA is so the pedestrian strikes the car at 25% of its width
+DEFINE_PARAMETER PED_DIST_CROSS = 0; m;  L where pedestrian starts
+EQ_PRE_INIT PED_DIST_CROSS = PED_L_BASE - (0.25 -TARG_STRIKE)*VEH_WID; m; L where ped. starts
+
+DEFINE_PARAMETER T_PED_BASELINE = 0;  s ; time that ...
+the baseline pedestrian will reach TARG_STRIKE of the vehicle's width: needed for vehicle start station
+EQ_PRE_INIT T_PED_BASELINE = -PED_L_BASE/(PED_SPEED_5); s; ped. time for init. veh. st. pt.
+
+DEFINE_PARAMETER T_PED_STRIKE = 0; s ; time that the pedestrian reaches TARG_STRIKE of the vehicle's width
+EQ_PRE_INIT T_PED_STRIKE = -PED_DIST_CROSS/(PED_SPEED_5); s; veh. time-to-strike ped.
+
+DEFINE_PARAMETER VEH_DIST_INIT =0; m; Long distance from pedestrian where vehicle starts
+EQ_PRE_INIT VEH_DIST_INIT = VEH_SPD_INIT*T_PED_BASELINE + LxBumper; m; x-dist. from veh start to ped.
+DEFINE_PARAMETER VEH_S_START = 0; m ; vehicle starting S
+EQ_PRE_INIT VEH_S_START = PED_S_START -VEH_DIST_INIT; m; vehicle starting S
+
+DEFINE_PARAMETER SIM_TIME_BUFFER = 5; s; buffer to extend example runtime
+DEFINE_PARAMETER TOT_SIM_TIME = 0 ; s; necessary runtime for the example + some buffer time
+EQ_PRE_INIT TOT_SIM_TIME = VEH_DIST_INIT/VEH_SPD_INIT + SIM_TIME_BUFFER; s; example runtime + buff.
+
+DEFINE_PARAMETER PED_L_START = PED_DIST_CROSS + LTARG_CONSTANT; m; the intial pedestrian LTARG
+EQ_PRE_INIT PED_L_START = PED_DIST_CROSS + LTARG_CONSTANT; m; the intial pedestrian LTARG
+
+********************** Update Procedure Initial Conditions **********************
+EQ_PRE_INIT SSTART = VEH_S_START; s; vehicle start S
+EQ_PRE_INIT TSTOP = TOT_SIM_TIME; s; example stop time
+EQ_PRE_INIT SPEED_TARGET_CONSTANT = VEH_SPD_INIT; km/h; ego vehicle init. target speed
+#ENDMYellow
+
+PARSFILE Animator\HUD\HUD_492c4fac-ff9f-4170-b2dc-ea2afc29c8e5.par
+#BlueLink0 Animator: HUD`Time To Collision` Euro NCAP` , Miscellaneous`HUD_492c4fac-ff9f-4170-b2dc-ea2afc29c8e5
+
+
+#EMBEDDED_NOTES
+#Specific values for each Euro NCAP VRU AEB test - also values to automate the starting position of the ego vehicle, so that if AEB were not active, it would strike the pedestrian target at the desired percentage of the vehicle's width
+#
+#Note: the NCAP VRU AEB spec calls for the vehicle detection to be the vehicle width - 50 mm from each side, and this is accounted for in VEH_WID
+#
+#There is a correction to project the sensor vector from a 3D space to the xy-plane
+#- After this, the horizontal sensor combined distance is into x and y components for distance calculations
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Generic VS Commands; { Pedestrian Euro NCAP } AEB CPNA 25 Tuning Setup
+#Library : Generic VS Commands
+#DataSet : AEB CPNA 25 Tuning Setup
+#Category: Pedestrian Euro NCAP
+#FileID  : GenVS_1563a7dd-12d3-4589-89aa-dfb6e0a4fc5c
+#Product : CarSim 2021.0
+#VehCode VS Commands
+
+END

@@ -1,0 +1,25 @@
+PARSFILE
+#FullDataName I/O Channels: Import`Bosch ABS import`MS2024(ABS)
+#RingCtrl0 1
+#RingCtrl1 1
+*README_FILE Results\Run_7b1bd328-5d57-4e5a-8993-8607ebb7d807\Run_imp_tab.txt
+
+#MiscYellow0
+IMP_BK_STAT Replace 0.0 ! 1
+IMP_PCON_BK Replace 0.0 ! 1
+IMP_M_MOTOR_D1 Replace 0.0 ! 1
+IMP_M_MOTOR_D2 Replace 0.0 ! 1
+#ENDMYellow
+
+#BlueLink0 CarSim Run Control`Electric: OL, Regen. Brk.100% RABS` Brake Tests` , example run`Run_7b1bd328-5d57-4e5a-8993-8607ebb7d807
+
+
+LOG_ENTRY Used Dataset: I/O Channels: Import; { MS2024(ABS) } Bosch ABS import
+#Library : I/O Channels: Import
+#DataSet : Bosch ABS import
+#Category: MS2024(ABS)
+#FileID  : Import_ff4f6b26-d021-42b5-ab3c-1a134e67f1e7
+#Product : CarSim 2021.0
+#VehCode Import Channels
+
+END

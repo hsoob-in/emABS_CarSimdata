@@ -1,0 +1,50 @@
+PARSFILE
+#FullDataName Models: Simulink`Fx observer`Braking Controls
+#RunMdlFile Extensions\Simulink\Kalman_Project.slx
+SIMULINK_MODEL_FILE Extensions\Simulink\Kalman_Project.slx
+#RingCtrl0 -1
+#CheckBox0 0    
+*USE_ALT_DIR 0
+#CheckBox1 0    
+*USE_DIFF_SOLVERS 0
+#CheckBox3 1    
+#CheckBox4 0    
+OPT_IO_SYNC_FM 0
+#RingCtrl1 0
+OPT_INT_METHOD 0
+#CheckBox2 1    
+OPT_IO_UPDATE 1
+#CheckBox4 0    
+OPT_IO_SYNC_FM 0
+*TSTEP 0.0005
+*FREQ_MODEL 2000
+*TSTEP_OUT 0.0005
+*FREQ_OUT 2000
+tstep 0.0005
+iprint 1
+#CheckBox5 0    
+*MULTI_SOLVERS 0
+PARSFILE IO_Channels\O_Channels\Export_f6b45e45-375c-4cad-9d12-d984ee56f57e.par
+#BlueLink1 I/O Channels: Export`Fx observer export data` Brake System Control` , Import/Export`Export_f6b45e45-375c-4cad-9d12-d984ee56f57e
+
+LIVE_SERVER_UPDATE_FREQ_MAX 60
+
+#EMBEDDED_NOTES
+#This “Models: Simulink” dataset links to a Simulink model of an ABS controller.
+#
+#The Simulink model calculates the brake system’s wheel cylinder pressure and this data is imported into CarSim. CarSim calculates a variety of vehicle properties including the equivalent longitudinal wheel speeds and brake master cylinder pressure, and this data is returned to Simulink.
+#
+#The time step is set to 0.0005 sec. (2000 Hz), the method is AB-2, and the option is checked to synchronize the CarSim kinematical exports with force imports.
+#
+#The Simulink model is set to use "variable step" numerical integration, which means it will inherit the time step from CarSim.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Models: Simulink; { Braking Controls } Fx observer
+#Library : Models: Simulink
+#DataSet : Fx observer
+#Category: Braking Controls
+#FileID  : Simlink_8a34a94e-8c2b-4bba-8fe1-cee198555b0c
+#Product : CarSim 2021.0
+#VehCode 
+
+END

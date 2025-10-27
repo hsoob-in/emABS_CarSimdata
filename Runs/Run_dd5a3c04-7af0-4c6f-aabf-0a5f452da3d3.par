@@ -1,0 +1,105 @@
+PARSFILE
+#FullDataName CarSim Run Control`VSA: Double Lane Change, Sports Car`Suspension and Ride Tests
+#VEHICLECODE Vir_Ind
+symbol_push  <<vehicle>> 0
+symbol_push  <<unit>> 0
+symbol_push  <<axle>> 0
+symbol_push  <<s>> 0
+symbol_push  <<o>> 0
+symbol_push  <<id_run>> Run_dd5a3c04-7af0-4c6f-aabf-0a5f452da3d3
+
+OPT_ALL_WRITE 0
+IOBJECT 0
+IUNIT 0
+IVEHICLE 0
+OPT_INT_METHOD 0
+OPT_VS_FILETYPE 2
+PARSFILE Animator\Cameras\Camera_32ea6678-907c-4a10-af4b-b9431e3d2f8a.par
+#BlueLink0 Animator: Camera Setup`13 Azm, 9 El, 18 m, No Yaw` Vehicle Reference` , Animator camera`Camera_32ea6678-907c-4a10-af4b-b9431e3d2f8a
+
+#CheckBox0 1    
+#CheckBox1 0    
+#CheckBox2 0    
+#CheckBox3 0    
+#CheckBox4 0    
+#CheckBox5 0    
+#CheckBox6 0    
+#CheckBox7 0    
+#CheckBox8 1    
+#CheckBox9 0    
+#CheckBox10 0    
+#CheckBox11 0    
+
+#RingCtrl0 4
+#RingCtrl1 1
+#RingCtrl2 3
+#RingCtrl3 0
+#RingCtrl6 8
+#RingCtrl7 -1
+*RUN_COLOR 0.8 0 0
+#RingCtrl4 off
+RT_WINDOW_CLOSE off
+#RingCtrl5 0
+LIVE_SERVER_MAX_CONNECTIONS 0
+PARSFILE Vehicles\Assembly\Vehicle_f6cd03e4-224b-4450-b9bc-b41125043a64.par
+#BlueLink2 Vehicle: Assembly`B-Class, Sports Car (VSA)` B-Class` , Math Model`Vehicle_f6cd03e4-224b-4450-b9bc-b41125043a64
+
+PARSFILE Procedures\Proc_3ae0353d-bd7c-43a3-9da4-150b6952a10e.par
+#BlueLink28 Procedures`DLC @ 120 km/h (Quick Start)` Handling Testing` , Procedure`Proc_3ae0353d-bd7c-43a3-9da4-150b6952a10e
+
+PARSFILE Generic\Group\GenGrp_c11e4bbe-5e3a-4498-91a5-6c42d1db378a.par
+#BlueLink9 Generic Data Group`2 Axle - Fx, Fy, Fz` Tire Force Arrows` , Miscellaneous`GenGrp_c11e4bbe-5e3a-4498-91a5-6c42d1db378a
+
+PARSFILE Sensors_Traffic\Traffic\TMotion_685c5b22-b555-4300-90e6-7f354600c8d8.par
+#BlueLink10 Multiple Moving Objects`1 Driver Preview Point` Points of Interest` , Miscellaneous`TMotion_685c5b22-b555-4300-90e6-7f354600c8d8
+
+PARSFILE Plot\Setup\Plot_2d8b6bd3-a996-4215-997e-be5d768e8fc6.par
+#BlueLink15 Plot: Setup`SuspX - Front & Rear` Suspension Motion` , Plot`Plot_2d8b6bd3-a996-4215-997e-be5d768e8fc6
+
+PARSFILE Plot\Setup\Plot_be2483b7-17ed-45e4-8f36-0d33141ac06e.par
+#BlueLink16 Plot: Setup`SuspY - Front & Rear` Suspension Motion` , Plot`Plot_be2483b7-17ed-45e4-8f36-0d33141ac06e
+
+PARSFILE Plot\Setup\Plot_dea1a60c-9bde-4695-8668-525f89e9b604.par
+#BlueLink17 Plot: Setup`Dive - Front & Rear` Suspension Motion` , Plot`Plot_dea1a60c-9bde-4695-8668-525f89e9b604
+
+PARSFILE Plot\Setup\Plot_81a8ead5-defa-4639-9749-2d75922335a7.par
+#BlueLink18 Plot: Setup`Camber - Front & Rear` Suspension Motion` , Plot`Plot_81a8ead5-defa-4639-9749-2d75922335a7
+
+PARSFILE Plot\Setup\Plot_b2e14ca1-978b-4827-9c82-91e33708330b.par
+#BlueLink19 Plot: Setup`Steer - Front & Rear` Suspension Motion` , Plot`Plot_b2e14ca1-978b-4827-9c82-91e33708330b
+
+PARSFILE Plot\Setup\Plot_cba7c0f9-86f6-433d-9855-e7dfef2964fc.par
+#BlueLink20 Plot: Setup`Total Rack Force - Axle 1` Steering` , Plot`Plot_cba7c0f9-86f6-433d-9855-e7dfef2964fc
+
+PARSFILE Plot\Setup\Plot_46729ee2-e96e-4997-a694-fa9ca697aad0.par
+#BlueLink21 Plot: Setup`Spring Compression` Suspension Motion` , Plot`Plot_46729ee2-e96e-4997-a694-fa9ca697aad0
+
+PARSFILE Plot\Setup\Plot_d2de0520-9066-41dd-ba4e-3ce9bb477656.par
+#BlueLink22 Plot: Setup`Damper Compression (Axles 1 & 2)` Suspension Motion` , Plot`Plot_d2de0520-9066-41dd-ba4e-3ce9bb477656
+
+
+*IMAGE_TYPE PASS_THROUGH
+*IMAGE_PASS_THROUGH Animator\Vehicles\AniVeh_4986d2bf-e6a5-4076-b5cc-94a288fa5a6d.png
+WRITE_SENSOR_DETECT
+Title VSA: Double Lane Change, Sports Car <Suspension and Ride Tests>
+CATEGORY Suspension and Ride Tests 
+DATASET_TITLE VSA: Double Lane Change, Sports Car
+#RingCtrl8 1
+NUM_CACHED_RUNS 1
+#RingCtrl9 
+
+#EMBEDDED_NOTES
+#The B-Class, Sports Car with Virtual Steering Axis (VSA) uses a steered suspension module denoted by "v", introduced in CarSim 2020.1. This provides steering by rack and pinion and does not require kingpin geometry to be defined. Instead, wheel kinematics are given as functions of both jounce and steering rack travel.
+#
+#The suspension and steering kinematics for this vehicle are based on a strut front suspension with a double lower ball joint which was modeled in SuspensionSim.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: CarSim Run Control; { Suspension and Ride Tests } VSA: Double Lane Change, Sports Car
+#Library : CarSim Run Control
+#DataSet : VSA: Double Lane Change, Sports Car
+#Category: Suspension and Ride Tests
+#FileID  : Run_dd5a3c04-7af0-4c6f-aabf-0a5f452da3d3
+#Product : CarSim 2021.0
+#VehCode Run
+
+END

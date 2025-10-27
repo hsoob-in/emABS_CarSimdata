@@ -1,0 +1,95 @@
+PARSFILE
+#FullDataName CarSim Run Control`Electric: OL, Regen. Brk.100% RABS`Brake Tests
+#VEHICLECODE Ind_Ind
+symbol_push  <<vehicle>> 0
+symbol_push  <<unit>> 0
+symbol_push  <<axle>> 0
+symbol_push  <<s>> 0
+symbol_push  <<o>> 0
+symbol_push  <<id_run>> Run_7b1bd328-5d57-4e5a-8993-8607ebb7d807
+
+OPT_ALL_WRITE 0
+IOBJECT 0
+IUNIT 0
+IVEHICLE 0
+OPT_INT_METHOD 0
+OPT_VS_FILETYPE 2
+PARSFILE Models\Simulink\Simlink_8a34a94e-8c2b-4bba-8fe1-cee198555b0c.par
+#BlueLink12 Models: Simulink`Fx observer` Braking Controls` , Models`Simlink_8a34a94e-8c2b-4bba-8fe1-cee198555b0c
+
+PARSFILE Animator\Cameras\Camera_32ea6678-907c-4a10-af4b-b9431e3d2f8a.par
+#BlueLink0 Animator: Camera Setup`13 Azm, 9 El, 18 m, No Yaw` Vehicle Reference` , Animator camera`Camera_32ea6678-907c-4a10-af4b-b9431e3d2f8a
+
+#CheckBox0 1    
+#CheckBox1 0    
+#CheckBox2 0    
+#CheckBox3 0    
+#CheckBox4 0    
+#CheckBox5 0    
+#CheckBox6 0    
+#CheckBox7 0    
+#CheckBox8 0    
+#CheckBox9 0    
+#CheckBox10 0    
+#CheckBox11 0    
+
+#RingCtrl0 4
+#RingCtrl1 1
+#RingCtrl2 3
+#RingCtrl3 0
+#RingCtrl6 4
+#RingCtrl7 -1
+*RUN_COLOR 0 0.604 0
+#RingCtrl4 off
+RT_WINDOW_CLOSE off
+#RingCtrl5 0
+LIVE_SERVER_MAX_CONNECTIONS 0
+PARSFILE Vehicles\Assembly\Vehicle_6e6ea2d6-0df3-427a-b34e-1b40ec477f03.par
+#BlueLink2 Vehicle: Assembly`B-Class, Hbk: Electric RWD, Regen Brk` B-Class` , Math Model`Vehicle_6e6ea2d6-0df3-427a-b34e-1b40ec477f03
+
+PARSFILE Procedures\Proc_daf8986d-3a92-45ab-9953-99ecb4eebb3f.par
+#BlueLink28 Procedures`Hybrid/Electric: Accel then Regen. Brk. #1` Accel. and Brake Testing` , Procedure`Proc_daf8986d-3a92-45ab-9953-99ecb4eebb3f
+
+*TSTOP 30
+*TSTART 0
+*SSTART 0
+PARSFILE Plot\Setup\Plot_b3ef8646-beef-4024-9925-3f874e91a76b.par
+#BlueLink15 Plot: Setup`Wheel Speeds` Braking` , Plot`Plot_b3ef8646-beef-4024-9925-3f874e91a76b
+
+PARSFILE Plot\Setup\Plot_2265b386-ffdf-44a9-92e9-e0a2a4c8fec0.par
+#BlueLink16 Plot: Setup`Longitudinal Accel. of CG's vs. Time` Vehicle Motion` , Plot`Plot_2265b386-ffdf-44a9-92e9-e0a2a4c8fec0
+
+PARSFILE Plot\Setup\Plot_c6f23fbc-2707-41af-a3cd-715e42a84da4.par
+#BlueLink17 Plot: Setup`Fx vs. Slip` Tire Forces and Moments` , Plot`Plot_c6f23fbc-2707-41af-a3cd-715e42a84da4
+
+PARSFILE Plot\Setup\Plot_b9d7a69c-1af1-46d3-be25-ca3a9a3b515a.par
+#BlueLink18 Plot: Setup`Longitudinal Forces (Axle 2)` Tire Forces and Moments` , Plot`Plot_b9d7a69c-1af1-46d3-be25-ca3a9a3b515a
+
+
+*IMAGE_TYPE PASS_THROUGH
+*IMAGE_PASS_THROUGH Animator\Vehicles\AniVeh_744dc54f-cca9-4d31-8bee-3535b6477b13.png
+WRITE_SENSOR_DETECT
+Title Electric: OL, Regen. Brk.100% RABS <Brake Tests>
+CATEGORY Brake Tests 
+DATASET_TITLE Electric: OL, Regen. Brk.100% RABS
+#RingCtrl8 1
+NUM_CACHED_RUNS 1
+#RingCtrl9 
+
+#EMBEDDED_NOTES
+#A B-Class Hatchback with an electric powertrain is modeled within CarSim (GUI and math model).
+#
+#CarSim supports for electric powertrains include an electric motor, electric powertrain assembly, and power management control.
+#
+#The Procedure has open-loop controls for throttle and braking.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: CarSim Run Control; { Brake Tests } Electric: OL, Regen. Brk.100% RABS
+#Library : CarSim Run Control
+#DataSet : Electric: OL, Regen. Brk.100% RABS
+#Category: Brake Tests
+#FileID  : Run_7b1bd328-5d57-4e5a-8993-8607ebb7d807
+#Product : CarSim 2021.0
+#VehCode Run
+
+END

@@ -1,0 +1,138 @@
+PARSFILE
+#FullDataName Road: Animator Surface Shapes`Split Mu & Homo Mu #1`emABS
+NLANES 8
+#MiscYellow0
+# 0.878 0.878 0.878, Road (No Centerline), 1, 10, 1, -5, m, 5, m, , , -500, 1800, 3, , , Road
+# 1 1 1, Ice, 1, 10, 0.5, 0, m, 5, m, , , 300, 350, 3, , 0.02, Off
+# 0.937 0.937 0.937, Snow, 1, 10, 6.5, -5, m, -70, m, , , -500, 1800, 10, , , Off
+# 0.937 0.937 0.937, Snow, 1, 10, 6.5, 5, m, 70, m, , , -500, 1800, 10, , , Off
+# 1 1 1, Ice, 1, 10, 6.5, -5, m, 5, m, , , 50, 100, 3, , 0.02, Off
+# 1 1 1, Concrete (Worn), 1, 10, 6.5, -5, m, 5, m, , , 110, 160, 3, , 0.02, Off
+# 1 1 1, Dirt (Light), 1, 10, 6.5, -5, m, 5, m, , , 170, 220, 3, , 0.02, Off
+# 1 1 1, Asphalt (Fine), 1, 10, 6.5, -5, m, 5, m, , , 230, 280, 3, , 0.02, Off
+#ENDMYellow
+
+#CheckBox0 0    
+MIRROR 0
+
+COLOR(1) 0.878 0.878 0.878
+MATERIAL(1) Road (No Centerline)
+SPECULAR(1) 1
+SCALE(1) 10
+LTILES(1) 1
+LIN(1) -5
+LINUNITS(1) m
+LOUT(1) 5
+LOUTUNITS(1) m
+S_START(1) -500
+S_STOP(1) 1800
+SINT(1) 3
+AUTODETAIL(1) Road
+COLOR(2) 1 1 1
+MATERIAL(2) Ice
+SPECULAR(2) 1
+SCALE(2) 10
+LTILES(2) 0.5
+LIN(2) 0
+LINUNITS(2) m
+LOUT(2) 5
+LOUTUNITS(2) m
+S_START(2) 300
+S_STOP(2) 350
+SINT(2) 3
+DZ(2) 0.02
+AUTODETAIL(2) Off
+COLOR(3) 0.937 0.937 0.937
+MATERIAL(3) Snow
+SPECULAR(3) 1
+SCALE(3) 10
+LTILES(3) 6.5
+LIN(3) -5
+LINUNITS(3) m
+LOUT(3) -70
+LOUTUNITS(3) m
+S_START(3) -500
+S_STOP(3) 1800
+SINT(3) 10
+AUTODETAIL(3) Off
+COLOR(4) 0.937 0.937 0.937
+MATERIAL(4) Snow
+SPECULAR(4) 1
+SCALE(4) 10
+LTILES(4) 6.5
+LIN(4) 5
+LINUNITS(4) m
+LOUT(4) 70
+LOUTUNITS(4) m
+S_START(4) -500
+S_STOP(4) 1800
+SINT(4) 10
+AUTODETAIL(4) Off
+COLOR(5) 1 1 1
+MATERIAL(5) Ice
+SPECULAR(5) 1
+SCALE(5) 10
+LTILES(5) 6.5
+LIN(5) -5
+LINUNITS(5) m
+LOUT(5) 5
+LOUTUNITS(5) m
+S_START(5) 50
+S_STOP(5) 100
+SINT(5) 3
+DZ(5) 0.02
+AUTODETAIL(5) Off
+COLOR(6) 1 1 1
+MATERIAL(6) Concrete (Worn)
+SPECULAR(6) 1
+SCALE(6) 10
+LTILES(6) 6.5
+LIN(6) -5
+LINUNITS(6) m
+LOUT(6) 5
+LOUTUNITS(6) m
+S_START(6) 110
+S_STOP(6) 160
+SINT(6) 3
+DZ(6) 0.02
+AUTODETAIL(6) Off
+COLOR(7) 1 1 1
+MATERIAL(7) Dirt (Light)
+SPECULAR(7) 1
+SCALE(7) 10
+LTILES(7) 6.5
+LIN(7) -5
+LINUNITS(7) m
+LOUT(7) 5
+LOUTUNITS(7) m
+S_START(7) 170
+S_STOP(7) 220
+SINT(7) 3
+DZ(7) 0.02
+AUTODETAIL(7) Off
+COLOR(8) 1 1 1
+MATERIAL(8) Asphalt (Fine)
+SPECULAR(8) 1
+SCALE(8) 10
+LTILES(8) 6.5
+LIN(8) -5
+LINUNITS(8) m
+LOUT(8) 5
+LOUTUNITS(8) m
+S_START(8) 230
+S_STOP(8) 280
+SINT(8) 3
+DZ(8) 0.02
+AUTODETAIL(8) Off
+MTL_FILE Animator\Road_Materials\road.mtl
+
+
+LOG_ENTRY Used Dataset: Road: Animator Surface Shapes; { emABS } Split Mu & Homo Mu #1
+#Library : Road: Animator Surface Shapes
+#DataSet : Split Mu & Homo Mu #1
+#Category: emABS
+#FileID  : RdShape_333ba29e-1208-4022-b6ff-6d83f40c60bc
+#Product : CarSim 2021.0
+#VehCode Road Shapes
+
+END

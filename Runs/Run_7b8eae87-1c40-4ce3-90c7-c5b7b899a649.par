@@ -1,0 +1,122 @@
+PARSFILE
+#FullDataName CarSim Run Control`VehicleDynamics_0610`copied_23.11.21
+#VEHICLECODE Ind_Ind
+symbol_push  <<vehicle>> 0
+symbol_push  <<unit>> 0
+symbol_push  <<axle>> 0
+symbol_push  <<s>> 0
+symbol_push  <<o>> 0
+symbol_push  <<id_run>> Run_7b8eae87-1c40-4ce3-90c7-c5b7b899a649
+
+OPT_ALL_WRITE 0
+IOBJECT 0
+IUNIT 0
+IVEHICLE 0
+OPT_INT_METHOD 0
+OPT_VS_FILETYPE 2
+PARSFILE Models\Simulink\Simlink_d6aa6bf4-b196-4633-9e7e-eb82be5f2516.par
+#BlueLink12 Models: Simulink`SRS_DMO #2` Copied 11-17-2023 16:45:14` , Models`Simlink_d6aa6bf4-b196-4633-9e7e-eb82be5f2516
+
+PARSFILE Animator\Cameras\Camera_7fd93935-5e80-4d39-bf60-d7ff5dbaa0af.par
+#BlueLink0 Animator: Camera Setup`180 Azm, 10 El, 36 m` Vehicle Reference` , Animator camera`Camera_7fd93935-5e80-4d39-bf60-d7ff5dbaa0af
+
+#CheckBox0 1    
+#CheckBox1 0    
+#CheckBox2 0    
+#CheckBox3 1    
+#CheckBox4 0    
+#CheckBox5 1    
+#CheckBox6 1    
+#CheckBox7 1    
+#CheckBox8 1    
+#CheckBox9 0    
+#CheckBox10 0    
+#CheckBox11 0    
+
+#RingCtrl0 1
+#RingCtrl1 0
+#RingCtrl2 0
+#RingCtrl3 0
+#RingCtrl6 6
+#RingCtrl7 -1
+#RingCtrl4 off
+RT_WINDOW_CLOSE off
+#RingCtrl5 0
+LIVE_SERVER_MAX_CONNECTIONS 0
+PARSFILE Vehicles\Assembly\Vehicle_e8e7f4c3-0129-418b-a8cf-edc2a7c7e68e.par
+#BlueLink2 Vehicle: Assembly`B-Class, Hbk: Electric AWD, Regen Brk` B-Class` , Math Model`Vehicle_e8e7f4c3-0129-418b-a8cf-edc2a7c7e68e
+
+PARSFILE Procedures\Proc_f1091af6-a3fc-4583-8991-db86828c6c10.par
+#BlueLink28 Procedures`SRS_DMO #2` Copied 11-17-2023 16:45:14` , Procedure`Proc_f1091af6-a3fc-4583-8991-db86828c6c10
+
+PARSFILE Roads\BuilderSegment\RoadSeg_f115974e-97f4-4f04-96c9-87400be6bcd3.par
+#BlueLink9 Path: Segment Builder`Clothoid S-Turn` S-Shaped Turns` , Miscellaneous`RoadSeg_f115974e-97f4-4f04-96c9-87400be6bcd3
+
+PARSFILE Animator\Arrows\Arrows_0707108a-af33-4db9-b1d3-bdbd23eea887.par
+#BlueLink10 Animator: Wheel Arrows and Other Indicators`Tire Skid Marks (2 Axles)` Skid Marks` , Miscellaneous`Arrows_0707108a-af33-4db9-b1d3-bdbd23eea887
+
+PARSFILE Animator\HUD\HUD_c2e4b254-3927-4dff-b7b4-112ad64d01ba.par
+#BlueLink11 Animator: HUD`DK` Copied 11-17-2023 16:45:14` , Miscellaneous`HUD_c2e4b254-3927-4dff-b7b4-112ad64d01ba
+
+INSTALL_SPEED_CONTROLLER
+Opt_SC 3
+N_SPEED_TARGET = N_SPEED_TARGET + 1
+ISPEED = N_SPEED_TARGET
+SPEED_TARGET_ID = ISPEED
+SPEED_ID_SC = ISPEED
+SPEED_TARGET_COMBINE ADD
+SPEED_TARGET_S_CONSTANT 0
+set_description SPEED_TARGET_ID Set from the Run Control screen
+SPEED_TARGET_CONSTANT 80
+OPT_SC_ENGINE_BRAKING 0
+PARSFILE Control\Driver\StrDM_a8694f5a-e834-4010-bab0-44ffb6bfa609.par
+#BlueLink3 Control: Steering by the Closed-loop Driver Model`On-Center Steer Test` Vehicle Dynamics Tests` , Steering`StrDM_a8694f5a-e834-4010-bab0-44ffb6bfa609
+
+*TSTEP 0.0005
+*FREQ_MODEL 2000
+*TSTEP_OUT 0.025
+*FREQ_OUT 40
+tstep 0.0005
+iprint 50
+OPT_STOP 0
+TSTART 0
+SSTART 0
+TSTART_WRITE = 0;
+TSTOP 45
+SSTOP =  SSTART + 1 ;
+OPT_DIRECTION 1
+*SPEED 80
+*TSTOP 45
+*TSTART 0
+*SSTART 0
+DELETE_PLOT_GROUP default
+PLOT_GROUP default
+PARSFILE Plot\Setup\Plot_a243fc1c-fc6b-4404-89ac-bc8209a293be.par
+#BlueLink17 Plot: Setup`Longitudinal Speed (Vxz_Fwd) vs. Time` Vehicle Motion` , Plot`Plot_a243fc1c-fc6b-4404-89ac-bc8209a293be
+
+PARSFILE Plot\Setup\Plot_ee7136e9-113f-4043-8b39-f8dea5b17777.par
+#BlueLink18 Plot: Setup`Detected Curvature Rate` Path Detector` , Plot`Plot_ee7136e9-113f-4043-8b39-f8dea5b17777
+
+PARSFILE Plot\Setup\Plot_e7487d45-296c-4d2a-9d47-4552f8ffea09.par
+#BlueLink20 Plot: Setup`electric modtor` ` , Plot`Plot_e7487d45-296c-4d2a-9d47-4552f8ffea09
+
+
+*IMAGE_TYPE PASS_THROUGH
+*IMAGE_PASS_THROUGH Animator\Vehicles\AniVeh_744dc54f-cca9-4d31-8bee-3535b6477b13.png
+WRITE_SENSOR_DETECT
+Title VehicleDynamics_0610 <copied_23.11.21>
+CATEGORY copied_23.11.21 
+DATASET_TITLE VehicleDynamics_0610
+#RingCtrl8 1
+NUM_CACHED_RUNS 1
+#RingCtrl9 
+
+LOG_ENTRY Used Dataset: CarSim Run Control; { copied_23.11.21 } VehicleDynamics_0610
+#Library : CarSim Run Control
+#DataSet : VehicleDynamics_0610
+#Category: copied_23.11.21
+#FileID  : Run_7b8eae87-1c40-4ce3-90c7-c5b7b899a649
+#Product : CarSim 2021.0
+#VehCode Run
+
+END

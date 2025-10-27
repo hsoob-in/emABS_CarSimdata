@@ -1,0 +1,73 @@
+PARSFILE
+#FullDataName Tire`R=287mm for Hybrid Evaluation (no RR)`Touring Tires
+FZ_REF 5500
+X_LENGTH 287
+Z_LENGTH 287
+Y_LENGTH 185
+#CheckBox2 0    
+#CheckBox4 1    
+#CheckBox5 1    
+#CheckBox6 0    
+
+#RingCtrl0 1
+#RingCtrl5 1
+#RingCtrl6 1
+#RingCtrl7 1
+#RingCtrl8 1
+#RingCtrl9 2
+OPT_TIRE_LAG_KAPPA 2
+#RingCtrl10 1
+OPT_TIRE_LAG_ALPHA 1
+OPT_TIRE_MODEL 1
+
+PARSFILE Animator\STL_Groups\ShpGrp_a242724f-2fdb-4b77-9ec1-81739a7709cb.par
+#BlueLink4 Animator: Shape Assembly`145/80 R13` emABS_0911` , Animator`ShpGrp_a242724f-2fdb-4b77-9ec1-81739a7709cb
+
+WRITE_WHEEL_OFFSET
+*SET_THICKNESS 185
+RRE 287
+R0 287
+FZ_TIRE_COEFFICIENT 232
+FZ_MAX 100000
+M_TIRE 16
+IT 0.8
+IT_XXZZ 0.4
+L_RELAX_X_CONSTANT 1000
+L_RELAX_Y_CONSTANT 1000
+VLOW_KAPPA 2
+VLOW_ALPHA 2
+RR_C 0
+RR_V 0
+L_CONTACT_X_CONSTANT 90
+L_CONTACT_Y_CONSTANT 185
+RR_FX 1
+OPT_TIRE_COMB 1
+R_TIRE_COMB 1.1
+PARSFILE Tires\Mz\TireMz_77421b2f-4026-48ac-92ff-9516ff82a831.par
+#BlueLink0 Tire: Aligning Moment`185/65 R15 (SAE)` Touring Tires` , Aligning Moment`TireMz_77421b2f-4026-48ac-92ff-9516ff82a831
+
+PARSFILE Tires\Fy\TireFy_1fff18cd-f654-4db4-94bc-096af613729e.par
+#BlueLink1 Tire: Lateral Force`185/65 R15` Touring Tires` , Lateral Force`TireFy_1fff18cd-f654-4db4-94bc-096af613729e
+
+PARSFILE Tires\Fx\TireFx_82b19a54-ecb6-4f4b-b568-47f52f88429e.par
+#BlueLink2 Tire: Longitudinal Force`185/65 R15` Touring Tires` , Longitudinal Force`TireFx_82b19a54-ecb6-4f4b-b568-47f52f88429e
+
+PARSFILE Tires\Camber_Thrust\CamStiff_0011c430-4b67-42df-9512-4f28df77d750.par
+#BlueLink3 Tire: Camber Thrust Coefficient`185/65 R15` Touring Tires` , Camber Thrust`CamStiff_0011c430-4b67-42df-9512-4f28df77d750
+
+
+
+#EMBEDDED_NOTES
+#Tire & Rim Association Load Rating: 1150 kg
+#
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Tire; { Touring Tires } R=287mm for Hybrid Evaluation (no RR)
+#Library : Tire
+#DataSet : R=287mm for Hybrid Evaluation (no RR)
+#Category: Touring Tires
+#FileID  : Tire_21c149d8-abbe-48f3-ac42-f3186c334844
+#Product : CarSim 2021.0
+#VehCode Tire
+
+END

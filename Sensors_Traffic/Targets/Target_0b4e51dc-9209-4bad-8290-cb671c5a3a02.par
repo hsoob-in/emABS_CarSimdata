@@ -1,0 +1,51 @@
+PARSFILE
+#FullDataName Single Moving Object (Custom)`IUNIT_OBJ (Narrow)`Multi-Vehicle
+DEFINE_MOVING_OBJECTS 1
+IOBJECT_INCREMENT
+symbol_add <<o>> 1
+SET_DESCRIPTION OBJECT_NAME IUNIT_OBJ (Narrow)
+OPT_SPEED_OBJ 0
+
+IUNIT_OBJ IUNIT
+#CheckBox3 0    
+#CheckBox6 0    
+#CheckBox7 0    
+#CheckBox8 1    
+
+#RingCtrl0 6
+#RingCtrl1 1
+H_OBJ HT_SM
+*COLOR 0 0.2 1
+*S_INIT 0
+*L_INIT 0
+OPT_SHAPE_OBJ 1
+SHAPE_TYPE_OBJ 1
+DZ_OBJECT 0
+*SIZE LEN_SM
+LENGTH_OBJ LEN_SM
+WIDTH_OBJ .8*WID_SM
+LX_FRONT_OBJ LX_F_SM
+*REFLECT 1
+MATERIAL_TYPE_OBJ 0
+REFLECT_OBJ 1
+#MiscYellow1
+TypeO_<<o>> = VEHICLE ! type of target
+MsgObj_<<o>> = 4 ! boundary, limit for reaching target
+#ENDMYellow
+
+
+#EMBEDDED_NOTES
+#Add an object that is attached to the current vehicle unit IUNIT. Used for simulations with multiple vehicles in one instance of the solver.
+#
+#The width used for the object is 0.8*WID_SM, where WID_SM was set on the spung mass screen to scale the 3D shape in VS Visualizer.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Single Moving Object (Custom); { Multi-Vehicle } IUNIT_OBJ (Narrow)
+#Library : Single Moving Object (Custom)
+#DataSet : IUNIT_OBJ (Narrow)
+#Category: Multi-Vehicle
+#FileID  : Target_0b4e51dc-9209-4bad-8290-cb671c5a3a02
+#Product : CarSim 2021.0
+#VehCode Moving Object (Custom)
+
+END

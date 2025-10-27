@@ -1,0 +1,92 @@
+PARSFILE
+#FullDataName CarSim Run Control`AEB CPNA_25`Euro NCAP
+#VEHICLECODE Ind_Ind
+symbol_push  <<vehicle>> 0
+symbol_push  <<unit>> 0
+symbol_push  <<axle>> 0
+symbol_push  <<s>> 0
+symbol_push  <<o>> 0
+symbol_push  <<id_run>> Run_4b64df1f-5382-4bb6-9a24-cba286938877
+
+OPT_ALL_WRITE 0
+IOBJECT 0
+IUNIT 0
+IVEHICLE 0
+OPT_INT_METHOD 0
+OPT_VS_FILETYPE 2
+PARSFILE Animator\Cameras\Camera_32ea6678-907c-4a10-af4b-b9431e3d2f8a.par
+#BlueLink0 Animator: Camera Setup`13 Azm, 9 El, 18 m, No Yaw` Vehicle Reference` , Animator camera`Camera_32ea6678-907c-4a10-af4b-b9431e3d2f8a
+
+#CheckBox0 1    
+#CheckBox1 0    
+#CheckBox2 0    
+#CheckBox3 0    
+#CheckBox4 1    
+#CheckBox5 0    
+#CheckBox6 1    
+#CheckBox7 0    
+#CheckBox8 1    
+#CheckBox9 0    
+#CheckBox10 0    
+#CheckBox11 0    
+
+#RingCtrl0 4
+#RingCtrl1 0
+#RingCtrl2 3
+#RingCtrl3 0
+#RingCtrl6 0
+#RingCtrl7 -1
+*RUN_COLOR 0.8 0 0
+SET_RUN_COLOR 0.8 0 0
+#RingCtrl4 off
+RT_WINDOW_CLOSE off
+#RingCtrl5 0
+LIVE_SERVER_MAX_CONNECTIONS 0
+PARSFILE Vehicles\Assembly\Vehicle_086b42b1-9788-4fd6-8cf6-1050c5194508.par
+#BlueLink2 Vehicle: Assembly`C-Class, Hatch Euro NCAP Adult` Euro NCAP AEB` , Math Model`Vehicle_086b42b1-9788-4fd6-8cf6-1050c5194508
+
+PARSFILE Procedures\Proc_fc317e6e-b416-4cd8-a86a-53899c73336e.par
+#BlueLink28 Procedures`CPNA: VDA 4-Way Inter.` Pedestrian Euro NCAP` , Procedure`Proc_fc317e6e-b416-4cd8-a86a-53899c73336e
+
+PARSFILE Generic\VS_commands\GenVS_70802c09-d848-49ad-90d9-579884b51f13.par
+#BlueLink9 Generic VS Commands`Plot and HUD Outputs` Pedestrian Euro NCAP` , Miscellaneous`GenVS_70802c09-d848-49ad-90d9-579884b51f13
+
+PARSFILE Animator\HUD\HUD_011cb7c6-939a-4deb-ab39-4bde5a2f0443.par
+#BlueLink10 Animator: HUD`CPNA_25 Label` Euro NCAP` , Miscellaneous`HUD_011cb7c6-939a-4deb-ab39-4bde5a2f0443
+
+*TSTEP 0.0005
+*FREQ_MODEL 2000
+*TSTEP_OUT 0.01
+*FREQ_OUT 100
+tstep 0.0005
+iprint 20
+
+*IMAGE_TYPE PASS_THROUGH
+*IMAGE_PASS_THROUGH Vehicles\Assembly\Vehicle_086b42b1-9788-4fd6-8cf6-1050c5194508.png
+WRITE_SENSOR_DETECT
+Title AEB CPNA_25 <Euro NCAP>
+CATEGORY Euro NCAP 
+DATASET_TITLE AEB CPNA_25
+#RingCtrl8 1
+NUM_CACHED_RUNS 1
+#RingCtrl9 
+
+#EMBEDDED_NOTES
+#This example mimics the Car-to-Pedestrian Nearside Adult 25 test from the Euro NCAP Vulnerable Road User (VRU) AEB test
+#
+#In this test, the objective is to avoid hitting the crossing pedestrian target, with use of Autonomous Emergency Braking (AEB) - at speeds from 10-60 km/h
+#
+#There is a camera sensor mounted on the ego vehicle, and a sensor within the pedestrian moving object which senses the ego vehicle front bumper.
+#
+#A score is tabulated during the run, using the Euro NCAP VRU AEB points schedule for CPNA 25, located in a Generic Table
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: CarSim Run Control; { Euro NCAP } AEB CPNA_25
+#Library : CarSim Run Control
+#DataSet : AEB CPNA_25
+#Category: Euro NCAP
+#FileID  : Run_4b64df1f-5382-4bb6-9a24-cba286938877
+#Product : CarSim 2021.0
+#VehCode Run
+
+END

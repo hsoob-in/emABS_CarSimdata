@@ -1,0 +1,27 @@
+PARSFILE
+#FullDataName Events`A. Establish steady state`Lift Throttle in Curve
+#CheckBox1 0    
+#CheckBox6 0    
+#CheckBox7 0    
+#CheckBox9 0    
+#CheckBox10 0    
+
+#RingCtrl0 >=
+#RingCtrl10 1
+#RingCtrl11 4
+*NAME1 SV_N_START_CROSS
+*VALUE1 1
+MAKE_EVENT SV_N_START_CROSS >= 1 ; Events\Events_28e04772-798a-497c-954e-6f40bbfdfdbb.par
+#BlueLink0 Events`B. Save steady state values` Lift Throttle in Curve` , Events`Events_28e04772-798a-497c-954e-6f40bbfdfdbb
+
+SET_EVENT_ID 0 ! reset to default
+
+LOG_ENTRY Used Dataset: Events; { Lift Throttle in Curve } A. Establish steady state
+#Library : Events
+#DataSet : A. Establish steady state
+#Category: Lift Throttle in Curve
+#FileID  : Events_f2b3c470-5d71-44a5-8959-93368cbbdac0
+#Product : CarSim 2021.0
+#VehCode Events
+
+END

@@ -1,0 +1,38 @@
+PARSFILE
+#FullDataName Events`Wrong Init. Ped. Calibration`Pedestrian Euro NCAP
+#CheckBox1 1    
+*CLEAR
+#CheckBox6 0    
+#CheckBox7 0    
+#CheckBox9 0    
+#CheckBox10 0    
+
+#RingCtrl10 0
+#RingCtrl11 4
+RESET_EVENTS
+#MiscYellow0
+stop_run_now End event triggered during initial calibration because ...
+the ego vehicle did not align with the pedestrian target at the correct ...
+strike percentage (TARG_STRIKE). Update alignment calibration...
+ and run test again.
+#ENDMYellow
+
+SET_EVENT_ID 0 ! reset to default
+
+#EMBEDDED_NOTES
+#VS Command STOP_RUN_NOW is used to trigger the simulation to end. The keyword is typed and a user defined message may be displayed after the keyword.  The message may be seen in the Log file by using the View button on the Run screen.
+#
+#Linking to an event like this, instead of simply linking to nothing (which will also end the run), serves as a reminder that the run is intentionally ended, and notice that a link wasn't broken or just forgotten.
+#
+#
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Events; { Pedestrian Euro NCAP } Wrong Init. Ped. Calibration
+#Library : Events
+#DataSet : Wrong Init. Ped. Calibration
+#Category: Pedestrian Euro NCAP
+#FileID  : Events_53834ce7-106e-45a2-97f5-0571297bae44
+#Product : CarSim 2021.0
+#VehCode Events
+
+END

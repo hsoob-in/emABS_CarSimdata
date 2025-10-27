@@ -1,0 +1,58 @@
+PARSFILE
+#FullDataName Powertrain: Front Differential`EV Open Diff.: Gear Ratio 3.905:1`Copied 10-08-2024 15:45:42
+#CheckBox0 0    
+LOCKED_FD_OPT 0
+
+#RingCtrl0 CONSTANT
+#RingCtrl1 1
+*EV_CONTROL 1
+OPT_LOCKED_DIFF 0
+M_DIFF_VISC_CONSTANT 0
+#RadioCtrl0 0    
+
+M_DIFF_FD_CONSTANT 0
+R_GEAR_FD 10.65
+R_EFF_F_FD 0.99
+R_EFF_R_FD 0.99
+LOCKED_FD_DAMP 0.8
+LOCKED_FD_K 80
+IDS_F 0.013
+IHS_LF 0.009
+IHS_RF 0.009
+*SCALAR 0
+
+OPT_MOTOR_ON_WHEEL 1
+
+#CheckBox1 0    
+OPT_WHEEL_MOTOR_REACTION 0
+
+ISIDE 1
+PARSFILE Powertrain\Motor\MMotor_3b1ee02c-0f44-45fc-af7f-02455a62ef40.par
+#BlueLink1 Powertrain: Electric Motor Torque`Max. Output 350 N-m #1` Copied 03-19-2025 17:17:21` , Electric Motor Center/Left`MMotor_3b1ee02c-0f44-45fc-af7f-02455a62ef40
+
+ISIDE 2
+ISIDE 1
+#BlueLink0 Powertrain: Differential Clutch`Max. Output 350 N-m #1` Copied 03-19-2025 17:17:21` , Differential Clutch`
+
+R_GEAR_DIFF 10.65
+R_EFF_F_DIFF 0.99
+R_EFF_R_DIFF 0.99
+LOCKED_DIFF_DAMP 0.8
+LOCKED_DIFF_K 80
+IDS 0.013
+IHS_L 0.009
+IHS_R 0.009
+
+#EMBEDDED_NOTES
+#Generic a 20 kW electric motor is equipped.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Powertrain: Front Differential; { Copied 10-08-2024 15:45:42 } EV Open Diff.: Gear Ratio 3.905:1
+#Library : Powertrain: Front Differential
+#DataSet : EV Open Diff.: Gear Ratio 3.905:1
+#Category: Copied 10-08-2024 15:45:42
+#FileID  : DiffF_4688d8c7-78b5-4179-81a4-29c69561aeea
+#Product : CarSim 2021.0
+#VehCode Front Differential
+
+END

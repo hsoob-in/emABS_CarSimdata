@@ -1,0 +1,38 @@
+PARSFILE
+#FullDataName Events`C. Lift throttle, hold wheel`Lift Throttle in Curve
+#CheckBox1 0    
+#CheckBox6 0    
+#CheckBox7 0    
+#CheckBox9 0    
+#CheckBox10 0    
+
+#RingCtrl0 >=
+#RingCtrl10 1
+#RingCtrl11 5
+*NAME1 T
+*VALUE1 T_LIFT+1
+OPT_SC 0
+PARSFILE Control\Throttle\Throttle_768d3744-c109-4ff7-a65b-3b0bea560117.par
+#BlueLink18 Control: Throttle (Open Loop)`Constant: 0` Constant` , Speed link`Throttle_768d3744-c109-4ff7-a65b-3b0bea560117
+
+#MiscYellow0
+define_parameter T_LIFT = T; s; Simulation time at throttle lift
+#ENDMYellow
+
+PARSFILE Control\Steer\StrSW_807fd9b8-a176-446c-a7b6-f7b1fa82d768.par
+#BlueLink10 Control: Steering (Open Loop)`Saved Value for Lift Throttle Test` Miscellaneous` , Miscellaneous`StrSW_807fd9b8-a176-446c-a7b6-f7b1fa82d768
+
+MAKE_EVENT T >= T_LIFT+1 ; Events\Events_ae228394-1e94-4790-b3d6-144636c37d83.par
+#BlueLink0 Events`D. Save values after 1 s` Lift Throttle in Curve` , Events`Events_ae228394-1e94-4790-b3d6-144636c37d83
+
+SET_EVENT_ID 0 ! reset to default
+
+LOG_ENTRY Used Dataset: Events; { Lift Throttle in Curve } C. Lift throttle, hold wheel
+#Library : Events
+#DataSet : C. Lift throttle, hold wheel
+#Category: Lift Throttle in Curve
+#FileID  : Events_86d6c15d-a6b4-4081-b3e9-46bbbdcfcad5
+#Product : CarSim 2021.0
+#VehCode Events
+
+END

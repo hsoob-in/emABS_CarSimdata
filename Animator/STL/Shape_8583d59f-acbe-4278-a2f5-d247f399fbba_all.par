@@ -1,0 +1,56 @@
+PARSFILE
+
+! EXPANDED_PARSFILE for Math models and animator
+
+! This is an expansion of the Parsfile: "Animator\STL\Shape_8583d59f-acbe-4278-a2f5-d247f399fbba.par"
+! It contains the contents of that file plus the contents of any files linked
+! with the "PARSFILE" keyword.
+
+! File created by CarSim 2021.0
+
+PRODUCT_NAME CarSim
+MODEL_LAYOUT i_i
+
+ENTER_PARSFILE Animator\STL\Shape_8583d59f-acbe-4278-a2f5-d247f399fbba.par
+#FullDataName Animator: Shape File Link`Blurred Tire: Car - Width 185 mm`emABS_0911
+add_obj Animator\3D_Shape_Files\Common_Vehicle_Assets\Tires\Blurred_Single_Car\blurred_tire.obj
+SET_COLOR 1 1 1
+SET_SCALE_X 1
+SET_SCALE_Y 0.944
+SET_SCALE_Z 1
+set_lighting on
+set_fogging on
+SET_SPECULAR 0.3 0.3 0.3
+vsv_enable_shadows_recursive
+ENTER_PARSFILE Animator\Cameras\Camera_af7c7c91-f09a-4493-9104-5b2725e3cf03.par
+#FullDataName Animator: Camera Setup`Isometric View - Small Objects`emABS_0911
+SET_CAMERA_REFERENCE_FRAME Frame_02b47476-96e6-474b-919e-07d03b43f1ec
+ENTER_PARSFILE Animator\Frames\Frame_02b47476-96e6-474b-919e-07d03b43f1ec.par
+#FullDataName Animator: Reference Frame`Yaw for Shape Preview`emABS_0911
+ADD_REFERENCE_FRAME Frame_02b47476-96e6-474b-919e-07d03b43f1ec
+SET_EULER_ANGLES yaw_pitch_roll
+SET_YAW_NAME Yaw
+WRT_Yaw
+ANI_Yaw
+LOG_ENTRY Used Dataset: Animator: Reference Frame; { emABS_0911 } Yaw for Shape Preview
+EXIT_PARSFILE Animator\Frames\Frame_02b47476-96e6-474b-919e-07d03b43f1ec.par
+
+SET_LOOKPOINT_REFERENCE_FRAME Frame_02b47476-96e6-474b-919e-07d03b43f1ec
+SET_LOOKPOINT_X 0
+SET_LOOKPOINT_Y 0
+SET_LOOKPOINT_Z 0
+SET_AZIMUTH 45
+SET_ELEVATION 35.264
+SET_DISTANCE 6
+SET_CAMERAMAN_NAME External camera
+FOG_SCALE 0
+SET_FIELD_OF_VIEW 21.1
+LOG_ENTRY Used Dataset: Animator: Camera Setup; { emABS_0911 } Isometric View - Small Objects
+EXIT_PARSFILE Animator\Cameras\Camera_af7c7c91-f09a-4493-9104-5b2725e3cf03.par
+
+LOG_ENTRY Used Dataset: Animator: Shape File Link; { emABS_0911 } Blurred Tire: Car - Width 185 mm
+EXIT_PARSFILE Animator\STL\Shape_8583d59f-acbe-4278-a2f5-d247f399fbba.par
+
+
+
+END

@@ -1,0 +1,40 @@
+PARSFILE
+#FullDataName Generic Table`Rear Spring Comp vs Jounce`B-Class, Sports Car (VSA)
+#RingCtrl0 SPLINE
+#CheckBox0 0    
+
+#DiagramOne0
+CMP_SPR_SEAT_TABLE SPLINE
+-70, -36.5394783
+-60, -31.25504875
+-50, -26.00815392
+-40, -20.79565048
+-30, -15.61476231
+-20, -10.46303844
+-10, -5.338348866
+-1.41e-15, -0.238867223
+10, 4.836929798
+20, 9.890257835
+30, 14.92201233
+40, 19.93274307
+50, 24.92262459
+60, 29.89140892
+70, 34.83837128
+ENDTABLE
+#RadioCtrl0 0    
+#RadioCtrl1 0    
+
+*KEYWORD CMP_SPR_SEAT
+*X_LABEL Jounce
+*Y_LABEL Spring compression
+
+
+LOG_ENTRY Used Dataset: Generic Table; { B-Class, Sports Car (VSA) } Rear Spring Comp vs Jounce
+#Library : Generic Table
+#DataSet : Rear Spring Comp vs Jounce
+#Category: B-Class, Sports Car (VSA)
+#FileID  : GenTab_fc2bec3d-084e-455e-ac35-a09ab317e93a
+#Product : CarSim 2021.0
+#VehCode table
+
+END

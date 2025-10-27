@@ -1,0 +1,44 @@
+PARSFILE
+#FullDataName Plot: Setup`AEB: TTC`Pedestrian Euro NCAP
+
+ADD_ENTITY Plot
+
+PARSFILE Plot\Format\PlotFmt_9c0da54c-ef5e-4a28-a4f7-2b9b79dcd98d.par
+#BlueLink0 Plot: Format`Lines without Symbols` ` , Plot format`PlotFmt_9c0da54c-ef5e-4a28-a4f7-2b9b79dcd98d
+
+#BlueLink1 ` , Discontinued` , Discontinued` , Discontinued`
+
+#CheckBox1 0    
+
+
+#MiscYellow0
+PLOTCHANNELS TTC_AEB, Time
+
+#ENDMYellow
+
+
+#RingCtrl2 Auto
+YMaxmin Auto
+#RingCtrl3 Auto
+XMaxmin Auto
+#RingCtrl8 1
+
+
+PTITLE AEB: TTC
+
+END_ENTITY Plot
+
+
+#EMBEDDED_NOTES
+#TTC_AEB was defined with VS Commands for AEB example controllers.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Plot: Setup; { Pedestrian Euro NCAP } AEB: TTC
+#Library : Plot: Setup
+#DataSet : AEB: TTC
+#Category: Pedestrian Euro NCAP
+#FileID  : Plot_af9ca435-1460-4bd4-b480-64389d1c37ac
+#Product : CarSim 2021.0
+#VehCode Plot Setup
+
+END

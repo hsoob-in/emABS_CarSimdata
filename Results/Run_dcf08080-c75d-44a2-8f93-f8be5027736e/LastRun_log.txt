@@ -1,0 +1,630 @@
+Run made by CarSim 2021.0 at 19:12 on December 10, 2020.
+
+Started with simfile: simfile.sim
+
+Include PARSFILE "Results\Run_dcf08080-c75d-44a2-8f93-f8be5027736e\Run_all.par"
+Installed keywords into VS Solver for MODEL_LAYOUT I_I
+Used Dataset: Animator: Reference Frame; { Tracking: Vehicle } Vehicle X-Y-Z-Yaw
+Used Dataset: Animator: Camera Setup; { Vehicle Reference } 165 Azm, 20 El, 16.5 m
+Used Dataset: Steering System: Compliance; Constant: Zero
+Used Dataset: Steering System: Kinematics for 2 Wheels (Rack & Pinion); { CS C-Class } C-Class, Hatchback
+Used Dataset: Steering: Power Assist Force; { C-Class } C-Class Hatchback, Not Spd Sens
+Used Dataset: Steering System: Compliance; { Linear } 0.001 deg/N-m
+Used Dataset: Steering: Parking Torque for 2 Wheels; { C-Class } C-Class Hatchback
+Used Dataset: Steering; { CS C-Class } C-Class, Hbk: Power, R&P
+Used Dataset: Suspension: Dive Angle (Caster Change); { Strut } Front Strut - Front Dive Angle
+Used Dataset: Suspension: Longitudinal Movement; { Strut } Front Strut -  Longitudinal Movement
+Used Dataset: Suspension: Camber Angle; { Strut } Front Strut - Camber
+Used Dataset: Suspension: Lateral Movement Due to Jounce; { Strut } Strut - Front
+Used Dataset: Suspension: Toe Angle; { Strut } Strut - Front
+Used Dataset: Suspension: Dive Angle (Caster Change); { Strut } Front Strut - Front Dive Angle
+Used Dataset: Suspension: Longitudinal Movement; { Strut } Front Strut -  Longitudinal Movement
+Used Dataset: Suspension: Camber Angle; { Strut } Front Strut - Camber
+Used Dataset: Suspension: Lateral Movement Due to Jounce; { Strut } Strut - Front
+Used Dataset: Suspension: Toe Angle; { Strut } Strut - Front
+Used Dataset: Suspension: Independent System Kinematics; { C-Class } C-Class, Hatchback - Front
+Used Dataset: Suspension: Shock Absorber; { Passenger Car } Big Car
+Used Dataset: Suspension: Jounce and Rebound Stops; { Jounce Range: 50 mm to 99 mm } +60 mm / -40 mm
+Used Dataset: Suspension: Shock Absorber; { Passenger Car } Big Car
+Used Dataset: Suspension: Jounce and Rebound Stops; { Jounce Range: 50 mm to 99 mm } +60 mm / -40 mm
+Used Dataset: Suspension: Auxiliary Roll Moment; { Linear } Linear: 384 N-m/deg
+Used Dataset: Suspension: Independent Compliance, Springs, and Dampers; { C-Class } C-Class, Hatchback - Front
+Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } 195/45 R16: Tire
+Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } 195/45 R16: Wheel
+Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } 195/45 R16: Stripe
+Used Dataset: Animator: Shape Assembly; { Tires } 195/45 R16
+Used Dataset: Generic Table; { Tire Relaxation Length } Lx Variable, Scaled to Tire
+Used Dataset: Generic Table; { Tire Relaxation Length } Ly Variable, Scaled to Tire
+Used Dataset: Tire: Aligning Moment; { Touring Tires } 215/55 R17 (SAE)
+Used Dataset: Tire: Lateral Force; { Touring Tires } 215/55 R17
+Used Dataset: Tire: Longitudinal Force; { Touring Tires } 215/55 R17
+Used Dataset: Tire: Camber Thrust Coefficient; { Touring Tires } 215/55 R17
+Used Dataset: Tire; { Touring Tires } 215/55 R17
+Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } 195/45 R16: Tire
+Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } 195/45 R16: Wheel
+Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } 195/45 R16: Stripe
+Used Dataset: Animator: Shape Assembly; { Tires } 195/45 R16
+Used Dataset: Generic Table; { Tire Relaxation Length } Lx Variable, Scaled to Tire
+Used Dataset: Generic Table; { Tire Relaxation Length } Ly Variable, Scaled to Tire
+Used Dataset: Tire: Aligning Moment; { Touring Tires } 215/55 R17 (SAE)
+Used Dataset: Tire: Lateral Force; { Touring Tires } 215/55 R17
+Used Dataset: Tire: Longitudinal Force; { Touring Tires } 215/55 R17
+Used Dataset: Tire: Camber Thrust Coefficient; { Touring Tires } 215/55 R17
+Used Dataset: Tire; { Touring Tires } 215/55 R17
+Used Dataset: Suspension: Longitudinal Movement; { 5-Link Rear } Rear 5-Link - Longitudinal Movement
+Used Dataset: Suspension: Camber Angle; { 5-Link Rear } Rear 5-Link - Camber Change
+Used Dataset: Suspension: Lateral Movement Due to Jounce; { 5-Link Rear } Rear 5-Link - Lateral Movement
+Used Dataset: Suspension: Toe Angle; { 5-Link Rear } Rear 5-Link - Toe Change
+Used Dataset: Suspension: Longitudinal Movement; { 5-Link Rear } Rear 5-Link - Longitudinal Movement
+Used Dataset: Suspension: Camber Angle; { 5-Link Rear } Rear 5-Link - Camber Change
+Used Dataset: Suspension: Lateral Movement Due to Jounce; { 5-Link Rear } Rear 5-Link - Lateral Movement
+Used Dataset: Suspension: Toe Angle; { 5-Link Rear } Rear 5-Link - Toe Change
+Used Dataset: Suspension: Independent System Kinematics; { C-Class } C-Class, Hatchback - Rear
+Used Dataset: Suspension: Spring; 30 N/mm
+Used Dataset: Suspension: Shock Absorber; { Passenger Car } Big Car
+Used Dataset: Suspension: Jounce and Rebound Stops; { Jounce Range: 50 mm to 99 mm } +60 mm / -40 mm
+Used Dataset: Suspension: Spring; 30 N/mm
+Used Dataset: Suspension: Shock Absorber; { Passenger Car } Big Car
+Used Dataset: Suspension: Jounce and Rebound Stops; { Jounce Range: 50 mm to 99 mm } +60 mm / -40 mm
+Used Dataset: Suspension: Auxiliary Roll Moment; { Non-Linear } Non-linear: 344 N-m/deg
+Used Dataset: Suspension: Independent Compliance, Springs, and Dampers; { C-Class } C-Class, Hatchback - Rear
+Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } 195/45 R16: Tire
+Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } 195/45 R16: Wheel
+Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } 195/45 R16: Stripe
+Used Dataset: Animator: Shape Assembly; { Tires } 195/45 R16
+Used Dataset: Generic Table; { Tire Relaxation Length } Lx Variable, Scaled to Tire
+Used Dataset: Generic Table; { Tire Relaxation Length } Ly Variable, Scaled to Tire
+Used Dataset: Tire: Aligning Moment; { Touring Tires } 215/55 R17 (SAE)
+Used Dataset: Tire: Lateral Force; { Touring Tires } 215/55 R17
+Used Dataset: Tire: Longitudinal Force; { Touring Tires } 215/55 R17
+Used Dataset: Tire: Camber Thrust Coefficient; { Touring Tires } 215/55 R17
+Used Dataset: Tire; { Touring Tires } 215/55 R17
+Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } 195/45 R16: Tire
+Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } 195/45 R16: Wheel
+Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } 195/45 R16: Stripe
+Used Dataset: Animator: Shape Assembly; { Tires } 195/45 R16
+Used Dataset: Generic Table; { Tire Relaxation Length } Lx Variable, Scaled to Tire
+Used Dataset: Generic Table; { Tire Relaxation Length } Ly Variable, Scaled to Tire
+Used Dataset: Tire: Aligning Moment; { Touring Tires } 215/55 R17 (SAE)
+Used Dataset: Tire: Lateral Force; { Touring Tires } 215/55 R17
+Used Dataset: Tire: Longitudinal Force; { Touring Tires } 215/55 R17
+Used Dataset: Tire: Camber Thrust Coefficient; { Touring Tires } 215/55 R17
+Used Dataset: Tire; { Touring Tires } 215/55 R17
+Used Dataset: Vehicle: Sprung Mass; { C-Class } C-Class, Hatchback
+Used Dataset: Aerodynamics: Fx (Drag) Coef. vs. Aero Slip; { Spline Interpolation } Spline: 0.30 at 0 deg.
+Used Dataset: Aerodynamics: Fy (Side Force) Coef. vs. Aero Slip; { Spline Interpolation } Spline: 2 at 90 deg.
+Used Dataset: Aerodynamics: Fz (Lift) Coef. vs. Aero Slip; { Spline Interpolation } Spline: 0.18 at 0 deg.
+Used Dataset: Aerodynamics: Mx (Roll Moment) Coef. vs. Aero Slip; { Spline Interpolation } Spline: 0.3 at 90 deg.
+Used Dataset: Aerodynamics: My (Pitch Moment) Coef. vs. Aero Slip; { Spline Interpolation } Spline: 0.15 at 0 deg.
+Used Dataset: Aerodynamics: Mz (Yaw Moment) Coef. vs. Aero Slip; { Spline Interpolation } Spline: 0.2 at 35 deg.
+Used Dataset: Aerodynamics: Basic; { C-Class } C-Class, Hatchback Aero
+Used Dataset: Powertrain: Engine; { 43 kW - 125 kW Engines } 125 kW Engine
+Used Dataset: Powertrain: Torque Converter; { Torque Converters: 75 kW to 150 kW } Torque Converter: 125 kW Engine
+Used Dataset: Powertrain: Shift Schedule; { 6-speed } 6-speed, 1-2 Shift
+Used Dataset: Powertrain: Shift Schedule; { 6-speed } 6-speed, 2-3 Shift
+Used Dataset: Powertrain: Shift Schedule; { 6-speed } 6-speed, 3-4 Shift
+Used Dataset: Powertrain: Shift Schedule; { 6-speed } 6-speed, 4-5 Shift
+Used Dataset: Powertrain: Shift Schedule; { 6-speed } 6-speed, 5-6 Shift
+Used Dataset: Powertrain: Transmission (18 Gears or CVT); { 6-Speed Transmissions } 6-Speed
+Used Dataset: Powertrain: Front Differential; { Limited Slip and Viscous Coupling } Viscous Coupling: Gear Ratio 4.1:1
+Used Dataset: Powertrain: Front-Wheel Drive; { 75 kW - 125 kW Powertrains } 125 kW, 6-spd., 4.1 Ratio w/ Visc. Diff.
+Used Dataset: Brakes: Proportioning / Limiting Valve; Unity until 1.5MPa then 30%
+Used Dataset: Brakes: Proportioning / Limiting Valve; Unity until 1.5MPa then 30%
+Used Dataset: Brakes: Four-Wheel System; { C-Class } (Hbk): MC Press, ABS
+Used Dataset: Generic Data Lists; Rear View Mirror (C -Class Example)
+Used Dataset: Animator: Shape File Link; { Cars: C-Class } Hatchback
+Used Dataset: Animator: Shape File Link; { Cars: C-Class } Hatchback: Driver (Caucasian Male)
+Used Dataset: Animator: Shape Assembly; { Passenger Cars } C-Class Hatchback
+Used Dataset: Animator: Shape File Link; { Cars: C-Class } Hatchback: Brake Lights
+Used Dataset: Animator: Shape File Link; { Cars: C-Class } C-Class Hatchback Reverse Lights
+Used Dataset: Animator: Vehicles and Sensor Targets; { C-Class } C-Class, Hatchback
+Used Dataset: Generic VS Commands; { Pedestrian Euro NCAP } Obstacle Parameters CPNC
+Used Dataset: Sensor Range and Bearing Sensitivity; { Sensor Range w/ Equations } Pedestrian Detection Camera
+Used Dataset: Sensor Elevation Sensitivity; Unity Gain
+Used Dataset: Plot: Format; Default Plot Settings
+Used Dataset: Plot: Setup; { ADAS Sensor Target Properties } ID and Message of Closest Object
+Used Dataset: Plot: Format; Default Plot Settings
+Used Dataset: Plot: Setup; { ADAS Sensor Target Properties } Sensor Y for Closest Pedestrian
+Used Dataset: ADAS Sensors for Range and Tracking; { Forward Facing Sensors: FCW and ACC } Pedestrian Camera
+Used Dataset: Polygonal Shape Coordinates; { Pedestrian Euro NCAP } Front of Car
+Used Dataset: Single Moving Object (Custom); { Multi-Vehicle } IUNIT_OBJ (Polygonal)
+Used Dataset: Animator: HUD; { Euro NCAP } FCW Alert (small - right side)
+Used Dataset: Generic VS Commands; { Pedestrian Euro NCAP } Obstacle Type Definitions
+WARNING: The keyword OPT_VMIN has been deprecated
+Used Dataset: Animator: HUD; { Euro NCAP } FCW Alert (small - right side)
+Used Dataset: Generic VS Commands; { Pedestrian Euro NCAP } FCW-AEB Tuning: Occlusion Vehs.
+Used Dataset: Sensor Reflectiveness Map; 1 Sensor, 3 Material Types
+Used Dataset: Generic Data Group; { Euro NCAP Pedestrian } C-Class Hatch Sensor Setup Child
+Used Dataset: Vehicle: Assembly; { Euro NCAP AEB } C-Class, Hatch Euro NCAP Child
+Used Dataset: Control: Steering by the Closed-loop Driver Model; { Constant Position: Non-Zero Offset } 1.8m Right, 0.4s Single Preview, No Line
+Used Dataset: Control: Shifting (Closed Loop); { Closed-Loop Shifting } AT (All Available Gears)
+ Straight East <Straight>
+Used Dataset: Path: Segment Builder; { Straight } Straight East
+Used Dataset: Road: Friction Map, S-L Grid; { Constant } Constant: 0.85
+Used Dataset: Road: Animator Surface Shapes; { Roads } 1 km Square Low
+Used Dataset: Animator: Reference Frame; { Tracking: Vehicle } Skybox (Vehicle X-Y-Z)
+Used Dataset: Animator: Shape File Link; { Environment: Sky Boxes } Partly Cloudy Sky
+Used Dataset: Animator: Shape File Link; { Environment: Land Bowls } Light Grass
+Used Dataset: Animator: Group; { Environment Spheres } Partly Cloudy Sky with Light Grass
+Used Dataset: Road: 3D Surface (All Properties); { Intersection, 3D Roads w/out Curbs } 999: 1km Square Proving Ground
+ South Entrance, Right Turn, 1001 <Crossing with Curbs>
+Used Dataset: Path: Segment Builder; { Crossing with Curbs } South Entrance, Right Turn, 1001
+Used Dataset: Road: Friction Map, S-L Grid; { Constant } Constant: 0.85
+Used Dataset: Road: Animator Surface Shapes; { Intersections } Right Turn, Crosswalk @ 10m
+Used Dataset: Road: 3D Surface (All Properties); { Intersection, 3D Roads w/out Curbs } 1001: Enter South, Exit East No Curb
+ East Entrance, Right Turn, 1002 <Crossing with Curbs>
+Used Dataset: Path: Segment Builder; { Crossing with Curbs } East Entrance, Right Turn, 1002
+Used Dataset: Road: Friction Map, S-L Grid; { Constant } Constant: 0.85
+Used Dataset: Road: Animator Surface Shapes; { Intersections } Right Turn, Crosswalk @ -10m
+Used Dataset: Road: 3D Surface (All Properties); { Intersection, 3D Roads w/out Curbs } 1002: Enter East, Exit North No Curb
+ North Entrance, Right Turn, 1003 <Crossing with Curbs>
+Used Dataset: Path: Segment Builder; { Crossing with Curbs } North Entrance, Right Turn, 1003
+Used Dataset: Road: Friction Map, S-L Grid; { Constant } Constant: 0.85
+Used Dataset: Road: Animator Surface Shapes; { Intersections } Right Turn, Crosswalk @ 10m
+Used Dataset: Road: 3D Surface (All Properties); { Intersection, 3D Roads w/out Curbs } 1003: Enter North, Exit West No Curb
+ West Entrance, Right Turn, 1004 <Crossing with Curbs>
+Used Dataset: Path: Segment Builder; { Crossing with Curbs } West Entrance, Right Turn, 1004
+Used Dataset: Road: Friction Map, S-L Grid; { Constant } Constant: 0.85
+Used Dataset: Road: Animator Surface Shapes; { Intersections } Right Turn, Crosswalk @ -10m
+Used Dataset: Road: 3D Surface (All Properties); { Intersection, 3D Roads w/out Curbs } 1004: Enter West, Exit South No Curb
+ Straight East <Straight>
+Used Dataset: Path: Segment Builder; { Straight } Straight East
+Used Dataset: Road: Friction Map, S-L Grid; { Constant } Constant: 0.85
+Used Dataset: Road: Animator Surface Shapes; { Intersections } No Grass, Pavement Intersection, 4-Way
+Used Dataset: Animator: Reference Frame; { Tracking: Vehicle } Skybox (Vehicle X-Y-Z)
+Used Dataset: Animator: Shape File Link; { Environment: Sky Boxes } Partly Cloudy Sky
+Used Dataset: Animator: Group; { Environment Spheres } Partly Cloudy Sky
+Used Dataset: Road: 3D Surface (All Properties); { Intersection, 3D Roads w/out Curbs } 1005: No Grass, Intersection  E-W
+ Straight North <Straight>
+Used Dataset: Path: Segment Builder; { Straight } Straight North
+Used Dataset: Road: Friction Map, S-L Grid; { Constant } Constant: 0.85
+Used Dataset: Road: Animator Surface Shapes; { Intersections } No Grass, Pavement Intersection, 4-Way
+Used Dataset: Animator: Reference Frame; { Tracking: Vehicle } Skybox (Vehicle X-Y-Z)
+Used Dataset: Animator: Shape File Link; { Environment: Sky Boxes } Partly Cloudy Sky
+Used Dataset: Animator: Group; { Environment Spheres } Partly Cloudy Sky
+Used Dataset: Road: 3D Surface (All Properties); { Intersection, 3D Roads w/out Curbs } 1006: No Grass, Intersection  N-S
+Used Dataset: Road Boundary: New Road ID; { Intersection, 4-Way } Left Edge for 1001
+Used Dataset: Road Boundary: New Station; Negative S
+Used Dataset: Road Boundary: New Road ID; { Intersection, 4-Way } Left Edge for 1002
+Used Dataset: Road Boundary: New Station; Negative S
+Used Dataset: Road: Boundaries; { Crossing with Curbs } South and East Entrances
+Used Dataset: Road Boundary: New Road ID; { Intersection, 4-Way } Left Edge for 1003
+Used Dataset: Road Boundary: New Station; Negative S
+Used Dataset: Road Boundary: New Road ID; { Intersection, 4-Way } Left Edge for 1004
+Used Dataset: Road Boundary: New Station; Negative S
+Used Dataset: Road: Boundaries; { Crossing with Curbs } North and West Entrances
+Used Dataset: Generic Group of Links; { Roads and Paths } Intersection, 4-Way w/Out Curbs
+Used Dataset: Animator: Shape File Link; { Geometric Shapes: Arrows } 3D Pyramid: Point Org (X-Axis)
+Used Dataset: Animator: Shape Assembly; { Arrows } Fx 3D Arrow (Tail Origin)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes: Arrows } 3D Pyramid: Point Org (X-Axis)
+Used Dataset: Animator: Shape Assembly; { Arrows } Fx 3D Arrow (Tail Origin)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes: Arrows } 3D Pyramid: Point Org (X-Axis)
+Used Dataset: Animator: Shape Assembly; { Arrows } Fx 3D Arrow (Tail Origin)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes: Arrows } 3D Pyramid: Point Org (X-Axis)
+Used Dataset: Animator: Shape Assembly; { Arrows } Fx 3D Arrow (Tail Origin)
+Used Dataset: Animator: Wheel Arrows and Other Indicators; { Tire Force Arrows (2 Axles) } 2A - Fx Tire Force Arrows
+Used Dataset: Animator: Shape File Link; { Geometric Shapes: Arrows } 3D Pyramid: Point Org (Y-Axis)
+Used Dataset: Animator: Shape Assembly; { Arrows } Fy 3D Arrow (Tail Origin)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes: Arrows } 3D Pyramid: Point Org (Y-Axis)
+Used Dataset: Animator: Shape Assembly; { Arrows } Fy 3D Arrow (Tail Origin)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes: Arrows } 3D Pyramid: Point Org (Y-Axis)
+Used Dataset: Animator: Shape Assembly; { Arrows } Fy 3D Arrow (Tail Origin)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes: Arrows } 3D Pyramid: Point Org (Y-Axis)
+Used Dataset: Animator: Shape Assembly; { Arrows } Fy 3D Arrow (Tail Origin)
+Used Dataset: Animator: Wheel Arrows and Other Indicators; { Tire Force Arrows (2 Axles) } 2A - Fy Tire Force Arrows
+Used Dataset: Animator: Shape File Link; { Geometric Shapes: Arrows } 3D Pyramid: Tail Org (Z-Axis)
+Used Dataset: Animator: Shape Assembly; { Arrows } Fz 3D, Offset (Tail Origin)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes: Arrows } 3D Pyramid: Tail Org (Z-Axis)
+Used Dataset: Animator: Shape Assembly; { Arrows } Fz 3D, Offset (Tail Origin)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes: Arrows } 3D Pyramid: Tail Org (Z-Axis)
+Used Dataset: Animator: Shape Assembly; { Arrows } Fz 3D, Offset (Tail Origin)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes: Arrows } 3D Pyramid: Tail Org (Z-Axis)
+Used Dataset: Animator: Shape Assembly; { Arrows } Fz 3D, Offset (Tail Origin)
+Used Dataset: Animator: Wheel Arrows and Other Indicators; { Tire Force Arrows (2 Axles) } 2A - Fz Tire Force Arrows
+Used Dataset: Generic Data Group; { Tire Force Arrows } 2 Axle - Fx, Fy, Fz
+ Straight West <Straight>
+Used Dataset: Path: Segment Builder; { Straight } Straight West
+Used Dataset: Animator: HUD; { Euro NCAP } Time To Collision Occ
+Used Dataset: Generic VS Commands; { Pedestrian Euro NCAP } AEB CPNC 50 10 kph Initial Setup
+Used Dataset: Animator: Shape File Link; { Environment: Pedestrians (Animated) } Euro NCAP Child Walking
+Used Dataset: Single Moving Object (Custom); { Pedestrians and Bicyclists } Euro NCAP Child: Near CPNC
+Used Dataset: Sensor Range and Bearing Sensitivity; { Limit from Range } 4-m Range
+Used Dataset: Sensor Elevation Sensitivity; Unity Gain
+Used Dataset: Plot: Format; Default Plot Settings
+Used Dataset: Plot: Setup; { ADAS Sensor Target Properties } ID and Message of Closest Object
+Used Dataset: Plot: Format; Default Plot Settings
+Used Dataset: Plot: Setup; { ADAS Sensor Detections } Distance for Closest Object
+Used Dataset: ADAS Sensors for Range and Tracking; { Collision Sensor for Target } Child Collision Detect (Left Side)
+Used Dataset: Animator: HUD; { Euro NCAP } FCW Alert (small - right side)
+Used Dataset: Generic VS Commands; { Pedestrian Euro NCAP } Pedestrian Sensor Outputs
+Used Dataset: Generic Data Group (More); { Pedestrian Euro NCAP } Child Pedestrian w/sensor
+Used Dataset: Generic Table; { Pedestrian Euro NCAP } Score vs. Speed
+Used Dataset: Generic VS Commands; { Pedestrian Euro NCAP } Scoring and Events
+Used Dataset: Events; { Pedestrian Euro NCAP } A. Initial Non-AEB Test
+Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } Blurred Tire: Car - Width 185 mm
+Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } Blurred Tire: Car - Width 185 mm
+Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } Blurred Tire: Car - Width 185 mm
+Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } Blurred Tire: Car - Width 185 mm
+Used Dataset: Animator: Shape File Link; { Cars: European Vehicles } Sedan: Body Dark
+Used Dataset: Animator: Shape File Link; { Cars: European Vehicles } Sedan: Details
+Used Dataset: Animator: Shape File Link; { Cars: European Vehicles } Sedan: Windows
+Used Dataset: Animator: Shape File Link; { Cars: European Vehicles } Sedan: Interior Trim
+Used Dataset: Animator: Shape File Link; { Cars: European Vehicles } Sedan: Steering Wheel
+Used Dataset: Animator: Shape File Link; { Cars: European Vehicles } Sedan: Seats
+Used Dataset: Animator: Shape File Link; { Cars: European Vehicles } Sedan: Driver (Caucasian Male)
+Used Dataset: Animator: Shape Assembly; { Passenger Cars } European Sedan Dark
+Used Dataset: Animator: Shape File Link; { Cars: European Vehicles } Sedan: Brake Lights (E-Class)
+Used Dataset: Animator: Shape File Link; { Cars: European Vehicles } Sedan: Reverse Lights (E-Class)
+Used Dataset: Animator: Vehicles and Sensor Targets; { E-Class } E-Class, Sedan Dark
+WARNING: DEFINE_PARAMETER was used for the keyword "TRUCK_WID", which was already installed.
+WARNING: DEFINE_PARAMETER was used for the keyword "OCC_CAR_OFFSET", which was already installed.
+Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } Blurred Tire: Car
+Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } Blurred Tire: Car
+Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } Blurred Tire: Car
+Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } Blurred Tire: Car
+Used Dataset: Animator: Shape File Link; { Trucks: Pickup Cabs } Crew Cab: Body Dark
+Used Dataset: Animator: Shape File Link; { Trucks: Pickup Cabs } Crew Cab: Details
+Used Dataset: Animator: Shape File Link; { Trucks: Pickup Beds } 8-Ft Box: Body Dark
+Used Dataset: Animator: Shape File Link; { Trucks: Pickup Beds } 8-Ft Box: Details
+Used Dataset: Animator: Shape Assembly; { Pickup Trucks } 8-Ft Box (For Crew Cab) Dark
+Used Dataset: Animator: Shape File Link; { Trucks: Pickup Cabs } All Cabs: Driver (Caucasian Male)
+Used Dataset: Animator: Shape File Link; { Trucks: Pickup Cabs } Crew Cab: Windows
+Used Dataset: Animator: Group; { Pickup Trucks } Crew Cab, 8 Bed Dark
+Used Dataset: Animator: Shape File Link; { Trucks: Pickup Beds } 8-Ft Box: Brake Lights (Crew Cab)
+Used Dataset: Animator: Shape File Link; { Trucks: Pickup Beds } 8-Ft Box: Reverse Lights (Crew Cab)
+Used Dataset: Animator: Vehicles and Sensor Targets; { Pickup Trucks } Pickup, Crew Cab 8 Bed Dark
+Used Dataset: Multiple Moving Objects; { Euro NCAP } Sm and Lg Occl Vehicles Mat
+Used Dataset: Generic Data Group; { Euro NCAP Pedestrian } Ped. Euro NCAP Setup Child
+Used Dataset: Procedures; { Pedestrian Euro NCAP } CPNC: VDA 4-Way Inter.
+Used Dataset: Generic VS Commands; { Pedestrian Euro NCAP } Background Boxes: Upper, Medium
+Used Dataset: Generic VS Commands; { Pedestrian Euro NCAP } Background Boxes: Lower, Large
+Used Dataset: Animator: HUD; { Euro NCAP } Collided Occlusion
+Used Dataset: Animator: HUD; { Euro NCAP } Total Score Output Occlusion
+Used Dataset: Plot: Setup; { Pedestrian Euro NCAP } AEB On Conditions
+Used Dataset: Plot: Format; Default Plot Settings
+Used Dataset: Plot: Setup; { ADAS and AEB Alerts and Commands } Ped AEB: Booleans
+Used Dataset: Plot: Format; Lines without Symbols
+Used Dataset: Plot: Setup; { Pedestrian Euro NCAP } AEB: TTC
+Used Dataset: Plot: Format; Lines without Symbols
+Used Dataset: Plot: Setup; { Braking } Brake Control: M/C Pressure
+Used Dataset: Plot: Setup; { Pedestrian Euro NCAP } Pedestrian Y_Start
+Used Dataset: Plot: Setup; { Pedestrian Euro NCAP } Bumper Strike Percentage
+Used Dataset: Plot: Format; Default Plot Settings
+Used Dataset: Plot: Setup; { Pedestrian Euro NCAP } Bearing Angles Obj. 1 to 3
+Used Dataset: Plot: Setup; { Pedestrian Euro NCAP } Vehicle Start Vxz
+Used Dataset: Plot: Format; Default Plot Settings
+Used Dataset: Plot: Setup; { Pedestrian Euro NCAP } Lateral Tracking Ped
+Used Dataset: Plot: Setup; { Pedestrian Euro NCAP } Scoring
+Used Dataset: Plot: Format; Lines without Symbols
+Used Dataset: Plot: Setup; { Pedestrian Euro NCAP } Sensed Object Type
+Used Dataset: Generic VS Commands; { Pedestrian Euro NCAP } Plot and HUD Outputs for Occlusion Test
+Used Dataset: Animator: HUD; { Euro NCAP } CPNC 50 Label
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Cube: 1m X, 0.1 Y, Z (Sensor Vector)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Cube: 1m X, 0.1 Y, Z (Sensor Vector)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Cube: 1m X, 0.1 Y, Z (Sensor Vector)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Cube: 1m X, 0.1 Y, Z (Sensor Vector)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Cube: 1m X, 0.1 Y, Z (Sensor Vector)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Cube: 1m X, 0.1 Y, Z (Sensor Vector)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Cube: 1m X, 0.1 Y, Z (Sensor Vector)
+Used Dataset: Animator: Shape File Link; { Geometric Shapes } Cube: 1m X, 0.1 Y, Z (Sensor Vector)
+ AEB CPNC_50 <Euro NCAP>
+Used Dataset: CarSim Run Control; { Euro NCAP } AEB CPNC_50
+
+Time to read input = 0.0732416
+Function F_REB_STOP_TABLE(1,1) extrapolated (out of range HIGH) for X = 0 mm at T = 0
+Function F_JNC_STOP_TABLE(1,1) extrapolated (out of range LOW) for X = 0 mm at T = 0
+Function F_REB_STOP_TABLE(1,2) extrapolated (out of range HIGH) for X = 0 mm at T = 0
+Function F_JNC_STOP_TABLE(1,2) extrapolated (out of range LOW) for X = 0 mm at T = 0
+Function F_REB_STOP_TABLE(2,1) extrapolated (out of range HIGH) for X = 0 mm at T = 0
+Function F_JNC_STOP_TABLE(2,1) extrapolated (out of range LOW) for X = 0 mm at T = 0
+Function F_REB_STOP_TABLE(2,2) extrapolated (out of range HIGH) for X = 0 mm at T = 0
+Function F_JNC_STOP_TABLE(2,2) extrapolated (out of range LOW) for X = 0 mm at T = 0
+
+Run started: VS output file = Results\Run_dcf08080-c75d-44a2-8f93-f8be5027736e\LastRun.vsb
+
+Event #1 occurred at t = 2.5095: Collided > 0
+Include PARSFILE "D:\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_8c3a676a-146b-42b9-90e4-4b9182716ef9.par"
+Used Dataset: Events; { Pedestrian Euro NCAP } End Initial Collision Run
+
+Event #2 occurred at t = 3.0095: t_event >= T_WAIT
+Include PARSFILE "D:\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_30038e90-68f6-4543-a7e5-f2501336fee1.par"
+Used Dataset: Events; { Pedestrian Euro NCAP } Check 25% Collision
+
+Event #3 occurred at t = 3.01: AEB_InitialCollideDone >= 1
+Include PARSFILE "D:\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_e362dcbb-652f-4186-8c5d-f356c43c8988.par"
+Include PARSFILE "D:\trunk\Image\CarSim\Core\CarSim_Data\Generic\VS_commands\GenVS_92369ad0-e15c-4d66-9906-6e3b791c6f4a.par"
+Used Dataset: Generic VS Commands; { Pedestrian Euro NCAP } Reload Key Parameters
+Used Dataset: Events; { Pedestrian Euro NCAP } Activate AEB
+
+Event #4 occurred at t = 3.0105: 1
+Include PARSFILE "D:\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_20ab3368-bc8f-47ed-bb2a-405ed54f6bce.par"
+Used Dataset: Events; { Pedestrian Euro NCAP } Reset Positions
+Function PBK_DL_TABLE(2,1) extrapolated (out of range HIGH) for X = 5 MPa at T = 3.011
+Function PBK_DL_TABLE(2,2) extrapolated (out of range HIGH) for X = 5 MPa at T = 3.011
+
+Event #5 occurred at t = 3.011: FINAL_AEB_TEST <= 0
+Include PARSFILE "D:\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_ac068677-3096-4711-b0d9-50a755244cb3.par"
+Used Dataset: Events; { Pedestrian Euro NCAP } B. Initialize AEB On Test
+
+Event #6 occurred at t = 3.0115: ReadyForAEB_Test >= 1
+Include PARSFILE "D:\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_e1327191-b0ac-4266-b5d0-4b9ed106b6fe.par"
+Used Dataset: Events; { Pedestrian Euro NCAP } Start AEB Run
+
+Event #7 occurred at t = 4.794: AEB_OnTestSuccess >= 1
+Include PARSFILE "D:\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_61708849-0680-413e-991e-472ad0e02135.par"
+Used Dataset: Events; { Pedestrian Euro NCAP } Check AEB Final Run
+
+Event #8 occurred at t = 4.7945: EndFinalRun < 1
+Include PARSFILE "D:\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_bafc00f0-7a8b-4661-9a45-dc5b840608ed.par"
+Used Dataset: Events; { Pedestrian Euro NCAP } AEB Run Success
+
+Event #9 occurred at t = 4.795: RESET_COMPLETE == 0
+Include PARSFILE "D:\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_5f0fbb7d-ed57-44eb-b669-0d4ff2a032f3.par"
+Include PARSFILE "D:\trunk\Image\CarSim\Core\CarSim_Data\Generic\VS_commands\GenVS_92369ad0-e15c-4d66-9906-6e3b791c6f4a.par"
+Used Dataset: Generic VS Commands; { Pedestrian Euro NCAP } Reload Key Parameters
+Used Dataset: Events; { Pedestrian Euro NCAP } Pre-Reset
+
+Event #10 occurred at t = 4.7955: 1
+Include PARSFILE "D:\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_20ab3368-bc8f-47ed-bb2a-405ed54f6bce.par"
+Used Dataset: Events; { Pedestrian Euro NCAP } Reset Positions
+
+Event #11 occurred at t = 4.796: FINAL_AEB_TEST <= 0
+Include PARSFILE "D:\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_ac068677-3096-4711-b0d9-50a755244cb3.par"
+Used Dataset: Events; { Pedestrian Euro NCAP } B. Initialize AEB On Test
+
+Event #12 occurred at t = 4.7965: ReadyForAEB_Test >= 1
+Include PARSFILE "D:\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_e1327191-b0ac-4266-b5d0-4b9ed106b6fe.par"
+Used Dataset: Events; { Pedestrian Euro NCAP } Start AEB Run
+
+Event #13 occurred at t = 7.013: AEB_OnTestSuccess >= 1
+Include PARSFILE "D:\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_61708849-0680-413e-991e-472ad0e02135.par"
+Used Dataset: Events; { Pedestrian Euro NCAP } Check AEB Final Run
+
+Event #14 occurred at t = 7.0135: EndFinalRun < 1
+Include PARSFILE "D:\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_bafc00f0-7a8b-4661-9a45-dc5b840608ed.par"
+Used Dataset: Events; { Pedestrian Euro NCAP } AEB Run Success
+
+Event #15 occurred at t = 7.014: RESET_COMPLETE == 0
+Include PARSFILE "D:\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_5f0fbb7d-ed57-44eb-b669-0d4ff2a032f3.par"
+Include PARSFILE "D:\trunk\Image\CarSim\Core\CarSim_Data\Generic\VS_commands\GenVS_92369ad0-e15c-4d66-9906-6e3b791c6f4a.par"
+Used Dataset: Generic VS Commands; { Pedestrian Euro NCAP } Reload Key Parameters
+Used Dataset: Events; { Pedestrian Euro NCAP } Pre-Reset
+
+Event #16 occurred at t = 7.0145: 1
+Include PARSFILE "D:\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_20ab3368-bc8f-47ed-bb2a-405ed54f6bce.par"
+Used Dataset: Events; { Pedestrian Euro NCAP } Reset Positions
+
+Event #17 occurred at t = 7.015: FINAL_AEB_TEST <= 0
+Include PARSFILE "D:\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_ac068677-3096-4711-b0d9-50a755244cb3.par"
+Used Dataset: Events; { Pedestrian Euro NCAP } B. Initialize AEB On Test
+
+Event #18 occurred at t = 7.0155: ReadyForAEB_Test >= 1
+Include PARSFILE "D:\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_e1327191-b0ac-4266-b5d0-4b9ed106b6fe.par"
+Used Dataset: Events; { Pedestrian Euro NCAP } Start AEB Run
+
+Event #19 occurred at t = 9.835: AEB_OnTestSuccess >= 1
+Include PARSFILE "D:\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_61708849-0680-413e-991e-472ad0e02135.par"
+Used Dataset: Events; { Pedestrian Euro NCAP } Check AEB Final Run
+
+Event #20 occurred at t = 9.8355: EndFinalRun < 1
+Include PARSFILE "D:\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_bafc00f0-7a8b-4661-9a45-dc5b840608ed.par"
+Used Dataset: Events; { Pedestrian Euro NCAP } AEB Run Success
+
+Event #21 occurred at t = 9.836: RESET_COMPLETE == 0
+Include PARSFILE "D:\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_5f0fbb7d-ed57-44eb-b669-0d4ff2a032f3.par"
+Include PARSFILE "D:\trunk\Image\CarSim\Core\CarSim_Data\Generic\VS_commands\GenVS_92369ad0-e15c-4d66-9906-6e3b791c6f4a.par"
+Used Dataset: Generic VS Commands; { Pedestrian Euro NCAP } Reload Key Parameters
+Used Dataset: Events; { Pedestrian Euro NCAP } Pre-Reset
+
+Event #22 occurred at t = 9.8365: 1
+Include PARSFILE "D:\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_20ab3368-bc8f-47ed-bb2a-405ed54f6bce.par"
+Used Dataset: Events; { Pedestrian Euro NCAP } Reset Positions
+
+Event #23 occurred at t = 9.837: FINAL_AEB_TEST <= 0
+Include PARSFILE "D:\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_ac068677-3096-4711-b0d9-50a755244cb3.par"
+Used Dataset: Events; { Pedestrian Euro NCAP } B. Initialize AEB On Test
+
+Event #24 occurred at t = 9.8375: ReadyForAEB_Test >= 1
+Include PARSFILE "D:\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_e1327191-b0ac-4266-b5d0-4b9ed106b6fe.par"
+Used Dataset: Events; { Pedestrian Euro NCAP } Start AEB Run
+
+Event #25 occurred at t = 12.845: AEB_OnTestSuccess >= 1
+Include PARSFILE "D:\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_61708849-0680-413e-991e-472ad0e02135.par"
+Used Dataset: Events; { Pedestrian Euro NCAP } Check AEB Final Run
+
+Event #26 occurred at t = 12.8455: EndFinalRun < 1
+Include PARSFILE "D:\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_bafc00f0-7a8b-4661-9a45-dc5b840608ed.par"
+Used Dataset: Events; { Pedestrian Euro NCAP } AEB Run Success
+
+Event #27 occurred at t = 12.846: RESET_COMPLETE == 0
+Include PARSFILE "D:\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_5f0fbb7d-ed57-44eb-b669-0d4ff2a032f3.par"
+Include PARSFILE "D:\trunk\Image\CarSim\Core\CarSim_Data\Generic\VS_commands\GenVS_92369ad0-e15c-4d66-9906-6e3b791c6f4a.par"
+Used Dataset: Generic VS Commands; { Pedestrian Euro NCAP } Reload Key Parameters
+Used Dataset: Events; { Pedestrian Euro NCAP } Pre-Reset
+
+Event #28 occurred at t = 12.8465: 1
+Include PARSFILE "D:\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_20ab3368-bc8f-47ed-bb2a-405ed54f6bce.par"
+Used Dataset: Events; { Pedestrian Euro NCAP } Reset Positions
+
+Event #29 occurred at t = 12.847: FINAL_AEB_TEST <= 0
+Include PARSFILE "D:\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_ac068677-3096-4711-b0d9-50a755244cb3.par"
+Used Dataset: Events; { Pedestrian Euro NCAP } B. Initialize AEB On Test
+
+Event #30 occurred at t = 12.8475: ReadyForAEB_Test >= 1
+Include PARSFILE "D:\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_e1327191-b0ac-4266-b5d0-4b9ed106b6fe.par"
+Used Dataset: Events; { Pedestrian Euro NCAP } Start AEB Run
+
+Event #31 occurred at t = 15.913: AEB_OnTestSuccess >= 1
+Include PARSFILE "D:\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_61708849-0680-413e-991e-472ad0e02135.par"
+Used Dataset: Events; { Pedestrian Euro NCAP } Check AEB Final Run
+
+Event #32 occurred at t = 15.9135: EndFinalRun < 1
+Include PARSFILE "D:\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_bafc00f0-7a8b-4661-9a45-dc5b840608ed.par"
+Used Dataset: Events; { Pedestrian Euro NCAP } AEB Run Success
+
+Event #33 occurred at t = 15.914: RESET_COMPLETE == 0
+Include PARSFILE "D:\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_5f0fbb7d-ed57-44eb-b669-0d4ff2a032f3.par"
+Include PARSFILE "D:\trunk\Image\CarSim\Core\CarSim_Data\Generic\VS_commands\GenVS_92369ad0-e15c-4d66-9906-6e3b791c6f4a.par"
+Used Dataset: Generic VS Commands; { Pedestrian Euro NCAP } Reload Key Parameters
+Used Dataset: Events; { Pedestrian Euro NCAP } Pre-Reset
+
+Event #34 occurred at t = 15.9145: 1
+Include PARSFILE "D:\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_20ab3368-bc8f-47ed-bb2a-405ed54f6bce.par"
+Used Dataset: Events; { Pedestrian Euro NCAP } Reset Positions
+
+Event #35 occurred at t = 15.915: FINAL_AEB_TEST <= 0
+Include PARSFILE "D:\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_ac068677-3096-4711-b0d9-50a755244cb3.par"
+Used Dataset: Events; { Pedestrian Euro NCAP } B. Initialize AEB On Test
+
+Event #36 occurred at t = 15.9155: ReadyForAEB_Test >= 1
+Include PARSFILE "D:\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_e1327191-b0ac-4266-b5d0-4b9ed106b6fe.par"
+Used Dataset: Events; { Pedestrian Euro NCAP } Start AEB Run
+
+Event #37 occurred at t = 19.238: AEB_OnTestSuccess >= 1
+Include PARSFILE "D:\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_61708849-0680-413e-991e-472ad0e02135.par"
+Used Dataset: Events; { Pedestrian Euro NCAP } Check AEB Final Run
+
+Event #38 occurred at t = 19.2385: EndFinalRun < 1
+Include PARSFILE "D:\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_bafc00f0-7a8b-4661-9a45-dc5b840608ed.par"
+Used Dataset: Events; { Pedestrian Euro NCAP } AEB Run Success
+
+Event #39 occurred at t = 19.239: RESET_COMPLETE == 0
+Include PARSFILE "D:\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_5f0fbb7d-ed57-44eb-b669-0d4ff2a032f3.par"
+Include PARSFILE "D:\trunk\Image\CarSim\Core\CarSim_Data\Generic\VS_commands\GenVS_92369ad0-e15c-4d66-9906-6e3b791c6f4a.par"
+Used Dataset: Generic VS Commands; { Pedestrian Euro NCAP } Reload Key Parameters
+Used Dataset: Events; { Pedestrian Euro NCAP } Pre-Reset
+
+Event #40 occurred at t = 19.2395: 1
+Include PARSFILE "D:\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_20ab3368-bc8f-47ed-bb2a-405ed54f6bce.par"
+Used Dataset: Events; { Pedestrian Euro NCAP } Reset Positions
+
+Event #41 occurred at t = 19.24: FINAL_AEB_TEST <= 0
+Include PARSFILE "D:\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_ac068677-3096-4711-b0d9-50a755244cb3.par"
+Used Dataset: Events; { Pedestrian Euro NCAP } B. Initialize AEB On Test
+
+Event #42 occurred at t = 19.2405: ReadyForAEB_Test >= 1
+Include PARSFILE "D:\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_e1327191-b0ac-4266-b5d0-4b9ed106b6fe.par"
+Used Dataset: Events; { Pedestrian Euro NCAP } Start AEB Run
+
+Event #43 occurred at t = 22.717: AEB_OnTestSuccess >= 1
+Include PARSFILE "D:\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_61708849-0680-413e-991e-472ad0e02135.par"
+Used Dataset: Events; { Pedestrian Euro NCAP } Check AEB Final Run
+
+Event #44 occurred at t = 22.7175: EndFinalRun < 1
+Include PARSFILE "D:\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_bafc00f0-7a8b-4661-9a45-dc5b840608ed.par"
+Used Dataset: Events; { Pedestrian Euro NCAP } AEB Run Success
+
+Event #45 occurred at t = 22.718: RESET_COMPLETE == 0
+Include PARSFILE "D:\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_5f0fbb7d-ed57-44eb-b669-0d4ff2a032f3.par"
+Include PARSFILE "D:\trunk\Image\CarSim\Core\CarSim_Data\Generic\VS_commands\GenVS_92369ad0-e15c-4d66-9906-6e3b791c6f4a.par"
+Used Dataset: Generic VS Commands; { Pedestrian Euro NCAP } Reload Key Parameters
+Used Dataset: Events; { Pedestrian Euro NCAP } Pre-Reset
+
+Event #46 occurred at t = 22.7185: 1
+Include PARSFILE "D:\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_20ab3368-bc8f-47ed-bb2a-405ed54f6bce.par"
+Used Dataset: Events; { Pedestrian Euro NCAP } Reset Positions
+
+Event #47 occurred at t = 22.719: FINAL_AEB_TEST <= 0
+Include PARSFILE "D:\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_ac068677-3096-4711-b0d9-50a755244cb3.par"
+Used Dataset: Events; { Pedestrian Euro NCAP } B. Initialize AEB On Test
+
+Event #48 occurred at t = 22.7195: ReadyForAEB_Test >= 1
+Include PARSFILE "D:\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_e1327191-b0ac-4266-b5d0-4b9ed106b6fe.par"
+Used Dataset: Events; { Pedestrian Euro NCAP } Start AEB Run
+
+Event #49 occurred at t = 26.4185: AEB_OnTestSuccess >= 1
+Include PARSFILE "D:\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_61708849-0680-413e-991e-472ad0e02135.par"
+Used Dataset: Events; { Pedestrian Euro NCAP } Check AEB Final Run
+
+Event #50 occurred at t = 26.419: EndFinalRun < 1
+Include PARSFILE "D:\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_bafc00f0-7a8b-4661-9a45-dc5b840608ed.par"
+Used Dataset: Events; { Pedestrian Euro NCAP } AEB Run Success
+
+Event #51 occurred at t = 26.4195: RESET_COMPLETE == 0
+Include PARSFILE "D:\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_5f0fbb7d-ed57-44eb-b669-0d4ff2a032f3.par"
+Include PARSFILE "D:\trunk\Image\CarSim\Core\CarSim_Data\Generic\VS_commands\GenVS_92369ad0-e15c-4d66-9906-6e3b791c6f4a.par"
+Used Dataset: Generic VS Commands; { Pedestrian Euro NCAP } Reload Key Parameters
+Used Dataset: Events; { Pedestrian Euro NCAP } Pre-Reset
+
+Event #52 occurred at t = 26.42: 1
+Include PARSFILE "D:\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_20ab3368-bc8f-47ed-bb2a-405ed54f6bce.par"
+Used Dataset: Events; { Pedestrian Euro NCAP } Reset Positions
+
+Event #53 occurred at t = 26.4205: FINAL_AEB_TEST <= 0
+Include PARSFILE "D:\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_ac068677-3096-4711-b0d9-50a755244cb3.par"
+Used Dataset: Events; { Pedestrian Euro NCAP } B. Initialize AEB On Test
+
+Event #54 occurred at t = 26.421: ReadyForAEB_Test >= 1
+Include PARSFILE "D:\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_e1327191-b0ac-4266-b5d0-4b9ed106b6fe.par"
+Used Dataset: Events; { Pedestrian Euro NCAP } Start AEB Run
+
+Event #55 occurred at t = 30.3255: AEB_OnTestSuccess >= 1
+Include PARSFILE "D:\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_61708849-0680-413e-991e-472ad0e02135.par"
+Used Dataset: Events; { Pedestrian Euro NCAP } Check AEB Final Run
+
+Event #56 occurred at t = 30.326: EndFinalRun < 1
+Include PARSFILE "D:\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_bafc00f0-7a8b-4661-9a45-dc5b840608ed.par"
+Used Dataset: Events; { Pedestrian Euro NCAP } AEB Run Success
+
+Event #57 occurred at t = 30.3265: RESET_COMPLETE == 0
+Include PARSFILE "D:\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_5f0fbb7d-ed57-44eb-b669-0d4ff2a032f3.par"
+Include PARSFILE "D:\trunk\Image\CarSim\Core\CarSim_Data\Generic\VS_commands\GenVS_92369ad0-e15c-4d66-9906-6e3b791c6f4a.par"
+Used Dataset: Generic VS Commands; { Pedestrian Euro NCAP } Reload Key Parameters
+Used Dataset: Events; { Pedestrian Euro NCAP } Pre-Reset
+
+Event #58 occurred at t = 30.327: 1
+Include PARSFILE "D:\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_20ab3368-bc8f-47ed-bb2a-405ed54f6bce.par"
+Used Dataset: Events; { Pedestrian Euro NCAP } Reset Positions
+
+Event #59 occurred at t = 30.3275: FINAL_AEB_TEST <= 0
+Include PARSFILE "D:\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_ac068677-3096-4711-b0d9-50a755244cb3.par"
+Used Dataset: Events; { Pedestrian Euro NCAP } B. Initialize AEB On Test
+
+Event #60 occurred at t = 30.328: ReadyForAEB_Test >= 1
+Include PARSFILE "D:\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_e1327191-b0ac-4266-b5d0-4b9ed106b6fe.par"
+Used Dataset: Events; { Pedestrian Euro NCAP } Start AEB Run
+
+Event #61 occurred at t = 34.417: AEB_OnTestSuccess >= 1
+Include PARSFILE "D:\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_61708849-0680-413e-991e-472ad0e02135.par"
+Used Dataset: Events; { Pedestrian Euro NCAP } Check AEB Final Run
+
+Event #62 occurred at t = 34.4175: EndFinalRun < 1
+Include PARSFILE "D:\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_bafc00f0-7a8b-4661-9a45-dc5b840608ed.par"
+Used Dataset: Events; { Pedestrian Euro NCAP } AEB Run Success
+
+Event #63 occurred at t = 34.418: RESET_COMPLETE == 0
+Include PARSFILE "D:\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_5f0fbb7d-ed57-44eb-b669-0d4ff2a032f3.par"
+Include PARSFILE "D:\trunk\Image\CarSim\Core\CarSim_Data\Generic\VS_commands\GenVS_92369ad0-e15c-4d66-9906-6e3b791c6f4a.par"
+Used Dataset: Generic VS Commands; { Pedestrian Euro NCAP } Reload Key Parameters
+Used Dataset: Events; { Pedestrian Euro NCAP } Pre-Reset
+
+Event #64 occurred at t = 34.4185: 1
+Include PARSFILE "D:\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_20ab3368-bc8f-47ed-bb2a-405ed54f6bce.par"
+Used Dataset: Events; { Pedestrian Euro NCAP } Reset Positions
+
+Event #65 occurred at t = 34.419: FINAL_AEB_TEST <= 0
+Include PARSFILE "D:\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_ac068677-3096-4711-b0d9-50a755244cb3.par"
+Used Dataset: Events; { Pedestrian Euro NCAP } B. Initialize AEB On Test
+
+Event #66 occurred at t = 34.4195: ReadyForAEB_Test >= 1
+Include PARSFILE "D:\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_e1327191-b0ac-4266-b5d0-4b9ed106b6fe.par"
+Used Dataset: Events; { Pedestrian Euro NCAP } Start AEB Run
+
+Event #67 occurred at t = 38.721: AEB_OnTestSuccess >= 1
+Include PARSFILE "D:\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_61708849-0680-413e-991e-472ad0e02135.par"
+Used Dataset: Events; { Pedestrian Euro NCAP } Check AEB Final Run
+
+Event #68 occurred at t = 38.7215: EndFinalRun >= 1
+Include PARSFILE "D:\trunk\Image\CarSim\Core\CarSim_Data\Events\Events_ea969e12-443d-4590-84d1-e4d34c5706fc.par"
+Used Dataset: Events; { Pedestrian Euro NCAP } End Last Run
+Function FY_TIRE_CARPET(1,1) extrapolated (out of range HIGH) for X = 26.4757 deg at T = 39.7465
+Function MZ_TIRE_CARPET(1,1) extrapolated (out of range HIGH) for X = 26.4757 deg at T = 39.7465
+Function FY_TIRE_CARPET(1,2) extrapolated (out of range HIGH) for X = 26.4757 deg at T = 39.7465
+Function MZ_TIRE_CARPET(1,2) extrapolated (out of range HIGH) for X = 26.4757 deg at T = 39.7465
+
+Event #69 occurred at t = 43.7245: t_event >= TOT_SIM_TIME- T_WAIT
+
+Run stopped at t = 43.7245. Event encountered with no continuation parsfile.
+
+Computational time ratio: RTIME = 0.150337 (real time)/(simulation time)
+

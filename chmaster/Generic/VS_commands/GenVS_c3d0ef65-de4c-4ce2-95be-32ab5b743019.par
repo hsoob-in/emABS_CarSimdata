@@ -1,0 +1,33 @@
+PARSFILE
+#FullDataName Generic VS Commands`VS Visualizer HUD Text Display`HUD Gauges
+#VehCode VS Commands
+
+#MiscYellow0
+! More common HUD items are added through the HUD Animator Datasets
+
+!Adds CarSim Logo
+ADD_ENTITY hud_image Image Widget
+  location 10 10 160 160
+  align_x 2
+  align_y 2
+  size_mode 1
+  place_mode 1
+  opacity 0.33
+  image_file Animator\2D_HUD_Icons\VS_Icons\CSIcon.png
+END_ENTITY hud_image Image Widget
+!
+#ENDMYellow
+
+PARSFILE Animator\Groups\Group_2597592e-ab24-47b1-9c29-d24dbab07e99.par
+#BlueLink0 Animator: Group`HUD Text Displays` ` , Miscellaneous`Group_2597592e-ab24-47b1-9c29-d24dbab07e99
+
+
+LOG_ENTRY Used Dataset: Generic VS Commands; { HUD Gauges } VS Visualizer HUD Text Display
+#Library : Generic VS Commands
+#DataSet : VS Visualizer HUD Text Display
+#Category: HUD Gauges
+#FileID  : GenVS_c3d0ef65-de4c-4ce2-95be-32ab5b743019
+#Product : CarSim 2021.0
+#VehCode VS Commands
+
+END

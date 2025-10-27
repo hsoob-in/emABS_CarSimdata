@@ -1,0 +1,84 @@
+PARSFILE
+#FullDataName Suspension: Virtual Steering Axis System Kinematics`B-Class, Sports Car (VSA) - Front`B-Class
+#RingCtrl0 1
+OPT_JNC_DESIGN 1
+#CheckBox0 0    
+
+L_TRACK 1440
+Y_CL_SUSP 0
+*M_US_STR_L 27.3
+*M_US_STR_R 27.3
+*IW_L 0.08
+*IW_R 0.08
+*IWXXZZ_L 0.04
+*IWXXZZ_R 0.04
+*JNC_DESIGN_L 0
+*JNC_DESIGN_R 0
+*CAMBER_L 0
+*CAMBER_R 0
+*TOE_L 0
+*TOE_R 0
+
+ISIDE 1
+M_US_STR 27.3
+IW 0.08
+IW_XXZZ 0.04
+JNC_DESIGN 0
+PARSFILE Suspensions\Dive_Vir\DiveVir_0557c5b1-9426-4eeb-99f7-cb52e5923b2d.par
+#BlueLink0 Suspension: Dive Angle (Virtual Steering Axis)`B-Class, Sports Car - Front Left` B-Class` , Left wheel dive (caster change)`DiveVir_0557c5b1-9426-4eeb-99f7-cb52e5923b2d
+
+PARSFILE Suspensions\Longitudinal_Vir\LongVir_f12d28f6-5df4-49b0-a519-86b6875d74bc.par
+#BlueLink1 Suspension: Longitudinal Movement (Virtual Steering Axis)`B-Class, Sports Car - Front Left` B-Class` , Left wheel X`LongVir_f12d28f6-5df4-49b0-a519-86b6875d74bc
+
+PARSFILE Suspensions\Camber_Vir\CamVir_ca550c8d-7ad0-47f6-b481-4522be37e176.par
+#BlueLink2 Suspension: Camber Angle (Virtual Steering Axis)`B-Class, Sports Car - Front Left` B-Class` , Left wheel camber`CamVir_ca550c8d-7ad0-47f6-b481-4522be37e176
+
+PARSFILE Suspensions\Lateral_Vir\LatVir_af755da5-0309-4d0b-9081-62643923de1a.par
+#BlueLink3 Suspension: Lateral Movement (Virtual Steering Axis)`B-Class, Sports Car - Front Left` B-Class` , Left wheel lateral (-Y)`LatVir_af755da5-0309-4d0b-9081-62643923de1a
+
+PARSFILE Suspensions\Steer_Vir\StrVir_d333f27b-ec3b-475f-8db3-4cc333e04461.par
+#BlueLink4 Suspension: Steer Angle (Virtual Steering Axis)`B-Class, Sports Car - Front Left` B-Class` , Left wheel toe`StrVir_d333f27b-ec3b-475f-8db3-4cc333e04461
+
+CAMBER_VIR_OFFSET(1,1) 0
+STEER_VIR_OFFSET(1,1) 0*-1
+
+ISIDE 2
+M_US_STR 27.3
+IW 0.08
+IW_XXZZ 0.04
+JNC_DESIGN 0
+PARSFILE Suspensions\Dive_Vir\DiveVir_535fb1b6-214d-4477-ad0a-637d72aa5a03.par
+#BlueLink5 Suspension: Dive Angle (Virtual Steering Axis)`B-Class, Sports Car - Front Right` B-Class` , Right wheel dive (caster change)`DiveVir_535fb1b6-214d-4477-ad0a-637d72aa5a03
+
+PARSFILE Suspensions\Longitudinal_Vir\LongVir_493ccc46-48b0-4895-9923-dac246ec8762.par
+#BlueLink6 Suspension: Longitudinal Movement (Virtual Steering Axis)`B-Class, Sports Car - Front Right` B-Class` , Right wheel X`LongVir_493ccc46-48b0-4895-9923-dac246ec8762
+
+PARSFILE Suspensions\Camber_Vir\CamVir_04a7617e-d9fb-4c6a-b049-7f4d0655963f.par
+#BlueLink7 Suspension: Camber Angle (Virtual Steering Axis)`B-Class, Sports Car - Front Right` B-Class` , Right wheel camber`CamVir_04a7617e-d9fb-4c6a-b049-7f4d0655963f
+
+PARSFILE Suspensions\Lateral_Vir\LatVir_ee8d3153-7527-4f8c-9c23-762e7ebe9b9c.par
+#BlueLink8 Suspension: Lateral Movement (Virtual Steering Axis)`B-Class, Sports Car - Front Right` B-Class` , Right wheel lateral (+Y)`LatVir_ee8d3153-7527-4f8c-9c23-762e7ebe9b9c
+
+PARSFILE Suspensions\Steer_Vir\StrVir_65011fea-4d36-4313-b366-1ba92aa9376a.par
+#BlueLink9 Suspension: Steer Angle (Virtual Steering Axis)`B-Class, Sports Car - Front Right` B-Class` , Right wheel toe`StrVir_65011fea-4d36-4313-b366-1ba92aa9376a
+
+CAMBER_VIR_OFFSET(1,2) 0
+STEER_VIR_OFFSET(1,2) 0
+
+#EMBEDDED_NOTES
+#Data representing a strut front suspension with double lower ball joint; there is no fixed kingpin.
+#
+#Instead, each side's 2D suspension kinematics tables defines an instantaneous steering axis which is dependent on both jounce and steering rack travel. These 2D tables were generated using a multibody model in SuspensionSim.
+#
+#Note: Several parameters may appear similar to those used for the Independent suspension, but differ slightly for this new suspension type. Use the right-click notes or click Help to learn more.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Suspension: Virtual Steering Axis System Kinematics; { B-Class } B-Class, Sports Car (VSA) - Front
+#Library : Suspension: Virtual Steering Axis System Kinematics
+#DataSet : B-Class, Sports Car (VSA) - Front
+#Category: B-Class
+#FileID  : KinVir_4abb33cc-cfd0-439d-9a69-f227f12b5d37
+#Product : CarSim 2021.0
+#VehCode Virtual Steering Axis
+
+END

@@ -1,0 +1,51 @@
+PARSFILE
+#FullDataName Vehicle: Sprung Mass`B-Class, IONIQ5`MS2024(ABS)
+#VehCode Rigid sprung mass
+#RingCtrl0 0
+#CheckBox2 0    
+X_LENGTH 2600
+Y_LENGTH 1500
+iaxle 2
+iside 1
+LX_AXLE 2600
+LX_CG_SU 1040
+M_SU 1898.2
+IXX_SU 736.7
+IYY_SU 2247.0
+IZZ_SU 2247.0
+IXZ_SU 0
+*RX 0.623
+*RY 1.088
+*RZ 1.088
+Y_CG_SU 0
+H_CG_SU 540
+IXY_SU 0
+IYZ_SU 0
+Z_LENGTH 1314
+Y_LENGTH 1889
+*HWC_LF 468
+*HWC_RF 468
+*HWC_LR 468
+*HWC_RR 468
+H_WC 468
+iside 2
+H_WC 468
+iaxle 1
+iside 1
+H_WC 468
+iside 2
+H_WC 468
+iaxle 2
+iside 1
+HT_SM 1314
+WID_SM 1889
+
+LOG_ENTRY Used Dataset: Vehicle: Sprung Mass; { MS2024(ABS) } B-Class, IONIQ5
+#Library : Vehicle: Sprung Mass
+#DataSet : B-Class, IONIQ5
+#Category: MS2024(ABS)
+#FileID  : SprMass_f13ffc1b-f77e-435c-9235-8e92af34e150
+#Product : CarSim 2021.0
+#VehCode Rigid sprung mass
+
+END

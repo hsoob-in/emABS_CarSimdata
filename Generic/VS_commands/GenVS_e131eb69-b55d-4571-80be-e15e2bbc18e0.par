@@ -1,0 +1,78 @@
+PARSFILE
+#FullDataName Generic VS Commands`Replace Vir. Steering Rack`External Steering
+#VehCode VS Commands
+
+#MiscYellow0
+! Tell the VS Math Model that we will be replacing the internal steering rack:
+opt_steer_ext(1) = 2
+
+! Define some units which are needed for the external model's parameters:
+define_units mm/rev 1000*2*pi
+define_units N/(N-m) 1
+
+! The steering rack is modeled with a few parameters similar to the internal rack model,
+! but there is no friction and the rack assist force is given by a coefficient instead of a curve.
+define_parameter rack_damping = 20.4; N-s/mm
+define_parameter tbar_stiffness = 2.2; N-m/deg
+define_parameter c_factor = 40; mm/rev
+define_parameter pinion_inertia = 0.000182; kg-m2
+define_parameter f_boost_gain = 230; N/(N-m)
+define_parameter h = 1; mm; Step size for partial derivative calc
+
+! Define some variables needed for intermediate portions of calculation:
+define_variable rack_accel
+define_variable rack_speed
+define_variable rack_pos
+define_variable dSteerL1_dRack
+define_variable dSteerR1_dRack
+define_variable f_boost_ext
+
+! Activate the appropriate import variables:
+import imp_rack_travel_1
+import imp_rack_travel_rate_1
+import imp_rack_travel_accel_1
+import imp_m_tbar_ext
+import imp_r_str_ext_l1
+import imp_r_str_ext_r1
+
+! Get partial derivative of suspension steer wrt rack travel, needed later.
+! A finite difference method is used because the partial derivative cannot
+! be accessed directly via VS Commands.
+eq_in dSteerL1_dRack = (steer_vir(Y_Rack1+h,Jnc_L1,1)-steer_vir(Y_Rack1-h,Jnc_L1,1))/(2*h)
+eq_in dSteerR1_dRack = (steer_vir(Y_Rack1+h,Jnc_R1,2)-steer_vir(Y_Rack1-h,Jnc_R1,2))/(2*h)
+
+! Update rack kinematics using values calculated in last timestep:
+eq_in imp_rack_travel_1 = rack_pos
+eq_in imp_rack_travel_rate_1 = rack_speed
+
+! Calculate info needed for rest of steering system using values calculated in last timestep:
+eq_in imp_m_tbar_ext = tbar_stiffness*(Steer_SW-rack_pos/c_factor)
+eq_in imp_r_str_ext_l1 = 1/(dSteerL1_dRack*c_factor)
+eq_in imp_r_str_ext_r1 = 1/(dSteerR1_dRack*c_factor)
+eq_in f_boost_ext = f_boost_gain*imp_m_tbar_ext
+
+! Get updated rack acceleration (this is the equation of motion for the external rack)
+eq_out rack_accel = (-rack_damping*rack_speed - tbar_stiffness*rack_pos/c_factor^2 ...
+                  + tbar_stiffness*Steer_SW/c_factor+F_TRdL1+F_TRdR1+f_boost_ext) ...
+                  / (MassVir1+pinion_inertia/c_factor^2)
+eq_out imp_rack_travel_accel_1 = rack_accel
+                  
+! Integrate the rack acceleration to get rack kinematics for next time step
+eq_differential rack_speed = rack_accel
+eq_differential rack_pos = rack_speed
+#ENDMYellow
+
+
+#EMBEDDED_NOTES
+#The steering rack is replaced with a totally external model, whose equation of motion is established here using VS Commands. Click "Parsfile" to open the VS Commands in a separate text editor for easier review.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Generic VS Commands; { External Steering } Replace Vir. Steering Rack
+#Library : Generic VS Commands
+#DataSet : Replace Vir. Steering Rack
+#Category: External Steering
+#FileID  : GenVS_e131eb69-b55d-4571-80be-e15e2bbc18e0
+#Product : CarSim 2021.0
+#VehCode VS Commands
+
+END

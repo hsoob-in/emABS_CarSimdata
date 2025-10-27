@@ -1,0 +1,88 @@
+PARSFILE
+#FullDataName CarSim Run Control`FCW, AEB, ACC, & LKAS: Animated Deer`* CS 2021.0 - Combined ADAS Features
+#VEHICLECODE Ind_Ind
+symbol_push  <<vehicle>> 0
+symbol_push  <<unit>> 0
+symbol_push  <<axle>> 0
+symbol_push  <<s>> 0
+symbol_push  <<o>> 0
+symbol_push  <<id_run>> Run_2c515197-fe5c-4ace-8692-50d47584242d
+
+OPT_ALL_WRITE 0
+IOBJECT 0
+IUNIT 0
+IVEHICLE 0
+OPT_INT_METHOD 0
+OPT_VS_FILETYPE 2
+PARSFILE Animator\Cameras\Camera_b3a6a2e3-3f98-4f6a-92de-c1f9cbe5cd9b.par
+#BlueLink0 Animator: Camera Setup`175 Azm, 5 El, 20 m` Vehicle Reference` , Animator camera`Camera_b3a6a2e3-3f98-4f6a-92de-c1f9cbe5cd9b
+
+#CheckBox0 1    
+#CheckBox1 0    
+#CheckBox2 0    
+#CheckBox3 0    
+#CheckBox4 0    
+#CheckBox5 0    
+#CheckBox6 0    
+#CheckBox7 0    
+#CheckBox8 1    
+#CheckBox9 0    
+#CheckBox10 0    
+#CheckBox11 0    
+
+#RingCtrl0 4
+#RingCtrl1 0
+#RingCtrl2 3
+#RingCtrl3 0
+#RingCtrl6 0
+#RingCtrl7 -1
+#RingCtrl4 off
+RT_WINDOW_CLOSE off
+#RingCtrl5 0
+LIVE_SERVER_MAX_CONNECTIONS 0
+PARSFILE Vehicles\Loaded\VehLoad_083d7154-217c-4079-aa7b-f97e317b0baa.par
+#BlueLink2 Vehicle with Loads, Sensors, Trailer, etc.`C-Class Hatch w/ ACC, AEB` C-Class` , Math Model`VehLoad_083d7154-217c-4079-aa7b-f97e317b0baa
+
+PARSFILE Procedures\Proc_93cc0da2-f15b-4aac-a4ec-d59dbe05819b.par
+#BlueLink28 Procedures`Deer Crossing` Road Networks` , Procedure`Proc_93cc0da2-f15b-4aac-a4ec-d59dbe05819b
+
+PARSFILE Generic\Links\GenLink_01dcefbb-8051-47f6-8121-510249df73ce.par
+#BlueLink9 Generic Group of Links`Animated Deer Gen` ADAS: Moving Objects, incl. Pedestrians` , Miscellaneous`GenLink_01dcefbb-8051-47f6-8121-510249df73ce
+
+PARSFILE Generic\Group\GenGrp_94e371e2-422c-4308-bf9e-b013e7781abb.par
+#BlueLink10 Generic Data Group`LKAS No Traffic` LKAS, LDW, RDM` , Miscellaneous`GenGrp_94e371e2-422c-4308-bf9e-b013e7781abb
+
+PARSFILE Generic\VS_commands\GenVS_6f16d2d6-d8c0-467f-83e4-078087dd0107.par
+#BlueLink11 Generic VS Commands`Plot and HUD Outputs General AEB` Pedestrian Euro NCAP` , Miscellaneous`GenVS_6f16d2d6-d8c0-467f-83e4-078087dd0107
+
+
+*IMAGE_TYPE PASS_THROUGH
+*IMAGE_PASS_THROUGH Vehicles\Assembly\Vehicle_9db9b98a-6725-424b-9635-e1ca6e15979d.png
+WRITE_SENSOR_DETECT
+Title FCW, AEB, ACC, & LKAS: Animated Deer <* CS 2021.0 - Combined ADAS Features>
+CATEGORY * CS 2021.0 - Combined ADAS Features 
+DATASET_TITLE FCW, AEB, ACC, & LKAS: Animated Deer
+#RingCtrl8 1
+NUM_CACHED_RUNS 1
+#RingCtrl9 
+
+#EMBEDDED_NOTES
+#Forward Collision Warning (FCW) with Automated Emergency Braking (AEB)
+#
+#A C-Class Hatchback with a forward-facing AEB Sensor detects three deer
+#- Two deer are not directly in front of the car so the perception controller does not react to them
+#- A third deer runs across the road, crossing the vehicle's path,
+#- The ADAS Sensor detects the crossing deer and the VS Commands-based FCW/AEB controller triggers a FCW first, and later applies the brakes to avoid a collision
+#
+#The three deer are set up as Moving Objects, and their motion — standing still, walking, and running — are included in their .osg files.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: CarSim Run Control; { * CS 2021.0 - Combined ADAS Features } FCW, AEB, ACC, & LKAS: Animated Deer
+#Library : CarSim Run Control
+#DataSet : FCW, AEB, ACC, & LKAS: Animated Deer
+#Category: * CS 2021.0 - Combined ADAS Features
+#FileID  : Run_2c515197-fe5c-4ace-8692-50d47584242d
+#Product : CarSim 2021.0
+#VehCode Run
+
+END

@@ -1,0 +1,53 @@
+PARSFILE
+#FullDataName I/O Channels: Export`SM torque control export #3`control_all
+#RingCtrl1 1
+
+
+EXPORT Vx
+EXPORT Ax
+EXPORT AVy_L1
+EXPORT AVy_L2
+EXPORT AVy_R1
+EXPORT AVy_R2
+EXPORT My_Dr_L1
+EXPORT My_Dr_L2
+EXPORT My_Dr_R1
+EXPORT My_Dr_R2
+EXPORT Steer_SW
+EXPORT AVz
+EXPORT Throttle
+EXPORT Fx_L1
+EXPORT Fx_L2
+EXPORT Fx_R1
+EXPORT Fx_R2
+#MiscYellow0
+#Number of Selected Channels: 17
+#CHN_NAME: Vx
+#CHN_NAME: Ax
+#CHN_NAME: AVy_L1
+#CHN_NAME: AVy_L2
+#CHN_NAME: AVy_R1
+#CHN_NAME: AVy_R2
+#CHN_NAME: My_Dr_L1
+#CHN_NAME: My_Dr_L2
+#CHN_NAME: My_Dr_R1
+#CHN_NAME: My_Dr_R2
+#CHN_NAME: Steer_SW
+#CHN_NAME: AVz
+#CHN_NAME: Throttle
+#CHN_NAME: Fx_L1
+#CHN_NAME: Fx_L2
+#CHN_NAME: Fx_R1
+#CHN_NAME: Fx_R2
+#ENDMYellow
+
+
+LOG_ENTRY Used Dataset: I/O Channels: Export; { control_all } SM torque control export #3
+#Library : I/O Channels: Export
+#DataSet : SM torque control export #3
+#Category: control_all
+#FileID  : Export_2b6678dd-7c19-4e3b-bfb9-c37f31339562
+#Product : CarSim 2021.0
+#VehCode Export Channels
+
+END

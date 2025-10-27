@@ -1,0 +1,55 @@
+PARSFILE
+#FullDataName Tire: Camber Thrust Coefficient`Scaled data, basis 215/55 R17 touring tire`Normalized Tires
+#CheckBox0 1    
+
+#MiscYellow0
+kgamma_gain = FZ_REF
+fz_scale_kgamma = FZ_REF
+#ENDMYellow
+
+#RingCtrl0 SPLINE
+#RadioCtrl0 0    
+
+#DiagramOne0
+KGAMMA_TABLE SPLINE
+0, 0
+0.0980665, -0.000928185
+0.196133, -0.001859446
+0.2941995, -0.002795108
+0.392266, -0.003736215
+0.4903325, -0.004683585
+0.588399, -0.005637985
+0.6864655, -0.006600077
+0.784532, -0.007570477
+0.8825985, -0.008549754
+0.980665, -0.009538462
+1.0787315, -0.010537108
+1.176798, -0.011546154
+1.2748645, -0.012566108
+1.372931, -0.013597369
+1.4709975, -0.0146404
+1.569064, -0.015695585
+1.6671305, -0.016763338
+1.765197, -0.017844062
+1.8632635, -0.018938092
+1.96133, -0.020045831
+ENDTABLE
+
+
+#EMBEDDED_NOTES
+#Reference load for the source data tire: 6500 N
+#
+#Scaling tire data is one way to estimate properties of a tire of a different size compared to the source data but of the same construction.
+#
+#By scaling the data in all dimensions, the linear-range performance (e.g., cornering stiffness) of the tire is the same as the original.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Tire: Camber Thrust Coefficient; { Normalized Tires } Scaled data, basis 215/55 R17 touring tire
+#Library : Tire: Camber Thrust Coefficient
+#DataSet : Scaled data, basis 215/55 R17 touring tire
+#Category: Normalized Tires
+#FileID  : CamStiff_c180a402-7765-4842-b2bd-612a94fd0555
+#Product : CarSim 2021.0
+#VehCode Camber Thrust
+
+END

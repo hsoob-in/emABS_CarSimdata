@@ -1,0 +1,79 @@
+PARSFILE
+#FullDataName CarSim Run Control`Trailer Oscillation Test`* CS 2021.0 - New Proving Ground
+#VEHICLECODE Ind_SA + S
+symbol_push  <<vehicle>> 0
+symbol_push  <<unit>> 0
+symbol_push  <<axle>> 0
+symbol_push  <<s>> 0
+symbol_push  <<o>> 0
+symbol_push  <<id_run>> Run_83b39c0c-e479-4b8d-8fb4-f7341829717b
+
+OPT_ALL_WRITE 0
+IOBJECT 0
+IUNIT 0
+IVEHICLE 0
+OPT_INT_METHOD 0
+OPT_VS_FILETYPE 2
+PARSFILE Animator\Cameras\Camera_dc48416e-5207-488c-ac1e-befb81183b3f.par
+#BlueLink0 Animator: Camera Setup`180 Azm, 15 El, 30 m` Vehicle Reference` , Animator camera`Camera_dc48416e-5207-488c-ac1e-befb81183b3f
+
+#CheckBox0 1    
+#CheckBox1 0    
+#CheckBox2 0    
+#CheckBox3 0    
+#CheckBox4 0    
+#CheckBox5 0    
+#CheckBox6 0    
+#CheckBox7 0    
+#CheckBox8 1    
+#CheckBox9 0    
+#CheckBox10 0    
+#CheckBox11 0    
+
+#RingCtrl0 0
+#RingCtrl1 10
+#RingCtrl2 3
+#RingCtrl3 0
+#RingCtrl6 0
+#RingCtrl7 -1
+*RUN_COLOR 0.8 0 0
+#RingCtrl4 off
+RT_WINDOW_CLOSE off
+#RingCtrl5 0
+LIVE_SERVER_MAX_CONNECTIONS 0
+PARSFILE Vehicles\Loaded\VehLoad_48d6fcc2-405f-433e-9188-0d379cd01d13.par
+#BlueLink2 Vehicle with Loads, Sensors, Trailer, etc.`Pickup, Midsize w/ Trailer` Pickup, Midsize` , Math Model`VehLoad_48d6fcc2-405f-433e-9188-0d379cd01d13
+
+PARSFILE Procedures\Proc_04b1aa20-06fc-4b04-8e7b-d1cfe75cb684.par
+#BlueLink28 Procedures`Trailer Oscillation Test` Proving Ground` , Procedure`Proc_04b1aa20-06fc-4b04-8e7b-d1cfe75cb684
+
+PARSFILE Animator\Arrows\Arrows_1227dc83-a0cb-4fdb-a77c-d8fe233f2eb8.par
+#BlueLink9 Animator: Wheel Arrows and Other Indicators`3A - Fz Tire Force Arrows` Tire Force Arrows (3 Axles)` , Miscellaneous`Arrows_1227dc83-a0cb-4fdb-a77c-d8fe233f2eb8
+
+
+*IMAGE_TYPE PASS_THROUGH
+WRITE_SENSOR_DETECT
+Title Trailer Oscillation Test <* CS 2021.0 - New Proving Ground>
+CATEGORY * CS 2021.0 - New Proving Ground 
+DATASET_TITLE Trailer Oscillation Test
+#RingCtrl8 1
+NUM_CACHED_RUNS 1
+#RingCtrl9 
+
+#EMBEDDED_NOTES
+#The proving ground introduced in version 2021.0 is demonstrated with a trailer oscillatory stability test.
+#
+#The truck is set to weave slightly while speed increases, causing the trailer to eventually become unstable in yaw.
+#
+#A CarSim with Trailers license is required to run this example, but you may still view videos and plots without.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: CarSim Run Control; { * CS 2021.0 - New Proving Ground } Trailer Oscillation Test
+#Library : CarSim Run Control
+#DataSet : Trailer Oscillation Test
+#Category: * CS 2021.0 - New Proving Ground
+#FileID  : Run_83b39c0c-e479-4b8d-8fb4-f7341829717b
+#Product : CarSim 2021.0
+#VehCode Run
+
+END

@@ -1,0 +1,59 @@
+PARSFILE
+#FullDataName Generic Data Group`C-Class Hatch Sensor Setup Child`Euro NCAP Pedestrian
+#VehCode Sensor and AEB Setup
+PARSFILE Generic\VS_commands\GenVS_2e6ad67e-3b16-418e-abcb-755783b36218.par
+#BlueLink0 Generic VS Commands`Obstacle Parameters CPNC` Pedestrian Euro NCAP` , Link 1`GenVS_2e6ad67e-3b16-418e-abcb-755783b36218
+
+
+PARSFILE Sensors_Traffic\Radar\Radar_5b49df95-9c63-4422-b05e-98b5af9a6646.par
+#BlueLink1 ADAS Sensors for Range and Tracking`Pedestrian Camera` Forward Facing Sensors: FCW and ACC` , Link 2`Radar_5b49df95-9c63-4422-b05e-98b5af9a6646
+
+
+#MiscYellow2
+! the first sensor is the vehicle camera
+DEFINE_PARAMETER ID_CAM = ISENSOR; - ; ...
+number assigned to the camera sensor
+define_output LxBumper =  LX_F_SM - X_SENSOR ; ...
+  m; Bumper dist from camera
+#ENDMYellow
+
+PARSFILE Sensors_Traffic\Targets\Target_f62876b6-df3b-4f31-8993-1d719aaf2145.par
+#BlueLink2 Single Moving Object (Custom)`IUNIT_OBJ (Polygonal)` Multi-Vehicle` , Link 3`Target_f62876b6-df3b-4f31-8993-1d719aaf2145
+
+
+PARSFILE Generic\VS_commands\GenVS_a6a62230-7eed-4dc6-9aa6-a0d0a7356afa.par
+#BlueLink3 Generic VS Commands`Obstacle Type Definitions` Pedestrian Euro NCAP` , Link 4`GenVS_a6a62230-7eed-4dc6-9aa6-a0d0a7356afa
+
+
+PARSFILE Generic\VS_commands\GenVS_1a03f212-d8e2-40c3-ac5f-6f202da2987f.par
+#BlueLink4 Generic VS Commands`FCW-AEB Tuning: Occlusion Vehs.` Pedestrian Euro NCAP` , Link 5`GenVS_1a03f212-d8e2-40c3-ac5f-6f202da2987f
+
+
+PARSFILE Sensors_Traffic\Type_Map\TypeMap_b58c1d44-8f9a-4292-96d7-96dbb735d9f7.par
+#BlueLink5 Sensor Reflectiveness Map`1 Sensor, 3 Material Types` ` , Link 6`TypeMap_b58c1d44-8f9a-4292-96d7-96dbb735d9f7
+
+
+
+
+
+*MODELCODE Sensor and AEB Setup
+
+#EMBEDDED_NOTES
+#This generic group provides the following:
+#
+#- Camera sensor setup
+#- Ego vehicle front bumper boundary available for moving object detection
+#- AEB control logic and tuning parameters
+#* This control logic is set up to act like Machine Learning, by detecting the type of obstacle sensed by the camera, then applyng AEB logic specifc to that object type
+#- Other parameters necessary for the Pedestrian Euro NCAP testing Events
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Generic Data Group; { Euro NCAP Pedestrian } C-Class Hatch Sensor Setup Child
+#Library : Generic Data Group
+#DataSet : C-Class Hatch Sensor Setup Child
+#Category: Euro NCAP Pedestrian
+#FileID  : GenGrp_5e3b458b-302a-4c3a-8975-0446108e7a9e
+#Product : CarSim 2021.0
+#VehCode Sensor and AEB Setup
+
+END

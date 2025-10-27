@@ -1,0 +1,24 @@
+PARSFILE
+#FullDataName I/O Channels: Import`SRS_carsim_to_simulink`Copied 03-19-2025 17:17:21
+#RingCtrl0 1
+#RingCtrl1 1
+*README_FILE Results\Run_2d0967fb-d1d6-4ee3-bf02-7f901cd34f6f\Run_imp_tab.txt
+
+#MiscYellow0
+IMP_THROTTLE_ENGINE Add 0.0 ! 1
+IMP_MY_OUT_D1_L Add 0.0 ! 0
+IMP_MY_OUT_D1_R Add 0.0 ! 0
+#ENDMYellow
+
+#BlueLink0 CarSim Run Control`Braking - Split Mu: ABS - WCRC` Copied 03-19-2025 17:17:21` , example run`Run_2d0967fb-d1d6-4ee3-bf02-7f901cd34f6f
+
+
+LOG_ENTRY Used Dataset: I/O Channels: Import; { Copied 03-19-2025 17:17:21 } SRS_carsim_to_simulink
+#Library : I/O Channels: Import
+#DataSet : SRS_carsim_to_simulink
+#Category: Copied 03-19-2025 17:17:21
+#FileID  : Import_4f3e29f7-1cd5-4511-a3ae-8a7809620ae0
+#Product : CarSim 2021.0
+#VehCode Import Channels
+
+END

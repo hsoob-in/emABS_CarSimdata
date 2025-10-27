@@ -1,0 +1,63 @@
+{
+  "VsTableGroup" : {
+    "FLabel" : "Engine",
+    "FUnits" : "N-m",
+    "Input File" : "EngineTable_125kw.csv",
+    "Title" : "Engine Powertrain",
+    "Type" : "2D_LINEAR",
+    "Version" : 1,
+    "XLabel" : "Throttle",
+    "XUnits" : "-",
+    "YLabel" : "Engine",
+    "YUnits" : "rpm",
+    "Columns" : [ {
+        "Name" : "Cols",
+        "Version" : 1,
+        "YValue" : 0
+      }, {
+        "Name" : "C0",
+        "Version" : 1,
+        "YValue" : 0
+      }, {
+        "Name" : "C1",
+        "Version" : 1,
+        "YValue" : 0
+      }, {
+        "Name" : "C2",
+        "Version" : 1,
+        "YValue" : 0.10000000000000000555
+      }, {
+        "Name" : "C3",
+        "Version" : 1,
+        "YValue" : 0.14999999999999999445
+      }, {
+        "Name" : "C4",
+        "Version" : 1,
+        "YValue" : 0.2000000000000000111
+      }, {
+        "Name" : "C5",
+        "Version" : 1,
+        "YValue" : 0.3499999999999999778
+      }, {
+        "Name" : "C6",
+        "Version" : 1,
+        "YValue" : 0.5
+      }, {
+        "Name" : "C7",
+        "Version" : 1,
+        "YValue" : 0.69999999999999995559
+      }, {
+        "Name" : "C8",
+        "Version" : 1,
+        "YValue" : 0.8499999999999999778
+      }, {
+        "Name" : "C9",
+        "Version" : 1,
+        "YValue" : 0.94999999999999995559
+      }, {
+        "Name" : "C10",
+        "Version" : 1,
+        "YValue" : 1
+      } ]
+  }
+}

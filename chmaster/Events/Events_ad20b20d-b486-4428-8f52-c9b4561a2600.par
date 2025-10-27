@@ -1,0 +1,32 @@
+PARSFILE
+#FullDataName Events`A. Start Run AEB On`Pedestrian Euro NCAP
+#CheckBox1 0    
+#CheckBox6 0    
+#CheckBox7 0    
+#CheckBox9 0    
+#CheckBox10 0    
+
+#RingCtrl0 >=
+#RingCtrl1 >
+#RingCtrl10 2
+#RingCtrl11 4
+*NAME1 AEB_On & COL_TEST_DONE & INITIAL_COL
+*VALUE1 1
+#MiscYellow0
+RESET_COMPLETE = 0
+#ENDMYellow
+
+MAKE_EVENT AEB_On & COL_TEST_DONE & INITIAL_COL >= 1 ; Events\Events_e1327191-b0ac-4266-b5d0-4b9ed106b6fe.par
+#BlueLink0 Events`Start AEB Run` Pedestrian Euro NCAP` , Events`Events_e1327191-b0ac-4266-b5d0-4b9ed106b6fe
+
+SET_EVENT_ID 0 ! reset to default
+
+LOG_ENTRY Used Dataset: Events; { Pedestrian Euro NCAP } A. Start Run AEB On
+#Library : Events
+#DataSet : A. Start Run AEB On
+#Category: Pedestrian Euro NCAP
+#FileID  : Events_ad20b20d-b486-4428-8f52-c9b4561a2600
+#Product : CarSim 2021.0
+#VehCode Events
+
+END

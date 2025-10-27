@@ -1,0 +1,62 @@
+PARSFILE
+#FullDataName Generic Group of Links`City Advanced Intersection`VS Scene Builder Paths
+#VehCode City Advanced Intersection Paths
+PARSFILE Roads\Center_XY\PathXY_ffa13683-f382-48c4-bba3-399cb5101313.par
+#BlueLink0 Path: X-Y Coordinates`SW Loop, CW, 1000` City Advanced Intersection Path Data` , Miscellaneous`PathXY_ffa13683-f382-48c4-bba3-399cb5101313
+
+PARSFILE Roads\Center_XY\PathXY_0e5d7ff3-5127-42b0-97f0-c2b566d5f3f5.par
+#BlueLink1 Path: X-Y Coordinates`SW Loop, CCW, 1001` City Advanced Intersection Path Data` , Miscellaneous`PathXY_0e5d7ff3-5127-42b0-97f0-c2b566d5f3f5
+
+PARSFILE Roads\Center_XY\PathXY_5b182ef0-6326-4cb0-ab1f-d9c49af7a986.par
+#BlueLink2 Path: X-Y Coordinates`NW Loop, CW, 1002` City Advanced Intersection Path Data` , Miscellaneous`PathXY_5b182ef0-6326-4cb0-ab1f-d9c49af7a986
+
+PARSFILE Roads\Center_XY\PathXY_1a7f30a3-0470-45d3-9592-f17edc3d63ba.par
+#BlueLink3 Path: X-Y Coordinates`NW Loop, CCW, 1003` City Advanced Intersection Path Data` , Miscellaneous`PathXY_1a7f30a3-0470-45d3-9592-f17edc3d63ba
+
+PARSFILE Roads\Center_XY\PathXY_cfc13484-7998-4d9b-973b-c0e2fe1a507f.par
+#BlueLink4 Path: X-Y Coordinates`NE Loop, CW, 1004` City Advanced Intersection Path Data` , Miscellaneous`PathXY_cfc13484-7998-4d9b-973b-c0e2fe1a507f
+
+PARSFILE Roads\Center_XY\PathXY_535fe364-dce8-4aa2-bb33-2e797e464c11.par
+#BlueLink5 Path: X-Y Coordinates`NE Loop, CCW, 1005` City Advanced Intersection Path Data` , Miscellaneous`PathXY_535fe364-dce8-4aa2-bb33-2e797e464c11
+
+PARSFILE Roads\Center_XY\PathXY_05aefe95-a221-4850-b462-39530f70ea71.par
+#BlueLink6 Path: X-Y Coordinates`SE Loop, CW, 1006` City Advanced Intersection Path Data` , Miscellaneous`PathXY_05aefe95-a221-4850-b462-39530f70ea71
+
+PARSFILE Roads\Center_XY\PathXY_c5515569-abde-414a-baf5-31cced54eec0.par
+#BlueLink7 Path: X-Y Coordinates`SE Loop, CCW, 1007` City Advanced Intersection Path Data` , Miscellaneous`PathXY_c5515569-abde-414a-baf5-31cced54eec0
+
+PARSFILE Roads\Center_XY\PathXY_8e93a7bd-760a-47c9-9635-d744a0ae0c8e.par
+#BlueLink8 Path: X-Y Coordinates`E Loop, CW, 1008` City Advanced Intersection Path Data` , Miscellaneous`PathXY_8e93a7bd-760a-47c9-9635-d744a0ae0c8e
+
+PARSFILE Roads\Center_XY\PathXY_ed40f32d-fc33-4faa-981d-344b9d9a8ce8.par
+#BlueLink9 Path: X-Y Coordinates`W Loop, CW, 1009` City Advanced Intersection Path Data` , Miscellaneous`PathXY_ed40f32d-fc33-4faa-981d-344b9d9a8ce8
+
+PARSFILE Roads\Center_XY\PathXY_99eb13ba-a2a2-4894-8fca-9e254c5d594b.par
+#BlueLink10 Path: X-Y Coordinates`N Loop, CW, 1010` City Advanced Intersection Path Data` , Miscellaneous`PathXY_99eb13ba-a2a2-4894-8fca-9e254c5d594b
+
+PARSFILE Roads\Center_XY\PathXY_0e4c1678-fb2b-4f9a-9e2e-c3462ef5c53b.par
+#BlueLink11 Path: X-Y Coordinates`S Loop, CW, 1011` City Advanced Intersection Path Data` , Miscellaneous`PathXY_0e4c1678-fb2b-4f9a-9e2e-c3462ef5c53b
+
+PARSFILE Roads\Center_XY\PathXY_480c3b1d-b257-4782-be49-215f4b86419d.par
+#BlueLink12 Path: X-Y Coordinates`E Loop, CCW, 1012` City Advanced Intersection Path Data` , Miscellaneous`PathXY_480c3b1d-b257-4782-be49-215f4b86419d
+
+PARSFILE Roads\Center_XY\PathXY_733d428c-aba5-4a8f-ab1e-313a8f9c1172.par
+#BlueLink13 Path: X-Y Coordinates`W Loop, CCW, 1013` City Advanced Intersection Path Data` , Miscellaneous`PathXY_733d428c-aba5-4a8f-ab1e-313a8f9c1172
+
+PARSFILE Roads\Center_XY\PathXY_756fabf8-6a87-4267-b767-335f5c087005.par
+#BlueLink14 Path: X-Y Coordinates`N Loop, CCW, 1014` City Advanced Intersection Path Data` , Miscellaneous`PathXY_756fabf8-6a87-4267-b767-335f5c087005
+
+PARSFILE Roads\Center_XY\PathXY_0f75596f-2a03-46a2-ba3c-e28bac90f1bd.par
+#BlueLink15 Path: X-Y Coordinates`S Loop, CCW, 1015` City Advanced Intersection Path Data` , Miscellaneous`PathXY_0f75596f-2a03-46a2-ba3c-e28bac90f1bd
+
+*MODELCODE City Advanced Intersection Paths
+
+LOG_ENTRY Used Dataset: Generic Group of Links; { VS Scene Builder Paths } City Advanced Intersection
+#Library : Generic Group of Links
+#DataSet : City Advanced Intersection
+#Category: VS Scene Builder Paths
+#FileID  : GenLink_1febc398-73e0-4b69-bfba-c5d04174f2b9
+#Product : CarSim 2021.0
+#VehCode City Advanced Intersection Paths
+
+END

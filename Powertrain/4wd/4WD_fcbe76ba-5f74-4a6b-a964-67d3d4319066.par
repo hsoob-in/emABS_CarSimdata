@@ -1,0 +1,72 @@
+PARSFILE
+#FullDataName Powertrain: 4-Wheel Drive`20kW x2, Electric AWD Hi-Pw, 3.905 Ratio`Copied 10-08-2024 15:45:42
+INSTALL_ENGINE
+
+OPT_PT 3
+R_REAR_DRIVE_SC 0.5
+
+OPT_ENGINE_PITCH_REACTION(1) 0
+OPT_ENGINE_PITCH_REACTION(2) 0
+
+#RingCtrl0 1
+R_MDRIVE 1
+#RingCtrl4 1
+#RingCtrl5 1
+#RingCtrl6 1
+#RingCtrl7 2
+OPT_HEV 2
+DRIVELINE_FREQ 9
+DRIVELINE_ZETA 0.9
+
+#CheckBox0 0    
+#CheckBox1 0    
+
+OPT_ENGINE_INTERNAL 0
+OPT_PWR_CPL_INTERNAL 0
+OPT_TRANS_INTERNAL 0
+OPT_SHIFT_INTERNAL 0
+OPT_TR_GEAR_INTERNAL 0
+IDIFF 1
+OPT_DIFF_INTERNAL 1
+IDIFF 2
+OPT_DIFF_INTERNAL 1
+IDIFF 3
+OPT_DIFF_INTERNAL 1
+
+PARSFILE Powertrain\HEV\HEV_a5500c1c-3095-456c-8413-d16b245e1b86.par
+#BlueLink11 Powertrain: Hybrid/Electric System`Hybrid Motors on Axles Powertrain Assy_WCRC` ` , Hybrid system`HEV_a5500c1c-3095-456c-8413-d16b245e1b86
+
+PARSFILE Powertrain\HEV_PMC\PMC_51ed0619-5582-4b91-b8f5-0ca48dfa1a29.par
+#BlueLink12 Powertrain: Hybrid/Electric Power Management Control`Electric Power Manage.: Full Load 168kW #1` Copied 03-19-2025 17:17:21` , Transmission`PMC_51ed0619-5582-4b91-b8f5-0ca48dfa1a29
+
+
+IDIFF 3
+PARSFILE Powertrain\Centerdiff\XC_5b09b60f-239a-468d-b714-046e2f8d7af9.par
+#BlueLink3 Powertrain: Transfer Case`EV eTransfer Case: 50/50, Gr. 1.0` Copied 10-08-2024 15:45:42` , Transfer case`XC_5b09b60f-239a-468d-b714-046e2f8d7af9
+
+
+IDIFF 1
+PARSFILE Powertrain\Frontdiff\DiffF_4688d8c7-78b5-4179-81a4-29c69561aeea.par
+#BlueLink4 Powertrain: Front Differential`EV Open Diff.: Gear Ratio 3.905:1` Copied 10-08-2024 15:45:42` , Differential front`DiffF_4688d8c7-78b5-4179-81a4-29c69561aeea
+
+
+IDIFF 2
+PARSFILE Powertrain\Reardiff\DiffR_9be4e6b7-54b7-4640-965f-3b0059166782.par
+#BlueLink5 Powertrain: Rear Differential`EV Open Diff.: Gear Ratio 3.905:1` Copied 03-19-2025 17:17:21` , Differential rear`DiffR_9be4e6b7-54b7-4640-965f-3b0059166782
+
+
+#EMBEDDED_NOTES
+#Generic two 20 kW electric motors are equipped on each of front and rear drive axles.
+#
+#Power manegement range is 165kW with full loaded throttle pedal.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Powertrain: 4-Wheel Drive; { Copied 10-08-2024 15:45:42 } 20kW x2, Electric AWD Hi-Pw, 3.905 Ratio
+#Library : Powertrain: 4-Wheel Drive
+#DataSet : 20kW x2, Electric AWD Hi-Pw, 3.905 Ratio
+#Category: Copied 10-08-2024 15:45:42
+#FileID  : 4WD_fcbe76ba-5f74-4a6b-a964-67d3d4319066
+#Product : CarSim 2021.0
+#VehCode 4WD
+
+END

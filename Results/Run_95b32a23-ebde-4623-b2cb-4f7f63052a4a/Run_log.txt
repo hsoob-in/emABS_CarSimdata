@@ -1,0 +1,253 @@
+Run made by CarSim 2021.0 at 03:58 on September 11, 2025.
+
+Started with simfile: simfile.sim
+
+Include PARSFILE "Results\Run_95b32a23-ebde-4623-b2cb-4f7f63052a4a\Run_all.par"
+Installed keywords into VS Solver for MODEL_LAYOUT I_I
+Used Dataset: I/O Channels: Import; { emABS } SM emABS import_0908
+Used Dataset: I/O Channels: Export; { emABS } SM emABS export 0908
+Used Dataset: Models: Simulink; { control_all } SM brake control #2
+Used Dataset: Animator: Reference Frame; { Tracking: Vehicle } Vehicle X-Y-Z-Yaw
+Used Dataset: Animator: Camera Setup; { Vehicle Reference } 180 Azm, 10 El, 36 m
+Used Dataset: Steering System: Compliance; { IONIC5 } Constant: Zero
+Used Dataset: Steering System: Kinematics for 2 Wheels (Rack & Pinion); { IONIC5 } B-Class, Hatchback
+Used Dataset: Steering: Power Assist Force; { IONIC5 } B-Class Hatchback, Not Spd Sens
+Used Dataset: Steering System: Compliance; { IONIC5 } 0.001 deg/N-m
+Used Dataset: Steering: Parking Torque for 2 Wheels; { IONIC5 } B-Class Hatchback
+Used Dataset: Steering; { IONIC5 } B-Class, Hbk: Power, R&P
+Used Dataset: Suspension: Dive Angle (Caster Change); { IONIC5 } Front Strut - Front Dive Angle
+Used Dataset: Suspension: Longitudinal Movement; { IONIC5 } Front Strut -  Longitudinal Movement
+Used Dataset: Suspension: Camber Angle; { IONIC5 } Front Strut - Camber
+Used Dataset: Suspension: Lateral Movement Due to Jounce; { IONIC5 } Strut - Front
+Used Dataset: Suspension: Toe Angle; { IONIC5 } Strut - Front
+Used Dataset: Suspension: Dive Angle (Caster Change); { IONIC5 } Front Strut - Front Dive Angle
+Used Dataset: Suspension: Longitudinal Movement; { IONIC5 } Front Strut -  Longitudinal Movement
+Used Dataset: Suspension: Camber Angle; { IONIC5 } Front Strut - Camber
+Used Dataset: Suspension: Lateral Movement Due to Jounce; { IONIC5 } Strut - Front
+Used Dataset: Suspension: Toe Angle; { IONIC5 } Strut - Front
+Used Dataset: Suspension: Independent System Kinematics; { IONIC5 } B-Class, Hatchback - Front
+Used Dataset: Suspension: Shock Absorber; { IONIC5 } Big Car
+Used Dataset: Suspension: Jounce and Rebound Stops; { IONIC5 } +70 mm / -50 mm
+Used Dataset: Suspension: Shock Absorber; { IONIC5 } Big Car
+Used Dataset: Suspension: Jounce and Rebound Stops; { IONIC5 } +70 mm / -50 mm
+Used Dataset: Suspension: Auxiliary Roll Moment; { IONIC5 } Linear: 384 N-m/deg
+Used Dataset: Suspension: Independent Compliance, Springs, and Dampers; { IONIC5 } B-Class, Hatchback - Front
+Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } 235/55 R18: Tire
+Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } 235/55 R18: Brake Rotor
+Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } 235/55 R18: Wheel
+Used Dataset: Animator: Shape Assembly; { Tires } 235/55 R18
+Used Dataset: Generic Table; { Tire Relaxation Length } Lx Variable, Scaled to Tire
+Used Dataset: Generic Table; { Tire Relaxation Length } Ly Variable, Scaled to Tire
+Used Dataset: Tire: Aligning Moment; { Touring Tires } 235/55 R18
+Used Dataset: Tire: Lateral Force; { Touring Tires } 235/55 R18
+Used Dataset: Tire: Longitudinal Force; { Touring Tires } 235/55 R18
+Used Dataset: Tire: Camber Thrust Coefficient; { Touring Tires } 235/55 R18
+Used Dataset: Tire; { Touring Tires } 235/55 R18
+Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } 235/55 R18: Tire
+Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } 235/55 R18: Brake Rotor
+Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } 235/55 R18: Wheel
+Used Dataset: Animator: Shape Assembly; { Tires } 235/55 R18
+Used Dataset: Generic Table; { Tire Relaxation Length } Lx Variable, Scaled to Tire
+Used Dataset: Generic Table; { Tire Relaxation Length } Ly Variable, Scaled to Tire
+Used Dataset: Tire: Aligning Moment; { Touring Tires } 235/55 R18
+Used Dataset: Tire: Lateral Force; { Touring Tires } 235/55 R18
+Used Dataset: Tire: Longitudinal Force; { Touring Tires } 235/55 R18
+Used Dataset: Tire: Camber Thrust Coefficient; { Touring Tires } 235/55 R18
+Used Dataset: Tire; { Touring Tires } 235/55 R18
+Used Dataset: Suspension: Longitudinal Movement; { IONIC5 } Rear 5-Link - Longitudinal Movement
+Used Dataset: Suspension: Camber Angle; { IONIC5 } Rear 5-Link - Camber Change
+Used Dataset: Suspension: Lateral Movement Due to Jounce; { IONIC5 } Rear 5-Link - Lateral Movement
+Used Dataset: Suspension: Toe Angle; { IONIC5 } Rear 5-Link - Toe Change
+Used Dataset: Suspension: Longitudinal Movement; { IONIC5 } Rear 5-Link - Longitudinal Movement
+Used Dataset: Suspension: Camber Angle; { IONIC5 } Rear 5-Link - Camber Change
+Used Dataset: Suspension: Lateral Movement Due to Jounce; { IONIC5 } Rear 5-Link - Lateral Movement
+Used Dataset: Suspension: Toe Angle; { IONIC5 } Rear 5-Link - Toe Change
+Used Dataset: Suspension: Independent System Kinematics; { IONIC5 } B-Class, Hatchback - Rear
+Used Dataset: Suspension: Shock Absorber; { IONIC5 } Big Car
+Used Dataset: Suspension: Jounce and Rebound Stops; { IONIC5 } +60 mm / -40 mm
+Used Dataset: Suspension: Shock Absorber; { IONIC5 } Big Car
+Used Dataset: Suspension: Jounce and Rebound Stops; { IONIC5 } +60 mm / -40 mm
+Used Dataset: Suspension: Auxiliary Roll Moment; { IONIC5 } Linear: 251 N-m/deg
+Used Dataset: Suspension: Independent Compliance, Springs, and Dampers; { IONIC5 } B-Class, Hatchback - Rear
+Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } 235/55 R18: Tire
+Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } 235/55 R18: Brake Rotor
+Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } 235/55 R18: Wheel
+Used Dataset: Animator: Shape Assembly; { Tires } 235/55 R18
+Used Dataset: Generic Table; { Tire Relaxation Length } Lx Variable, Scaled to Tire
+Used Dataset: Generic Table; { Tire Relaxation Length } Ly Variable, Scaled to Tire
+Used Dataset: Tire: Aligning Moment; { Touring Tires } 235/55 R18
+Used Dataset: Tire: Lateral Force; { Touring Tires } 235/55 R18
+Used Dataset: Tire: Longitudinal Force; { Touring Tires } 235/55 R18
+Used Dataset: Tire: Camber Thrust Coefficient; { Touring Tires } 235/55 R18
+Used Dataset: Tire; { Touring Tires } 235/55 R18
+Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } 235/55 R18: Tire
+Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } 235/55 R18: Brake Rotor
+Used Dataset: Animator: Shape File Link; { Common Vehicle Assets: Tires } 235/55 R18: Wheel
+Used Dataset: Animator: Shape Assembly; { Tires } 235/55 R18
+Used Dataset: Generic Table; { Tire Relaxation Length } Lx Variable, Scaled to Tire
+Used Dataset: Generic Table; { Tire Relaxation Length } Ly Variable, Scaled to Tire
+Used Dataset: Tire: Aligning Moment; { Touring Tires } 235/55 R18
+Used Dataset: Tire: Lateral Force; { Touring Tires } 235/55 R18
+Used Dataset: Tire: Longitudinal Force; { Touring Tires } 235/55 R18
+Used Dataset: Tire: Camber Thrust Coefficient; { Touring Tires } 235/55 R18
+Used Dataset: Tire; { Touring Tires } 235/55 R18
+Used Dataset: Vehicle: Sprung Mass; { IONIC5 } B-Class, Hatchback w/Hybrid Powertrain #1
+Used Dataset: Aerodynamics: Fx (Drag) Coef. vs. Aero Slip; { IONIC5 } Spline: 0.30 at 0 deg.
+Used Dataset: Aerodynamics: Fy (Side Force) Coef. vs. Aero Slip; { IONIC5 } Spline: 2 at 90 deg.
+Used Dataset: Aerodynamics: Fz (Lift) Coef. vs. Aero Slip; { IONIC5 } Spline: 0.18 at 0 deg.
+Used Dataset: Aerodynamics: Mx (Roll Moment) Coef. vs. Aero Slip; { IONIC5 } Spline: 0.3 at 90 deg.
+Used Dataset: Aerodynamics: My (Pitch Moment) Coef. vs. Aero Slip; { IONIC5 } Spline: 0.15 at 0 deg.
+Used Dataset: Aerodynamics: Mz (Yaw Moment) Coef. vs. Aero Slip; { IONIC5 } Spline: 0.2 at 35 deg.
+Used Dataset: Aerodynamics: Basic; { IONIC5 } B-Class, Hatchback Aero
+Used Dataset: Generic Table; { IONIC5 } Battery charged resistance
+Used Dataset: Generic Table; { IONIC5 } Battery discharged resistance
+Used Dataset: Generic Table; { IONIC5 } Battery Open-Circuit Voltage
+Used Dataset: Generic Table; { IONIC5 } Battery Max Capacity (Pure Electric)
+Used Dataset: Powertrain: Hybrid/Electric System; { IONIC5 } Electric Motors on Axles Powertrain Assy
+Used Dataset: Generic Table; { IONIC_RWD } Driver Demand Power: Full Load 272 kW
+Used Dataset: Powertrain: Hybrid/Electric Power Management Control; { IONIC_RWD } Electric Power Manage.: Max 272kW
+Used Dataset: Powertrain: Transfer Case; { IONIC5 } EV eTransfer Case: 50/50, Gr. 1.0
+Used Dataset: Generic Table; { IONIC5 } Motor efficiency
+Used Dataset: Powertrain: Electric Motor Torque; { IONIC5 } Max. Output 605
+Used Dataset: Powertrain: Front Differential; { IONIC5 } EV Open Diff.: Gear Ratio 10.65
+Used Dataset: Generic Table; { IONIC5 } Motor efficiency
+Used Dataset: Powertrain: Electric Motor Torque; { IONIC5 } Max. Output 605
+Used Dataset: Powertrain: Rear Differential; { IONIC5 } EV Open Diff.: Gear Ratio 10.65
+Used Dataset: Powertrain: 4-Wheel Drive; { IONIC5 } IONIC5
+Used Dataset: Brakes: Proportioning / Limiting Valve; { IONIC5 } Zero Brake Pressure
+Used Dataset: Brakes: Proportioning / Limiting Valve; { IONIC5 } Zero Brake Pressure
+Used Dataset: Brakes: Four-Wheel System; { IONIC5 } (Hbk): MC Press, No ABS, No Rr
+Used Dataset: Animator: Shape File Link; { IONIC5 } Hatchback: Body
+Used Dataset: Animator: Shape File Link; { IONIC5 } Hatchback: Driver (Caucasian Male)
+Used Dataset: Animator: Shape Assembly; { IONIC5 } B-Class Hatchback
+Used Dataset: Animator: Shape File Link; { IONIC5 } Hatchback: Brake Lights
+Used Dataset: Animator: Shape File Link; { IONIC5 } Hatchback: Reverse Lights
+Used Dataset: Animator: Vehicles and Sensor Targets; { IONIC5 } B-Class, Hatchback
+Used Dataset: Vehicle: Assembly; { IONIC5 } IONIC5_1004
+Used Dataset: Control: Steering by the Closed-loop Driver Model; { Constant Position: Non-Zero Offset } 1.8m Right, 0.4s Single Preview
+Used Dataset: Control: Shifting (Closed Loop); { ABS_test } AT (All Available Gears)
+ long road <emABS>
+Used Dataset: Path: Segment Builder; { emABS } long road
+Used Dataset: Road: Friction Map, S-L Grid; { Constant } Constant: 0.5
+Used Dataset: Road: Animator Surface Shapes; { emABS } low mu road
+Used Dataset: Animator: Reference Frame; { ABS_test } Skybox (Vehicle X-Y-Z)
+Used Dataset: Animator: Shape File Link; { Environment: Sky Boxes } Partly Cloudy Sky
+Used Dataset: Animator: Shape File Link; { Environment: Land Bowls } Light Grass
+Used Dataset: Animator: Group; { Environment Spheres } Partly Cloudy Sky with Light Grass
+Used Dataset: Road: Animator Repeated Object; { Trees } Trees (0, 1000)
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Oak: Summer
+Used Dataset: Road: 3D Surface (All Properties); { emABS } Straight Road
+Used Dataset: Plot: Format; { ABS_test } Default Plot Settings
+Used Dataset: Plot: Setup; { ABS_test } Ground Mu
+Used Dataset: Plot: Format; { ABS_test } Lines without Symbols
+Used Dataset: Plot: Setup; { ABS_test } Longitudinal Accel. of CG's vs. Time
+Used Dataset: Plot: Format; { ABS_test } Lines without Symbols
+Used Dataset: Plot: Setup; { ABS_test } Lateral Accel. of CG's vs. Time
+Used Dataset: Plot: Format; { ABS_test } Default Plot Settings
+Used Dataset: Plot: Setup; { Tire Forces and Moments } Longitudinal Forces (Axle 1)
+Used Dataset: Plot: Format; { ABS_test } Default Plot Settings
+Used Dataset: Plot: Setup; { Tire Forces and Moments } Longitudinal Forces (Axle 2)
+Used Dataset: Plot: Format; { ABS_test } Default Plot Settings
+Used Dataset: Plot: Setup; { ABS_test } Wheel Speeds
+Used Dataset: Plot: Format; { ABS_test } Default Plot Settings
+Used Dataset: Plot: Setup; { ABS_test } Slip Ratios: Instant
+Used Dataset: Plot: Format; { ABS_test } Default Plot Settings
+Used Dataset: Plot: Setup; { Tire Kinematics } Slip Angles: Instant
+Used Dataset: Plot: Setup; { VD#3 } electric motor
+Used Dataset: Plot: Format; { ABS_test } Lines without Symbols
+Used Dataset: Plot: Setup; { Steering } Steering Wheel Angle vs. t_stamp
+Used Dataset: Plot: Format; { ABS_test } Lines without Symbols
+Used Dataset: Plot: Setup; { ABS_test } Steer Torque
+Used Dataset: Plot: Format; { ABS_test } Default Plot Settings
+Used Dataset: Plot: Setup; { Tire Forces and Moments } Vertical Forces
+Used Dataset: Plot: Format; { ABS_test } Default Plot Settings
+Used Dataset: Plot: Setup; { Tire Forces and Moments } Lateral Forces
+Used Dataset: Plot: Format; { ABS_test } Lines without Symbols
+Used Dataset: Plot: Setup; { Vehicle Motion } Vehicle Sideslip Angle
+Used Dataset: Plot: Setup; { VD#3 } Fy vs alpha
+Used Dataset: Plot: Setup; { VD#3 } Fx vs kappa
+Used Dataset: Plot: Format; { ABS_test } Default Plot Settings
+Used Dataset: Plot: Setup; { Powertrain (Hybrid) } Powers in Hybrid Powertrain
+Used Dataset: Plot: Format; { ABS_test } Default Plot Settings
+Used Dataset: Plot: Setup; { Powertrain (Hybrid) } Motor efficiency
+Used Dataset: Procedures; { emABS } emABS
+Used Dataset: Animator: HUD; { Vehicle Status Indicators } Throttle and Speed #1
+Used Dataset: Plot: Format; { ABS_test } Default Plot Settings
+Used Dataset: Plot: Setup; { Controls: Driver } Throttle: Control Input
+Used Dataset: Plot: Format; { ABS_test } Default Plot Settings
+Used Dataset: Plot: Setup; { Tire Forces and Moments } Longitudinal Forces
+Used Dataset: Plot: Format; { ABS_test } Default Plot Settings
+Used Dataset: Plot: Setup; { Tire Kinematics } Slip Ratios: Lagged - Rear
+Used Dataset: Plot: Format; { ABS_test } Default Plot Settings
+Used Dataset: Plot: Setup; { ADAS Sensor Target Properties } Yaw Angle: YawO_1
+Used Dataset: Plot: Format; { ABS_test } Default Plot Settings
+Used Dataset: Plot: Setup; { Braking } Brake Torque
+Used Dataset: Plot: Format; { ABS_test } Default Plot Settings
+Used Dataset: Plot: Setup; { Tire Forces and Moments } Lateral Forces
+Used Dataset: Plot: Setup; { VD#3 } electric motor
+Used Dataset: Plot: Setup; { VD#3 } yaw rate
+ emABS_withall <emABS>
+Used Dataset: CarSim Run Control; { emABS } emABS_withall
+
+Time to read input = 0.0838862

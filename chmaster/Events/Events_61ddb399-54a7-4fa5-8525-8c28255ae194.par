@@ -1,0 +1,41 @@
+PARSFILE
+#FullDataName Events`Increase Vx by 10 km/h`Pedestrian Euro NCAP
+#CheckBox1 0    
+#CheckBox6 0    
+#CheckBox7 1    
+#CheckBox9 0    
+#CheckBox10 0    
+
+#RingCtrl0 ZERO ~=
+#RingCtrl10 1
+#RingCtrl11 4
+*NAME1 0
+*VALUE1 1
+#MiscYellow0
+AEB_On = 1 ! need to do this before resetting conditions, ...
+before the next run
+
+!after the non-AEB run, we will run the same ...
+setup with AEB on, so no need to increment ...
+speed
+PrevRunSpeedIncr = 1
+#ENDMYellow
+
+DEFINE_EVENT 1 ; Events\Events_20ab3368-bc8f-47ed-bb2a-405ed54f6bce.par
+#BlueLink0 Events`Reset Positions` Pedestrian Euro NCAP` , Events`Events_20ab3368-bc8f-47ed-bb2a-405ed54f6bce
+
+SET_EVENT_ID 0 ! reset to default
+
+#EMBEDDED_NOTES
+#Take one time step to prepare for the resest
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Events; { Pedestrian Euro NCAP } Increase Vx by 10 km/h
+#Library : Events
+#DataSet : Increase Vx by 10 km/h
+#Category: Pedestrian Euro NCAP
+#FileID  : Events_61ddb399-54a7-4fa5-8525-8c28255ae194
+#Product : CarSim 2021.0
+#VehCode Events
+
+END

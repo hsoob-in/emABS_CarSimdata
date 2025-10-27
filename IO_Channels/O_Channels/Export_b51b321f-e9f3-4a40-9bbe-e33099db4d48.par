@@ -1,0 +1,85 @@
+PARSFILE
+#FullDataName I/O Channels: Export`SRS_simulink_to_carsim`Copied 03-19-2025 17:17:21
+#RingCtrl0 3
+#RingCtrl1 1
+*README_FILE Results\Run_46cad77c-dded-40df-a9dd-744d6e457340\Run_out_tab.txt
+
+
+EXPORT Station
+EXPORT Vx
+EXPORT Ax
+EXPORT M_MtC_D1_L
+EXPORT M_MtC_D1_R
+EXPORT M_Mtr_D1_L
+EXPORT M_Mtr_D1_R
+EXPORT PwMtC_D1_L
+EXPORT PwMtC_D1_R
+EXPORT Throttle
+EXPORT Mx_Air
+EXPORT MyRR_L1
+EXPORT MyRR_L2
+EXPORT MyRR_R1
+EXPORT MyRR_R2
+EXPORT Kappa_L1
+EXPORT Kappa_L2
+EXPORT Kappa_R1
+EXPORT Kappa_R2
+EXPORT RRE_L1
+EXPORT RRE_L2
+EXPORT RRE_R1
+EXPORT RRE_R2
+EXPORT Fx_L1
+EXPORT Fx_L2
+EXPORT Fx_R1
+EXPORT Fx_R2
+EXPORT Fz_L1
+EXPORT Fz_L2
+EXPORT Fz_R1
+EXPORT Fz_R2
+#MiscYellow0
+#Number of Selected Channels: 31
+#CHN_NAME: Station
+#CHN_NAME: Vx
+#CHN_NAME: Ax
+#CHN_NAME: M_MtC_D1_L
+#CHN_NAME: M_MtC_D1_R
+#CHN_NAME: M_Mtr_D1_L
+#CHN_NAME: M_Mtr_D1_R
+#CHN_NAME: PwMtC_D1_L
+#CHN_NAME: PwMtC_D1_R
+#CHN_NAME: Throttle
+#CHN_NAME: Mx_Air
+#CHN_NAME: MyRR_L1
+#CHN_NAME: MyRR_L2
+#CHN_NAME: MyRR_R1
+#CHN_NAME: MyRR_R2
+#CHN_NAME: Kappa_L1
+#CHN_NAME: Kappa_L2
+#CHN_NAME: Kappa_R1
+#CHN_NAME: Kappa_R2
+#CHN_NAME: RRE_L1
+#CHN_NAME: RRE_L2
+#CHN_NAME: RRE_R1
+#CHN_NAME: RRE_R2
+#CHN_NAME: Fx_L1
+#CHN_NAME: Fx_L2
+#CHN_NAME: Fx_R1
+#CHN_NAME: Fx_R2
+#CHN_NAME: Fz_L1
+#CHN_NAME: Fz_L2
+#CHN_NAME: Fz_R1
+#CHN_NAME: Fz_R2
+#ENDMYellow
+
+#BlueLink0 CarSim Run Control`Braking - Split Mu: No ABS_WCRC` Copied 08-11-2025 15:34:57` , example run`Run_46cad77c-dded-40df-a9dd-744d6e457340
+
+
+LOG_ENTRY Used Dataset: I/O Channels: Export; { Copied 03-19-2025 17:17:21 } SRS_simulink_to_carsim
+#Library : I/O Channels: Export
+#DataSet : SRS_simulink_to_carsim
+#Category: Copied 03-19-2025 17:17:21
+#FileID  : Export_b51b321f-e9f3-4a40-9bbe-e33099db4d48
+#Product : CarSim 2021.0
+#VehCode Export Channels
+
+END

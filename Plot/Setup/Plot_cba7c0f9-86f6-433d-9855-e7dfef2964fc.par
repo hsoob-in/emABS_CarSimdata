@@ -1,0 +1,42 @@
+PARSFILE
+#FullDataName Plot: Setup`Total Rack Force - Axle 1`Steering
+
+ADD_ENTITY Plot
+
+PARSFILE Plot\Format\PlotFmt_33e2becb-9fc8-474d-a6bb-685bf100d862.par
+#BlueLink0 Plot: Format`Default Plot Settings` ` , Plot format`PlotFmt_33e2becb-9fc8-474d-a6bb-685bf100d862
+
+#CheckBox1 0    
+
+
+#MiscYellow1
+define_output FRackTot = F_TRdL1+F_TRdR1; N; Total rack force
+#ENDMYellow
+
+#MiscYellow0
+PLOTCHANNELS FRackTot, Time
+
+#ENDMYellow
+
+
+#RingCtrl2 Auto
+YMaxmin Auto
+#RingCtrl3 Auto
+XMaxmin Auto
+#RingCtrl8 1
+
+
+PTITLE Total Rack Force - Axle 1
+
+END_ENTITY Plot
+
+
+LOG_ENTRY Used Dataset: Plot: Setup; { Steering } Total Rack Force - Axle 1
+#Library : Plot: Setup
+#DataSet : Total Rack Force - Axle 1
+#Category: Steering
+#FileID  : Plot_cba7c0f9-86f6-433d-9855-e7dfef2964fc
+#Product : CarSim 2021.0
+#VehCode Plot Setup
+
+END

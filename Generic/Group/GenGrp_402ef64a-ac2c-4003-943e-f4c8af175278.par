@@ -1,0 +1,49 @@
+PARSFILE
+#FullDataName Generic Data Group`City (2 Cars)`Multiple Vehicles
+#VehCode I_I I_I
+PARSFILE Generic\GroupMore\GenGrpM_6b271f85-bed4-44b7-899b-7c08b64276f2.par
+#BlueLink0 Generic Data Group (More)`Vehicle 1 (Blue), Group` Multiple Vehicles (Running in Group)` , Link 1`GenGrpM_6b271f85-bed4-44b7-899b-7c08b64276f2
+
+
+PARSFILE Procedures\Proc_3d95ff7e-7405-4d0c-a799-028ee209d82e.par
+#BlueLink1 Procedures`Multiple Vehicles: City (Controls + Setup)` Multi-Vehicle` , Link 2`Proc_3d95ff7e-7405-4d0c-a799-028ee209d82e
+
+
+PARSFILE Generic\GroupMore\GenGrpM_76f29ccd-0b07-41d1-a23b-685f39967cee.par
+#BlueLink2 Generic Data Group (More)`Vehicle 2 (Red), Group` Multiple Vehicles (Running in Group)` , Link 3`GenGrpM_76f29ccd-0b07-41d1-a23b-685f39967cee
+
+
+#MiscYellow3
+SSTART 60 ! override settings for vehicle 2
+path_id_dm 1010
+opt_direction 1
+#ENDMYellow
+
+PARSFILE Procedures\Proc_19717839-7eb4-407b-a165-94b4a6788b3d.par
+#BlueLink3 Procedures`Multiple Vehicles: City (Controls Only)` Multi-Vehicle` , Link 4`Proc_19717839-7eb4-407b-a165-94b4a6788b3d
+
+
+
+
+
+
+
+*MODELCODE I_I I_I
+
+#EMBEDDED_NOTES
+#This dataset has the MODEL_LAYOUT code used by the solver to create 2 vehicles, each with configuration I_I.
+#
+#There are two pairs of links to Vehicle data and Procedure data. The linked Procedure dataset for vehicle 1 includes the environment. The other linked procedure simply defines the closed-loop controls used by the associated vehicle.
+#
+#The initial position of vehicle 2 is set in a miscellaneous field after the vehicle is specified.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Generic Data Group; { Multiple Vehicles } City (2 Cars)
+#Library : Generic Data Group
+#DataSet : City (2 Cars)
+#Category: Multiple Vehicles
+#FileID  : GenGrp_402ef64a-ac2c-4003-943e-f4c8af175278
+#Product : CarSim 2021.0
+#VehCode I_I I_I
+
+END

@@ -1,0 +1,53 @@
+PARSFILE
+#FullDataName Animator: HUD`Total Score Output Occlusion`Euro NCAP
+#CheckBox1 1    
+#CheckBox2 1    
+
+#RingCtrl0 1
+#RingCtrl1 18
+#RingCtrl2 0
+#RingCtrl3 0
+#RingCtrl4 1
+*TITLE_1 Total NCAP VRU AEB Score
+*LOCX_1 1
+*LOCY_1 10.5
+*VAR_NAME_1 TotalScore
+*COLOR_1 0.6 0.8 1
+*PREC1 2
+
+
+#Selection 18 for Icon 0
+#Selection_1 18 for Icon
+#Selection_2 Title: Total NCAP VRU AEB Score AlX 0 AlY 0
+#Selection_3 Scale 1.000000 locX 20 locY 105
+#Selection_4 Fixed: 1 VarName: TotalScore  ColorStr: 0.6 0.8 1
+#Selection_5 ImgName: 
+ANI_TotalScore
+WRT_TotalScore
+ADD_ENTITY hud_text Text Output
+location 20 105 18 18
+align_x left
+align_y top
+size_mode absolute
+place_mode absolute
+# var name is TotalScore
+prefix Total NCAP VRU AEB Score
+min_width_prefix 20
+value TotalScore
+precision 2
+color 0.6 0.8 1 1.0
+END_ENTITY hud_text Text Output
+
+#EMBEDDED_NOTES
+#Cumulative score during the Euro NCAP AEB Testing
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Animator: HUD; { Euro NCAP } Total Score Output Occlusion
+#Library : Animator: HUD
+#DataSet : Total Score Output Occlusion
+#Category: Euro NCAP
+#FileID  : HUD_fce58990-7963-43b7-872e-fe3e03f1d75d
+#Product : CarSim 2021.0
+#VehCode HUD
+
+END

@@ -1,0 +1,26 @@
+PARSFILE
+#FullDataName Events`End Design Load Run`K & C Testing
+#CheckBox1 0    
+#CheckBox6 0    
+#CheckBox7 0    
+#CheckBox9 0    
+#CheckBox10 0    
+
+#RingCtrl0 ZERO ~=
+#RingCtrl10 1
+#RingCtrl11 4
+*VALUE1 (err_l1<h_tol)&(err_r1<h_tol)&(err_l2<h_tol)&(err_r2<h_tol)
+DEFINE_EVENT (err_l1<h_tol)&(err_r1<h_tol)&(err_l2<h_tol)&(err_r2<h_tol) ; Events\Events_97d8bfab-2f3a-4e8b-bf0a-09518d4de111.par
+#BlueLink0 Events`Delete EQ's and End` K & C Testing` , Events`Events_97d8bfab-2f3a-4e8b-bf0a-09518d4de111
+
+SET_EVENT_ID 0 ! reset to default
+
+LOG_ENTRY Used Dataset: Events; { K & C Testing } End Design Load Run
+#Library : Events
+#DataSet : End Design Load Run
+#Category: K & C Testing
+#FileID  : Events_2b242984-cef9-4097-bd21-47811f9b7c03
+#Product : CarSim 2021.0
+#VehCode Events
+
+END

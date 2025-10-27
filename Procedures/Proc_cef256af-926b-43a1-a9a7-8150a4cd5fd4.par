@@ -1,0 +1,105 @@
+PARSFILE
+#FullDataName Procedures`Hill Start Assist (Manual Trans)`Proving Ground
+#CheckBox1 1    
+OPT_INIT_PATH 1
+
+#RingCtrl0 5
+#RingCtrl1 1
+OPT_STOP 1
+SSTART 20
+TSTART 0
+TSTART_WRITE = 0;
+TSTOP 30
+SSTOP 50
+OPT_DIRECTION 0
+*SPEED 35
+*TSTOP 30
+*TSTART 0
+*SSTART 20
+*SSTOP 50
+
+OPT_SC 0
+PARSFILE Control\Driver\StrDM_6bec9717-49f4-4c9c-8644-b5e0a402a44d.par
+#BlueLink27 Control: Steering by the Closed-loop Driver Model`0.4 sec. Single Preview` Constant Position: No Offset` , Steering`StrDM_6bec9717-49f4-4c9c-8644-b5e0a402a44d
+
+PARSFILE Control\Braking\PbkCon_99583725-3fab-4a15-a40c-665c2c8bd2f5.par
+#BlueLink28 Control: Braking MC Pressure (Open Loop)`Constant: 3 MPa` Constant` , Braking`PbkCon_99583725-3fab-4a15-a40c-665c2c8bd2f5
+
+PARSFILE Control\Gear_mt\GearOL_98f2ae6c-4bd8-47ce-bf99-3c3f64529a22.par
+#BlueLink30 Control: Shifting (Open Loop)`Neutral w/ Clutch Disengaged` Constant` , Shifting Control`GearOL_98f2ae6c-4bd8-47ce-bf99-3c3f64529a22
+
+PARSFILE Control\Throttle\Throttle_768d3744-c109-4ff7-a65b-3b0bea560117.par
+#BlueLink29 Control: Throttle (Open Loop)`Constant: 0` Constant` , Speed vs. time`Throttle_768d3744-c109-4ff7-a65b-3b0bea560117
+
+PARSFILE Roads\3D_Road\Road_9a4c072a-6444-47c0-a973-4d46fefa890d.par
+#BlueLink0 Road: 3D Surface (All Properties)`Proving Ground` VS Scene Builder` , Miscellaneous`Road_9a4c072a-6444-47c0-a973-4d46fefa890d
+
+PARSFILE Generic\Group\GenGrp_c11e4bbe-5e3a-4498-91a5-6c42d1db378a.par
+#BlueLink1 Generic Data Group`2 Axle - Fx, Fy, Fz` Tire Force Arrows` , Miscellaneous`GenGrp_c11e4bbe-5e3a-4498-91a5-6c42d1db378a
+
+PARSFILE Generic\VS_commands\GenVS_73f48f2a-3cd6-46b7-9540-12cace0bea41.par
+#BlueLink6 Generic VS Commands`Hill Start Assist (MT) Set Up` Miscellaneous Custom Controls` , Miscellaneous`GenVS_73f48f2a-3cd6-46b7-9540-12cace0bea41
+
+#MiscYellow1
+PATH_ID_DM 1006 ! 15% grade hill
+#ENDMYellow
+
+PARSFILE Events\Events_1b3b8392-aeb6-4cb1-b13a-f09f72d7869e.par
+#BlueLink7 Events`A. Wait a few seconds` Hill Start Assist (Manual Trans)` , Miscellaneous`Events_1b3b8392-aeb6-4cb1-b13a-f09f72d7869e
+
+PARSFILE Plot\Setup\Plot_a146934a-339c-4983-9664-0f9749a0dfd6.par
+#BlueLink8 Plot: Setup`Vertical Forces` Tire Forces and Moments` , Plot`Plot_a146934a-339c-4983-9664-0f9749a0dfd6
+
+PARSFILE Plot\Setup\Plot_4e5f03b6-bc24-46a8-9679-7ba999344a05.par
+#BlueLink9 Plot: Setup`Vertical Accel. of Sprung Mass CG's` Vehicle Motion` , Plot`Plot_4e5f03b6-bc24-46a8-9679-7ba999344a05
+
+PARSFILE Plot\Setup\Plot_2265b386-ffdf-44a9-92e9-e0a2a4c8fec0.par
+#BlueLink10 Plot: Setup`Longitudinal Accel. of CG's vs. Time` Vehicle Motion` , Plot`Plot_2265b386-ffdf-44a9-92e9-e0a2a4c8fec0
+
+PARSFILE Plot\Setup\Plot_076736e1-2cdd-49d5-8a36-d55940b011f0.par
+#BlueLink11 Plot: Setup`Steering: Handwheel Angle` Steering` , Plot`Plot_076736e1-2cdd-49d5-8a36-d55940b011f0
+
+PARSFILE Plot\Setup\Plot_84cf249c-520a-44d4-965b-f2a898a45ad5.par
+#BlueLink12 Plot: Setup`Trans. Control: Gear Selected` Controls: Driver` , Plot`Plot_84cf249c-520a-44d4-965b-f2a898a45ad5
+
+PARSFILE Plot\Setup\Plot_60c40b33-9b7a-4d9f-868c-fdfcd6c5ea90.par
+#BlueLink13 Plot: Setup`Clutch: Control Input` Controls: Driver` , Plot`Plot_60c40b33-9b7a-4d9f-868c-fdfcd6c5ea90
+
+PARSFILE Plot\Setup\Plot_7251a722-18c9-43db-a324-bd380d275618.par
+#BlueLink14 Plot: Setup`Throttle: Control Input` Controls: Driver` , Plot`Plot_7251a722-18c9-43db-a324-bd380d275618
+
+PARSFILE Plot\Setup\Plot_dafae624-d48a-4548-93eb-fa73d080e21a.par
+#BlueLink15 Plot: Setup`Brake Control: M/C Pressure` Braking` , Plot`Plot_dafae624-d48a-4548-93eb-fa73d080e21a
+
+PARSFILE Plot\Setup\Plot_6f0c0125-1c0c-4b0a-a06b-529aada16a53.par
+#BlueLink16 Plot: Setup`Brake Torque` Braking` , Plot`Plot_6f0c0125-1c0c-4b0a-a06b-529aada16a53
+
+PARSFILE Plot\Setup\Plot_6a5e8523-9ee4-49b9-ad46-c244f0ce9dba.par
+#BlueLink17 Plot: Setup`User Defined Drive/Brake Moments` User-Defined Variables` , Plot`Plot_6a5e8523-9ee4-49b9-ad46-c244f0ce9dba
+
+PARSFILE Plot\Setup\Plot_a243fc1c-fc6b-4404-89ac-bc8209a293be.par
+#BlueLink18 Plot: Setup`Longitudinal Speed (Vxz_Fwd) vs. Time` Vehicle Motion` , Plot`Plot_a243fc1c-fc6b-4404-89ac-bc8209a293be
+
+PARSFILE Plot\Setup\Plot_881b430b-dfba-4afc-a6ce-ff0d76b1c26c.par
+#BlueLink19 Plot: Setup`Pitch Angle of Sprung Masses vs. Time` Vehicle Motion` , Plot`Plot_881b430b-dfba-4afc-a6ce-ff0d76b1c26c
+
+
+#EMBEDDED_NOTES
+#
+#
+#
+#
+#
+#
+#
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Procedures; { Proving Ground } Hill Start Assist (Manual Trans)
+#Library : Procedures
+#DataSet : Hill Start Assist (Manual Trans)
+#Category: Proving Ground
+#FileID  : Proc_cef256af-926b-43a1-a9a7-8150a4cd5fd4
+#Product : CarSim 2021.0
+#VehCode Procedure
+
+END

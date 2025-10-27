@@ -1,0 +1,40 @@
+PARSFILE
+#FullDataName Generic VS Commands`Control SWT from Driver Model SWA`Custom Steering Controls
+#VehCode VS Commands
+
+#MiscYellow0
+! In this example, the steering wheel angle from the driver model is used as the desired steering 
+! wheel angle, and the steering wheel torque is controlled to produce that steering wheel angle
+! using a simple PD controller. This is similar, but not identical, to the built-in controller when it is 
+! using the option to control by torque.
+
+! This setting means the driver model calculates the desired angle Steer_DM, but does not do
+! anything with it:
+opt_driver_action 0
+
+! Get rate of Steer_DM, needed for "D" part of controller
+define_output steer_dm_old; deg
+eq_save steer_dm_old = steer_dm
+define_output strav_dm = (steer_dm-steer_dm_old)/tstep; deg/s
+
+define_output steer_sw_error = steer_dm-steer_sw; deg
+define_output strav_sw_error = strav_dm-strav_sw; deg/s
+
+import imp_steer_t_in vs_replace
+
+define_parameter k_con = 25; N-m/deg; ! Proportional control
+define_parameter d_con = 0.5; N-m-s/deg; ! Derivative control
+
+eq_in imp_steer_t_in = k_con*steer_sw_error + d_con*strav_sw_error
+#ENDMYellow
+
+
+LOG_ENTRY Used Dataset: Generic VS Commands; { Custom Steering Controls } Control SWT from Driver Model SWA
+#Library : Generic VS Commands
+#DataSet : Control SWT from Driver Model SWA
+#Category: Custom Steering Controls
+#FileID  : GenVS_7e3b47a9-d4a4-4245-8985-ea4b87fd2fe2
+#Product : CarSim 2021.0
+#VehCode VS Commands
+
+END

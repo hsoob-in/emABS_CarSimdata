@@ -1,0 +1,41 @@
+PARSFILE
+#FullDataName Animator: Shape Assembly`Lead Unit Frame Rails (Long)`Truck Lead Units
+*OFFSET_Z -0.021
+*X_REF_LENGTH 5000
+#CheckBox0 0    
+#CheckBox2 0    
+#CheckBox3 0    
+#CheckBox4 1    
+#CheckBox5 1    
+
+#RingCtrl1 2
+#RingCtrl2 2
+*IMAGE_TYPE PASTED
+*IMAGE_PASTED Animator\STL_Groups\ShpGrp_af3585e5-d668-4bb7-b149-c6d70e7107f1.png
+PARSFILE Animator\STL\Shape_8f9a304c-d90a-4ca0-a31f-96d183970df7.par
+#BlueLink0 Animator: Shape File Link`Lead Unit (Long): Frame Rails` Trucks: Chassis` , Shape File`Shape_8f9a304c-d90a-4ca0-a31f-96d183970df7
+
+set_offset_z -0.021
+PARSFILE Animator\STL\Shape_e3de0366-83e2-4b60-bbf6-d48626e92fe2.par
+#BlueLink1 Animator: Shape File Link`Mudflaps: Offset for Long Frame Rails` Common Vehicle Assets` , Shape File`Shape_e3de0366-83e2-4b60-bbf6-d48626e92fe2
+
+set_offset_z -0.021
+PARSFILE Animator\STL\Shape_3746bac5-4ca6-4d6d-a010-36d1f24ce363.par
+#BlueLink2 Animator: Shape File Link`Lead Unit (Long): Brake Lights (Off)` Trucks: Chassis` , Shape File`Shape_3746bac5-4ca6-4d6d-a010-36d1f24ce363
+
+set_offset_z -0.021
+x_ref_length 5000
+
+SPECIAL_PARSFILE Animator\Cameras\Camera_36f7b3ee-b8ff-46b0-8d75-a0bab22adf60.par
+#BlueLink17 Animator: Camera Setup`YZ-Plane, No Offsets (with Yaw)` Shape Preview` , Video Camera`Camera_36f7b3ee-b8ff-46b0-8d75-a0bab22adf60
+
+
+LOG_ENTRY Used Dataset: Animator: Shape Assembly; { Truck Lead Units } Lead Unit Frame Rails (Long)
+#Library : Animator: Shape Assembly
+#DataSet : Lead Unit Frame Rails (Long)
+#Category: Truck Lead Units
+#FileID  : ShpGrp_af3585e5-d668-4bb7-b149-c6d70e7107f1
+#Product : CarSim 2021.0
+#VehCode Shape Assembly
+
+END

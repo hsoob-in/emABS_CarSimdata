@@ -1,0 +1,156 @@
+PARSFILE
+#FullDataName Animator: HUD`Time To Collision General AEB`Euro NCAP
+#CheckBox1 1    
+#CheckBox2 1    
+#CheckBox4 1    
+#CheckBox5 1    
+#CheckBox7 1    
+#CheckBox8 1    
+#CheckBox10 1    
+#CheckBox11 1    
+
+#RingCtrl0 4
+#RingCtrl1 18
+#RingCtrl2 0
+#RingCtrl3 0
+#RingCtrl4 2
+#RingCtrl5 18
+#RingCtrl6 0
+#RingCtrl7 0
+#RingCtrl8 1
+#RingCtrl9 18
+#RingCtrl10 0
+#RingCtrl11 0
+#RingCtrl12 1
+#RingCtrl13 18
+#RingCtrl14 0
+#RingCtrl15 0
+#RingCtrl16 1
+*TITLE_1 Time to Collision (s)
+*LOCX_1 1
+*LOCY_1 14
+*VAR_NAME_1 TTC_AEB
+*COLOR_1 1 1 1 1
+*PREC1 2
+*TITLE_2 Relative Distance (m)
+*LOCX_2 1
+*LOCY_2 10
+*VAR_NAME_2 RelDistFrontBump
+*COLOR_2 0.8 1 1
+*PREC2 2
+*TITLE_3 Relative Speed (km/h)
+*LOCX_3 1
+*LOCY_3 6
+*VAR_NAME_3 RelSpeedOk
+*COLOR_3 0.8 1 1
+*PREC3 2
+*TITLE_4 Actual Vehicle Speed (km/h)
+*LOCX_4 1
+*LOCY_4 2
+*VAR_NAME_4 Vxz_Fwd
+*COLOR_4 1 1 1
+*TITLE_5 Start Ped. Distance
+*LOCX_5 5
+*LOCY_5 26
+*VAR_NAME_5 VehDistStartPed5Out
+*COLOR_5 1 0.4 1
+*PREC5 2
+
+PARSFILE Generic\VS_commands\GenVS_cf361126-9132-4c80-a021-eceb529ced02.par
+#BlueLink0 Generic VS Commands`Background Boxes: Upper TTC, Large` Pedestrian Euro NCAP` , Miscellaneous`GenVS_cf361126-9132-4c80-a021-eceb529ced02
+
+
+#Selection 18 for Icon 0
+#Selection_1 18 for Icon
+#Selection_2 Title: Time to Collision (s) AlX 0 AlY 0
+#Selection_3 Scale 1.333333 locX 20 locY 140
+#Selection_4 Fixed: 1 VarName: TTC_AEB  ColorStr: 1 1 1 1
+#Selection_5 ImgName: 
+ANI_TTC_AEB
+WRT_TTC_AEB
+ADD_ENTITY hud_text Text Output
+location 20 140 24 24
+align_x left
+align_y top
+size_mode absolute
+place_mode absolute
+# var name is TTC_AEB
+prefix Time to Collision (s)
+min_width_prefix 20
+value TTC_AEB
+precision 2
+color 1 1 1 1.0
+END_ENTITY hud_text Text Output
+#Selection 18 for Icon 1
+#Selection_1 18 for Icon
+#Selection_2 Title: Relative Distance (m) AlX 0 AlY 0
+#Selection_3 Scale 1.000000 locX 20 locY 100
+#Selection_4 Fixed: 1 VarName: RelDistFrontBump  ColorStr: 0.8 1 1
+#Selection_5 ImgName: 
+ANI_RelDistFrontBump
+WRT_RelDistFrontBump
+ADD_ENTITY hud_text Text Output
+location 20 100 18 18
+align_x left
+align_y top
+size_mode absolute
+place_mode absolute
+# var name is RelDistFrontBump
+prefix Relative Distance (m)
+min_width_prefix 20
+value RelDistFrontBump
+precision 2
+color 0.8 1 1 1.0
+END_ENTITY hud_text Text Output
+#Selection 18 for Icon 2
+#Selection_1 18 for Icon
+#Selection_2 Title: Relative Speed (km/h) AlX 0 AlY 0
+#Selection_3 Scale 1.000000 locX 20 locY 60
+#Selection_4 Fixed: 1 VarName: RelSpeedOk  ColorStr: 0.8 1 1
+#Selection_5 ImgName: 
+ANI_RelSpeedOk
+WRT_RelSpeedOk
+ADD_ENTITY hud_text Text Output
+location 20 60 18 18
+align_x left
+align_y top
+size_mode absolute
+place_mode absolute
+# var name is RelSpeedOk
+prefix Relative Speed (km/h)
+min_width_prefix 20
+value RelSpeedOk
+precision 2
+color 0.8 1 1 1.0
+END_ENTITY hud_text Text Output
+#Selection 18 for Icon 3
+#Selection_1 18 for Icon
+#Selection_2 Title: Actual Vehicle Speed (km/h) AlX 0 AlY 0
+#Selection_3 Scale 1.000000 locX 20 locY 20
+#Selection_4 Fixed: 1 VarName: Vxz_Fwd  ColorStr: 1 1 1
+#Selection_5 ImgName: 
+ANI_Vxz_Fwd
+WRT_Vxz_Fwd
+ADD_ENTITY hud_text Text Output
+location 20 20 18 18
+align_x left
+align_y top
+size_mode absolute
+place_mode absolute
+# var name is Vxz_Fwd
+prefix Actual Vehicle Speed (km/h)
+min_width_prefix 20
+value Vxz_Fwd
+precision 0
+color 1 1 1 1.0
+END_ENTITY hud_text Text Output
+
+LOG_ENTRY Used Dataset: Animator: HUD; { Euro NCAP } Time To Collision General AEB
+#Library : Animator: HUD
+#DataSet : Time To Collision General AEB
+#Category: Euro NCAP
+#FileID  : HUD_e2d268e1-2ae6-4af4-a9f3-6d2dd4cc286b
+#Product : CarSim 2021.0
+#VehCode HUD
+
+END

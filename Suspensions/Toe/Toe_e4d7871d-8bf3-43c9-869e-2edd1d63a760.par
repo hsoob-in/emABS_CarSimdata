@@ -1,0 +1,48 @@
+PARSFILE
+#FullDataName Suspension: Toe Angle`Toe vs Jounce`B-Class, Sports Car (VSA) - Rear
+#CheckBox0 0    
+
+#RingCtrl0 SPLINE
+#RingCtrl1 CONSTANT
+#RingCtrl2 ADD
+TOE_COMBINE ADD
+#DiagramOne0
+TOE_TABLE SPLINE
+-70, -0.399982214
+-60, -0.321766049
+-50, -0.252705663
+-40, -0.190535024
+-30, -0.133197621
+-20, -0.078813784
+-10, -0.02565366
+-1.41e-15, 0.027885195
+10, 0.083296604
+20, 0.141981483
+30, 0.205261052
+40, 0.274387896
+50, 0.35055536
+60, 0.434905171
+70, 0.528533816
+ENDTABLE
+SUSP_TOE_JNC_OTHER_SIDE_CONSTANT 0
+#RadioCtrl0 0    
+#RadioCtrl1 0    
+
+*SCALAR2 0
+
+
+#EMBEDDED_NOTES
+#Provides a slight roll understeer effect for a rear axle.
+#
+#Generated using a five link independent rear suspension in SuspensionSim.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Suspension: Toe Angle; { B-Class, Sports Car (VSA) - Rear } Toe vs Jounce
+#Library : Suspension: Toe Angle
+#DataSet : Toe vs Jounce
+#Category: B-Class, Sports Car (VSA) - Rear
+#FileID  : Toe_e4d7871d-8bf3-43c9-869e-2edd1d63a760
+#Product : CarSim 2021.0
+#VehCode Toe
+
+END

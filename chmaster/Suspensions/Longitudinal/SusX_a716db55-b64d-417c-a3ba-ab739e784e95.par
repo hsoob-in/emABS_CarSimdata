@@ -1,0 +1,66 @@
+PARSFILE
+#FullDataName Suspension: Longitudinal Movement`X vs Jounce`B-Class, Sports Car (VSA) - Rear
+#CheckBox0 0    
+
+#RingCtrl0 SPLINE
+#RingCtrl1 CONSTANT
+#RingCtrl2 ADD
+SUSP_X_COMBINE ADD
+*SCALAR2 0
+
+#DiagramOne0
+SUSP_X_TABLE SPLINE
+-70, 15.03738022
+-60, 12.34798813
+-50, 9.840740204
+-40, 7.512577057
+-30, 5.361045361
+-20, 3.384253502
+-10, 1.580836773
+-1.41e-15, -0.050069828
+10, -1.508849859
+20, -2.795418262
+30, -3.909227848
+40, -4.849269867
+50, -5.614069462
+60, -6.201675415
+70, -6.609642506
+ENDTABLE
+SUSP_X_JNC_OTHER_SIDE_CONSTANT 0
+#RadioCtrl0 0    
+#RadioCtrl1 0    
+
+#DiagramOne0
+SUSP_X_AXLE_TABLE SPLINE
+-70, 15.03738022
+-60, 12.34798813
+-50, 9.840740204
+-40, 7.512577057
+-30, 5.361045361
+-20, 3.384253502
+-10, 1.580836773
+-1.41e-15, -0.050069828
+10, -1.508849859
+20, -2.795418262
+30, -3.909227848
+40, -4.849269867
+50, -5.614069462
+60, -6.201675415
+70, -6.609642506
+ENDTABLE
+
+#EMBEDDED_NOTES
+#For a driven rear wheel, provides an anti-squat effect.
+#
+#Generated from a five link independent rear suspension in SuspensionSim.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Suspension: Longitudinal Movement; { B-Class, Sports Car (VSA) - Rear } X vs Jounce
+#Library : Suspension: Longitudinal Movement
+#DataSet : X vs Jounce
+#Category: B-Class, Sports Car (VSA) - Rear
+#FileID  : SusX_a716db55-b64d-417c-a3ba-ab739e784e95
+#Product : CarSim 2021.0
+#VehCode Longitudinal Movement
+
+END

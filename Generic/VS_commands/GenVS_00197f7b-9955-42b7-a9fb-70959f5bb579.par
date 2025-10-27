@@ -1,0 +1,51 @@
+PARSFILE
+#FullDataName Generic VS Commands`Background Boxes: Upper, Medium`Pedestrian Euro NCAP
+#VehCode Background Boxes for HUD
+
+#MiscYellow0
+!------------- Upper Outer Box --------------
+ADD_ENTITY hud_image Text_BG_Outer
+  size_mode absolute
+  place_mode absolute
+  align_x left
+  align_y top
+  location 5 10 410 270
+  red 0
+  green 0
+  blue 0
+  opacity .5
+!  image_file Animator\Hud\Text_Box.tga
+END_ENTITY hud_image Text_BG_Outer
+
+!------------- Upper Inner Box --------------
+ADD_ENTITY hud_image Text_BG_Inner
+  size_mode absolute
+  place_mode absolute
+  align_x left
+  align_y top
+  location 10 15 400 260
+  red 0
+  green 0
+  blue 0
+  opacity .25
+!  image_file Animator\Hud\Text_Box.tga
+END_ENTITY hud_image Text_BG_Inner
+#ENDMYellow
+
+*MODELCODE Background Boxes for HUD
+
+#EMBEDDED_NOTES
+#Background boxes to allow HUD information to be seen easier
+#
+#
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Generic VS Commands; { Pedestrian Euro NCAP } Background Boxes: Upper, Medium
+#Library : Generic VS Commands
+#DataSet : Background Boxes: Upper, Medium
+#Category: Pedestrian Euro NCAP
+#FileID  : GenVS_00197f7b-9955-42b7-a9fb-70959f5bb579
+#Product : CarSim 2021.0
+#VehCode Background Boxes for HUD
+
+END

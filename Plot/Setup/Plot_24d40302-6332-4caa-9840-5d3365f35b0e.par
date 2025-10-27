@@ -1,0 +1,44 @@
+PARSFILE
+#FullDataName Plot: Setup`Target Points`Path Detector
+
+ADD_ENTITY Plot
+
+PARSFILE Plot\Format\PlotFmt_33e2becb-9fc8-474d-a6bb-685bf100d862.par
+#BlueLink0 Plot: Format`Default Plot Settings` ` , Plot format`PlotFmt_33e2becb-9fc8-474d-a6bb-685bf100d862
+
+#CheckBox1 1    
+
+
+#MiscYellow0
+PLOTCHANNELS ypdtarg1_1, xpdtarg1_1
+PLOTCHANNELS ypdtarg2_1, xpdtarg2_1
+PLOTCHANNELS ypdtarg3_1, xpdtarg3_1
+PLOTCHANNELS ypdtarg1_2, xpdtarg1_2
+PLOTCHANNELS ypdtarg2_2, xpdtarg2_2
+PLOTCHANNELS ypdtarg3_2, xpdtarg3_2
+
+#ENDMYellow
+
+ASPECTRATIO 1
+
+#RingCtrl8 1
+
+
+PTITLE Target Points
+
+END_ENTITY Plot
+
+
+#EMBEDDED_NOTES
+#NOTE: These are in the path detector coordinate system.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Plot: Setup; { Path Detector } Target Points
+#Library : Plot: Setup
+#DataSet : Target Points
+#Category: Path Detector
+#FileID  : Plot_24d40302-6332-4caa-9840-5d3365f35b0e
+#Product : CarSim 2021.0
+#VehCode Plot Setup
+
+END

@@ -1,0 +1,44 @@
+PARSFILE
+#FullDataName Plot: Setup`Rack Kinematics`Steering
+
+ADD_ENTITY Plot
+
+PARSFILE Plot\Format\PlotFmt_33e2becb-9fc8-474d-a6bb-685bf100d862.par
+#BlueLink0 Plot: Format`Default Plot Settings` ` , Plot format`PlotFmt_33e2becb-9fc8-474d-a6bb-685bf100d862
+
+#CheckBox1 0    
+
+
+#MiscYellow0
+PLOTCHANNELS Y_Rack1, Time
+PLOTCHANNELS Vy_Rack1, Time
+PLOTCHANNELS Ay_Rack1, Time
+
+#ENDMYellow
+
+
+#RingCtrl2 Auto
+YMaxmin Auto
+#RingCtrl3 Auto
+XMaxmin Auto
+#RingCtrl8 1
+
+
+PTITLE Rack Kinematics
+
+END_ENTITY Plot
+
+
+#EMBEDDED_NOTES
+#The acceleration output is only available for virtual steering axis suspensions.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Plot: Setup; { Steering } Rack Kinematics
+#Library : Plot: Setup
+#DataSet : Rack Kinematics
+#Category: Steering
+#FileID  : Plot_3731da9c-c280-4889-92bf-a26641a24d54
+#Product : CarSim 2021.0
+#VehCode Plot Setup
+
+END

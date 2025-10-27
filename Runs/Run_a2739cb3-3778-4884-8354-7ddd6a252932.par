@@ -1,0 +1,103 @@
+PARSFILE
+#FullDataName CarSim Run Control`City (4 Parallel Solvers): Car 4`Parallel Solvers
+#VEHICLECODE I_I
+symbol_push  <<vehicle>> 0
+symbol_push  <<unit>> 0
+symbol_push  <<axle>> 0
+symbol_push  <<s>> 0
+symbol_push  <<o>> 0
+symbol_push  <<id_run>> Run_a2739cb3-3778-4884-8354-7ddd6a252932
+
+OPT_ALL_WRITE 0
+IOBJECT 0
+IUNIT 0
+IVEHICLE 0
+OPT_INT_METHOD 0
+OPT_VS_FILETYPE 2
+PARSFILE Models\Simulink\Simlink_667c238e-34b1-4bb0-b864-3e428deaeae0.par
+#BlueLink12 Models: Simulink`Autonomous (Detect 3 Other Vehicles)` Parallel Solvers` , Models`Simlink_667c238e-34b1-4bb0-b864-3e428deaeae0
+
+PARSFILE Animator\Cameras\Camera_60b80fb3-7727-497c-b28a-db3fb078ce59.par
+#BlueLink0 Animator: Camera Setup`180 Azm, 3 El, 20 m` Vehicle Reference` , Animator camera`Camera_60b80fb3-7727-497c-b28a-db3fb078ce59
+
+#CheckBox0 1    
+#CheckBox1 1    
+#CheckBox2 1    
+#CheckBox3 0    
+#CheckBox4 1    
+#CheckBox5 0    
+#CheckBox6 0    
+#CheckBox7 0    
+#CheckBox8 1    
+#CheckBox9 0    
+#CheckBox10 0    
+#CheckBox11 0    
+
+#RingCtrl0 4
+#RingCtrl1 3
+#RingCtrl2 3
+#RingCtrl3 0
+#RingCtrl6 0
+#RingCtrl7 -1
+*RUN_COLOR 1 1 0
+SET_RUN_COLOR 1 1 0
+#RingCtrl4 off
+RT_WINDOW_CLOSE off
+#RingCtrl5 0
+LIVE_SERVER_MAX_CONNECTIONS 0
+PARSFILE Generic\GroupMore\GenGrpM_be703ee9-4ed9-42ac-b5a5-fc4753ef8206.par
+#BlueLink2 Generic Data Group (More)`Vehicle 4 (Yellow), Solo` Multiple Vehicles (Running Solo)` , Math Model`GenGrpM_be703ee9-4ed9-42ac-b5a5-fc4753ef8206
+
+PARSFILE Procedures\Proc_ce68ddac-5993-45c7-bd97-45694a02087f.par
+#BlueLink28 Procedures`Autonomous Driving: City (4-Car)` Multi-Vehicle` , Procedure`Proc_ce68ddac-5993-45c7-bd97-45694a02087f
+
+PARSFILE Generic\Links\GenLink_1febc398-73e0-4b69-bfba-c5d04174f2b9.par
+#BlueLink9 Generic Group of Links`City Advanced Intersection` VS Scene Builder Paths` , Miscellaneous`GenLink_1febc398-73e0-4b69-bfba-c5d04174f2b9
+
+
+SPECIAL_PARSFILE Runs\Run_aa76dce2-630c-47c0-84c8-275a1975d306.par
+#BlueLink23 CarSim Run Control`City (4 Parallel Solvers): Car 1` Parallel Solvers` , Overlay run or ERD file`Run_aa76dce2-630c-47c0-84c8-275a1975d306
+
+
+SPECIAL_PARSFILE Runs\Run_c1fc9dee-8e96-46e8-bcd1-1db079bbb1e2.par
+#BlueLink24 CarSim Run Control`City (4 Parallel Solvers): Car 2` Parallel Solvers` , Overlay run or ERD file`Run_c1fc9dee-8e96-46e8-bcd1-1db079bbb1e2
+
+
+SPECIAL_PARSFILE Runs\Run_2c662592-f728-475b-8b8b-31ce4754401f.par
+#BlueLink25 CarSim Run Control`City (4 Parallel Solvers): Car 3` Parallel Solvers` , Overlay run or ERD file`Run_2c662592-f728-475b-8b8b-31ce4754401f
+
+
+*IMAGE_TYPE PASS_THROUGH
+WRITE_SENSOR_DETECT
+Title City (4 Parallel Solvers): Car 4 <Parallel Solvers>
+CATEGORY Parallel Solvers 
+DATASET_TITLE City (4 Parallel Solvers): Car 4
+#MiscYellow0
+VS_TERRAIN_FILE Scene_Import\VS_Scene_Builder\City_Advanced_Intersection.vsterrain
+SSTART 50
+path_id_dm 1005
+#ENDMYellow
+
+#RingCtrl8 1
+NUM_CACHED_RUNS 1
+#RingCtrl9 
+
+#EMBEDDED_NOTES
+#WARNING: do not click Run or Send to Simulink! Use the new 'Parallel Solvers' Library (Batch/Parallel Solvers) to run this example.
+#
+#To make a new run from Simulink, you  need two parallel solver licenses (a standard CarSim package supports two parallel solvers).
+#
+#This is 4 of 4 Run Control datasets used to simultaneously simulate four vehicles that interact with signs, pedestrians, and each other.
+#
+#This dataset does not link to the 3D road dataset; instead, it has alink to paths from that dataset, plus the pathname for the VS  Terrain file. This is done so Visualizer only loads one set of 3D shapes for the roads and buildings.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: CarSim Run Control; { Parallel Solvers } City (4 Parallel Solvers): Car 4
+#Library : CarSim Run Control
+#DataSet : City (4 Parallel Solvers): Car 4
+#Category: Parallel Solvers
+#FileID  : Run_a2739cb3-3778-4884-8354-7ddd6a252932
+#Product : CarSim 2021.0
+#VehCode Run
+
+END

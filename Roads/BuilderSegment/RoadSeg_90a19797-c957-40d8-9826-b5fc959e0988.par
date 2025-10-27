@@ -1,0 +1,751 @@
+PARSFILE
+#FullDataName Path: Segment Builder`curve_road_56`Copied 10-14-2024 12:49:49
+#RingCtrl0 1
+SET_IPATH_FOR_ID 0
+#CheckBox0 1    
+OPT_PATH_START 1
+#CheckBox1 0    
+OPT_PATH_LOOP 0
+
+SPATH_START 0
+X_PATH_START 0
+Y_PATH_START 0
+HEADING_START 0
+PATH_ID_DM = PATH_ID
+set_description path_id curve_road_56
+
+NSEGMENTS 100
+*TABLEROWS 100
+
+! Table Columns:
+!   NOTE: Label columns are not written to parsfile.
+!
+! 0: (Ring) Specify the type of segment. Circular arcs can be specified using radius or curvature (inverse radius). The table option provides a link to a dataset from the X-Y Coordinates for Segment library. The clothoid option will automatically generate an X-Y table with a specified length that maintains continuity with adjacent segments (the preceding and following rows in the table).
+! 1: (BlueLink) Link to a dataset from the X-Y Coordinates for Segment library.
+! 2: (Text) Length of straight segment in meters.
+! 3: (Label) Specify the length of a straight segment with meters.
+! 4: (Text) Segment radius: use a positive radius for a left turn, negative for a right turn.
+! 5: (Label) Specify radius with meters. Use a positive number for a left turn, negative number for a right turn.
+! 6: (Text) Length of segment arc, specified with arc length (m) or central angle (deg).
+! 7: (Ring) Specify arc size with central angle (deg) or arc length (m).
+! 8: (Text) Segment curvature (inverse of radius, 1/m): use a positive curvature for a left turn, negative for a right turn
+! 9: (Label) Specify segment curvature with 1/meter (inverse of radius). Use a positive number for a left turn, negative for a right turn.
+! 10: (Text) Length of segment arc, specified with arc length (m) or central angle (deg).
+! 11: (Ring) Specify arc size with central angle (deg) or arc length (m).
+! 12: (Text) Length of clothoid segment in meters. This will automatically generate an X-Y table that has this overall length and maintains continuity with the adjacent segments (the preceding and following rows in the table).
+! 13: (Label) Specify the length of a clothoid segment with meters.
+#MIXTABLE0
+#NUMROWS 100
+#straight, , 300, 100, 90, deg, 0.01, 90, deg, 400
+#radius, , 50, 2608, 0.5, m, 0.01, 90, deg, 400
+#straight, , 100, 7000, 5, deg, 0.01, 90, deg, 400
+#radius, , 50, 1436, 9, m, 0.01, 90, deg, 400
+#radius, , 50, 1184, 17, m, 0.01, 90, deg, 400
+#radius, , 50, 932, 9, m, 0.01, 90, deg, 400
+#radius, , 50, 588, 20, m, 0.01, 90, deg, 400
+#radius, , 50, 404, 20, m, 0.01, 90, deg, 400
+#radius, , 50, 332, 10, m, 0.01, 90, deg, 400
+#radius, , 50, 260, 11, m, 0.01, 90, deg, 400
+#radius, , 50, 196, 9, m, 0.01, 90, deg, 400
+#radius, , 50, 136, 10, m, 0.01, 90, deg, 400
+#radius, , 50, 122, 10, m, 0.01, 90, deg, 400
+#clothoid, , 50, 50, 90, m, 0.01, 90, deg, 50
+#radius, , 50, 108, 90, m, 0.01, 90, deg, 400
+#clothoid, , 50, 50, 9, m, 0.01, 90, deg, 50
+#radius, , 100, 122, 10, m, 0.01, 90, deg, 400
+#radius, , 50, 196, 9, m, 0.01, 90, deg, 400
+#radius, , 50, 260, 11, m, 0.01, 90, deg, 400
+#radius, , 50, 332, 10, m, 0.01, 90, deg, 400
+#radius, , 50, 332, 20, m, 0.01, 90, deg, 400
+#radius, , 50, 588, 20, m, 0.01, 90, deg, 400
+#radius, , 50, 932, 20, m, 0.01, 90, deg, 400
+#radius, , 50, 1184, 17, m, 0.01, 90, deg, 400
+#radius, , 200, 1436, 9, m, 0.01, 90, deg, 400
+#straight, , 200, 2608, 0.5, m, 0.01, 90, deg, 400
+#radius, , 100, 2608, 0.5, m, 0.01, 90, deg, 400
+#straight, , 100, 1436, 9, m, 0.01, 90, deg, 400
+#radius, , 100, 1436, 9, m, 0.01, 90, deg, 400
+#radius, , 200, 1184, 17, m, 0.01, 90, deg, 400
+#radius, , 100, 932, 9, m, 0.01, 90, deg, 400
+#radius, , 100, 588, 20, m, 0.01, 90, deg, 400
+#radius, , 100, 404, 20, m, 0.01, 90, deg, 400
+#radius, , 50, 332, 10, m, 0.01, 90, deg, 400
+#radius, , 50, 260, 11, m, 0.01, 90, deg, 400
+#radius, , 50, 196, 9, m, 0.01, 90, deg, 400
+#radius, , 50, 136, 10, m, 0.01, 90, deg, 400
+#radius, , 50, 122, 10, m, 0.01, 90, deg, 400
+#clothoid, , 50, 136, 0.5, m, 0.01, 90, deg, 50
+#radius, , 50, 108, 90, m, 0.01, 90, deg, 400
+#clothoid, , 50, 260, 11, m, 0.01, 90, deg, 50
+#radius, , 500, 122, 10, m, 0.01, 90, deg, 400
+#radius, , 50, 196, 9, m, 0.01, 90, deg, 400
+#radius, , 100, 260, 11, m, 0.01, 90, deg, 400
+#radius, , 50, 332, 10, m, 0.01, 90, deg, 400
+#radius, , 50, 332, 20, m, 0.01, 90, deg, 400
+#radius, , 50, 588, 20, m, 0.01, 90, deg, 400
+#radius, , 200, 932, 20, m, 0.01, 90, deg, 400
+#radius, , 200, 1184, 17, m, 0.01, 90, deg, 400
+#radius, , 200, 1436, 9, m, 0.01, 90, deg, 400
+#straight, , 200, 2608, 0.5, m, 0.01, 90, deg, 400
+#radius, , 100, 2608, 0.5, m, 0.01, 90, deg, 400
+#straight, , 100, 1184, 17, m, 0.01, 90, deg, 400
+#radius, , 356, 1436, 9, m, 0.01, 90, deg, 400
+#radius, , 308, 1184, 17, m, 0.01, 90, deg, 400
+#radius, , 264, 932, 9, m, 0.01, 90, deg, 400
+#radius, , 220, 588, 20, m, 0.01, 90, deg, 400
+#radius, , 264, 404, 20, m, 0.01, 90, deg, 400
+#radius, , 308, 332, 10, m, 0.01, 90, deg, 400
+#radius, , 356, 260, 11, m, 0.01, 90, deg, 400
+#radius, , 50, 196, 9, m, 0.01, 90, deg, 400
+#radius, , 50, 136, 10, m, 0.01, 90, deg, 400
+#radius, , 50, 122, 10, m, 0.01, 90, deg, 400
+#clothoid, , 50, 196, 9, m, 0.01, 90, deg, 50
+#radius, , 50, 108, 90, m, 0.01, 90, deg, 400
+#clothoid, , 50, 332, 10, m, 0.01, 90, deg, 50
+#radius, , 50, 122, 10, m, 0.01, 90, deg, 400
+#radius, , 50, 196, 9, m, 0.01, 90, deg, 400
+#radius, , 50, 260, 11, m, 0.01, 90, deg, 400
+#radius, , 50, 332, 10, m, 0.01, 90, deg, 400
+#radius, , 50, 332, 20, m, 0.01, 90, deg, 400
+#radius, , 50, 588, 20, m, 0.01, 90, deg, 400
+#radius, , 9332, 932, 20, m, 0.01, 90, deg, 400
+#radius, , 50, 1184, 17, m, 0.01, 90, deg, 400
+#radius, , 100, 1436, 9, m, 0.01, 90, deg, 400
+#straight, , 200, 1436, 9, m, 0.01, 90, deg, 400
+#radius, , 50, 2608, 0.5, m, 0.01, 90, deg, 400
+#straight, , 100, 932, 9, m, 0.01, 90, deg, 400
+#radius, , 50, 1436, 9, m, 0.01, 90, deg, 400
+#radius, , 50, 1184, 17, m, 0.01, 90, deg, 400
+#radius, , 50, 932, 9, m, 0.01, 90, deg, 400
+#radius, , 50, 588, 20, m, 0.01, 90, deg, 400
+#radius, , 50, 404, 20, m, 0.01, 90, deg, 400
+#radius, , 50, 332, 10, m, 0.01, 90, deg, 400
+#radius, , 50, 260, 11, m, 0.01, 90, deg, 400
+#radius, , 50, 196, 9, m, 0.01, 90, deg, 400
+#radius, , 50, 136, 10, m, 0.01, 90, deg, 400
+#radius, , 50, 122, 10, m, 0.01, 90, deg, 400
+#clothoid, , 50, 260, 11, m, 0.01, 90, deg, 50
+#radius, , 50, 108, 90, m, 0.01, 90, deg, 400
+#clothoid, , 50, 404, 20, m, 0.01, 90, deg, 50
+#radius, , 50, 122, 10, m, 0.01, 90, deg, 400
+#radius, , 50, 196, 9, m, 0.01, 90, deg, 400
+#radius, , 50, 260, 11, m, 0.01, 90, deg, 400
+#radius, , 50, 332, 10, m, 0.01, 90, deg, 400
+#radius, , 50, 332, 20, m, 0.01, 90, deg, 400
+#radius, , 588, 588, 20, m, 0.01, 90, deg, 400
+#radius, , 50, 932, 20, m, 0.01, 90, deg, 400
+#radius, , 50, 1184, 17, m, 0.01, 90, deg, 400
+#radius, , 50, 1436, 9, m, 0.01, 90, deg, 400
+#ENDTABLE
+
+! Segment 1, straight
+IPATHSEG 1
+SEGMENT_TYPE 0
+SEGMENT_LENGTH 300
+
+! Segment 2, radius
+IPATHSEG 2
+SEGMENT_TYPE 3
+SEGMENT_RADIUS 2608.000000
+SEGMENT_ARC 0.010985
+
+! Segment 3, straight
+IPATHSEG 3
+SEGMENT_TYPE 0
+SEGMENT_LENGTH 100
+
+! Segment 4, radius
+IPATHSEG 4
+SEGMENT_TYPE 3
+SEGMENT_RADIUS 1436.000000
+SEGMENT_ARC 0.359096
+
+! Segment 5, radius
+IPATHSEG 5
+SEGMENT_TYPE 3
+SEGMENT_RADIUS 1184.000000
+SEGMENT_ARC 0.822659
+
+! Segment 6, radius
+IPATHSEG 6
+SEGMENT_TYPE 3
+SEGMENT_RADIUS 932.000000
+SEGMENT_ARC 0.553285
+
+! Segment 7, radius
+IPATHSEG 7
+SEGMENT_TYPE 3
+SEGMENT_RADIUS 588.000000
+SEGMENT_ARC 1.948836
+
+! Segment 8, radius
+IPATHSEG 8
+SEGMENT_TYPE 3
+SEGMENT_RADIUS 404.000000
+SEGMENT_ARC 2.836425
+
+! Segment 9, radius
+IPATHSEG 9
+SEGMENT_TYPE 3
+SEGMENT_RADIUS 332.000000
+SEGMENT_ARC 1.725776
+
+! Segment 10, radius
+IPATHSEG 10
+SEGMENT_TYPE 3
+SEGMENT_RADIUS 260.000000
+SEGMENT_ARC 2.424052
+
+! Segment 11, radius
+IPATHSEG 11
+SEGMENT_TYPE 3
+SEGMENT_RADIUS 196.000000
+SEGMENT_ARC 2.630929
+
+! Segment 12, radius
+IPATHSEG 12
+SEGMENT_TYPE 3
+SEGMENT_RADIUS 136.000000
+SEGMENT_ARC 4.212925
+
+! Segment 13, radius
+IPATHSEG 13
+SEGMENT_TYPE 3
+SEGMENT_RADIUS 122.000000
+SEGMENT_ARC 4.696375
+
+! Segment 14, clothoid
+IPATHSEG 14
+SEGMENT_TYPE 4
+SEGMENT_RHO_DS_ENTERING 0.008197
+SEGMENT_RHO_DS_DEPARTING 0.009259
+SEGMENT_LENGTH 50.000000
+
+! Segment 15, radius
+IPATHSEG 15
+SEGMENT_TYPE 3
+SEGMENT_RADIUS 108.000000
+SEGMENT_ARC 47.746483
+
+! Segment 16, clothoid
+IPATHSEG 16
+SEGMENT_TYPE 4
+SEGMENT_RHO_DS_ENTERING 0.009259
+SEGMENT_RHO_DS_DEPARTING 0.008197
+SEGMENT_LENGTH 50.000000
+
+! Segment 17, radius
+IPATHSEG 17
+SEGMENT_TYPE 3
+SEGMENT_RADIUS 122.000000
+SEGMENT_ARC 4.696375
+
+! Segment 18, radius
+IPATHSEG 18
+SEGMENT_TYPE 3
+SEGMENT_RADIUS 196.000000
+SEGMENT_ARC 2.630929
+
+! Segment 19, radius
+IPATHSEG 19
+SEGMENT_TYPE 3
+SEGMENT_RADIUS 260.000000
+SEGMENT_ARC 2.424052
+
+! Segment 20, radius
+IPATHSEG 20
+SEGMENT_TYPE 3
+SEGMENT_RADIUS 332.000000
+SEGMENT_ARC 1.725776
+
+! Segment 21, radius
+IPATHSEG 21
+SEGMENT_TYPE 3
+SEGMENT_RADIUS 332.000000
+SEGMENT_ARC 3.451553
+
+! Segment 22, radius
+IPATHSEG 22
+SEGMENT_TYPE 3
+SEGMENT_RADIUS 588.000000
+SEGMENT_ARC 1.948836
+
+! Segment 23, radius
+IPATHSEG 23
+SEGMENT_TYPE 3
+SEGMENT_RADIUS 932.000000
+SEGMENT_ARC 1.229523
+
+! Segment 24, radius
+IPATHSEG 24
+SEGMENT_TYPE 3
+SEGMENT_RADIUS 1184.000000
+SEGMENT_ARC 0.822659
+
+! Segment 25, radius
+IPATHSEG 25
+SEGMENT_TYPE 3
+SEGMENT_RADIUS 1436.000000
+SEGMENT_ARC 0.359096
+
+! Segment 26, straight
+IPATHSEG 26
+SEGMENT_TYPE 0
+SEGMENT_LENGTH 200
+
+! Segment 27, radius
+IPATHSEG 27
+SEGMENT_TYPE 3
+SEGMENT_RADIUS 2608.000000
+SEGMENT_ARC 0.010985
+
+! Segment 28, straight
+IPATHSEG 28
+SEGMENT_TYPE 0
+SEGMENT_LENGTH 100
+
+! Segment 29, radius
+IPATHSEG 29
+SEGMENT_TYPE 3
+SEGMENT_RADIUS 1436.000000
+SEGMENT_ARC 0.359096
+
+! Segment 30, radius
+IPATHSEG 30
+SEGMENT_TYPE 3
+SEGMENT_RADIUS 1184.000000
+SEGMENT_ARC 0.822659
+
+! Segment 31, radius
+IPATHSEG 31
+SEGMENT_TYPE 3
+SEGMENT_RADIUS 932.000000
+SEGMENT_ARC 0.553285
+
+! Segment 32, radius
+IPATHSEG 32
+SEGMENT_TYPE 3
+SEGMENT_RADIUS 588.000000
+SEGMENT_ARC 1.948836
+
+! Segment 33, radius
+IPATHSEG 33
+SEGMENT_TYPE 3
+SEGMENT_RADIUS 404.000000
+SEGMENT_ARC 2.836425
+
+! Segment 34, radius
+IPATHSEG 34
+SEGMENT_TYPE 3
+SEGMENT_RADIUS 332.000000
+SEGMENT_ARC 1.725776
+
+! Segment 35, radius
+IPATHSEG 35
+SEGMENT_TYPE 3
+SEGMENT_RADIUS 260.000000
+SEGMENT_ARC 2.424052
+
+! Segment 36, radius
+IPATHSEG 36
+SEGMENT_TYPE 3
+SEGMENT_RADIUS 196.000000
+SEGMENT_ARC 2.630929
+
+! Segment 37, radius
+IPATHSEG 37
+SEGMENT_TYPE 3
+SEGMENT_RADIUS 136.000000
+SEGMENT_ARC 4.212925
+
+! Segment 38, radius
+IPATHSEG 38
+SEGMENT_TYPE 3
+SEGMENT_RADIUS 122.000000
+SEGMENT_ARC 4.696375
+
+! Segment 39, clothoid
+IPATHSEG 39
+SEGMENT_TYPE 4
+SEGMENT_RHO_DS_ENTERING 0.008197
+SEGMENT_RHO_DS_DEPARTING 0.009259
+SEGMENT_LENGTH 50.000000
+
+! Segment 40, radius
+IPATHSEG 40
+SEGMENT_TYPE 3
+SEGMENT_RADIUS 108.000000
+SEGMENT_ARC 47.746483
+
+! Segment 41, clothoid
+IPATHSEG 41
+SEGMENT_TYPE 4
+SEGMENT_RHO_DS_ENTERING 0.009259
+SEGMENT_RHO_DS_DEPARTING 0.008197
+SEGMENT_LENGTH 50.000000
+
+! Segment 42, radius
+IPATHSEG 42
+SEGMENT_TYPE 3
+SEGMENT_RADIUS 122.000000
+SEGMENT_ARC 4.696375
+
+! Segment 43, radius
+IPATHSEG 43
+SEGMENT_TYPE 3
+SEGMENT_RADIUS 196.000000
+SEGMENT_ARC 2.630929
+
+! Segment 44, radius
+IPATHSEG 44
+SEGMENT_TYPE 3
+SEGMENT_RADIUS 260.000000
+SEGMENT_ARC 2.424052
+
+! Segment 45, radius
+IPATHSEG 45
+SEGMENT_TYPE 3
+SEGMENT_RADIUS 332.000000
+SEGMENT_ARC 1.725776
+
+! Segment 46, radius
+IPATHSEG 46
+SEGMENT_TYPE 3
+SEGMENT_RADIUS 332.000000
+SEGMENT_ARC 3.451553
+
+! Segment 47, radius
+IPATHSEG 47
+SEGMENT_TYPE 3
+SEGMENT_RADIUS 588.000000
+SEGMENT_ARC 1.948836
+
+! Segment 48, radius
+IPATHSEG 48
+SEGMENT_TYPE 3
+SEGMENT_RADIUS 932.000000
+SEGMENT_ARC 1.229523
+
+! Segment 49, radius
+IPATHSEG 49
+SEGMENT_TYPE 3
+SEGMENT_RADIUS 1184.000000
+SEGMENT_ARC 0.822659
+
+! Segment 50, radius
+IPATHSEG 50
+SEGMENT_TYPE 3
+SEGMENT_RADIUS 1436.000000
+SEGMENT_ARC 0.359096
+
+! Segment 51, straight
+IPATHSEG 51
+SEGMENT_TYPE 0
+SEGMENT_LENGTH 200
+
+! Segment 52, radius
+IPATHSEG 52
+SEGMENT_TYPE 3
+SEGMENT_RADIUS 2608.000000
+SEGMENT_ARC 0.010985
+
+! Segment 53, straight
+IPATHSEG 53
+SEGMENT_TYPE 0
+SEGMENT_LENGTH 100
+
+! Segment 54, radius
+IPATHSEG 54
+SEGMENT_TYPE 3
+SEGMENT_RADIUS 1436.000000
+SEGMENT_ARC 0.359096
+
+! Segment 55, radius
+IPATHSEG 55
+SEGMENT_TYPE 3
+SEGMENT_RADIUS 1184.000000
+SEGMENT_ARC 0.822659
+
+! Segment 56, radius
+IPATHSEG 56
+SEGMENT_TYPE 3
+SEGMENT_RADIUS 932.000000
+SEGMENT_ARC 0.553285
+
+! Segment 57, radius
+IPATHSEG 57
+SEGMENT_TYPE 3
+SEGMENT_RADIUS 588.000000
+SEGMENT_ARC 1.948836
+
+! Segment 58, radius
+IPATHSEG 58
+SEGMENT_TYPE 3
+SEGMENT_RADIUS 404.000000
+SEGMENT_ARC 2.836425
+
+! Segment 59, radius
+IPATHSEG 59
+SEGMENT_TYPE 3
+SEGMENT_RADIUS 332.000000
+SEGMENT_ARC 1.725776
+
+! Segment 60, radius
+IPATHSEG 60
+SEGMENT_TYPE 3
+SEGMENT_RADIUS 260.000000
+SEGMENT_ARC 2.424052
+
+! Segment 61, radius
+IPATHSEG 61
+SEGMENT_TYPE 3
+SEGMENT_RADIUS 196.000000
+SEGMENT_ARC 2.630929
+
+! Segment 62, radius
+IPATHSEG 62
+SEGMENT_TYPE 3
+SEGMENT_RADIUS 136.000000
+SEGMENT_ARC 4.212925
+
+! Segment 63, radius
+IPATHSEG 63
+SEGMENT_TYPE 3
+SEGMENT_RADIUS 122.000000
+SEGMENT_ARC 4.696375
+
+! Segment 64, clothoid
+IPATHSEG 64
+SEGMENT_TYPE 4
+SEGMENT_RHO_DS_ENTERING 0.008197
+SEGMENT_RHO_DS_DEPARTING 0.009259
+SEGMENT_LENGTH 50.000000
+
+! Segment 65, radius
+IPATHSEG 65
+SEGMENT_TYPE 3
+SEGMENT_RADIUS 108.000000
+SEGMENT_ARC 47.746483
+
+! Segment 66, clothoid
+IPATHSEG 66
+SEGMENT_TYPE 4
+SEGMENT_RHO_DS_ENTERING 0.009259
+SEGMENT_RHO_DS_DEPARTING 0.008197
+SEGMENT_LENGTH 50.000000
+
+! Segment 67, radius
+IPATHSEG 67
+SEGMENT_TYPE 3
+SEGMENT_RADIUS 122.000000
+SEGMENT_ARC 4.696375
+
+! Segment 68, radius
+IPATHSEG 68
+SEGMENT_TYPE 3
+SEGMENT_RADIUS 196.000000
+SEGMENT_ARC 2.630929
+
+! Segment 69, radius
+IPATHSEG 69
+SEGMENT_TYPE 3
+SEGMENT_RADIUS 260.000000
+SEGMENT_ARC 2.424052
+
+! Segment 70, radius
+IPATHSEG 70
+SEGMENT_TYPE 3
+SEGMENT_RADIUS 332.000000
+SEGMENT_ARC 1.725776
+
+! Segment 71, radius
+IPATHSEG 71
+SEGMENT_TYPE 3
+SEGMENT_RADIUS 332.000000
+SEGMENT_ARC 3.451553
+
+! Segment 72, radius
+IPATHSEG 72
+SEGMENT_TYPE 3
+SEGMENT_RADIUS 588.000000
+SEGMENT_ARC 1.948836
+
+! Segment 73, radius
+IPATHSEG 73
+SEGMENT_TYPE 3
+SEGMENT_RADIUS 932.000000
+SEGMENT_ARC 1.229523
+
+! Segment 74, radius
+IPATHSEG 74
+SEGMENT_TYPE 3
+SEGMENT_RADIUS 1184.000000
+SEGMENT_ARC 0.822659
+
+! Segment 75, radius
+IPATHSEG 75
+SEGMENT_TYPE 3
+SEGMENT_RADIUS 1436.000000
+SEGMENT_ARC 0.359096
+
+! Segment 76, straight
+IPATHSEG 76
+SEGMENT_TYPE 0
+SEGMENT_LENGTH 200
+
+! Segment 77, radius
+IPATHSEG 77
+SEGMENT_TYPE 3
+SEGMENT_RADIUS 2608.000000
+SEGMENT_ARC 0.010985
+
+! Segment 78, straight
+IPATHSEG 78
+SEGMENT_TYPE 0
+SEGMENT_LENGTH 100
+
+! Segment 79, radius
+IPATHSEG 79
+SEGMENT_TYPE 3
+SEGMENT_RADIUS 1436.000000
+SEGMENT_ARC 0.359096
+
+! Segment 80, radius
+IPATHSEG 80
+SEGMENT_TYPE 3
+SEGMENT_RADIUS 1184.000000
+SEGMENT_ARC 0.822659
+
+! Segment 81, radius
+IPATHSEG 81
+SEGMENT_TYPE 3
+SEGMENT_RADIUS 932.000000
+SEGMENT_ARC 0.553285
+
+! Segment 82, radius
+IPATHSEG 82
+SEGMENT_TYPE 3
+SEGMENT_RADIUS 588.000000
+SEGMENT_ARC 1.948836
+
+! Segment 83, radius
+IPATHSEG 83
+SEGMENT_TYPE 3
+SEGMENT_RADIUS 404.000000
+SEGMENT_ARC 2.836425
+
+! Segment 84, radius
+IPATHSEG 84
+SEGMENT_TYPE 3
+SEGMENT_RADIUS 332.000000
+SEGMENT_ARC 1.725776
+
+! Segment 85, radius
+IPATHSEG 85
+SEGMENT_TYPE 3
+SEGMENT_RADIUS 260.000000
+SEGMENT_ARC 2.424052
+
+! Segment 86, radius
+IPATHSEG 86
+SEGMENT_TYPE 3
+SEGMENT_RADIUS 196.000000
+SEGMENT_ARC 2.630929
+
+! Segment 87, radius
+IPATHSEG 87
+SEGMENT_TYPE 3
+SEGMENT_RADIUS 136.000000
+SEGMENT_ARC 4.212925
+
+! Segment 88, radius
+IPATHSEG 88
+SEGMENT_TYPE 3
+SEGMENT_RADIUS 122.000000
+SEGMENT_ARC 4.696375
+
+! Segment 89, clothoid
+IPATHSEG 89
+SEGMENT_TYPE 4
+SEGMENT_RHO_DS_ENTERING 0.008197
+SEGMENT_RHO_DS_DEPARTING 0.009259
+SEGMENT_LENGTH 50.000000
+
+! Segment 90, radius
+IPATHSEG 90
+SEGMENT_TYPE 3
+SEGMENT_RADIUS 108.000000
+SEGMENT_ARC 47.746483
+
+! Segment 91, clothoid
+IPATHSEG 91
+SEGMENT_TYPE 4
+SEGMENT_RHO_DS_ENTERING 0.009259
+SEGMENT_RHO_DS_DEPARTING 0.008197
+SEGMENT_LENGTH 50.000000
+
+! Segment 92, radius
+IPATHSEG 92
+SEGMENT_TYPE 3
+SEGMENT_RADIUS 122.000000
+SEGMENT_ARC 4.696375
+
+! Segment 93, radius
+IPATHSEG 93
+SEGMENT_TYPE 3
+SEGMENT_RADIUS 196.000000
+SEGMENT_ARC 2.630929
+
+! Segment 94, radius
+IPATHSEG 94
+SEGMENT_TYPE 3
+SEGMENT_RADIUS 260.000000
+SEGMENT_ARC 2.424052
+
+! Segment 95, radius
+IPATHSEG 95
+SEGMENT_TYPE 3
+SEGMENT_RADIUS 332.000000
+SEGMENT_ARC 1.725776
+
+! Segment 96, radius
+IPATHSEG 96
+SEGMENT_TYPE 3
+SEGMENT_RADIUS 332.000000
+SEGMENT_ARC 3.451553
+
+! Segment 97, radius
+IPATHSEG 97
+SEGMENT_TYPE 3
+SEGMENT_RADIUS 588.000000
+SEGMENT_ARC 1.948836
+
+! Segment 98, radius
+IPATHSEG 98
+SEGMENT_TYPE 3
+SEGMENT_RADIUS 932.000000
+SEGMENT_ARC 1.229523
+
+! Segment 99, radius
+IPATHSEG 99
+SEGMENT_TYPE 3
+SEGMENT_RADIUS 1184.000000
+SEGMENT_ARC 0.822659
+
+! Segment 100, radius
+IPATHSEG 100
+SEGMENT_TYPE 3
+SEGMENT_RADIUS 1436.000000
+SEGMENT_ARC 0.359096
+
+Title curve_road_56 <Copied 10-14-2024 12:49:49>
+
+LOG_ENTRY Used Dataset: Path: Segment Builder; { Copied 10-14-2024 12:49:49 } curve_road_56
+#Library : Path: Segment Builder
+#DataSet : curve_road_56
+#Category: Copied 10-14-2024 12:49:49
+#FileID  : RoadSeg_90a19797-c957-40d8-9826-b5fc959e0988
+#Product : CarSim 2021.0
+#VehCode Path Segment Builder
+
+END

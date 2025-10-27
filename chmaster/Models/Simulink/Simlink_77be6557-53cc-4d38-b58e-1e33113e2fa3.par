@@ -1,0 +1,53 @@
+PARSFILE
+#FullDataName Models: Simulink`Yaw Control Twin-Motor 4WD`External Powertrain
+#RunMdlFile Extensions\Simulink\Yaw_EV_4WD.mdl
+SIMULINK_MODEL_FILE Extensions\Simulink\Yaw_EV_4WD.mdl
+#RingCtrl0 -1
+#CheckBox0 0    
+*USE_ALT_DIR 0
+#CheckBox1 0    
+*USE_DIFF_SOLVERS 0
+#CheckBox3 1    
+#CheckBox4 1    
+OPT_IO_SYNC_FM 1
+#RingCtrl1 0
+OPT_INT_METHOD 0
+#CheckBox2 0    
+OPT_IO_UPDATE 0
+#CheckBox4 1    
+OPT_IO_SYNC_FM 1
+*TSTEP 0.0005
+*FREQ_MODEL 2000
+*TSTEP_OUT 0.025
+*FREQ_OUT 40
+tstep 0.0005
+iprint 50
+#CheckBox5 0    
+*MULTI_SOLVERS 0
+PARSFILE IO_Channels\I_Channels\Import_ec4c0cd0-f601-41b0-bf35-48ebc8f48696.par
+#BlueLink0 I/O Channels: Import`EV Wheel Motors Command (4WD)` Powertrain Control and Ext. Models` , Import`Import_ec4c0cd0-f601-41b0-bf35-48ebc8f48696
+
+PARSFILE IO_Channels\O_Channels\Export_817b4603-f41d-4fe2-a986-65235852cd77.par
+#BlueLink1 I/O Channels: Export`Yaw Control Twin-Motor` Powertrain Control and Ext. Models` , Import/Export`Export_817b4603-f41d-4fe2-a986-65235852cd77
+
+LIVE_SERVER_UPDATE_FREQ_MAX 60
+
+#EMBEDDED_NOTES
+#This dataset specifies a Simulink model that has a control system for a yaw control twin-motor. The system works by controlling electrically driven wheels.
+#
+#The CarSim model involves some detailed interactions between variables, so the option to Add, Replace, or Multiply the Simulink imported variables with their corresponding variables in CarSim is available for most HEV/BEV powertrain variables.
+#
+#This Simulink model calculates motor torque adjustment of each wheel which stabilizes vehicle attitude. The adjustment torques calculated by this Simulink model is fed to CarSim with "Add" option so that the adjustment torque is added or subtracted (both positive and negative) on the internally calculated electric motor torque command.
+#
+#
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Models: Simulink; { External Powertrain } Yaw Control Twin-Motor 4WD
+#Library : Models: Simulink
+#DataSet : Yaw Control Twin-Motor 4WD
+#Category: External Powertrain
+#FileID  : Simlink_77be6557-53cc-4d38-b58e-1e33113e2fa3
+#Product : CarSim 2021.0
+#VehCode 
+
+END

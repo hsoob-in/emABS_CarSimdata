@@ -1,0 +1,83 @@
+Run made by VS Road Calculator at 21:58 on September 09, 2025.
+Utility to calculate road and path coordinates for visualization
+Started with simfile: Roads\3D_Road\simfile_road
+
+Include PARSFILE "Roads\3D_Road\Road_0400cc12-57e9-4595-8377-8524ef199a86.par"
+Include PARSFILE "Roads\BuilderSegment\RoadSeg_681ce8ba-17ae-429c-8f85-4f7a447e2ed2.par"
+ Straight South, ID = 1013 <Straight>
+Used Dataset: Path: Segment Builder; { Straight } Straight South, ID = 1013
+Include PARSFILE "Roads\dZ_Map\RdMapZ_13270e08-1630-4e19-8d77-bef66de74b82.par"
+Used Dataset: Road: Off-Center Elevation Map, S-L Grid; { Gutters, Curbs, Ditches } Lane with Curb and Cross-Slope
+Include PARSFILE "Roads\Friction\RdMu_25e73395-9471-44b9-9c60-27bd9cc24921.par"
+Used Dataset: Road: Friction Map, S-L Grid; { Constant } Constant: 0.85
+Include PARSFILE "Roads\Shapes\RdShape_d05b70d7-5673-4cd6-a868-f384e2f9445c.par"
+Used Dataset: Road: Animator Surface Shapes; { Intersections } Straight w/ Curb
+Include PARSFILE "Roads\AniGroup\AniRep_142a9ad5-a22f-4396-bf11-b1243b533108.par"
+Used Dataset: Road: Animator Repeated Object; { Forests } Mixed Forest, R. Side, 0 - 1000m
+Include PARSFILE "Roads\AniGroup\AniRep_a51e48e3-364b-43eb-a9fa-bac3fad58c12.par"
+Used Dataset: Road: Animator Repeated Object; { Forests } Mixed Forest, R. Side, -1000m - 0
+Include PARSFILE "Roads\3D_Road\Road_0400cc12-57e9-4595-8377-8524ef199a86.ani"
+Include PARSFILE "Animator\STL\Shape_5f235565-63f3-498c-8aa0-abca99ce3850.par"
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Mixed Forest
+Include PARSFILE "Animator\STL\Shape_5f235565-63f3-498c-8aa0-abca99ce3850.par"
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Mixed Forest
+Include PARSFILE "Animator\STL\Shape_5f235565-63f3-498c-8aa0-abca99ce3850.par"
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Mixed Forest
+Include PARSFILE "Animator\STL\Shape_5f235565-63f3-498c-8aa0-abca99ce3850.par"
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Mixed Forest
+Include PARSFILE "Animator\STL\Shape_5f235565-63f3-498c-8aa0-abca99ce3850.par"
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Mixed Forest
+Include PARSFILE "Animator\STL\Shape_5f235565-63f3-498c-8aa0-abca99ce3850.par"
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Mixed Forest
+Include PARSFILE "Animator\STL\Shape_5f235565-63f3-498c-8aa0-abca99ce3850.par"
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Mixed Forest
+Include PARSFILE "Animator\STL\Shape_5f235565-63f3-498c-8aa0-abca99ce3850.par"
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Mixed Forest
+Include PARSFILE "Animator\STL\Shape_5f235565-63f3-498c-8aa0-abca99ce3850.par"
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Mixed Forest
+Include PARSFILE "Animator\STL\Shape_5f235565-63f3-498c-8aa0-abca99ce3850.par"
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Mixed Forest
+Include PARSFILE "Animator\STL\Shape_5f235565-63f3-498c-8aa0-abca99ce3850.par"
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Mixed Forest
+Include PARSFILE "Animator\STL\Shape_5f235565-63f3-498c-8aa0-abca99ce3850.par"
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Mixed Forest
+Include PARSFILE "Animator\STL\Shape_5f235565-63f3-498c-8aa0-abca99ce3850.par"
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Mixed Forest
+Include PARSFILE "Animator\STL\Shape_5f235565-63f3-498c-8aa0-abca99ce3850.par"
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Mixed Forest
+Include PARSFILE "Animator\STL\Shape_5f235565-63f3-498c-8aa0-abca99ce3850.par"
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Mixed Forest
+Include PARSFILE "Animator\STL\Shape_5f235565-63f3-498c-8aa0-abca99ce3850.par"
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Mixed Forest
+Include PARSFILE "Animator\STL\Shape_5f235565-63f3-498c-8aa0-abca99ce3850.par"
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Mixed Forest
+Include PARSFILE "Animator\STL\Shape_5f235565-63f3-498c-8aa0-abca99ce3850.par"
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Mixed Forest
+Include PARSFILE "Animator\STL\Shape_5f235565-63f3-498c-8aa0-abca99ce3850.par"
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Mixed Forest
+Include PARSFILE "Animator\STL\Shape_5f235565-63f3-498c-8aa0-abca99ce3850.par"
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Mixed Forest
+Include PARSFILE "Animator\STL\Shape_5f235565-63f3-498c-8aa0-abca99ce3850.par"
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Mixed Forest
+Include PARSFILE "Animator\STL\Shape_5f235565-63f3-498c-8aa0-abca99ce3850.par"
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Mixed Forest
+Include PARSFILE "Animator\STL\Shape_5f235565-63f3-498c-8aa0-abca99ce3850.par"
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Mixed Forest
+Include PARSFILE "Animator\STL\Shape_5f235565-63f3-498c-8aa0-abca99ce3850.par"
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Mixed Forest
+Include PARSFILE "Animator\STL\Shape_5f235565-63f3-498c-8aa0-abca99ce3850.par"
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Mixed Forest
+Include PARSFILE "Animator\STL\Shape_5f235565-63f3-498c-8aa0-abca99ce3850.par"
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Mixed Forest
+Include PARSFILE "Animator\STL\Shape_5f235565-63f3-498c-8aa0-abca99ce3850.par"
+Used Dataset: Animator: Shape File Link; { Environment: Trees } Mixed Forest
+Used Dataset: Road: 3D Surface (All Properties); { Intersection, 3D Roads with Curbs } 1013: Enter North, Straight South
+
+Time to read input = 0.0053844
+
+Run stopped at t = 12.68. Stop time reached.
+
+Run started: VS output file = Roads\3D_Road\Road_0400cc12-57e9-4595-8377-8524ef199a86.vsb
+
+Computational time ratio: RTIME = inf (real time)/(simulation time)
+

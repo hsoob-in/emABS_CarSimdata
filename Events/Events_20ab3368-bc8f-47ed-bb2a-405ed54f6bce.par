@@ -1,0 +1,78 @@
+PARSFILE
+#FullDataName Events`Reset Positions`Pedestrian Euro NCAP
+#CheckBox1 1    
+*CLEAR
+#CheckBox2 1    
+#CheckBox3 1    
+#CheckBox4 1    
+#CheckBox5 1    
+#CheckBox6 1    
+#CheckBox7 0    
+#CheckBox8 0    
+#CheckBox9 0    
+#CheckBox10 0    
+
+#RingCtrl0 <=
+#RingCtrl10 1
+#RingCtrl11 1
+#RingCtrl12 1
+RESET_EVENTS
+*NAME1 FINAL_AEB_TEST
+*NAME2 FINAL_AEB_TEST
+*VALUE1 0
+*VALUE2 1
+*SPEED VEH_SPD_INIT
+INSTALL_SPEED_CONTROLLER
+OPT_SC 3
+SET_ISPEED_FOR_ID 0
+set_description SPEED_TARGET_ID Event: Reset Positions
+SPEED_TARGET_COMBINE ADD
+SPEED_TARGET_S_CONSTANT 0
+SPEED_ID_SC = SPEED_TARGET_ID
+OPT_SC_ENGINE_BRAKING 0
+SPEED_TARGET_CONSTANT VEH_SPD_INIT
+OPT_INIT_CONFIG 1
+OPT_INIT_PATH 1
+OPT_INIT_SPEED 1
+
+! Reset all open-loop control clocks by setting parameters to current time
+TSTART_T_EVENT = T ;
+TSTART_BRAKES = T ;
+TSTART_STEER_TQ = T ;
+TSTART_F_BRAKE_PEDAL = T ;
+TSTART_PBK_CON = T ;
+TSTART_CLUTCH = T ;
+TSTART_GEAR = T ;
+TSTART_SPEED_TARGET = T ;
+TSTART_STEER = T ;
+TSTART_THROTTLE = T ;
+TSTART_TRANS = T ;
+TSTART_WIND = T ;
+#MiscYellow1
+! Due to modularity, the pedestrian is set as the first moving object...
+with index 2
+LatO_2 = PED_L_START ; m; Output: Lateral offset, object 2
+S_Obj_2 = PED_S_START; m; Output and possibly ODE SV: Station of object
+RESET_COMPLETE = 1
+#ENDMYellow
+
+MAKE_EVENT FINAL_AEB_TEST <= 0 ; Events\Events_ac068677-3096-4711-b0d9-50a755244cb3.par
+#BlueLink0 Events`B. Initialize AEB On Test` Pedestrian Euro NCAP` , Events`Events_ac068677-3096-4711-b0d9-50a755244cb3
+
+SET_EVENT_ID 0 ! reset to default
+
+#EMBEDDED_NOTES
+#Last event before starting a new run
+#- reset the vehicle postion, and other initialization items
+#- reset the location of the pedestrian moving object
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Events; { Pedestrian Euro NCAP } Reset Positions
+#Library : Events
+#DataSet : Reset Positions
+#Category: Pedestrian Euro NCAP
+#FileID  : Events_20ab3368-bc8f-47ed-bb2a-405ed54f6bce
+#Product : CarSim 2021.0
+#VehCode Events
+
+END

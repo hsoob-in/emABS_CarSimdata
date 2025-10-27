@@ -1,0 +1,103 @@
+PARSFILE
+#FullDataName I/O Channels: Export`CHO ABS Export`MS2024(ABS)
+#RingCtrl0 1
+#RingCtrl1 1
+*README_FILE Results\Run_9e4c7912-2109-4fbb-8f56-a91b47f2678e\Run_out_tab.txt
+
+
+EXPORT Vx
+EXPORT Ax
+EXPORT Ay
+EXPORT AVz
+EXPORT AVy_L1
+EXPORT AVy_R1
+EXPORT AVy_L2
+EXPORT AVy_R2
+EXPORT My_Bk_L1
+EXPORT My_Bk_R1
+EXPORT My_Bk_L2
+EXPORT My_Bk_R2
+EXPORT PbkCh_L1
+EXPORT PbkCh_R1
+EXPORT PbkCh_L2
+EXPORT PbkCh_R2
+EXPORT Fx_L1
+EXPORT Fx_R1
+EXPORT Fx_L2
+EXPORT Fx_R2
+EXPORT Fy_L1
+EXPORT Fy_R1
+EXPORT Fy_L2
+EXPORT Fy_R2
+EXPORT Fz_L1
+EXPORT Fz_R1
+EXPORT Fz_L2
+EXPORT Fz_R2
+EXPORT Steer_L1
+EXPORT Steer_R1
+EXPORT Steer_L2
+EXPORT Steer_R2
+EXPORT My_Dr_L1
+EXPORT My_Dr_R1
+EXPORT My_Dr_L2
+EXPORT My_Dr_R2
+EXPORT KappL_L1
+EXPORT KappL_R1
+EXPORT KappL_L2
+EXPORT KappL_R2
+#MiscYellow0
+#Number of Selected Channels: 40
+#CHN_NAME: Vx
+#CHN_NAME: Ax
+#CHN_NAME: Ay
+#CHN_NAME: AVz
+#CHN_NAME: AVy_L1
+#CHN_NAME: AVy_R1
+#CHN_NAME: AVy_L2
+#CHN_NAME: AVy_R2
+#CHN_NAME: My_Bk_L1
+#CHN_NAME: My_Bk_R1
+#CHN_NAME: My_Bk_L2
+#CHN_NAME: My_Bk_R2
+#CHN_NAME: PbkCh_L1
+#CHN_NAME: PbkCh_R1
+#CHN_NAME: PbkCh_L2
+#CHN_NAME: PbkCh_R2
+#CHN_NAME: Fx_L1
+#CHN_NAME: Fx_R1
+#CHN_NAME: Fx_L2
+#CHN_NAME: Fx_R2
+#CHN_NAME: Fy_L1
+#CHN_NAME: Fy_R1
+#CHN_NAME: Fy_L2
+#CHN_NAME: Fy_R2
+#CHN_NAME: Fz_L1
+#CHN_NAME: Fz_R1
+#CHN_NAME: Fz_L2
+#CHN_NAME: Fz_R2
+#CHN_NAME: Steer_L1
+#CHN_NAME: Steer_R1
+#CHN_NAME: Steer_L2
+#CHN_NAME: Steer_R2
+#CHN_NAME: My_Dr_L1
+#CHN_NAME: My_Dr_R1
+#CHN_NAME: My_Dr_L2
+#CHN_NAME: My_Dr_R2
+#CHN_NAME: KappL_L1
+#CHN_NAME: KappL_R1
+#CHN_NAME: KappL_L2
+#CHN_NAME: KappL_R2
+#ENDMYellow
+
+#BlueLink0 CarSim Run Control`Ext. ABS: Split Mu` Simulink and LabVIEW Models` , example run`Run_9e4c7912-2109-4fbb-8f56-a91b47f2678e
+
+
+LOG_ENTRY Used Dataset: I/O Channels: Export; { MS2024(ABS) } CHO ABS Export
+#Library : I/O Channels: Export
+#DataSet : CHO ABS Export
+#Category: MS2024(ABS)
+#FileID  : Export_0b0de8e1-10a2-4cf4-b668-4fb1e57fb474
+#Product : CarSim 2021.0
+#VehCode Export Channels
+
+END

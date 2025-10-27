@@ -1,0 +1,56 @@
+PARSFILE
+#FullDataName Generic VS Commands`Plot and HUD Outputs`Pedestrian Euro NCAP
+#VehCode VS Commands
+
+#MiscYellow0
+**************** Outputs for scoring HUD and plots **************** 
+define_output AEB_MaxRunScore = AEB_MaxScore(CURRENT_TEST, VEH_SPD_INIT*3.6, 1); -;
+define_output CurrentTestNumber = CURRENT_TEST; -;
+define_output CurrentRunScore = ScoreNew; -;
+define_output TotalScore = ScoreOld; -;
+define_output EgoSpeedReduction = SpeedReduction; km/h
+#ENDMYellow
+
+PARSFILE Animator\HUD\HUD_0defe2bb-1e39-4a4c-a53c-b2c8badeb0a6.par
+#BlueLink0 Animator: HUD`Collided Med` Euro NCAP` , Miscellaneous`HUD_0defe2bb-1e39-4a4c-a53c-b2c8badeb0a6
+
+PARSFILE Animator\HUD\HUD_2c3c34bc-85cd-4e96-ba77-ce60648ceca0.par
+#BlueLink1 Animator: HUD`Total Score Output` Euro NCAP` , Miscellaneous`HUD_2c3c34bc-85cd-4e96-ba77-ce60648ceca0
+
+PARSFILE Plot\Setup\Plot_d3fe357c-fc28-4c9e-86a3-bc43a4d6c536.par
+#BlueLink3 Plot: Setup`AEB On Conditions` Pedestrian Euro NCAP` , Plot`Plot_d3fe357c-fc28-4c9e-86a3-bc43a4d6c536
+
+PARSFILE Plot\Setup\Plot_4d8a3392-9147-49dc-96ea-5155dcdc0dc1.par
+#BlueLink4 Plot: Setup`Ped AEB: Booleans` ADAS and AEB Alerts and Commands` , Plot`Plot_4d8a3392-9147-49dc-96ea-5155dcdc0dc1
+
+PARSFILE Plot\Setup\Plot_af9ca435-1460-4bd4-b480-64389d1c37ac.par
+#BlueLink5 Plot: Setup`AEB: TTC` Pedestrian Euro NCAP` , Plot`Plot_af9ca435-1460-4bd4-b480-64389d1c37ac
+
+PARSFILE Plot\Setup\Plot_dafae624-d48a-4548-93eb-fa73d080e21a.par
+#BlueLink6 Plot: Setup`Brake Control: M/C Pressure` Braking` , Plot`Plot_dafae624-d48a-4548-93eb-fa73d080e21a
+
+PARSFILE Plot\Setup\Plot_e26c0e44-e006-41c7-a5fd-4b911d0ece1d.par
+#BlueLink7 Plot: Setup`Pedestrian Y_Start` Pedestrian Euro NCAP` , Plot`Plot_e26c0e44-e006-41c7-a5fd-4b911d0ece1d
+
+PARSFILE Plot\Setup\Plot_0dfd849f-a030-4028-9a0a-099e961295a9.par
+#BlueLink8 Plot: Setup`Bumper Strike Percentage` Pedestrian Euro NCAP` , Plot`Plot_0dfd849f-a030-4028-9a0a-099e961295a9
+
+PARSFILE Plot\Setup\Plot_43b5b33f-1900-4ac7-97c8-508e3177cfba.par
+#BlueLink9 Plot: Setup`Vehicle Start Vxz` Pedestrian Euro NCAP` , Plot`Plot_43b5b33f-1900-4ac7-97c8-508e3177cfba
+
+PARSFILE Plot\Setup\Plot_2320bba0-7369-4604-9d51-81a7f9374f78.par
+#BlueLink10 Plot: Setup`Lateral Tracking Ped` Pedestrian Euro NCAP` , Plot`Plot_2320bba0-7369-4604-9d51-81a7f9374f78
+
+PARSFILE Plot\Setup\Plot_6dec3dce-349e-4d40-b15a-787e7028fc83.par
+#BlueLink11 Plot: Setup`Scoring` Pedestrian Euro NCAP` , Plot`Plot_6dec3dce-349e-4d40-b15a-787e7028fc83
+
+
+LOG_ENTRY Used Dataset: Generic VS Commands; { Pedestrian Euro NCAP } Plot and HUD Outputs
+#Library : Generic VS Commands
+#DataSet : Plot and HUD Outputs
+#Category: Pedestrian Euro NCAP
+#FileID  : GenVS_70802c09-d848-49ad-90d9-579884b51f13
+#Product : CarSim 2021.0
+#VehCode VS Commands
+
+END

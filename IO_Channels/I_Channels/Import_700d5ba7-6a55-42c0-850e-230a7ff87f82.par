@@ -1,0 +1,26 @@
+PARSFILE
+#FullDataName I/O Channels: Import`SM emABS import_0908`emABS
+#RingCtrl0 1
+#RingCtrl1 1
+*README_FILE Results\Run_95b32a23-ebde-4623-b2cb-4f7f63052a4a\Run_imp_tab.txt
+
+#MiscYellow0
+IMP_BK_STAT Replace 0.0 ! 1
+IMP_PBK_L1 Replace 0.0 ! 1
+IMP_PBK_R1 Replace 0.0 ! 1
+IMP_M_MOTOR_CMD_D1 Replace 0.0 ! 1
+IMP_M_MOTOR_CMD_D2 Replace 0.0 ! 1
+#ENDMYellow
+
+#BlueLink0 CarSim Run Control`emABS_withall` emABS` , example run`Run_95b32a23-ebde-4623-b2cb-4f7f63052a4a
+
+
+LOG_ENTRY Used Dataset: I/O Channels: Import; { emABS } SM emABS import_0908
+#Library : I/O Channels: Import
+#DataSet : SM emABS import_0908
+#Category: emABS
+#FileID  : Import_700d5ba7-6a55-42c0-850e-230a7ff87f82
+#Product : CarSim 2021.0
+#VehCode Import Channels
+
+END

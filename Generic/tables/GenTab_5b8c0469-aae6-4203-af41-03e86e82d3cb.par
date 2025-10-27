@@ -1,0 +1,25 @@
+PARSFILE
+#FullDataName Generic Table`Motor efficiency`IONIC5
+#RingCtrl0 CONSTANT
+#CheckBox0 0    
+
+r_eff_motor_CONSTANT 4.8
+#RadioCtrl0 0    
+#RadioCtrl1 0    
+
+*KEYWORD r_eff_motor
+*X_LABEL Motor power (kW)
+*Y_LABEL Efficiency (-)
+*SCALAR 4.8
+*X_LABEL_2 Motor output torque (N-m)
+
+
+LOG_ENTRY Used Dataset: Generic Table; { IONIC5 } Motor efficiency
+#Library : Generic Table
+#DataSet : Motor efficiency
+#Category: IONIC5
+#FileID  : GenTab_5b8c0469-aae6-4203-af41-03e86e82d3cb
+#Product : CarSim 2021.0
+#VehCode table
+
+END

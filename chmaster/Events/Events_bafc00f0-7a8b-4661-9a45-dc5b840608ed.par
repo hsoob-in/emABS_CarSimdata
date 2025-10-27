@@ -1,0 +1,55 @@
+PARSFILE
+#FullDataName Events`AEB Run Success`Pedestrian Euro NCAP
+#CheckBox1 1    
+*CLEAR
+#CheckBox6 0    
+#CheckBox7 0    
+#CheckBox9 0    
+#CheckBox10 0    
+
+#RingCtrl0 >=
+#RingCtrl1 ==
+#RingCtrl10 2
+#RingCtrl11 4
+RESET_EVENTS
+*NAME1 EndFinalRun
+*NAME2 RESET_COMPLETE
+*VALUE1 1
+*VALUE2 0
+#MiscYellow0
+!enter score criteria here
+AEB_ON_COLLIDE = 0
+PrevRunSpeedIncr = 5 ! increase speed by 5 km/h
+Vimpact = 0
+SpeedReduction = VEH_SPD_INIT - Vimpact
+
+ScoreNew_BLW40 = ( SpeedReduction/VEH_SPD_INIT )*...
+AEB_MaxScore(CURRENT_TEST, VEH_SPD_INIT*3.6, 1)
+ScoreNew_ABV40 = if( SpeedReduction>=MIN_SPD_REDUC , AEB_MaxScore(CURRENT_TEST, VEH_SPD_INIT*3.6, 1), 0)
+ScoreNew = if( VEH_SPD_INIT <= SCORE_CHG_SPD, ScoreNew_BLW40, ScoreNew_ABV40)
+ScoreOld = ScoreNew + ScoreOld
+#ENDMYellow
+
+MAKE_EVENT EndFinalRun >= 1 ; Events\Events_ea969e12-443d-4590-84d1-e4d34c5706fc.par
+#BlueLink0 Events`End Last Run` Pedestrian Euro NCAP` , Events`Events_ea969e12-443d-4590-84d1-e4d34c5706fc
+
+MAKE_EVENT RESET_COMPLETE == 0 ; Events\Events_5f0fbb7d-ed57-44eb-b669-0d4ff2a032f3.par
+#BlueLink1 Events`Pre-Reset` Pedestrian Euro NCAP` , Events`Events_5f0fbb7d-ed57-44eb-b669-0d4ff2a032f3
+
+SET_EVENT_ID 0 ! reset to default
+
+#EMBEDDED_NOTES
+#The test run with AEB on completed successfully
+#- if this is the last run, then end the test
+#- if this is not the last test, and the test reset has not occurred yet, begin the process or resetting the necessary test parameters so the next test run can occur
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Events; { Pedestrian Euro NCAP } AEB Run Success
+#Library : Events
+#DataSet : AEB Run Success
+#Category: Pedestrian Euro NCAP
+#FileID  : Events_bafc00f0-7a8b-4661-9a45-dc5b840608ed
+#Product : CarSim 2021.0
+#VehCode Events
+
+END

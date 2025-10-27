@@ -1,0 +1,23 @@
+PARSFILE
+#FullDataName Powertrain: Hybrid/Electric Power Management Control`Electric Power Manage.: Max 239kW`IONIC_RWD
+! Hybrid Power Management Controller. 
+#CheckBox0 0    
+PWR_HEV_DRV_MAX 239
+TC_PWR_HYBRID_AV 0.8
+KPW_PBK_HEV 20
+PWR_EV_MODE 239
+REGEN_BRK_OFF 0.8
+
+PARSFILE Generic\tables\GenTab_0597bb27-36e7-4e09-8208-483ff394266f.par
+#BlueLink0 Generic Table`Driver Demand Power: Full Load 239 kW_` IONIC_RWD` , Driver Demand Power`GenTab_0597bb27-36e7-4e09-8208-483ff394266f
+
+
+LOG_ENTRY Used Dataset: Powertrain: Hybrid/Electric Power Management Control; { IONIC_RWD } Electric Power Manage.: Max 239kW
+#Library : Powertrain: Hybrid/Electric Power Management Control
+#DataSet : Electric Power Manage.: Max 239kW
+#Category: IONIC_RWD
+#FileID  : PMC_0e0f9925-2cc7-4e62-86c8-05858adaa057
+#Product : CarSim 2021.0
+#VehCode Power Management Control (HEV)
+
+END

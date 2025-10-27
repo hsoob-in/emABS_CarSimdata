@@ -1,0 +1,46 @@
+PARSFILE
+#FullDataName Suspension: Camber Angle`Camber vs Jounce`B-Class, Sports Car (VSA) - Rear
+#CheckBox0 0    
+
+#RingCtrl0 SPLINE
+#RingCtrl1 CONSTANT
+#RingCtrl2 ADD
+CAMBER_COMBINE ADD
+#DiagramOne0
+CAMBER_TABLE SPLINE
+-70, 2.077540159
+-60, 1.800058723
+-50, 1.514431357
+-40, 1.219539285
+-30, 0.914334118
+-20, 0.597816169
+-10, 0.269015461
+-1.41e-15, -0.073025167
+10, -0.429265112
+20, -0.800680101
+30, -1.188276052
+40, -1.593102098
+50, -2.016265154
+60, -2.458943367
+70, -2.92240262
+ENDTABLE
+SUSP_CAMBER_JNC_OTHER_SIDE_CONSTANT 0
+#RadioCtrl0 0    
+#RadioCtrl1 0    
+
+*SCALAR2 0
+
+
+#EMBEDDED_NOTES
+#Generated from a five link independent rear suspension in SuspensionSim.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Suspension: Camber Angle; { B-Class, Sports Car (VSA) - Rear } Camber vs Jounce
+#Library : Suspension: Camber Angle
+#DataSet : Camber vs Jounce
+#Category: B-Class, Sports Car (VSA) - Rear
+#FileID  : Camber_428457f1-e56f-496f-ab92-4173a7fce003
+#Product : CarSim 2021.0
+#VehCode Camber
+
+END

@@ -1,0 +1,79 @@
+PARSFILE
+#FullDataName I/O Channels: Export`Brk Torque Control EV SLC`Brake System Control
+#RingCtrl0 1
+#RingCtrl1 1
+*README_FILE Results\Run_9e4c7912-2109-4fbb-8f56-a91b47f2678e\Run_out_tab.txt
+
+
+EXPORT Vx
+EXPORT Ax
+EXPORT Ay
+EXPORT AVz
+EXPORT Fx_L1
+EXPORT Fx_L2
+EXPORT Fx_R1
+EXPORT Fx_R2
+EXPORT Fz_L1
+EXPORT Fz_L2
+EXPORT Fz_R1
+EXPORT Fz_R2
+EXPORT Kappa_L1
+EXPORT Kappa_L2
+EXPORT Kappa_R1
+EXPORT Kappa_R2
+EXPORT AVy_L1
+EXPORT AVy_L2
+EXPORT AVy_R1
+EXPORT AVy_R2
+EXPORT My_Bk_L1
+EXPORT My_Bk_L2
+EXPORT My_Bk_R1
+EXPORT My_Bk_R2
+EXPORT Steer_L1
+EXPORT Steer_R1
+EXPORT PbkCh_L1
+EXPORT PbkCh_R1
+#MiscYellow0
+#Number of Selected Channels: 28
+#CHN_NAME: Vx
+#CHN_NAME: Ax
+#CHN_NAME: Ay
+#CHN_NAME: AVz
+#CHN_NAME: Fx_L1
+#CHN_NAME: Fx_L2
+#CHN_NAME: Fx_R1
+#CHN_NAME: Fx_R2
+#CHN_NAME: Fz_L1
+#CHN_NAME: Fz_L2
+#CHN_NAME: Fz_R1
+#CHN_NAME: Fz_R2
+#CHN_NAME: Kappa_L1
+#CHN_NAME: Kappa_L2
+#CHN_NAME: Kappa_R1
+#CHN_NAME: Kappa_R2
+#CHN_NAME: AVy_L1
+#CHN_NAME: AVy_L2
+#CHN_NAME: AVy_R1
+#CHN_NAME: AVy_R2
+#CHN_NAME: My_Bk_L1
+#CHN_NAME: My_Bk_L2
+#CHN_NAME: My_Bk_R1
+#CHN_NAME: My_Bk_R2
+#CHN_NAME: Steer_L1
+#CHN_NAME: Steer_R1
+#CHN_NAME: PbkCh_L1
+#CHN_NAME: PbkCh_R1
+#ENDMYellow
+
+#BlueLink0 CarSim Run Control`Ext. ABS: Split Mu` Simulink and LabVIEW Models` , example run`Run_9e4c7912-2109-4fbb-8f56-a91b47f2678e
+
+
+LOG_ENTRY Used Dataset: I/O Channels: Export; { Brake System Control } Brk Torque Control EV SLC
+#Library : I/O Channels: Export
+#DataSet : Brk Torque Control EV SLC
+#Category: Brake System Control
+#FileID  : Export_e78e9168-7724-4030-accf-9abc3d97ee2b
+#Product : CarSim 2021.0
+#VehCode Export Channels
+
+END

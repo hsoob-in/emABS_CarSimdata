@@ -1,0 +1,48 @@
+PARSFILE
+#FullDataName Powertrain: Front Differential`EV Open Diff.: Gear Ratio 10.65`Copied 10-21-2024 17:14:28
+#CheckBox0 0    
+LOCKED_FD_OPT 0
+
+#RingCtrl0 CONSTANT
+#RingCtrl1 0
+*EV_CONTROL 0
+OPT_LOCKED_DIFF 0
+#RadioCtrl0 0    
+
+R_GEAR_FD 10.65
+R_EFF_F_FD 0.99
+R_EFF_R_FD 0.99
+LOCKED_FD_DAMP 0.8
+LOCKED_FD_K 80
+IDS_F 0.013
+IHS_LF 0.009
+IHS_RF 0.009
+
+OPT_MOTOR_ON_WHEEL 0
+
+ISIDE 1
+PARSFILE Powertrain\Motor\MMotor_c33ddec6-ad58-42b1-89af-02b675663a74.par
+#BlueLink1 Powertrain: Electric Motor Torque`Max. Output 605` Copied 10-21-2024 17:14:28` , Electric Motor Center/Left`MMotor_c33ddec6-ad58-42b1-89af-02b675663a74
+
+R_GEAR_DIFF 10.65
+R_EFF_F_DIFF 0.99
+R_EFF_R_DIFF 0.99
+LOCKED_DIFF_DAMP 0.8
+LOCKED_DIFF_K 80
+IDS 0.013
+IHS_L 0.009
+IHS_R 0.009
+
+#EMBEDDED_NOTES
+#Generic a 20 kW electric motor is equipped.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Powertrain: Front Differential; { Copied 10-21-2024 17:14:28 } EV Open Diff.: Gear Ratio 10.65
+#Library : Powertrain: Front Differential
+#DataSet : EV Open Diff.: Gear Ratio 10.65
+#Category: Copied 10-21-2024 17:14:28
+#FileID  : DiffF_82aa3724-8dea-4697-ae00-57382ac9c56e
+#Product : CarSim 2021.0
+#VehCode Front Differential
+
+END

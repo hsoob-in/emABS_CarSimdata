@@ -1,0 +1,59 @@
+PARSFILE
+#FullDataName Steering: Virtual Steering Axis`B-Class, Sports Car (VSA)`B-Class
+I_COL 0.02
+I_GEAR_IN 0.000182
+D_COL 0.0025
+HYS_COL 0.2
+BETA_COL 0.1
+*CF_F 40
+*D_RACK_F 20.4
+*K_TBAR 2.2
+*H_RACK_F 280
+*B_RACK_F 0.1
+A_STR_STOP_L -30
+A_STR_STOP_R 30
+K_STR_STOP_L 1100
+K_STR_STOP_R 1100
+
+#RingCtrl0 3
+#RingCtrl1 0
+#RingCtrl2 0
+#RingCtrl3 0
+#RingCtrl4 0
+
+IAXLE 1
+OPT_POWER 1
+OPT_STEER_EXT 0
+RACK_TRAVEL_COEFFICIENT 40/360
+D_RACK 20.4
+HYS_RACK 280
+BETA_RACK 0.1
+M_TBAR_COEFFICIENT 2.2
+PARSFILE Steering\Str_FBoost\FBoost_aa1bc3f4-ed3d-430b-b369-405e466e41a7.par
+#BlueLink19 Steering: Power Assist Force`B-Class Sports Car, Not Spd Sens` B-Class` , Rack Assist Force`FBoost_aa1bc3f4-ed3d-430b-b369-405e466e41a7
+
+PARSFILE Steering\Compliance\StrCmp_f4b80ad1-ab8e-40f7-b49d-a44d1e763264.par
+#BlueLink13 Steering System: Compliance`B-Class, Sports Car (VSA)` Linear` , Front Compliance`StrCmp_f4b80ad1-ab8e-40f7-b49d-a44d1e763264
+
+PARSFILE Steering\Str_Park_Trq2\TqPark2_d9d90453-c5af-4b7c-b4fb-a11a8bd332d9.par
+#BlueLink15 Steering: Parking Torque for 2 Wheels`B-Class Sports Car` B-Class` , Front Wheels`TqPark2_d9d90453-c5af-4b7c-b4fb-a11a8bd332d9
+
+IAXLE 2
+OPT_STEER_EXT 1
+
+
+#EMBEDDED_NOTES
+#The virtual steering axis front suspension, introduced for CarSim 2020.1, uses 2D suspension kinematics tables, linked on the new suspension kinematics screen. These establish parameters like camber and steer as functions of both jounce and steering rack travel.
+#
+#This new library "Steering: Virtual Steering Axis" removes several yellow fields and blue links that are no longer needed with the new suspension type.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Steering: Virtual Steering Axis; { B-Class } B-Class, Sports Car (VSA)
+#Library : Steering: Virtual Steering Axis
+#DataSet : B-Class, Sports Car (VSA)
+#Category: B-Class
+#FileID  : StrSys3_471f59d3-210b-488c-8991-8fcae5ebd02f
+#Product : CarSim 2021.0
+#VehCode Virtual Steering Axis
+
+END

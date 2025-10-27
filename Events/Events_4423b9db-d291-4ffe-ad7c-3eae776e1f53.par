@@ -1,0 +1,39 @@
+PARSFILE
+#FullDataName Events`0. Start Straight`Combined ADAS - LDW
+#CheckBox1 1    
+*CLEAR
+#CheckBox6 0    
+#CheckBox7 0    
+#CheckBox9 0    
+#CheckBox10 0    
+
+#RingCtrl0 >
+#RingCtrl10 1
+#RingCtrl11 4
+RESET_EVENTS
+*NAME1 T_EVENT
+*VALUE1 1
+#MiscYellow0
+TSTART_T_EVENT = T
+TSTART_SPEED_TARGET = T ;
+TSTART_STEER = T ;
+#ENDMYellow
+
+MAKE_EVENT T_EVENT > 1 ; Events\Events_c5fb307e-d725-45d5-aa2c-6e913d2b1ae3.par
+#BlueLink0 Events`1. Allow Drift` Combined ADAS - LDW` , Events`Events_c5fb307e-d725-45d5-aa2c-6e913d2b1ae3
+
+SET_EVENT_ID 0 ! reset to default
+
+#EMBEDDED_NOTES
+#Initially allow for normal driving w/LKAS on and  without LDW + RDM engaged
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Events; { Combined ADAS - LDW } 0. Start Straight
+#Library : Events
+#DataSet : 0. Start Straight
+#Category: Combined ADAS - LDW
+#FileID  : Events_4423b9db-d291-4ffe-ad7c-3eae776e1f53
+#Product : CarSim 2021.0
+#VehCode Events
+
+END

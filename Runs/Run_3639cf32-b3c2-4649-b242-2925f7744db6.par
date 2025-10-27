@@ -1,0 +1,80 @@
+PARSFILE
+#FullDataName CarSim Run Control`Virtual Steer Axis - Baseline`* CS 2021.0 - Steering System
+#VEHICLECODE Vir_Ind
+symbol_push  <<vehicle>> 0
+symbol_push  <<unit>> 0
+symbol_push  <<axle>> 0
+symbol_push  <<s>> 0
+symbol_push  <<o>> 0
+symbol_push  <<id_run>> Run_3639cf32-b3c2-4649-b242-2925f7744db6
+
+OPT_ALL_WRITE 0
+IOBJECT 0
+IUNIT 0
+IVEHICLE 0
+OPT_INT_METHOD 0
+OPT_VS_FILETYPE 2
+PARSFILE Animator\Cameras\Camera_a9a29c8e-4050-45dd-a1b0-68322cea8073.par
+#BlueLink0 Animator: Camera Setup`150 Azm, 10 El, 6.25 m` Vehicle Reference` , Animator camera`Camera_a9a29c8e-4050-45dd-a1b0-68322cea8073
+
+#CheckBox0 1    
+#CheckBox1 0    
+#CheckBox2 0    
+#CheckBox3 0    
+#CheckBox4 0    
+#CheckBox5 0    
+#CheckBox6 0    
+#CheckBox7 0    
+#CheckBox8 0    
+#CheckBox9 0    
+#CheckBox10 0    
+#CheckBox11 0    
+
+#RingCtrl0 4
+#RingCtrl1 0
+#RingCtrl2 3
+#RingCtrl3 0
+ANI_T_STAMP
+TIME_CHANNEL T_STAMP
+
+#RingCtrl6 1
+#RingCtrl7 -1
+#RingCtrl4 on
+RT_WINDOW_CLOSE on
+#RingCtrl5 1
+LIVE_SERVER_MAX_CONNECTIONS 1
+PARSFILE Vehicles\Assembly\Vehicle_f6cd03e4-224b-4450-b9bc-b41125043a64.par
+#BlueLink2 Vehicle: Assembly`B-Class, Sports Car (VSA)` B-Class` , Math Model`Vehicle_f6cd03e4-224b-4450-b9bc-b41125043a64
+
+PARSFILE Procedures\Proc_d3581837-1d26-4694-9799-7a039ae5295c.par
+#BlueLink28 Procedures`Steering Step Input` Handling Testing` , Procedure`Proc_d3581837-1d26-4694-9799-7a039ae5295c
+
+PARSFILE Plot\Setup\Plot_74986bb8-0dfc-417f-9f2c-7a29be92102f.par
+#BlueLink15 Plot: Setup`Rack Mass from Vir. Steer Axis Susp.` Steering` , Plot`Plot_74986bb8-0dfc-417f-9f2c-7a29be92102f
+
+
+*IMAGE_TYPE PASS_THROUGH
+*IMAGE_PASS_THROUGH Animator\Vehicles\AniVeh_4986d2bf-e6a5-4076-b5cc-94a288fa5a6d.png
+WRITE_SENSOR_DETECT
+Title Virtual Steer Axis - Baseline <* CS 2021.0 - Steering System>
+CATEGORY * CS 2021.0 - Steering System 
+DATASET_TITLE Virtual Steer Axis - Baseline
+#RingCtrl8 1
+NUM_CACHED_RUNS 1
+#RingCtrl9 
+
+#EMBEDDED_NOTES
+#The virtual steering axis sports car is exercised in a basic step steer test.
+#
+#This example is intended to serve as a baseline for comparison with an extended model which replaces the steering rack model using import variables.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: CarSim Run Control; { * CS 2021.0 - Steering System } Virtual Steer Axis - Baseline
+#Library : CarSim Run Control
+#DataSet : Virtual Steer Axis - Baseline
+#Category: * CS 2021.0 - Steering System
+#FileID  : Run_3639cf32-b3c2-4649-b242-2925f7744db6
+#Product : CarSim 2021.0
+#VehCode Run
+
+END

@@ -1,0 +1,30 @@
+PARSFILE
+#FullDataName Road: Friction Map, S-L Grid`high mu`emABS
+#CheckBox0 0    
+
+#RingCtrl0 CONSTANT
+#RingCtrl1 CONSTANT
+#RingCtrl2 ADD
+MU_ROAD_COMBINE ADD
+#RadioCtrl0 0    
+#RadioCtrl1 0    
+
+MU_ROAD_CONSTANT 0.8
+MU_ROAD_L_CONSTANT 0
+*SCALAR 0.8
+*SCALAR2 0
+
+
+#EMBEDDED_NOTES
+#This dataset is almost completely zero.  In most cases using a true zero is just fine - however, in user defined cases where the coeficient of friction for the road is in the denominator, use this dataset to avoid division by zero errors.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Road: Friction Map, S-L Grid; { emABS } high mu
+#Library : Road: Friction Map, S-L Grid
+#DataSet : high mu
+#Category: emABS
+#FileID  : RdMu_70208d3d-e083-48c3-9bac-28c2e36d451c
+#Product : CarSim 2021.0
+#VehCode Mu via S-L Grid
+
+END

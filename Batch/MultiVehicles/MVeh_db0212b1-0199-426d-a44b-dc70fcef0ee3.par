@@ -1,0 +1,35 @@
+PARSFILE
+#FullDataName Parallel VS Math Models`City Environment (2 Cars)`ADAS and Active Safety
+PARSFILE Runs\Run_e8d52382-b2c9-4fdb-91f1-63d7c1788b3f.par
+#BlueLink0 CarSim Run Control`City (2 Parallel Solvers): Car 1` Parallel Solvers` , Vehicle 1:`Run_e8d52382-b2c9-4fdb-91f1-63d7c1788b3f
+
+PARSFILE Runs\Run_e35c3206-bfd5-4e5c-af7b-6a5868a6ed8c.par
+#BlueLink1 CarSim Run Control`City (2 Parallel Solvers): Car 2` Parallel Solvers` , Vehicle 2:`Run_e35c3206-bfd5-4e5c-af7b-6a5868a6ed8c
+
+#RingCtrl0 0
+*RUN_PLATFORM 0
+#RingCtrl1 2
+*SHOW_LINK 2
+
+#EMBEDDED_NOTES
+#To run this example in Windows:
+#1) click Open Model or Generate FMU
+#2) in Simulink, click the run button
+#3) view results for either vehicle
+#
+#V: Video
+#P: Plot
+#
+#Each vehicle in the platoon uses a shared simulink model, that leverages parallel solvers to simulate the vehicles across multiple CarSim Runs.
+#
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Parallel VS Math Models; { ADAS and Active Safety } City Environment (2 Cars)
+#Library : Parallel VS Math Models
+#DataSet : City Environment (2 Cars)
+#Category: ADAS and Active Safety
+#FileID  : MVeh_db0212b1-0199-426d-a44b-dc70fcef0ee3
+#Product : CarSim 2021.0
+#VehCode mVeh
+
+END

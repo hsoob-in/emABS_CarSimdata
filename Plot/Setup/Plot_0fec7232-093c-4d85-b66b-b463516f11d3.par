@@ -1,0 +1,44 @@
+PARSFILE
+#FullDataName Plot: Setup`AEB: TypeNear2`ADAS and AEB Alerts and Commands
+
+ADD_ENTITY Plot
+
+PARSFILE Plot\Format\PlotFmt_9c0da54c-ef5e-4a28-a4f7-2b9b79dcd98d.par
+#BlueLink0 Plot: Format`Lines without Symbols` ` , Plot format`PlotFmt_9c0da54c-ef5e-4a28-a4f7-2b9b79dcd98d
+
+#BlueLink1 ` , Discontinued` , Discontinued` , Discontinued`
+
+#CheckBox1 0    
+
+
+#MiscYellow0
+PLOTCHANNELS TypeNear2, Time
+
+#ENDMYellow
+
+
+#RingCtrl2 Auto
+YMaxmin Auto
+#RingCtrl3 Auto
+XMaxmin Auto
+#RingCtrl8 1
+
+
+PTITLE AEB: TypeNear2
+
+END_ENTITY Plot
+
+
+#EMBEDDED_NOTES
+#
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Plot: Setup; { ADAS and AEB Alerts and Commands } AEB: TypeNear2
+#Library : Plot: Setup
+#DataSet : AEB: TypeNear2
+#Category: ADAS and AEB Alerts and Commands
+#FileID  : Plot_0fec7232-093c-4d85-b66b-b463516f11d3
+#Product : CarSim 2021.0
+#VehCode Plot Setup
+
+END

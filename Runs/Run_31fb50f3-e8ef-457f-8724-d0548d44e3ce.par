@@ -1,0 +1,115 @@
+PARSFILE
+#FullDataName CarSim Run Control`Flat Road w/ Accel. Field, 10% Grade`Acceleration Field Imports
+#VEHICLECODE Ind_Ind
+symbol_push  <<vehicle>> 0
+symbol_push  <<unit>> 0
+symbol_push  <<axle>> 0
+symbol_push  <<s>> 0
+symbol_push  <<o>> 0
+symbol_push  <<id_run>> Run_31fb50f3-e8ef-457f-8724-d0548d44e3ce
+
+OPT_ALL_WRITE 0
+IOBJECT 0
+IUNIT 0
+IVEHICLE 0
+OPT_INT_METHOD 0
+OPT_VS_FILETYPE 2
+PARSFILE Animator\Cameras\Camera_fa668846-ecab-4a6b-858c-7be5cd0236cf.par
+#BlueLink0 Animator: Camera Setup`80 Azm, 2 El, 48 m` Vehicle Reference` , Animator camera`Camera_fa668846-ecab-4a6b-858c-7be5cd0236cf
+
+#CheckBox0 1    
+#CheckBox1 0    
+#CheckBox2 0    
+#CheckBox3 0    
+#CheckBox4 1    
+#CheckBox5 0    
+#CheckBox6 0    
+#CheckBox7 1    
+#CheckBox8 1    
+#CheckBox9 0    
+#CheckBox10 0    
+#CheckBox11 0    
+
+#RingCtrl0 0
+#RingCtrl1 0
+#RingCtrl2 3
+#RingCtrl3 0
+#RingCtrl6 7
+#RingCtrl7 -1
+*RUN_COLOR 0.8 0 0
+SET_RUN_COLOR 0.8 0 0
+#RingCtrl4 off
+RT_WINDOW_CLOSE off
+#RingCtrl5 0
+LIVE_SERVER_MAX_CONNECTIONS 0
+PARSFILE Vehicles\Loaded\VehLoad_181c85dd-a6bc-4adc-9ad0-e3e314c75510.par
+#BlueLink2 Vehicle with Loads, Sensors, Trailer, etc.`C-Class Hatch, Motion Sensor at SM CG` C-Class` , Math Model`VehLoad_181c85dd-a6bc-4adc-9ad0-e3e314c75510
+
+PARSFILE Procedures\Proc_6d8b1b84-98c6-4f27-9a49-b4c9e4df5210.par
+#BlueLink28 Procedures`Flat road w/ no animated sky` Acceleration Field Imports` , Procedure`Proc_6d8b1b84-98c6-4f27-9a49-b4c9e4df5210
+
+PARSFILE Generic\Group\GenGrp_c11e4bbe-5e3a-4498-91a5-6c42d1db378a.par
+#BlueLink9 Generic Data Group`2 Axle - Fx, Fy, Fz` Tire Force Arrows` , Miscellaneous`GenGrp_c11e4bbe-5e3a-4498-91a5-6c42d1db378a
+
+PARSFILE Sensors_Traffic\Traffic\TMotion_685c5b22-b555-4300-90e6-7f354600c8d8.par
+#BlueLink10 Multiple Moving Objects`1 Driver Preview Point` Points of Interest` , Miscellaneous`TMotion_685c5b22-b555-4300-90e6-7f354600c8d8
+
+PARSFILE Generic\VS_commands\GenVS_1ad94915-184d-4560-8c80-ca1cd7a0157f.par
+#BlueLink11 Generic VS Commands`Acceleration Field (replicate 10% grade)` Acceleration Field Imports` , Miscellaneous`GenVS_1ad94915-184d-4560-8c80-ca1cd7a0157f
+
+DELETE_PLOT_GROUP default
+PLOT_GROUP default
+PARSFILE Plot\Setup\Plot_a243fc1c-fc6b-4404-89ac-bc8209a293be.par
+#BlueLink15 Plot: Setup`Longitudinal Speed (Vxz_Fwd) vs. Time` Vehicle Motion` , Plot`Plot_a243fc1c-fc6b-4404-89ac-bc8209a293be
+
+PARSFILE Plot\Setup\Plot_881b430b-dfba-4afc-a6ce-ff0d76b1c26c.par
+#BlueLink16 Plot: Setup`Pitch Angle of Sprung Masses vs. Time` Vehicle Motion` , Plot`Plot_881b430b-dfba-4afc-a6ce-ff0d76b1c26c
+
+PARSFILE Plot\Setup\Plot_98eadcd4-fdee-4dc9-b1a0-537e80c706ea.par
+#BlueLink17 Plot: Setup`Longitudinal Forces (Axle 1)` Tire Forces and Moments` , Plot`Plot_98eadcd4-fdee-4dc9-b1a0-537e80c706ea
+
+PARSFILE Plot\Setup\Plot_bf6fe58e-c7e6-4245-8b6d-6bc72e35ad1c.par
+#BlueLink18 Plot: Setup`Vertical Forces (Axle 1)` Tire Forces and Moments` , Plot`Plot_bf6fe58e-c7e6-4245-8b6d-6bc72e35ad1c
+
+PARSFILE Plot\Setup\Plot_e59dcdae-7fd0-4187-94ae-29f0f0b587ef.par
+#BlueLink19 Plot: Setup`Sensor Longitudinal Acceleration w/ G` Position, Accel. and Rate Sensors` , Plot`Plot_e59dcdae-7fd0-4187-94ae-29f0f0b587ef
+
+PARSFILE Plot\Setup\Plot_43d9b2ae-0bc8-4112-ad93-ef6e25eed1a4.par
+#BlueLink20 Plot: Setup`Sensor Vertical Acceleration w/ G` Position, Accel. and Rate Sensors` , Plot`Plot_43d9b2ae-0bc8-4112-ad93-ef6e25eed1a4
+
+PARSFILE Plot\Setup\Plot_b03feea9-b57c-4acb-97a2-c506adae2c1f.par
+#BlueLink21 Plot: Setup`Road Grade (Used to Adjust of Gravity)` User-Defined Variables` , Plot`Plot_b03feea9-b57c-4acb-97a2-c506adae2c1f
+
+#BlueLink23 CarSim Run Control`Baseline: Road w/ 10% grade` Acceleration Field Imports` , Overlay run or ERD file`Run_9b271fcb-5315-4402-92aa-e6f344066da1
+
+
+*IMAGE_TYPE PASS_THROUGH
+WRITE_SENSOR_DETECT
+Title Flat Road w/ Accel. Field, 10% Grade <Acceleration Field Imports>
+CATEGORY Acceleration Field Imports 
+DATASET_TITLE Flat Road w/ Accel. Field, 10% Grade
+#RingCtrl8 1
+NUM_CACHED_RUNS 1
+#RingCtrl9 
+
+#EMBEDDED_NOTES
+#This example demonstrates two of the three available import variables to adjust the Acceleration Field applied to the vehicle:
+#Imp_Ax_Field
+#Imp_Az_Field
+#
+#VS Commands are used to replicate the effect of a vehicle driving up a 10% grade.
+#
+#A corresponding Tech Memo is available from Help -> Technical Memos -> Gravity and Acceleration Fields.
+#
+#The Overlay option is useful for comparing plots for this run with a physical road with 10% grade. However, the videos are not compatible. Please turn off the overlay when viewing the video.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: CarSim Run Control; { Acceleration Field Imports } Flat Road w/ Accel. Field, 10% Grade
+#Library : CarSim Run Control
+#DataSet : Flat Road w/ Accel. Field, 10% Grade
+#Category: Acceleration Field Imports
+#FileID  : Run_31fb50f3-e8ef-457f-8724-d0548d44e3ce
+#Product : CarSim 2021.0
+#VehCode Run
+
+END

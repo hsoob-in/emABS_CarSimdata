@@ -1,0 +1,59 @@
+PARSFILE
+#FullDataName Plot: Setup`M_Mtr_Torque`SRS_Curve
+
+ADD_ENTITY Plot
+
+PARSFILE Plot\Format\PlotFmt_26d47ca1-e009-48bc-837d-89d713f635b7.par
+#BlueLink0 Plot: Format`Plot Settings2` SRS_Curve` , Plot format`PlotFmt_26d47ca1-e009-48bc-837d-89d713f635b7
+
+#BlueLink2 CarSim Run Control`SRS_ionic5` Copied 03-19-2025 17:17:21` , example run`Run_d1f4f51a-9c54-4220-a6b2-be1c5f3a4dc6
+
+#CheckBox1 0    
+
+*README_FILE Results\Run_d1f4f51a-9c54-4220-a6b2-be1c5f3a4dc6\Run_out_tab.txt
+
+#MiscYellow1
+define_parameter road_width = 10; m;Width used to define X-Y coordinates
+define_output x_left = road_x_sl_i(station, road_width / 2, 1);m; X coordinate, left edge
+define_output y_left = road_y_sl_i(station, road_width / 2 , 1); m; Y coordinate, left edge
+define_output x_right = road_x_sl_i(station, -road_width / 2, 2); m; Y coordinate, right edge
+define_output y_right = road_y_sl_i(station, -road_width / 2, 2);m; X coordinate, right edge
+#ENDMYellow
+
+#MiscYellow0
+PLOTCHANNELS M_Mtr_D2, Time, Regen Torque Input (Nm)
+
+#ENDMYellow
+
+YAXISLABEL Regen Torque Input (Nm)
+XAXISLABEL Time (s)
+
+#RingCtrl2 Auto
+YMaxmin Auto
+#RingCtrl3 Auto
+XMaxmin Auto
+#RingCtrl4 0
+#RingCtrl6 0
+#RingCtrl8 1
+
+
+PTITLE M_Mtr_Torque
+
+END_ENTITY Plot
+
+
+#EMBEDDED_NOTES
+#VS commands are used to create a new parameter road_width and X-Y variables for the left and right edges of the road based on this width. Road_width is given a value of 10 m here, but can be overridden from any dataset that is sent to the VS solver after this one. (E.g., the Misc. field on the Run screen.)
+#
+#Names are assigned to each set of information to be displayed in the plot.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Plot: Setup; { SRS_Curve } M_Mtr_Torque
+#Library : Plot: Setup
+#DataSet : M_Mtr_Torque
+#Category: SRS_Curve
+#FileID  : Plot_89a09e37-aed5-4952-af76-7b8cdfd83884
+#Product : CarSim 2021.0
+#VehCode Plot Setup
+
+END

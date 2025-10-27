@@ -1,0 +1,29 @@
+PARSFILE
+#FullDataName Powertrain: Electric Motor Torque`Max. Output 605`IONIC5
+#CheckBox0 1    
+
+#RingCtrl0 CONSTANT
+MMOTOR_MAX_CONSTANT 605
+#RadioCtrl0 0    
+
+TC_MOTOR 0.05
+IMOTOR 0.0226
+*SCALAR 605
+
+PARSFILE Generic\tables\GenTab_5b8c0469-aae6-4203-af41-03e86e82d3cb.par
+#BlueLink0 Generic Table`Motor efficiency` IONIC5` , Motor Efficiency`GenTab_5b8c0469-aae6-4203-af41-03e86e82d3cb
+
+
+#EMBEDDED_NOTES
+#Generic 20 kW electric motor.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Powertrain: Electric Motor Torque; { IONIC5 } Max. Output 605
+#Library : Powertrain: Electric Motor Torque
+#DataSet : Max. Output 605
+#Category: IONIC5
+#FileID  : MMotor_c33ddec6-ad58-42b1-89af-02b675663a74
+#Product : CarSim 2021.0
+#VehCode Drive torque w/ electric motor
+
+END

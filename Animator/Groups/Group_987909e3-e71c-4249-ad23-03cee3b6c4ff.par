@@ -1,0 +1,25 @@
+PARSFILE
+#FullDataName Animator: Group`Time-To-Collision HUD General AEB`Roads and Environment
+PARSFILE Generic\VS_commands\GenVS_6f16d2d6-d8c0-467f-83e4-078087dd0107.par
+#BlueLink0 Generic VS Commands`Plot and HUD Outputs General AEB` Pedestrian Euro NCAP` , Miscellaneous`GenVS_6f16d2d6-d8c0-467f-83e4-078087dd0107
+
+PARSFILE Animator\HUD\HUD_e2d268e1-2ae6-4af4-a9f3-6d2dd4cc286b.par
+#BlueLink1 Animator: HUD`Time To Collision General AEB` Euro NCAP` , Miscellaneous`HUD_e2d268e1-2ae6-4af4-a9f3-6d2dd4cc286b
+
+
+#CheckBox0 0    
+
+
+SPECIAL_PARSFILE Animator\Cameras\Camera_36f7b3ee-b8ff-46b0-8d75-a0bab22adf60.par
+#BlueLink20 Animator: Camera Setup`YZ-Plane, No Offsets (with Yaw)` Shape Preview` , Video Camera`Camera_36f7b3ee-b8ff-46b0-8d75-a0bab22adf60
+
+
+LOG_ENTRY Used Dataset: Animator: Group; { Roads and Environment } Time-To-Collision HUD General AEB
+#Library : Animator: Group
+#DataSet : Time-To-Collision HUD General AEB
+#Category: Roads and Environment
+#FileID  : Group_987909e3-e71c-4249-ad23-03cee3b6c4ff
+#Product : CarSim 2021.0
+#VehCode Animator Group
+
+END

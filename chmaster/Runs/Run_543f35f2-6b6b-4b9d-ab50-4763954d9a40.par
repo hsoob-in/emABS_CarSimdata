@@ -1,0 +1,111 @@
+PARSFILE
+#FullDataName CarSim Run Control`Brake Distance Test (EV) Curve Test`Brake Tests
+#VEHICLECODE Ind_Ind
+symbol_push  <<vehicle>> 0
+symbol_push  <<unit>> 0
+symbol_push  <<axle>> 0
+symbol_push  <<s>> 0
+symbol_push  <<o>> 0
+symbol_push  <<id_run>> Run_543f35f2-6b6b-4b9d-ab50-4763954d9a40
+
+OPT_ALL_WRITE 0
+IOBJECT 0
+IUNIT 0
+IVEHICLE 0
+OPT_INT_METHOD 0
+OPT_VS_FILETYPE 2
+PARSFILE Models\Simulink\Simlink_786cc048-62a6-48f6-8a03-bd7f4900404b.par
+#BlueLink12 Models: Simulink`ABS Controller EV Test` Braking Controls` , Models`Simlink_786cc048-62a6-48f6-8a03-bd7f4900404b
+
+PARSFILE Animator\Cameras\Camera_045f9b8a-2e8a-4608-8066-fecace521157.par
+#BlueLink0 Animator: Camera Setup`167 Azm, 5 El, 38 m` Road Reference` , Animator camera`Camera_045f9b8a-2e8a-4608-8066-fecace521157
+
+#CheckBox0 1    
+#CheckBox1 1    
+#CheckBox2 0    
+#CheckBox3 0    
+#CheckBox4 1    
+#CheckBox5 0    
+#CheckBox6 0    
+#CheckBox7 0    
+#CheckBox8 1    
+#CheckBox9 0    
+#CheckBox10 0    
+#CheckBox11 0    
+
+#RingCtrl0 4
+#RingCtrl1 10
+#RingCtrl2 3
+#RingCtrl3 0
+#RingCtrl6 6
+#RingCtrl7 -1
+*RUN_COLOR 0 0.6 1
+SET_RUN_COLOR 0 0.6 1
+#RingCtrl4 off
+RT_WINDOW_CLOSE off
+#RingCtrl5 0
+LIVE_SERVER_MAX_CONNECTIONS 0
+PARSFILE Vehicles\Assembly\Vehicle_9cfe3b55-f4de-4fe0-975b-f65dfde32186.par
+#BlueLink2 Vehicle: Assembly`B-Class, Hbk: Electric AWD, Regen Brk comparison` B-Class` , Math Model`Vehicle_9cfe3b55-f4de-4fe0-975b-f65dfde32186
+
+PARSFILE Procedures\Proc_b25056f1-705b-483d-b3bf-2aa3bf1f4173.par
+#BlueLink28 Procedures`Regen. Brk. EV Curve` Accel. and Brake Testing` , Procedure`Proc_b25056f1-705b-483d-b3bf-2aa3bf1f4173
+
+PARSFILE Animator\Arrows\Arrows_0707108a-af33-4db9-b1d3-bdbd23eea887.par
+#BlueLink9 Animator: Wheel Arrows and Other Indicators`Tire Skid Marks (2 Axles)` Skid Marks` , Miscellaneous`Arrows_0707108a-af33-4db9-b1d3-bdbd23eea887
+
+PARSFILE Generic\Group\GenGrp_c11e4bbe-5e3a-4498-91a5-6c42d1db378a.par
+#BlueLink10 Generic Data Group`2 Axle - Fx, Fy, Fz` Tire Force Arrows` , Miscellaneous`GenGrp_c11e4bbe-5e3a-4498-91a5-6c42d1db378a
+
+PARSFILE Plot\Setup\Plot_21f6e1cd-f399-4b25-8d21-7b5875fab760.par
+#BlueLink15 Plot: Setup`Steering Wheel Angle vs. t_stamp` Steering` , Plot`Plot_21f6e1cd-f399-4b25-8d21-7b5875fab760
+
+PARSFILE Plot\Setup\Plot_6f0c0125-1c0c-4b0a-a06b-529aada16a53.par
+#BlueLink16 Plot: Setup`Brake Torque` Braking` , Plot`Plot_6f0c0125-1c0c-4b0a-a06b-529aada16a53
+
+PARSFILE Plot\Setup\Plot_c7306601-bee0-4edc-92fb-2c670cb34a1b.par
+#BlueLink17 Plot: Setup`Longitudinal Forces` Tire Forces and Moments` , Plot`Plot_c7306601-bee0-4edc-92fb-2c670cb34a1b
+
+PARSFILE Plot\Setup\Plot_0773e087-151d-42db-a308-f02b7b6ee48d.par
+#BlueLink18 Plot: Setup`Lateral Forces` Tire Forces and Moments` , Plot`Plot_0773e087-151d-42db-a308-f02b7b6ee48d
+
+PARSFILE Plot\Setup\Plot_2265b386-ffdf-44a9-92e9-e0a2a4c8fec0.par
+#BlueLink19 Plot: Setup`Longitudinal Accel. of CG's vs. Time` Vehicle Motion` , Plot`Plot_2265b386-ffdf-44a9-92e9-e0a2a4c8fec0
+
+PARSFILE Plot\Setup\Plot_3f15c9c3-0af9-463a-9ef0-afdf4ae9de1c.par
+#BlueLink20 Plot: Setup`Aerodynamic Forces` Aerodynamics and Wind` , Plot`Plot_3f15c9c3-0af9-463a-9ef0-afdf4ae9de1c
+
+
+SPECIAL_PARSFILE Runs\Run_333b2ce8-0d4c-43be-8a8f-7e0f3d86319d.par
+#BlueLink23 CarSim Run Control`Brake Distance Test (EV) comparision` Brake Tests` , Overlay run or ERD file`Run_333b2ce8-0d4c-43be-8a8f-7e0f3d86319d
+
+
+*IMAGE_TYPE PASS_THROUGH
+*IMAGE_PASS_THROUGH Animator\Vehicles\AniVeh_744dc54f-cca9-4d31-8bee-3535b6477b13.png
+WRITE_SENSOR_DETECT
+Title Brake Distance Test (EV) Curve Test <Brake Tests>
+CATEGORY Brake Tests 
+DATASET_TITLE Brake Distance Test (EV) Curve Test
+#RingCtrl8 1
+NUM_CACHED_RUNS 1
+#RingCtrl9 
+
+#EMBEDDED_NOTES
+#A full size pickup truck with Master Cylinder Brake Control and ABS performs a stopping distance test.
+#
+#The vehicle is traveling at 102 km/h at the start of the simulation and coasts down to 100 km/h.
+#
+#Events are used to reposition the vehicle to the start of the road (Station = 0 m) and simultaneously begin braking.
+#
+#A plot of Station vs. Time is used to measure the vehicle's braking distance.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: CarSim Run Control; { Brake Tests } Brake Distance Test (EV) Curve Test
+#Library : CarSim Run Control
+#DataSet : Brake Distance Test (EV) Curve Test
+#Category: Brake Tests
+#FileID  : Run_543f35f2-6b6b-4b9d-ab50-4763954d9a40
+#Product : CarSim 2021.0
+#VehCode Run
+
+END

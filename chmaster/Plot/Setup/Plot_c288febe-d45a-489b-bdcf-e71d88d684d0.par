@@ -1,0 +1,46 @@
+PARSFILE
+#FullDataName Plot: Setup`Total Steering Gear Inertia`Steering
+
+ADD_ENTITY Plot
+
+PARSFILE Plot\Format\PlotFmt_33e2becb-9fc8-474d-a6bb-685bf100d862.par
+#BlueLink0 Plot: Format`Default Plot Settings` ` , Plot format`PlotFmt_33e2becb-9fc8-474d-a6bb-685bf100d862
+
+#CheckBox1 0    
+
+
+#MiscYellow0
+PLOTCHANNELS IstrGear, Time
+
+#ENDMYellow
+
+
+#RingCtrl2 Auto
+YMaxmin Auto
+#RingCtrl3 Auto
+XMaxmin Auto
+#RingCtrl8 1
+
+
+PTITLE Total Steering Gear Inertia
+
+END_ENTITY Plot
+
+
+#EMBEDDED_NOTES
+#When OPT_I_GEAR_IN = 1, the VS Math Model calculates a suspension contribution to the steering system inertia, which is added to the steering system inertia parameter I_GEAR_IN which is entered on the steering screen.
+#
+#The suspension contribution is in general a function of the wheel/steering kinematics, so it is not constant.
+#
+#The total inertia seen by the steering gear is output here.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Plot: Setup; { Steering } Total Steering Gear Inertia
+#Library : Plot: Setup
+#DataSet : Total Steering Gear Inertia
+#Category: Steering
+#FileID  : Plot_c288febe-d45a-489b-bdcf-e71d88d684d0
+#Product : CarSim 2021.0
+#VehCode Plot Setup
+
+END

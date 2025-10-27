@@ -1,0 +1,32 @@
+PARSFILE
+#FullDataName Events`Check Speed`Variable Grade Hill Climb
+#CheckBox1 0    
+#CheckBox6 0    
+#CheckBox7 0    
+#CheckBox9 0    
+#CheckBox10 0    
+
+#RingCtrl0 ZERO ~=
+#RingCtrl1 >
+#RingCtrl10 2
+#RingCtrl11 4
+*NAME2 T_EVENT
+*VALUE1 ABS(Vxz_Fwd - SPEED_TARGET(0,0,1)) < V_TOL
+*VALUE2 T_WAIT
+DEFINE_EVENT ABS(Vxz_Fwd - SPEED_TARGET(0,0,1)) < V_TOL ; Events\Events_f73f6cb7-3e8b-4390-a882-12348ace445c.par
+#BlueLink0 Events`Set New Grade` Variable Grade Hill Climb` , Events`Events_f73f6cb7-3e8b-4390-a882-12348ace445c
+
+MAKE_EVENT T_EVENT > T_WAIT ; Events\Events_b5af09b5-d8ad-4e81-ae24-eebce691780e.par
+#BlueLink1 Events`End Events` ` , Events`Events_b5af09b5-d8ad-4e81-ae24-eebce691780e
+
+SET_EVENT_ID 0 ! reset to default
+
+LOG_ENTRY Used Dataset: Events; { Variable Grade Hill Climb } Check Speed
+#Library : Events
+#DataSet : Check Speed
+#Category: Variable Grade Hill Climb
+#FileID  : Events_57c0420d-6f20-490a-84dc-a01fe1172e65
+#Product : CarSim 2021.0
+#VehCode Events
+
+END

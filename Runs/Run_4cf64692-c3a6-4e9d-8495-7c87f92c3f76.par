@@ -1,0 +1,108 @@
+PARSFILE
+#FullDataName CarSim Run Control`ABS in straight`emABS_0911
+#VEHICLECODE Ind_Ind
+symbol_push  <<vehicle>> 0
+symbol_push  <<unit>> 0
+symbol_push  <<axle>> 0
+symbol_push  <<s>> 0
+symbol_push  <<o>> 0
+symbol_push  <<id_run>> Run_4cf64692-c3a6-4e9d-8495-7c87f92c3f76
+
+OPT_ALL_WRITE 0
+IOBJECT 0
+IUNIT 0
+IVEHICLE 0
+OPT_INT_METHOD 0
+OPT_VS_FILETYPE 2
+PARSFILE Models\Simulink\Simlink_cd5203d6-673b-44a7-a593-e8a2359ecaf4.par
+#BlueLink12 Models: Simulink`ABS_CHO in straight` emABS_0911` , Models`Simlink_cd5203d6-673b-44a7-a593-e8a2359ecaf4
+
+PARSFILE Animator\Cameras\Camera_7fd93935-5e80-4d39-bf60-d7ff5dbaa0af.par
+#BlueLink0 Animator: Camera Setup`180 Azm, 10 El, 36 m` emABS_0911` , Animator camera`Camera_7fd93935-5e80-4d39-bf60-d7ff5dbaa0af
+
+#CheckBox0 1    
+#CheckBox1 0    
+#CheckBox2 0    
+#CheckBox3 0    
+#CheckBox4 1    
+#CheckBox5 1    
+#CheckBox6 0    
+#CheckBox7 0    
+#CheckBox8 1    
+#CheckBox9 0    
+#CheckBox10 0    
+#CheckBox11 0    
+
+#RingCtrl0 0
+#RingCtrl1 0
+#RingCtrl2 0
+#RingCtrl3 0
+#RingCtrl6 8
+#RingCtrl7 -1
+*RUN_COLOR 0 0 1
+SET_RUN_COLOR 0 0 1
+#RingCtrl4 off
+RT_WINDOW_CLOSE off
+#RingCtrl5 0
+LIVE_SERVER_MAX_CONNECTIONS 0
+PARSFILE Vehicles\Assembly\Vehicle_e8e7f4c3-0129-418b-a8cf-edc2a7c7e68e.par
+#BlueLink2 Vehicle: Assembly`B-Class, Hbk: Electric AWD, Regen Brk` emABS_0911` , Math Model`Vehicle_e8e7f4c3-0129-418b-a8cf-edc2a7c7e68e
+
+PARSFILE Procedures\Proc_3967986d-6e2a-47a7-8be6-be0643aaef5c.par
+#BlueLink28 Procedures`Straight(mu=0.5)` emABS_0911` , Procedure`Proc_3967986d-6e2a-47a7-8be6-be0643aaef5c
+
+PARSFILE Animator\HUD\HUD_3978acd2-7aee-486d-b4a7-f07dc083d947.par
+#BlueLink11 Animator: HUD`Throttle and Speed #1` emABS_0911` , Miscellaneous`HUD_3978acd2-7aee-486d-b4a7-f07dc083d947
+
+OPT_STOP 0
+SSTART 0
+TSTOP 20
+SSTOP =  SSTART + 1 ;
+OPT_DIRECTION 1
+*SPEED 80
+*TSTOP 20
+*SSTART 0
+PARSFILE Plot\Setup\Plot_2265b386-ffdf-44a9-92e9-e0a2a4c8fec0.par
+#BlueLink15 Plot: Setup`Longitudinal Accel. of CG's vs. Time` emABS_0911` , Plot`Plot_2265b386-ffdf-44a9-92e9-e0a2a4c8fec0
+
+PARSFILE Plot\Setup\Plot_5ead09bd-2b8f-470e-af04-1a232741844f.par
+#BlueLink16 Plot: Setup`Fy vs. Alpha` emABS_0911` , Plot`Plot_5ead09bd-2b8f-470e-af04-1a232741844f
+
+PARSFILE Plot\Setup\Plot_19310881-e0f6-4f37-af13-994798cd606c.par
+#BlueLink17 Plot: Setup`Slip Ratios: Lagged - Rear` emABS_0911` , Plot`Plot_19310881-e0f6-4f37-af13-994798cd606c
+
+PARSFILE Plot\Setup\Plot_71df6f9d-5f7f-43e1-a5d7-d556dc8678ab.par
+#BlueLink18 Plot: Setup`Slip Ratios: Lagged` emABS_0911` , Plot`Plot_71df6f9d-5f7f-43e1-a5d7-d556dc8678ab
+
+PARSFILE Plot\Setup\Plot_6f0c0125-1c0c-4b0a-a06b-529aada16a53.par
+#BlueLink19 Plot: Setup`Brake Torque` emABS_0911` , Plot`Plot_6f0c0125-1c0c-4b0a-a06b-529aada16a53
+
+PARSFILE Plot\Setup\Plot_0773e087-151d-42db-a308-f02b7b6ee48d.par
+#BlueLink20 Plot: Setup`Lateral Forces` emABS_0911` , Plot`Plot_0773e087-151d-42db-a308-f02b7b6ee48d
+
+PARSFILE Plot\Setup\Plot_881b430b-dfba-4afc-a6ce-ff0d76b1c26c.par
+#BlueLink21 Plot: Setup`Pitch Angle of Sprung Masses vs. Time` emABS_0911` , Plot`Plot_881b430b-dfba-4afc-a6ce-ff0d76b1c26c
+
+PARSFILE Plot\Setup\Plot_c6f23fbc-2707-41af-a3cd-715e42a84da4.par
+#BlueLink22 Plot: Setup`Fx vs. Slip` emABS_0911` , Plot`Plot_c6f23fbc-2707-41af-a3cd-715e42a84da4
+
+
+*IMAGE_TYPE PASS_THROUGH
+*IMAGE_PASS_THROUGH Animator\Vehicles\AniVeh_744dc54f-cca9-4d31-8bee-3535b6477b13.png
+WRITE_SENSOR_DETECT
+Title ABS in straight <emABS_0911>
+CATEGORY emABS_0911 
+DATASET_TITLE ABS in straight
+#RingCtrl8 1
+NUM_CACHED_RUNS 1
+#RingCtrl9 
+
+LOG_ENTRY Used Dataset: CarSim Run Control; { emABS_0911 } ABS in straight
+#Library : CarSim Run Control
+#DataSet : ABS in straight
+#Category: emABS_0911
+#FileID  : Run_4cf64692-c3a6-4e9d-8495-7c87f92c3f76
+#Product : CarSim 2021.0
+#VehCode Run
+
+END

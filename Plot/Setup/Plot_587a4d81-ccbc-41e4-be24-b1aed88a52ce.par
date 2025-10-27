@@ -1,0 +1,59 @@
+PARSFILE
+#FullDataName Plot: Setup`Throttle`SRS_Curve
+
+ADD_ENTITY Plot
+
+PARSFILE Plot\Format\PlotFmt_c5960c32-87d4-4c3b-b19b-6652f48b9394.par
+#BlueLink0 Plot: Format`Plot Settings1` SRS_Curve` , Plot format`PlotFmt_c5960c32-87d4-4c3b-b19b-6652f48b9394
+
+#BlueLink2 CarSim Run Control`SRS_ionic5_realcar` Copied 03-19-2025 17:17:21` , example run`Run_0008c148-5da7-4df1-933e-b0e2a47f64f8
+
+#CheckBox1 0    
+
+*README_FILE Results\Run_0008c148-5da7-4df1-933e-b0e2a47f64f8\Run_out_tab.txt
+
+#MiscYellow1
+define_parameter road_width = 10; m;Width used to define X-Y coordinates
+define_output x_left = road_x_sl_i(station, road_width / 2, 1);m; X coordinate, left edge
+define_output y_left = road_y_sl_i(station, road_width / 2 , 1); m; Y coordinate, left edge
+define_output x_right = road_x_sl_i(station, -road_width / 2, 2); m; Y coordinate, right edge
+define_output y_right = road_y_sl_i(station, -road_width / 2, 2);m; X coordinate, right edge
+#ENDMYellow
+
+#MiscYellow0
+PLOTCHANNELS Throttle, Time, Throttle (-)
+
+#ENDMYellow
+
+YAXISLABEL Throttle Input (-)
+XAXISLABEL Time (s)
+
+#RingCtrl2 Auto
+YMaxmin Auto
+#RingCtrl3 Auto
+XMaxmin Auto
+#RingCtrl4 0
+#RingCtrl6 0
+#RingCtrl8 1
+
+
+PTITLE Throttle
+
+END_ENTITY Plot
+
+
+#EMBEDDED_NOTES
+#VS commands are used to create a new parameter road_width and X-Y variables for the left and right edges of the road based on this width. Road_width is given a value of 10 m here, but can be overridden from any dataset that is sent to the VS solver after this one. (E.g., the Misc. field on the Run screen.)
+#
+#Names are assigned to each set of information to be displayed in the plot.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Plot: Setup; { SRS_Curve } Throttle
+#Library : Plot: Setup
+#DataSet : Throttle
+#Category: SRS_Curve
+#FileID  : Plot_587a4d81-ccbc-41e4-be24-b1aed88a52ce
+#Product : CarSim 2021.0
+#VehCode Plot Setup
+
+END

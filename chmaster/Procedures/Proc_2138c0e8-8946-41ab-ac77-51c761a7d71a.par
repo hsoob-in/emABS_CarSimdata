@@ -1,0 +1,111 @@
+PARSFILE
+#FullDataName Procedures`K & C Design Load Condition`Test Rigs
+#CheckBox1 1    
+OPT_INIT_PATH 1
+#CheckBox4 0    
+
+#RingCtrl0 1
+#RingCtrl1 0
+#RingCtrl2 0
+OPT_STOP 0
+SSTART 0
+TSTART 0
+TSTART_WRITE = 0;
+TSTOP 10
+SSTOP = SSTART + 1 ;
+OPT_DIRECTION 1
+*SPEED 0
+*TSTOP 10
+*TSTART 0
+*SSTART 0
+*SSTOP 210
+
+INSTALL_SPEED_CONTROLLER
+OPT_SC 3
+N_SPEED_TARGET = N_SPEED_TARGET + 1
+ISPEED = N_SPEED_TARGET
+SPEED_TARGET_ID = ISPEED
+SPEED_ID_SC = ISPEED
+SPEED_TARGET_COMBINE ADD
+SPEED_TARGET_S_CONSTANT 0
+set_description SPEED_TARGET_ID Procedure: K & C Design Load Condition
+SPEED_TARGET_CONSTANT 0
+OPT_SC_ENGINE_BRAKING 0
+PARSFILE Control\Steer\StrSW_d02d6236-3489-4162-b8b9-953cdc586f4c.par
+#BlueLink27 Control: Steering (Open Loop)`Constant: 0 deg.` Constant` , Steering`StrSW_d02d6236-3489-4162-b8b9-953cdc586f4c
+
+PARSFILE Control\Braking\PbkCon_12a24cb4-8d4b-4ff4-9710-416a675c1cd7.par
+#BlueLink28 Control: Braking MC Pressure (Open Loop)`Constant: 0.3 MPa` Constant` , Braking`PbkCon_12a24cb4-8d4b-4ff4-9710-416a675c1cd7
+
+PARSFILE Control\Gear_at\GearCL_395374af-90fa-4fef-80e1-a8df607bfbef.par
+#BlueLink30 Control: Shifting (Closed Loop)`Neutral` ` , Shifting Control`GearCL_395374af-90fa-4fef-80e1-a8df607bfbef
+
+#MiscYellow0
+! output every calculation because the
+! movements are small and we want to
+! capture the final point
+iprint 0
+#ENDMYellow
+
+PARSFILE Generic\Links\GenLink_a5c93536-9abc-4ee1-bed1-d13d08d3b7a2.par
+#BlueLink0 Generic Group of Links`K&C Rig for Design Load Condition` K&C Testing` , Miscellaneous`GenLink_a5c93536-9abc-4ee1-bed1-d13d08d3b7a2
+
+PARSFILE Events\Events_2b242984-cef9-4097-bd21-47811f9b7c03.par
+#BlueLink1 Events`End Design Load Run` K & C Testing` , Miscellaneous`Events_2b242984-cef9-4097-bd21-47811f9b7c03
+
+PARSFILE Plot\Setup\Plot_a146934a-339c-4983-9664-0f9749a0dfd6.par
+#BlueLink8 Plot: Setup`Vertical Forces` Tire Forces and Moments` , Plot`Plot_a146934a-339c-4983-9664-0f9749a0dfd6
+
+PARSFILE Plot\Setup\Plot_54f319fb-1aa2-48dc-9260-eda2669b08b3.par
+#BlueLink9 Plot: Setup`Spring Force` Suspension Forces and Moments` , Plot`Plot_54f319fb-1aa2-48dc-9260-eda2669b08b3
+
+PARSFILE Plot\Setup\Plot_cd3b5d36-ffa9-4760-83ee-3726d22d5a59.par
+#BlueLink10 Plot: Setup`Jounce - Front` Suspension Motion` , Plot`Plot_cd3b5d36-ffa9-4760-83ee-3726d22d5a59
+
+PARSFILE Plot\Setup\Plot_6e89fcc6-8e6b-4e4b-8f58-fef0a7f6d22d.par
+#BlueLink11 Plot: Setup`Jounce - Rear` Suspension Motion` , Plot`Plot_6e89fcc6-8e6b-4e4b-8f58-fef0a7f6d22d
+
+PARSFILE Plot\Setup\Plot_0ca06a5e-1f85-4eef-a02e-4457ccf18ce7.par
+#BlueLink12 Plot: Setup`Sprung Mass Origin Vertical Position` Tracking` , Plot`Plot_0ca06a5e-1f85-4eef-a02e-4457ccf18ce7
+
+PARSFILE Plot\Setup\Plot_881b430b-dfba-4afc-a6ce-ff0d76b1c26c.par
+#BlueLink13 Plot: Setup`Pitch Angle of Sprung Masses vs. Time` Vehicle Motion` , Plot`Plot_881b430b-dfba-4afc-a6ce-ff0d76b1c26c
+
+PARSFILE Plot\Setup\Plot_2865bd77-14b2-4e51-9c7f-3484aa98e979.par
+#BlueLink14 Plot: Setup`Roll Angle of Sprung Masses vs. Time` Vehicle Motion` , Plot`Plot_2865bd77-14b2-4e51-9c7f-3484aa98e979
+
+PARSFILE Plot\Setup\Plot_6c043331-6042-4512-a7a0-52b3c6d66a58.par
+#BlueLink15 Plot: Setup`Z Coord.: Wheel Centers` Vehicle Motion` , Plot`Plot_6c043331-6042-4512-a7a0-52b3c6d66a58
+
+PARSFILE Plot\Setup\Plot_2f48d77f-b760-4fab-a2c0-0fa2004b8b4f.par
+#BlueLink16 Plot: Setup`Ground Elevation` Ground` , Plot`Plot_2f48d77f-b760-4fab-a2c0-0fa2004b8b4f
+
+PARSFILE Plot\Setup\Plot_46729ee2-e96e-4997-a694-fa9ca697aad0.par
+#BlueLink17 Plot: Setup`Spring Compression` Suspension Motion` , Plot`Plot_46729ee2-e96e-4997-a694-fa9ca697aad0
+
+PARSFILE Plot\Setup\Plot_6480bda8-8a2c-47e4-af8c-16140f47b086.par
+#BlueLink18 Plot: Setup`Road Wheel Steer Angles` Steering` , Plot`Plot_6480bda8-8a2c-47e4-af8c-16140f47b086
+
+PARSFILE Plot\Setup\Plot_49899491-d8d8-4ff6-a245-a19f3e895cff.par
+#BlueLink19 Plot: Setup`Tire Compression` Tire Kinematics` , Plot`Plot_49899491-d8d8-4ff6-a245-a19f3e895cff
+
+
+#EMBEDDED_NOTES
+#This procedure brings the vehicle into the CarSim Design Load Condition.
+#
+#In the Design Load Condition, the Sprung mass origin is at Z = 0, pitch = 0, roll = 0, and the wheel center locations match the height shown on the sprung mass screen.
+#
+#The position is defined to have equal spring loads left and right.
+#
+#If the vehicle continues to oscillate or blows up, it likely has poorly chosen parameters.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Procedures; { Test Rigs } K & C Design Load Condition
+#Library : Procedures
+#DataSet : K & C Design Load Condition
+#Category: Test Rigs
+#FileID  : Proc_2138c0e8-8946-41ab-ac77-51c761a7d71a
+#Product : CarSim 2021.0
+#VehCode Procedure
+
+END

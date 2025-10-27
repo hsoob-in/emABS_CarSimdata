@@ -1,0 +1,20 @@
+PARSFILE
+#FullDataName I/O Channels: Import`Regen. Motor Torque control #1`control_all
+#RingCtrl1 1
+
+#MiscYellow0
+IMP_M_MOTOR_D1 Add 0.0! 1
+IMP_M_MOTOR_D2 Add 0.0! 1
+IMP_THROTTLE_ENGINE Add 0.0! 1
+#ENDMYellow
+
+
+LOG_ENTRY Used Dataset: I/O Channels: Import; { control_all } Regen. Motor Torque control #1
+#Library : I/O Channels: Import
+#DataSet : Regen. Motor Torque control #1
+#Category: control_all
+#FileID  : Import_2e900389-ce8c-4f59-a0fa-6b1131a48359
+#Product : CarSim 2021.0
+#VehCode Import Channels
+
+END

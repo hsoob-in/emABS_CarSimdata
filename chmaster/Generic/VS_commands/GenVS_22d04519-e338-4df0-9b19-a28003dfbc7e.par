@@ -1,0 +1,44 @@
+PARSFILE
+#FullDataName Generic VS Commands`LKAS Strong Control.: LDW + RDM`Path Detection
+#VehCode VS Commands
+
+#MiscYellow0
+! A PI controller is used to calculate handwheel angle based on making detected lateral
+! offset zero. The detected curvature is treated as a disturbance which is between the PI
+! controller and the plant model.
+
+DEFINE_PARAMETER STEER_RATIO = 17.3 ! handwheel angle / avg roadwheel angle
+!The Third Path Detector curve represents the calculated middle of the lane
+DEFINE_OUTPUT SteerDisturbance = STEER_RATIO*LX_AXLE*CurvPD_3; deg
+
+DEFINE_VARIABLE IntYoffsetPD
+EQ_DIFFERENTIAL IntYoffsetPD = YoffsetPD_3
+
+!LKAS PID gain values
+DEFINE_PARAMETER KP = 1.5
+DEFINE_PARAMETER KI = 1.0
+
+!VS_ADD is used rather than VS_Replace, intentionally, so that additional steer from the 
+! Road Departure Mitigation (RDM) system can be realized  
+IMPORT IMP_STEER_SW VS_ADD 0
+EQ_IN IMP_STEER_SW = KP*YoffsetPD_3+KI*IntYoffsetPD+SteerDisturbance
+#ENDMYellow
+
+
+#EMBEDDED_NOTES
+#Strong LKAS Tuning:
+#- This LKAS system uses detected path curvature, with the Path Detectors functionality
+#- The path (curvature) is detected for the left lane marker, right lane maker, and center of the lane
+#- The strong LKAS PID gain values are substantial  enough to keep the Lane Departure Warnings (LDWs) and Road departure Mitigation (RDM) from activating
+#- The sensitivity of the LDW activation, can also be changed in the Lane Departure Warning, from Path Det. Dataset
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Generic VS Commands; { Path Detection } LKAS Strong Control.: LDW + RDM
+#Library : Generic VS Commands
+#DataSet : LKAS Strong Control.: LDW + RDM
+#Category: Path Detection
+#FileID  : GenVS_22d04519-e338-4df0-9b19-a28003dfbc7e
+#Product : CarSim 2021.0
+#VehCode VS Commands
+
+END

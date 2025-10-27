@@ -1,0 +1,39 @@
+PARSFILE
+#FullDataName Generic Group of Links`Another Car, West Entrance`Multiple Vehicles
+#VehCode I_I
+PARSFILE Vehicles\Assembly\Vehicle_4c56d437-56bf-48a1-b545-6f016e2bae89.par
+#BlueLink11 Vehicle: Assembly`D-Class, Sedan` D-Class` , Miscellaneous`Vehicle_4c56d437-56bf-48a1-b545-6f016e2bae89
+
+PARSFILE Roads\BuilderSegment\RoadSeg_29872f79-5545-4579-8f70-d32b21fe73be.par
+#BlueLink12 Path: Segment Builder`West Entrance, 3d Exit, 1024` Roundabout, D = 36 m` , Miscellaneous`RoadSeg_29872f79-5545-4579-8f70-d32b21fe73be
+
+#MiscYellow2
+current_road_id 1004
+sstart 65
+opt_direction 1
+#ENDMYellow
+
+PARSFILE Sensors_Traffic\Targets\Target_0b4e51dc-9209-4bad-8290-cb671c5a3a02.par
+#BlueLink13 Single Moving Object (Custom)`IUNIT_OBJ (Narrow)` Multi-Vehicle` , Miscellaneous`Target_0b4e51dc-9209-4bad-8290-cb671c5a3a02
+
+PARSFILE Procedures\Proc_e6753177-393b-4f41-ba8e-b288792d34a7.par
+#BlueLink16 Procedures`Control w/ path preview` Multi-Vehicle` , Miscellaneous`Proc_e6753177-393b-4f41-ba8e-b288792d34a7
+
+PARSFILE Sensors_Traffic\Traffic\TMotion_9654fe8d-c6c0-4b81-870b-39cf8a9ed92e.par
+#BlueLink18 Multiple Moving Objects`1 Driver Preview Point veh 2` Points of Interest` , Miscellaneous`TMotion_9654fe8d-c6c0-4b81-870b-39cf8a9ed92e
+
+*MODELCODE I_I
+
+#EMBEDDED_NOTES
+#Setup for a vehicle in a multi-vehicle scenario on the roundabout.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Generic Group of Links; { Multiple Vehicles } Another Car, West Entrance
+#Library : Generic Group of Links
+#DataSet : Another Car, West Entrance
+#Category: Multiple Vehicles
+#FileID  : GenLink_4d0cff1b-3e5b-4c35-8ae5-f284af711d69
+#Product : CarSim 2021.0
+#VehCode I_I
+
+END

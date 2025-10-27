@@ -1,0 +1,44 @@
+PARSFILE
+#FullDataName Plot: Setup`VxCrit`ADAS and AEB Alerts and Commands
+
+ADD_ENTITY Plot
+
+PARSFILE Plot\Format\PlotFmt_9c0da54c-ef5e-4a28-a4f7-2b9b79dcd98d.par
+#BlueLink0 Plot: Format`Lines without Symbols` ` , Plot format`PlotFmt_9c0da54c-ef5e-4a28-a4f7-2b9b79dcd98d
+
+#BlueLink1 ` , Discontinued` , Discontinued` , Discontinued`
+
+#CheckBox1 0    
+
+
+#MiscYellow0
+PLOTCHANNELS VxCrit, Time
+
+#ENDMYellow
+
+
+#RingCtrl2 Auto
+YMaxmin Auto
+#RingCtrl3 Auto
+XMaxmin Auto
+#RingCtrl8 1
+
+
+PTITLE VxCrit
+
+END_ENTITY Plot
+
+
+#EMBEDDED_NOTES
+#
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Plot: Setup; { ADAS and AEB Alerts and Commands } VxCrit
+#Library : Plot: Setup
+#DataSet : VxCrit
+#Category: ADAS and AEB Alerts and Commands
+#FileID  : Plot_72f63dcd-3fb8-4603-890b-5fe335547999
+#Product : CarSim 2021.0
+#VehCode Plot Setup
+
+END

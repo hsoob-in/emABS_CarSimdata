@@ -1,0 +1,39 @@
+PARSFILE
+#FullDataName Events`Turn On AEB Before Reset`Pedestrian Euro NCAP
+#CheckBox1 0    
+#CheckBox6 0    
+#CheckBox7 0    
+#CheckBox9 0    
+#CheckBox10 0    
+
+#RingCtrl0 ZERO ~=
+#RingCtrl10 1
+#RingCtrl11 4
+*NAME1 0
+*NAME2 AEB_On
+*VALUE1 1
+*VALUE2 1
+#MiscYellow0
+AEB_On = 1 ! need to do this before resetting conditions, ...
+before the next run
+#ENDMYellow
+
+DEFINE_EVENT 1 ; Events\Events_20ab3368-bc8f-47ed-bb2a-405ed54f6bce.par
+#BlueLink0 Events`Reset Positions` Pedestrian Euro NCAP` , Events`Events_20ab3368-bc8f-47ed-bb2a-405ed54f6bce
+
+SET_EVENT_ID 0 ! reset to default
+
+#EMBEDDED_NOTES
+#Take one time step to activate AEB before resetting the vehicle for the next run
+#
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Events; { Pedestrian Euro NCAP } Turn On AEB Before Reset
+#Library : Events
+#DataSet : Turn On AEB Before Reset
+#Category: Pedestrian Euro NCAP
+#FileID  : Events_63c9efd0-0109-4895-a331-1dbe56f22a12
+#Product : CarSim 2021.0
+#VehCode Events
+
+END

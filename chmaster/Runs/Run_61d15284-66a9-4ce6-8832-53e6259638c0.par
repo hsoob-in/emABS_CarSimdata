@@ -1,0 +1,87 @@
+PARSFILE
+#FullDataName CarSim Run Control`Ext. ABS: Split Mu #1`Simulink and LabVIEW Models
+#VEHICLECODE Ind_Ind
+symbol_push  <<vehicle>> 0
+symbol_push  <<unit>> 0
+symbol_push  <<axle>> 0
+symbol_push  <<s>> 0
+symbol_push  <<o>> 0
+symbol_push  <<id_run>> Run_61d15284-66a9-4ce6-8832-53e6259638c0
+
+OPT_ALL_WRITE 0
+IOBJECT 0
+IUNIT 0
+IVEHICLE 0
+OPT_INT_METHOD 0
+OPT_VS_FILETYPE 2
+PARSFILE Models\Simulink\Simlink_51b0592d-db5d-4a61-80bf-1ece86492108.par
+#BlueLink12 Models: Simulink`ABS Controller` Braking Controls` , Models`Simlink_51b0592d-db5d-4a61-80bf-1ece86492108
+
+PARSFILE Animator\Cameras\Camera_8f7a3057-cb7d-444e-8cf2-c6f46989b6a4.par
+#BlueLink0 Animator: Camera Setup`0 Azm, 5 El, 27 m` Road Reference` , Animator camera`Camera_8f7a3057-cb7d-444e-8cf2-c6f46989b6a4
+
+#CheckBox0 1    
+#CheckBox1 1    
+#CheckBox2 0    
+#CheckBox3 0    
+#CheckBox4 1    
+#CheckBox5 0    
+#CheckBox6 0    
+#CheckBox7 0    
+#CheckBox8 0    
+#CheckBox9 0    
+#CheckBox10 0    
+#CheckBox11 0    
+
+#RingCtrl0 4
+#RingCtrl1 0
+#RingCtrl2 3
+#RingCtrl3 0
+#RingCtrl6 0
+#RingCtrl7 -1
+*RUN_COLOR 0.4 0.4 0
+SET_RUN_COLOR 0.4 0.4 0
+#RingCtrl4 off
+RT_WINDOW_CLOSE off
+#RingCtrl5 0
+LIVE_SERVER_MAX_CONNECTIONS 0
+PARSFILE Vehicles\Assembly\Vehicle_9db9b98a-6725-424b-9635-e1ca6e15979d.par
+#BlueLink2 Vehicle: Assembly`C-Class, Hatchback` C-Class` , Math Model`Vehicle_9db9b98a-6725-424b-9635-e1ca6e15979d
+
+PARSFILE Procedures\Proc_6176f125-a511-4ae7-a0d8-4f94800fa0d5.par
+#BlueLink28 Procedures`100 - 0 km/h Braking Dist Test (Frc Ctrl)` Accel. and Brake Testing` , Procedure`Proc_6176f125-a511-4ae7-a0d8-4f94800fa0d5
+
+
+SPECIAL_PARSFILE Runs\Run_5b3d86e9-3bdc-4863-b51d-fa00438bded3.par
+#BlueLink23 CarSim Run Control`Braking - Split Mu: No ABS` Brake Tests` , Overlay run or ERD file`Run_5b3d86e9-3bdc-4863-b51d-fa00438bded3
+
+
+*IMAGE_TYPE PASS_THROUGH
+*IMAGE_PASS_THROUGH Vehicles\Assembly\Vehicle_9db9b98a-6725-424b-9635-e1ca6e15979d.png
+WRITE_SENSOR_DETECT
+Title Ext. ABS: Split Mu #1 <Simulink and LabVIEW Models>
+CATEGORY Simulink and LabVIEW Models 
+DATASET_TITLE Ext. ABS: Split Mu #1
+#RingCtrl8 1
+NUM_CACHED_RUNS 1
+#RingCtrl9 
+
+#EMBEDDED_NOTES
+#A B-Class Hatchback with an ABS Controller modeled in Simulink performs a split mu stop.
+#
+#The Simulink model calculates the wheel cylinder brake pressures based on CarSim-calculated data for the longitudinal speed of the vehicle, wheel speeds, and the Master Cylinder Pressure control, set on the Procedure screen.
+#
+#Help > Guides and Tutorials > Running a VS Math Model in Simulink
+#
+#An overlay is included which does not use ABS.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: CarSim Run Control; { Simulink and LabVIEW Models } Ext. ABS: Split Mu #1
+#Library : CarSim Run Control
+#DataSet : Ext. ABS: Split Mu #1
+#Category: Simulink and LabVIEW Models
+#FileID  : Run_61d15284-66a9-4ce6-8832-53e6259638c0
+#Product : CarSim 2021.0
+#VehCode Run
+
+END

@@ -1,0 +1,113 @@
+PARSFILE
+#FullDataName Vehicle: Assembly`B-Class, Hbk: Electric AWD, Regen Brk`emABS_0911
+#VehCode Ind_Ind
+IUNIT_INCREMENT
+IVEHICLE = IVEHICLE + 1
+NAXLES 2
+IOBJECT_SAVE
+symbol_add  <<vehicle>> 1
+symbol_add  <<unit>> 1
+#CheckBox0 0    
+#CheckBox1 0    
+#CheckBox2 1    
+INSTALL_SPEED_CONTROLLER
+
+#RingCtrl0 3
+OPT_PT 3
+#RingCtrl1 1
+#RingCtrl2 1
+#RingCtrl3 0
+PARSFILE Steering\System2\StrSys2_25d9c47e-6437-40ab-9054-2134f14f0d2d.par
+#BlueLink7 Steering`B-Class, Hbk: Power, R&P` emABS_0911` , Steering System`StrSys2_25d9c47e-6437-40ab-9054-2134f14f0d2d
+
+
+* Front components
+iaxle 1
+symbol_add  <<axle>> 1
+PARSFILE Suspensions\Kin_Indy\KinInd_74151e37-72c6-4592-aa45-2f4b19ad1152.par
+#BlueLink19 Suspension: Independent System Kinematics`B-Class, Hatchback - Front` emABS_0911` , Kinematics`KinInd_74151e37-72c6-4592-aa45-2f4b19ad1152
+
+PARSFILE Suspensions\Compliance\CmpInd_75f33e4d-a05c-47e1-a809-10c0d59b38de.par
+#BlueLink16 Suspension: Independent Compliance, Springs, and Dampers`B-Class, Hatchback - Front` emABS_0911` , Compliance`CmpInd_75f33e4d-a05c-47e1-a809-10c0d59b38de
+
+
+OPT_ALL_FOUR_TIRES_ALIKE 1
+
+* LF tire
+iside 1
+WRITE_ADD_REFERENCE_FRAME_WHEEL
+symbol_push  <<tire>> L<<axle>>
+PARSFILE Tires\Tire\Tire_6eff5edc-dd14-4483-84e5-05564922d0c4.par
+#BlueLink999 Tire`R=287mm for Hybrid Evaluation (no RR)` emABS_0911` , Tire`Tire_6eff5edc-dd14-4483-84e5-05564922d0c4
+
+
+* RF tire
+iside 2
+WRITE_ADD_REFERENCE_FRAME_WHEEL
+symbol_push  <<tire>> R<<axle>>
+PARSFILE Tires\Tire\Tire_6eff5edc-dd14-4483-84e5-05564922d0c4.par
+#BlueLink10 Tire`R=287mm for Hybrid Evaluation (no RR)` emABS_0911` , Tire`Tire_6eff5edc-dd14-4483-84e5-05564922d0c4
+
+* Rear components
+iaxle 2
+symbol_add  <<axle>> 1
+PARSFILE Suspensions\Kin_Indy\KinInd_49a0d2c0-088d-44d0-8dd5-3656c3b35c27.par
+#BlueLink20 Suspension: Independent System Kinematics`B-Class, Hatchback - Rear` emABS_0911` , Kinematics`KinInd_49a0d2c0-088d-44d0-8dd5-3656c3b35c27
+
+PARSFILE Suspensions\Compliance\CmpInd_de979640-7f0d-460e-8a33-c60537f41e3d.par
+#BlueLink17 Suspension: Independent Compliance, Springs, and Dampers`B-Class, Hatchback - Rear` emABS_0911` , Compliance`CmpInd_de979640-7f0d-460e-8a33-c60537f41e3d
+
+
+* LR tire
+iside 1
+WRITE_ADD_REFERENCE_FRAME_WHEEL
+symbol_push  <<tire>> L<<axle>>
+PARSFILE Tires\Tire\Tire_6eff5edc-dd14-4483-84e5-05564922d0c4.par
+#BlueLink999 Tire`R=287mm for Hybrid Evaluation (no RR)` emABS_0911` , Tire`Tire_6eff5edc-dd14-4483-84e5-05564922d0c4
+
+
+* RR tire
+iside 2
+WRITE_ADD_REFERENCE_FRAME_WHEEL
+symbol_push  <<tire>> R<<axle>>
+PARSFILE Tires\Tire\Tire_6eff5edc-dd14-4483-84e5-05564922d0c4.par
+#BlueLink999 Tire`R=287mm for Hybrid Evaluation (no RR)` emABS_0911` , Tire`Tire_6eff5edc-dd14-4483-84e5-05564922d0c4
+
+symbol_add  <<axle>> -1
+WRITE_ADD_REFERENCE_FRAME_BODY
+PARSFILE Vehicles\Sprung_Mass\SprMass_fdecbebf-859b-4b9d-beff-920bee8c258d.par
+#BlueLink0 Vehicle: Sprung Mass`B-Class, Hatchback w/Hybrid Powertrain` emABS_0911` , Sprung Mass`SprMass_fdecbebf-859b-4b9d-beff-920bee8c258d
+
+PARSFILE Aerodynamics\Aero_Main\Aero_db988a1d-4f04-40ca-b2eb-75902adea4ca.par
+#BlueLink1 Aerodynamics: Basic`B-Class, Hatchback Aero` emABS_0911` , Aerodynamics`Aero_db988a1d-4f04-40ca-b2eb-75902adea4ca
+
+PARSFILE Brakes\4W_System\Brk4W_b6740d91-11e2-48c6-b222-919a170ec1c8.par
+#BlueLink6 Brakes: Four-Wheel System`(Hbk): MC Press, ABS My sys` emABS_0911` , Brake System`Brk4W_b6740d91-11e2-48c6-b222-919a170ec1c8
+
+symbol_add  <<axle>> 1
+PARSFILE Animator\Vehicles\AniVeh_744dc54f-cca9-4d31-8bee-3535b6477b13.par
+#BlueLink2 Animator: Vehicles and Sensor Targets`B-Class, Hatchback` emABS_0911` , Vehicle 3D Shape`AniVeh_744dc54f-cca9-4d31-8bee-3535b6477b13
+
+IOBJECT_RESTORE
+*IMAGE_FIT_MODE 1
+*IMAGE_TYPE PASS_THROUGH
+*IMAGE_PASS_THROUGH Animator\Vehicles\AniVeh_744dc54f-cca9-4d31-8bee-3535b6477b13.png
+
+#EMBEDDED_NOTES
+#This example vehicle demonstrates an electric powertrain modeled in the CarSim GUI and math model.
+#
+#This electric vehicle is AWD in which an electric motor is equipped on each of front and rear drive axle.
+#
+#Click on the powertrain blue link to see the settings for defining an electric powertrain.
+#
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Vehicle: Assembly; { emABS_0911 } B-Class, Hbk: Electric AWD, Regen Brk
+#Library : Vehicle: Assembly
+#DataSet : B-Class, Hbk: Electric AWD, Regen Brk
+#Category: emABS_0911
+#FileID  : Vehicle_e8e7f4c3-0129-418b-a8cf-edc2a7c7e68e
+#Product : CarSim 2021.0
+#VehCode Ind_Ind
+
+END

@@ -1,0 +1,25 @@
+PARSFILE
+#FullDataName I/O Channels: Export`Ax control`Brake System Control
+#RingCtrl0 0
+#RingCtrl1 1
+*README_FILE Results\Run_9e4c7912-2109-4fbb-8f56-a91b47f2678e\Run_out_tab.txt
+
+
+EXPORT Ax
+#MiscYellow0
+#Number of Selected Channels: 1
+#CHN_NAME: Ax
+#ENDMYellow
+
+#BlueLink0 CarSim Run Control`Ext. ABS: Split Mu` Simulink and LabVIEW Models` , example run`Run_9e4c7912-2109-4fbb-8f56-a91b47f2678e
+
+
+LOG_ENTRY Used Dataset: I/O Channels: Export; { Brake System Control } Ax control
+#Library : I/O Channels: Export
+#DataSet : Ax control
+#Category: Brake System Control
+#FileID  : Export_932914fa-b013-4d28-baf4-2cbcbdc83f50
+#Product : CarSim 2021.0
+#VehCode Export Channels
+
+END

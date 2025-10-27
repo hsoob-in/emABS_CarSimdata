@@ -1,0 +1,23 @@
+PARSFILE
+#FullDataName Powertrain: Hybrid/Electric Power Management Control`Electric Power Manage.: Max 272kW`Copied 10-21-2024 17:14:28
+! Hybrid Power Management Controller. 
+#CheckBox0 0    
+PWR_HEV_DRV_MAX 272
+TC_PWR_HYBRID_AV 0.8
+KPW_PBK_HEV 16
+PWR_EV_MODE 200
+REGEN_BRK_OFF 0.8
+
+PARSFILE Generic\tables\GenTab_ece7cd77-401a-4b7d-91aa-1f93c3540f79.par
+#BlueLink0 Generic Table`Driver Demand Power: Full Load 272 kW` Copied 10-21-2024 17:14:28` , Driver Demand Power`GenTab_ece7cd77-401a-4b7d-91aa-1f93c3540f79
+
+
+LOG_ENTRY Used Dataset: Powertrain: Hybrid/Electric Power Management Control; { Copied 10-21-2024 17:14:28 } Electric Power Manage.: Max 272kW
+#Library : Powertrain: Hybrid/Electric Power Management Control
+#DataSet : Electric Power Manage.: Max 272kW
+#Category: Copied 10-21-2024 17:14:28
+#FileID  : PMC_3180d8a7-e49e-41aa-a9e0-67330de9bced
+#Product : CarSim 2021.0
+#VehCode Power Management Control (HEV)
+
+END

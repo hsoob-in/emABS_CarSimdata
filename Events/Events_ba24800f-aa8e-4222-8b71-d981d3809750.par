@@ -1,0 +1,46 @@
+PARSFILE
+#FullDataName Events`Braking for Object`ADAS Detection
+#CheckBox1 1    
+*CLEAR
+#CheckBox6 0    
+#CheckBox7 0    
+#CheckBox9 1    
+#CheckBox10 1    
+
+#RingCtrl0 <
+#RingCtrl1 <
+#RingCtrl10 2
+#RingCtrl11 4
+IVEHICLE 1
+DELETE_EVENTS_ID IVEHICLE
+*NAME1 Vxz_Fwd
+*NAME2 AxCrit
+*VALUE1 .1
+*VALUE2 .25
+*SET_EVENT_ID IVEHICLE
+SET_EVENT_ID IVEHICLE
+#MiscYellow0
+OPT_SC = 5 !  AxCrit is the command for speed controller
+#ENDMYellow
+
+MAKE_EVENT Vxz_Fwd < .1 ; Events\Events_fd627ae8-7976-4d33-877b-60966d2bb401.par
+#BlueLink0 Events`Wait to go` ADAS Detection` , Events`Events_fd627ae8-7976-4d33-877b-60966d2bb401
+
+MAKE_EVENT AxCrit < .25 ; Events\Events_6457ae0f-84a8-416b-a6d9-f376dd0ffd0a.par
+#BlueLink1 Events`Ensure Avoidance` ADAS Detection` , Events`Events_6457ae0f-84a8-416b-a6d9-f376dd0ffd0a
+
+SET_EVENT_ID 0 ! reset to default
+
+#EMBEDDED_NOTES
+#Slow vehicle #1 down by setting the4 speed controller to acceleration command (OPT_SC = 5). Do this until the vehicle is stopped, or the need goes away (AxCrit < 0.25 m/s2).
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Events; { ADAS Detection } Braking for Object
+#Library : Events
+#DataSet : Braking for Object
+#Category: ADAS Detection
+#FileID  : Events_ba24800f-aa8e-4222-8b71-d981d3809750
+#Product : CarSim 2021.0
+#VehCode Events
+
+END

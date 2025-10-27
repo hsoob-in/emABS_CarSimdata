@@ -1,0 +1,45 @@
+PARSFILE
+#FullDataName Plot: Setup`ApplyAEB`ADAS and AEB Alerts and Commands
+
+ADD_ENTITY Plot
+
+PARSFILE Plot\Format\PlotFmt_33e2becb-9fc8-474d-a6bb-685bf100d862.par
+#BlueLink0 Plot: Format`Default Plot Settings` ` , Plot format`PlotFmt_33e2becb-9fc8-474d-a6bb-685bf100d862
+
+#BlueLink1 ` , Discontinued` , Discontinued` , Discontinued`
+
+#CheckBox1 0    
+
+
+#MiscYellow0
+PLOTCHANNELS ApplyAEB, Time
+
+#ENDMYellow
+
+YAXISLABEL AEB Flags
+
+#RingCtrl2 Auto
+YMaxmin Auto
+#RingCtrl3 Auto
+XMaxmin Auto
+#RingCtrl8 1
+
+
+PTITLE ApplyAEB
+
+END_ENTITY Plot
+
+
+#EMBEDDED_NOTES
+#These variables were added with VS Commands for AEB example controllers.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Plot: Setup; { ADAS and AEB Alerts and Commands } ApplyAEB
+#Library : Plot: Setup
+#DataSet : ApplyAEB
+#Category: ADAS and AEB Alerts and Commands
+#FileID  : Plot_4fa8b7a1-1733-4334-99e2-138ee0d3eb24
+#Product : CarSim 2021.0
+#VehCode Plot Setup
+
+END

@@ -1,0 +1,40 @@
+PARSFILE
+#FullDataName Generic VS Commands`Setup for Simple AEB`Setup Events
+#VehCode Setup Events
+
+#MiscYellow0
+define_parameter VEHICLE = 202 ; - ; Vehicle (object type)
+define_parameter Ax_Brake = 2;m/s2; Threshold for applying brakes
+define_output DistCrit = if(magS<<s>>_1, max(1,X_S<<s>>_1 -2.0 -MsgS<<s>>_1), 0); m; ...
+  Distance to object bdry
+define_output VxCrit = if(DistCrit>0, Vx_S<<s>>_1, 0);km/h; Sensor speed detection
+
+define_output AxCrit =if(VxCrit < 0, VxCrit*VxCrit/(2*DistCrit), 0);m/s2; Required decel for nearest
+define_output ApplyAEB =  AxCrit > Ax_Brake | (AxCrit > 0.25 & DistCrit < 2); - ;  Boolean: apply brakes?
+
+EQ_OUT Ax_SCcmd = -AxCrit ! speed control command if OPT_SC = 5
+#ENDMYellow
+
+*MODELCODE Setup Events
+PARSFILE Events\Events_e8436edd-78c1-4e51-a245-37c95f045a08.par
+#BlueLink1 Events`Look for AEB` ADAS Detection` , Miscellaneous`Events_e8436edd-78c1-4e51-a245-37c95f045a08
+
+PARSFILE Plot\Setup\Plot_7dadda40-7138-4c4d-bc66-73caadcece25.par
+#BlueLink3 Plot: Setup`AEB: AxCrit` ADAS and AEB Alerts and Commands` , Plot`Plot_7dadda40-7138-4c4d-bc66-73caadcece25
+
+PARSFILE Plot\Setup\Plot_ac871e31-3a2e-4f60-b6cb-3284aa167ea9.par
+#BlueLink4 Plot: Setup`Speed Target and Actual` Speed Controller` , Plot`Plot_ac871e31-3a2e-4f60-b6cb-3284aa167ea9
+
+PARSFILE Plot\Setup\Plot_72f63dcd-3fb8-4603-890b-5fe335547999.par
+#BlueLink5 Plot: Setup`VxCrit` ADAS and AEB Alerts and Commands` , Plot`Plot_72f63dcd-3fb8-4603-890b-5fe335547999
+
+
+LOG_ENTRY Used Dataset: Generic VS Commands; { Setup Events } Setup for Simple AEB
+#Library : Generic VS Commands
+#DataSet : Setup for Simple AEB
+#Category: Setup Events
+#FileID  : GenVS_e2c94e92-322c-423c-a01b-bbfadd95267f
+#Product : CarSim 2021.0
+#VehCode Setup Events
+
+END

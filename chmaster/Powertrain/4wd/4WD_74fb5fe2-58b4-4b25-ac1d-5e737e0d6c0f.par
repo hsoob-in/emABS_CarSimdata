@@ -1,0 +1,72 @@
+PARSFILE
+#FullDataName Powertrain: 4-Wheel Drive`20kW x2, Electric AWD Hi-Pw, 3.905 Ratio #1`Electric: 20kW x2 (2 Motors)
+INSTALL_ENGINE
+
+OPT_PT 3
+R_REAR_DRIVE_SC 0.5
+
+OPT_ENGINE_PITCH_REACTION(1) 0
+OPT_ENGINE_PITCH_REACTION(2) 0
+
+#RingCtrl0 1
+R_MDRIVE 1
+#RingCtrl4 1
+#RingCtrl5 1
+#RingCtrl6 1
+#RingCtrl7 2
+OPT_HEV 2
+DRIVELINE_FREQ 9
+DRIVELINE_ZETA 0.9
+
+#CheckBox0 0    
+#CheckBox1 0    
+
+OPT_ENGINE_INTERNAL 0
+OPT_PWR_CPL_INTERNAL 0
+OPT_TRANS_INTERNAL 0
+OPT_SHIFT_INTERNAL 0
+OPT_TR_GEAR_INTERNAL 0
+IDIFF 1
+OPT_DIFF_INTERNAL 1
+IDIFF 2
+OPT_DIFF_INTERNAL 1
+IDIFF 3
+OPT_DIFF_INTERNAL 1
+
+PARSFILE Powertrain\HEV\HEV_d85b4cba-5206-4048-9418-d11f80dfd1d3.par
+#BlueLink11 Powertrain: Hybrid/Electric System`Electric Motors on Axles Powertrain Assy` ` , Hybrid system`HEV_d85b4cba-5206-4048-9418-d11f80dfd1d3
+
+PARSFILE Powertrain\HEV_PMC\PMC_6ae01742-2231-4526-8745-21786d28d0c8.par
+#BlueLink12 Powertrain: Hybrid/Electric Power Management Control`Electric Power Manage.: Full Load 165kW` ` , Transmission`PMC_6ae01742-2231-4526-8745-21786d28d0c8
+
+
+IDIFF 3
+PARSFILE Powertrain\Centerdiff\XC_5b09b60f-239a-468d-b714-046e2f8d7af9.par
+#BlueLink3 Powertrain: Transfer Case`EV eTransfer Case: 50/50, Gr. 1.0` Electric Motor Drive` , Transfer case`XC_5b09b60f-239a-468d-b714-046e2f8d7af9
+
+
+IDIFF 1
+PARSFILE Powertrain\Frontdiff\DiffF_4688d8c7-78b5-4179-81a4-29c69561aeea.par
+#BlueLink4 Powertrain: Front Differential`EV Open Diff.: Gear Ratio 3.905:1` Electric Motor Drive (20 kW)` , Differential front`DiffF_4688d8c7-78b5-4179-81a4-29c69561aeea
+
+
+IDIFF 2
+PARSFILE Powertrain\Reardiff\DiffR_9be4e6b7-54b7-4640-965f-3b0059166782.par
+#BlueLink5 Powertrain: Rear Differential`EV Open Diff.: Gear Ratio 3.905:1` Electric Motor Drive (20 kW)` , Differential rear`DiffR_9be4e6b7-54b7-4640-965f-3b0059166782
+
+
+#EMBEDDED_NOTES
+#Generic two 20 kW electric motors are equipped on each of front and rear drive axles.
+#
+#Power manegement range is 165kW with full loaded throttle pedal.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Powertrain: 4-Wheel Drive; { Electric: 20kW x2 (2 Motors) } 20kW x2, Electric AWD Hi-Pw, 3.905 Ratio #1
+#Library : Powertrain: 4-Wheel Drive
+#DataSet : 20kW x2, Electric AWD Hi-Pw, 3.905 Ratio #1
+#Category: Electric: 20kW x2 (2 Motors)
+#FileID  : 4WD_74fb5fe2-58b4-4b25-ac1d-5e737e0d6c0f
+#Product : CarSim 2021.0
+#VehCode 4WD
+
+END

@@ -1,0 +1,122 @@
+PARSFILE
+#FullDataName CarSim Run Control`SRS_ionic5`Copied 03-19-2025 17:17:21
+#VEHICLECODE Ind_Ind
+symbol_push  <<vehicle>> 0
+symbol_push  <<unit>> 0
+symbol_push  <<axle>> 0
+symbol_push  <<s>> 0
+symbol_push  <<o>> 0
+symbol_push  <<id_run>> Run_d1f4f51a-9c54-4220-a6b2-be1c5f3a4dc6
+
+OPT_ALL_WRITE 0
+IOBJECT 0
+IUNIT 0
+IVEHICLE 0
+OPT_INT_METHOD 0
+OPT_VS_FILETYPE 2
+PARSFILE Models\Simulink\Simlink_83ba4601-61f4-4aa5-8fb7-cbbafb2b3f58.par
+#BlueLink12 Models: Simulink`SRS_24` Copied 03-19-2025 17:17:21` , Models`Simlink_83ba4601-61f4-4aa5-8fb7-cbbafb2b3f58
+
+PARSFILE Animator\Cameras\Camera_7fd93935-5e80-4d39-bf60-d7ff5dbaa0af.par
+#BlueLink0 Animator: Camera Setup`180 Azm, 10 El, 36 m` Copied 03-19-2025 17:17:21` , Animator camera`Camera_7fd93935-5e80-4d39-bf60-d7ff5dbaa0af
+
+#CheckBox0 1    
+#CheckBox1 0    
+#CheckBox2 0    
+#CheckBox3 1    
+#CheckBox4 0    
+#CheckBox5 1    
+#CheckBox6 1    
+#CheckBox7 0    
+#CheckBox8 1    
+#CheckBox9 0    
+#CheckBox10 0    
+#CheckBox11 0    
+
+#RingCtrl0 4
+#RingCtrl1 0
+#RingCtrl2 0
+#RingCtrl3 0
+#RingCtrl6 5
+#RingCtrl7 -1
+*RUN_COLOR 0.8 0 0
+#RingCtrl4 off
+RT_WINDOW_CLOSE off
+#RingCtrl5 0
+LIVE_SERVER_MAX_CONNECTIONS 0
+PARSFILE Vehicles\Assembly\Vehicle_b8fc0dfb-e466-42a8-a073-929f79dcafe4.par
+#BlueLink2 Vehicle: Assembly`IONIC_RWD` Copied 03-19-2025 17:17:21` , Math Model`Vehicle_b8fc0dfb-e466-42a8-a073-929f79dcafe4
+
+PARSFILE Procedures\Proc_94f3d353-1fa8-47b3-a6e6-2be2e05152cd.par
+#BlueLink28 Procedures`SRS_pro` Copied 03-19-2025 17:17:21` , Procedure`Proc_94f3d353-1fa8-47b3-a6e6-2be2e05152cd
+
+PARSFILE Roads\BuilderSegment\RoadSeg_04994539-0782-416d-b2d2-702eae6ef642.par
+#BlueLink9 Path: Segment Builder`curve_road_108_constraint` Copied 03-19-2025 17:17:21` , Miscellaneous`RoadSeg_04994539-0782-416d-b2d2-702eae6ef642
+
+PARSFILE Roads\3D_Road\Road_d4f12d69-183a-4aa7-ab57-981b2c95e7df.par
+#BlueLink10 Road: 3D Surface (All Properties)`SRS_3D` Copied 03-19-2025 17:17:21` , Miscellaneous`Road_d4f12d69-183a-4aa7-ab57-981b2c95e7df
+
+PARSFILE Animator\HUD\HUD_c2fbf11d-df7b-4c89-a15c-4481962442ec.par
+#BlueLink11 Animator: HUD`Speed Output Text` Copied 03-19-2025 17:17:21` , Miscellaneous`HUD_c2fbf11d-df7b-4c89-a15c-4481962442ec
+
+PARSFILE Control\Driver\StrDM_6bec9717-49f4-4c9c-8644-b5e0a402a44d.par
+#BlueLink3 Control: Steering by the Closed-loop Driver Model`0.4 sec. Single Preview` Copied 03-19-2025 17:17:21` , Steering`StrDM_6bec9717-49f4-4c9c-8644-b5e0a402a44d
+
+*TSTEP 0.001
+*FREQ_MODEL 1000
+*TSTEP_OUT 0.025
+*FREQ_OUT 40
+tstep 0.001
+iprint 25
+OPT_STOP 0
+TSTART 0
+SSTART 0
+TSTART_WRITE = 0;
+TSTOP 50
+SSTOP =  SSTART + 1 ;
+OPT_DIRECTION 1
+*SPEED 60
+*TSTOP 50
+*TSTART 0
+*SSTART 0
+PARSFILE Plot\Setup\Plot_63bc81b2-5a6b-4e32-bed9-f1aeedc537f4.par
+#BlueLink15 Plot: Setup`Vx` SRS_Curve` , Plot`Plot_63bc81b2-5a6b-4e32-bed9-f1aeedc537f4
+
+PARSFILE Plot\Setup\Plot_95bc234b-76ad-4cc1-9e43-101691807e3b.par
+#BlueLink16 Plot: Setup`acceleration` SRS_Curve` , Plot`Plot_95bc234b-76ad-4cc1-9e43-101691807e3b
+
+PARSFILE Plot\Setup\Plot_a6706a9e-c3eb-475c-b761-5662a9874a1f.par
+#BlueLink17 Plot: Setup`Rho_Road` SRS_Curve` , Plot`Plot_a6706a9e-c3eb-475c-b761-5662a9874a1f
+
+PARSFILE Plot\Setup\Plot_89a09e37-aed5-4952-af76-7b8cdfd83884.par
+#BlueLink18 Plot: Setup`M_Mtr_Torque` SRS_Curve` , Plot`Plot_89a09e37-aed5-4952-af76-7b8cdfd83884
+
+PARSFILE Plot\Setup\Plot_587a4d81-ccbc-41e4-be24-b1aed88a52ce.par
+#BlueLink19 Plot: Setup`Throttle` SRS_Curve` , Plot`Plot_587a4d81-ccbc-41e4-be24-b1aed88a52ce
+
+
+*IMAGE_TYPE PASS_THROUGH
+*IMAGE_PASS_THROUGH Animator\Vehicles\AniVeh_744dc54f-cca9-4d31-8bee-3535b6477b13.png
+WRITE_SENSOR_DETECT
+Title SRS_ionic5 <Copied 03-19-2025 17:17:21>
+CATEGORY Copied 03-19-2025 17:17:21 
+DATASET_TITLE SRS_ionic5
+#RingCtrl8 1
+NUM_CACHED_RUNS 1
+#RingCtrl9 
+
+#EMBEDDED_NOTES
+#A D-Class Sedan on a handling course subject to sublimit (i.e., 0.3g) levels of acceleration via the Speed control from path preview.
+#
+#A speed target can be calculated along a path using a preview distance, including the effects of the road's 3D geometry, while attempting to remain within target limits of lateral and longitudinal acceleration.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: CarSim Run Control; { Copied 03-19-2025 17:17:21 } SRS_ionic5
+#Library : CarSim Run Control
+#DataSet : SRS_ionic5
+#Category: Copied 03-19-2025 17:17:21
+#FileID  : Run_d1f4f51a-9c54-4220-a6b2-be1c5f3a4dc6
+#Product : CarSim 2021.0
+#VehCode Run
+
+END

@@ -1,0 +1,18 @@
+PARSFILE
+#FullDataName I/O Channels: Import`SRS_DMO #1`Copied 11-17-2023 16:45:14
+#RingCtrl1 1
+
+#MiscYellow0
+IMP_M_MOTOR_CMD_D2 Replace 0.0! 1
+#ENDMYellow
+
+
+LOG_ENTRY Used Dataset: I/O Channels: Import; { Copied 11-17-2023 16:45:14 } SRS_DMO #1
+#Library : I/O Channels: Import
+#DataSet : SRS_DMO #1
+#Category: Copied 11-17-2023 16:45:14
+#FileID  : Import_71be5d17-1a22-4fbc-8cd1-dd2a2a11e3c4
+#Product : CarSim 2021.0
+#VehCode Import Channels
+
+END

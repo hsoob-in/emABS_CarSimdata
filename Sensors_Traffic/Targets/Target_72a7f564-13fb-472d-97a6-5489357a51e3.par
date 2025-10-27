@@ -1,0 +1,79 @@
+PARSFILE
+#FullDataName Single Moving Object (Custom)`Euro NCAP Bicyclist: Near CBNA`Pedestrians and Bicyclists
+DEFINE_MOVING_OBJECTS 1
+IOBJECT_INCREMENT
+symbol_add <<o>> 1
+SET_DESCRIPTION OBJECT_NAME Euro NCAP Bicyclist: Near CBNA
+OPT_SPEED_OBJ 0
+PATH_ID_OBJ 1005
+ROAD_ID_OBJ 1005
+#CheckBox0 0    
+#CheckBox1 0    
+OPT_RECYCLE_OBJ 0
+#CheckBox2 0    
+#CheckBox3 0    
+#CheckBox5 0    
+#CheckBox6 1    
+#CheckBox7 1    
+#CheckBox8 1    
+
+#RingCtrl0 1
+#RingCtrl1 0
+H_OBJ 0.85
+*COLOR 1 0 0
+*S_INIT PED_S_START
+*L_INIT PED_L_START
+OPT_SHAPE_OBJ 1
+SHAPE_TYPE_OBJ 0
+DZ_OBJECT 0
+*SIZE 0.5
+DIAMETER_OBJ 0.5
+*REFLECT 3
+MATERIAL_TYPE_OBJ 3
+WRITE_ADD_REFERENCE_FRAME_OBJECT
+X_REF_LENGTH 1
+Y_REF_LENGTH 1
+Z_REF_LENGTH 1
+X_LENGTH 0.5
+Y_LENGTH 0.5
+Z_LENGTH 1.7
+add_obj Resources\Animator\3D_Shape_Files\Geometric_Shapes\Cylinders\cylinder_Zaxis_1m_diameter_1m_long.obj
+set_transparency 0.5
+SET_OFFSET_Z 0.5
+SET_COLOR 1 0 0
+*SPEED PED_SPEED_10
+EQ_INIT HeadO_<<o>> 90/DR
+WRITE_ADD_REFERENCE_FRAME_OBJECT
+PARSFILE Animator\STL\Shape_37ec74bb-29ff-4e01-bd8e-ff4f21132233.par
+#BlueLink0 Animator: Shape File Link`Euro NCAP Adult Bicycling` Environment: Pedestrians (Animated)` , 3D Shape for Video`Shape_37ec74bb-29ff-4e01-bd8e-ff4f21132233
+
+EQ_INIT S_Obj_<<o>> PED_S_START
+EQ_INIT LatO_<<o>> PED_L_START
+DEFINE_VARIABLE V_CMD_OBJ_<<o>>;KM/H; Speed command
+DEFINE_VARIABLE HeadV_O_<<o>> 90/DR;-; Heading vector for ODEs
+EQ_OUT V_CMD_OBJ_<<o>> = PED_SPEED_10;
+EQ_DIFFERENTIAL LatO_<<o>> = V_CMD_OBJ_<<o>>
+#MiscYellow1
+TypeO_<<o>> = PEDESTRIAN
+opt_road_pitch = 0
+opt_road_roll = 0
+DEFINE_OUTPUT LTARG_PED = LatO_<<o>>
+DEFINE_PARAMETER PED_OBJ_HT = H_OBJ(2) ; m; Height of pedestrian
+#ENDMYellow
+
+
+#EMBEDDED_NOTES
+#Initial parameters for the pedestrian target are set in the Initial Setup Dataset
+#
+#This Bicyclist pedestrian target is defined by the European Automobile Manufacturers' Association (ACEA) articulated pedestrian specifications
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Single Moving Object (Custom); { Pedestrians and Bicyclists } Euro NCAP Bicyclist: Near CBNA
+#Library : Single Moving Object (Custom)
+#DataSet : Euro NCAP Bicyclist: Near CBNA
+#Category: Pedestrians and Bicyclists
+#FileID  : Target_72a7f564-13fb-472d-97a6-5489357a51e3
+#Product : CarSim 2021.0
+#VehCode Moving Object (Custom)
+
+END

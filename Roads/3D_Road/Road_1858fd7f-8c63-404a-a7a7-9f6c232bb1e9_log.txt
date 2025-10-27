@@ -1,0 +1,29 @@
+Run made by VS Road Calculator at 14:37 on July 31, 2025.
+Utility to calculate road and path coordinates for visualization
+Started with simfile: Roads\3D_Road\simfile_road
+
+Include PARSFILE "Roads\3D_Road\Road_1858fd7f-8c63-404a-a7a7-9f6c232bb1e9.par"
+Include PARSFILE "Roads\BuilderSegment\RoadSeg_299f5dd8-31b0-44f2-9251-eaaf215df33c.par"
+ Straight East <Straight>
+Used Dataset: Path: Segment Builder; { Straight } Straight East
+Include PARSFILE "Roads\Friction\RdMu_25e73395-9471-44b9-9c60-27bd9cc24921.par"
+Used Dataset: Road: Friction Map, S-L Grid; { Constant } Constant: 0.85
+Include PARSFILE "Roads\Shapes\RdShape_35cda503-cf0a-4113-9cbb-ec1d2fe64efa.par"
+Used Dataset: Road: Animator Surface Shapes; { Roads } 1200 m Road + 200 m Light Grass
+Include PARSFILE "Animator\Groups\Group_4ccae742-4649-427a-8871-7b3629a730a2.par"
+Include PARSFILE "Animator\Frames\Frame_8761c9b6-c784-4d2d-b8bc-72683578e773.par"
+Used Dataset: Animator: Reference Frame; { Copied 03-19-2025 17:17:21 } Skybox (Vehicle X-Y-Z)
+Include PARSFILE "Animator\STL\Shape_6d5f4980-0cdc-4aa2-841c-f127e1b02f97.par"
+Used Dataset: Animator: Shape File Link; { Copied 03-19-2025 17:17:21 } Partly Cloudy Sky
+Used Dataset: Animator: Group; { Copied 03-19-2025 17:17:21 } Partly Cloudy Sky with Light Grass
+Include PARSFILE "Roads\3D_Road\Road_1858fd7f-8c63-404a-a7a7-9f6c232bb1e9.ani"
+Used Dataset: Road: 3D Surface (All Properties); { Straight } 1200 m, Two Lanes, Mu = 0.85
+
+Time to read input = 0.001836
+
+Run stopped at t = 14.44. Stop time reached.
+
+Run started: VS output file = Roads\3D_Road\Road_1858fd7f-8c63-404a-a7a7-9f6c232bb1e9.vsb
+
+Computational time ratio: RTIME = inf (real time)/(simulation time)
+

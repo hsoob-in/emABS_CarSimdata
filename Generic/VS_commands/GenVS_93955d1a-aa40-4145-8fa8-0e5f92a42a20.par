@@ -1,0 +1,54 @@
+PARSFILE
+#FullDataName Generic VS Commands`Plot and HUD Outputs: Collision Check`Pedestrian Euro NCAP
+#VehCode VS Commands
+
+#MiscYellow0
+define_output BumperStrike = if( PedSensMag > 0, ( (VEH_WID/2 - abs(yDistAct) )/VEH_WID), 0); ...
+  % ; strike perc. of bumper width
+define_output StrikePercentDiff = abs(BumperStrike-TARG_STRIKE);%; target vs. strike perc. diff
+#ENDMYellow
+
+PARSFILE Animator\HUD\HUD_808e2b66-ef85-44f5-b0ab-fa89ccc1c08f.par
+#BlueLink0 Animator: HUD`Collided Small` Euro NCAP` , Miscellaneous`HUD_808e2b66-ef85-44f5-b0ab-fa89ccc1c08f
+
+PARSFILE Animator\HUD\HUD_af2f5bb6-c251-4a9a-b703-baf892afb10d.par
+#BlueLink1 Animator: HUD`Pedestrian Collision Check Label` Euro NCAP` , Miscellaneous`HUD_af2f5bb6-c251-4a9a-b703-baf892afb10d
+
+PARSFILE Animator\HUD\HUD_492c4fac-ff9f-4170-b2dc-ea2afc29c8e5.par
+#BlueLink2 Animator: HUD`Time To Collision` Euro NCAP` , Miscellaneous`HUD_492c4fac-ff9f-4170-b2dc-ea2afc29c8e5
+
+PARSFILE Plot\Setup\Plot_43b5b33f-1900-4ac7-97c8-508e3177cfba.par
+#BlueLink3 Plot: Setup`Vehicle Start Vxz` Pedestrian Euro NCAP` , Plot`Plot_43b5b33f-1900-4ac7-97c8-508e3177cfba
+
+PARSFILE Plot\Setup\Plot_4d8a3392-9147-49dc-96ea-5155dcdc0dc1.par
+#BlueLink4 Plot: Setup`Ped AEB: Booleans` ADAS and AEB Alerts and Commands` , Plot`Plot_4d8a3392-9147-49dc-96ea-5155dcdc0dc1
+
+PARSFILE Plot\Setup\Plot_af9ca435-1460-4bd4-b480-64389d1c37ac.par
+#BlueLink5 Plot: Setup`AEB: TTC` Pedestrian Euro NCAP` , Plot`Plot_af9ca435-1460-4bd4-b480-64389d1c37ac
+
+PARSFILE Plot\Setup\Plot_dafae624-d48a-4548-93eb-fa73d080e21a.par
+#BlueLink6 Plot: Setup`Brake Control: M/C Pressure` Braking` , Plot`Plot_dafae624-d48a-4548-93eb-fa73d080e21a
+
+PARSFILE Plot\Setup\Plot_e26c0e44-e006-41c7-a5fd-4b911d0ece1d.par
+#BlueLink7 Plot: Setup`Pedestrian Y_Start` Pedestrian Euro NCAP` , Plot`Plot_e26c0e44-e006-41c7-a5fd-4b911d0ece1d
+
+PARSFILE Plot\Setup\Plot_0dfd849f-a030-4028-9a0a-099e961295a9.par
+#BlueLink8 Plot: Setup`Bumper Strike Percentage` Pedestrian Euro NCAP` , Plot`Plot_0dfd849f-a030-4028-9a0a-099e961295a9
+
+PARSFILE Plot\Setup\Plot_2320bba0-7369-4604-9d51-81a7f9374f78.par
+#BlueLink9 Plot: Setup`Lateral Tracking Ped` Pedestrian Euro NCAP` , Plot`Plot_2320bba0-7369-4604-9d51-81a7f9374f78
+
+
+#EMBEDDED_NOTES
+#Animator and plot outputs for the Pedestrian Target moving object collision with ego vehicle
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Generic VS Commands; { Pedestrian Euro NCAP } Plot and HUD Outputs: Collision Check
+#Library : Generic VS Commands
+#DataSet : Plot and HUD Outputs: Collision Check
+#Category: Pedestrian Euro NCAP
+#FileID  : GenVS_93955d1a-aa40-4145-8fa8-0e5f92a42a20
+#Product : CarSim 2021.0
+#VehCode VS Commands
+
+END

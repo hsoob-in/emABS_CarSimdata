@@ -1,0 +1,41 @@
+PARSFILE
+#FullDataName Plot: Setup`Path Detector Origin`Path Detector
+
+ADD_ENTITY Plot
+
+PARSFILE Plot\Format\PlotFmt_33e2becb-9fc8-474d-a6bb-685bf100d862.par
+#BlueLink0 Plot: Format`Default Plot Settings` ` , Plot format`PlotFmt_33e2becb-9fc8-474d-a6bb-685bf100d862
+
+#CheckBox1 0    
+
+
+#MiscYellow0
+PLOTCHANNELS x_detector_1, time
+PLOTCHANNELS y_detector_1, time
+PLOTCHANNELS x_detector_2, time
+PLOTCHANNELS y_detector_2, time
+
+#ENDMYellow
+
+
+#RingCtrl2 Auto
+YMaxmin Auto
+#RingCtrl3 Auto
+XMaxmin Auto
+#RingCtrl8 1
+
+
+PTITLE Path Detector Origin
+
+END_ENTITY Plot
+
+
+LOG_ENTRY Used Dataset: Plot: Setup; { Path Detector } Path Detector Origin
+#Library : Plot: Setup
+#DataSet : Path Detector Origin
+#Category: Path Detector
+#FileID  : Plot_a1c84a6b-1109-4f4a-9f98-ff770e85d405
+#Product : CarSim 2021.0
+#VehCode Plot Setup
+
+END

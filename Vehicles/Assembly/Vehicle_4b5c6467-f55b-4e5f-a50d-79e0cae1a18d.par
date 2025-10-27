@@ -1,0 +1,116 @@
+PARSFILE
+#FullDataName Vehicle: Assembly`IONIC5_1004`IONIC5
+#VehCode Ind_Ind
+IUNIT_INCREMENT
+IVEHICLE = IVEHICLE + 1
+NAXLES 2
+IOBJECT_SAVE
+symbol_add  <<vehicle>> 1
+symbol_add  <<unit>> 1
+#CheckBox0 0    
+#CheckBox1 0    
+#CheckBox2 1    
+INSTALL_SPEED_CONTROLLER
+
+#RingCtrl0 3
+OPT_PT 3
+#RingCtrl1 1
+#RingCtrl2 1
+#RingCtrl3 0
+PARSFILE Steering\System2\StrSys2_25d9c47e-6437-40ab-9054-2134f14f0d2d.par
+#BlueLink7 Steering`B-Class, Hbk: Power, R&P` emABS_0911` , Steering System`StrSys2_25d9c47e-6437-40ab-9054-2134f14f0d2d
+
+
+* Front components
+iaxle 1
+symbol_add  <<axle>> 1
+PARSFILE Suspensions\Kin_Indy\KinInd_74151e37-72c6-4592-aa45-2f4b19ad1152.par
+#BlueLink19 Suspension: Independent System Kinematics`B-Class, Hatchback - Front` emABS_0911` , Kinematics`KinInd_74151e37-72c6-4592-aa45-2f4b19ad1152
+
+PARSFILE Suspensions\Compliance\CmpInd_75f33e4d-a05c-47e1-a809-10c0d59b38de.par
+#BlueLink16 Suspension: Independent Compliance, Springs, and Dampers`B-Class, Hatchback - Front` emABS_0911` , Compliance`CmpInd_75f33e4d-a05c-47e1-a809-10c0d59b38de
+
+
+OPT_ALL_FOUR_TIRES_ALIKE 1
+
+* LF tire
+iside 1
+WRITE_ADD_REFERENCE_FRAME_WHEEL
+symbol_push  <<tire>> L<<axle>>
+PARSFILE Tires\Tire\Tire_bceca20d-20f5-4761-9b06-2ddc62dcd47e.par
+#BlueLink999 Tire`235/55 R18` Touring Tires` , Tire`Tire_bceca20d-20f5-4761-9b06-2ddc62dcd47e
+
+
+* RF tire
+iside 2
+WRITE_ADD_REFERENCE_FRAME_WHEEL
+symbol_push  <<tire>> R<<axle>>
+PARSFILE Tires\Tire\Tire_bceca20d-20f5-4761-9b06-2ddc62dcd47e.par
+#BlueLink10 Tire`235/55 R18` Touring Tires` , Tire`Tire_bceca20d-20f5-4761-9b06-2ddc62dcd47e
+
+* Rear components
+iaxle 2
+symbol_add  <<axle>> 1
+PARSFILE Suspensions\Kin_Indy\KinInd_49a0d2c0-088d-44d0-8dd5-3656c3b35c27.par
+#BlueLink20 Suspension: Independent System Kinematics`B-Class, Hatchback - Rear` emABS_0911` , Kinematics`KinInd_49a0d2c0-088d-44d0-8dd5-3656c3b35c27
+
+PARSFILE Suspensions\Compliance\CmpInd_de979640-7f0d-460e-8a33-c60537f41e3d.par
+#BlueLink17 Suspension: Independent Compliance, Springs, and Dampers`B-Class, Hatchback - Rear` emABS_0911` , Compliance`CmpInd_de979640-7f0d-460e-8a33-c60537f41e3d
+
+
+* LR tire
+iside 1
+WRITE_ADD_REFERENCE_FRAME_WHEEL
+symbol_push  <<tire>> L<<axle>>
+PARSFILE Tires\Tire\Tire_bceca20d-20f5-4761-9b06-2ddc62dcd47e.par
+#BlueLink999 Tire`235/55 R18` Touring Tires` , Tire`Tire_bceca20d-20f5-4761-9b06-2ddc62dcd47e
+
+
+* RR tire
+iside 2
+WRITE_ADD_REFERENCE_FRAME_WHEEL
+symbol_push  <<tire>> R<<axle>>
+PARSFILE Tires\Tire\Tire_bceca20d-20f5-4761-9b06-2ddc62dcd47e.par
+#BlueLink999 Tire`235/55 R18` Touring Tires` , Tire`Tire_bceca20d-20f5-4761-9b06-2ddc62dcd47e
+
+symbol_add  <<axle>> -1
+WRITE_ADD_REFERENCE_FRAME_BODY
+PARSFILE Vehicles\Sprung_Mass\SprMass_252e6a3e-a8fc-44b4-b326-f3f39a77c395.par
+#BlueLink0 Vehicle: Sprung Mass`B-Class, Hatchback w/Hybrid Powertrain #1` IONIC5` , Sprung Mass`SprMass_252e6a3e-a8fc-44b4-b326-f3f39a77c395
+
+PARSFILE Aerodynamics\Aero_Main\Aero_db988a1d-4f04-40ca-b2eb-75902adea4ca.par
+#BlueLink1 Aerodynamics: Basic`B-Class, Hatchback Aero` emABS_0911` , Aerodynamics`Aero_db988a1d-4f04-40ca-b2eb-75902adea4ca
+
+PARSFILE Powertrain\4wd\4WD_1fe97672-4e49-4fb5-ba12-d8db0e31e872.par
+#BlueLink5 Powertrain: 4-Wheel Drive`IONIC5_emABS` IONIC5` , Powertrain`4WD_1fe97672-4e49-4fb5-ba12-d8db0e31e872
+
+PARSFILE Brakes\4W_System\Brk4W_2276dc13-2698-4949-b4a6-c2745f75552b.par
+#BlueLink6 Brakes: Four-Wheel System`(Hbk): MC Press, No ABS, No Rr` IONIC5` , Brake System`Brk4W_2276dc13-2698-4949-b4a6-c2745f75552b
+
+symbol_add  <<axle>> 1
+PARSFILE Animator\Vehicles\AniVeh_744dc54f-cca9-4d31-8bee-3535b6477b13.par
+#BlueLink2 Animator: Vehicles and Sensor Targets`B-Class, Hatchback` emABS_0911` , Vehicle 3D Shape`AniVeh_744dc54f-cca9-4d31-8bee-3535b6477b13
+
+IOBJECT_RESTORE
+*IMAGE_FIT_MODE 1
+*IMAGE_TYPE PASS_THROUGH
+*IMAGE_PASS_THROUGH Animator\Vehicles\AniVeh_744dc54f-cca9-4d31-8bee-3535b6477b13.png
+
+#EMBEDDED_NOTES
+#This example vehicle demonstrates an electric powertrain modeled in the CarSim GUI and math model.
+#
+#This electric vehicle is AWD in which an electric motor is equipped on each of front and rear drive axle.
+#
+#Click on the powertrain blue link to see the settings for defining an electric powertrain.
+#
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Vehicle: Assembly; { IONIC5 } IONIC5_1004
+#Library : Vehicle: Assembly
+#DataSet : IONIC5_1004
+#Category: IONIC5
+#FileID  : Vehicle_4b5c6467-f55b-4e5f-a50d-79e0cae1a18d
+#Product : CarSim 2021.0
+#VehCode Ind_Ind
+
+END

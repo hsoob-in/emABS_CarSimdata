@@ -1,0 +1,26 @@
+PARSFILE
+#FullDataName Control: Braking MC Pressure (Open Loop)`Spike:  7MPa @ 5 sec.`Spike
+#CheckBox0 0    
+
+#RingCtrl0 LINEAR_FLAT
+#RadioCtrl0 0    
+
+#DiagramOne0
+PBK_CON_TABLE LINEAR_FLAT
+0, 0
+5, 0
+5.35, 7
+15, 7
+ENDTABLE
+VLOW_STOP -1
+
+
+LOG_ENTRY Used Dataset: Control: Braking MC Pressure (Open Loop); { Spike } Spike:  7MPa @ 5 sec.
+#Library : Control: Braking MC Pressure (Open Loop)
+#DataSet : Spike:  7MPa @ 5 sec.
+#Category: Spike
+#FileID  : PbkCon_c8364685-6a2a-49fd-823b-22326d9f3abd
+#Product : CarSim 2021.0
+#VehCode Brake Control
+
+END

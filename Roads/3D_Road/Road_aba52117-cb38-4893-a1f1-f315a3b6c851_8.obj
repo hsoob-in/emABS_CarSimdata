@@ -1,0 +1,20 @@
+# Shape file for lane 8
+v 73.6332731 46.6451839 0.5
+vt 0 0
+v 76.6821997 39.2489655 0.5
+vt 1 0
+v 905.707852 389.64943 0.5
+vt 0 45.0000005
+v 908.756779 382.253211 0.5
+vt 1 45.0000005
+mtllib Roads\3D_Road\Road_aba52117-cb38-4893-a1f1-f315a3b6c851_8.mtl
+usemtl US Crosswalk
+g g1
+s 1
+f  1/1 2/2 4/4 3/3
+g g2
+s 2
+g g3
+s 3
+g g4
+s 4

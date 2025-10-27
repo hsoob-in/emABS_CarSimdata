@@ -1,0 +1,23 @@
+PARSFILE
+#FullDataName Generic VS Commands`Disable Stabilizer Bars`K & C Testing
+#VehCode VS Commands
+
+#MiscYellow0
+! turn off stabilizer bars
+mx_aux_constant(1) 0
+mx_aux_constant(2) 0
+
+
+!
+#ENDMYellow
+
+
+LOG_ENTRY Used Dataset: Generic VS Commands; { K & C Testing } Disable Stabilizer Bars
+#Library : Generic VS Commands
+#DataSet : Disable Stabilizer Bars
+#Category: K & C Testing
+#FileID  : GenVS_179e22a2-303b-463a-a050-ef50fca32d3d
+#Product : CarSim 2021.0
+#VehCode VS Commands
+
+END

@@ -1,0 +1,40 @@
+PARSFILE
+#FullDataName Events`End Last Run`Pedestrian Euro NCAP
+#CheckBox1 0    
+#CheckBox6 0    
+#CheckBox7 1    
+#CheckBox9 0    
+#CheckBox10 0    
+
+#RingCtrl0 >=
+#RingCtrl10 1
+#RingCtrl11 4
+*NAME1 t_event
+*VALUE1 TOT_SIM_TIME- T_WAIT
+#MiscYellow0
+TSTART_T_EVENT = T
+T_WAIT = 3.0; s; wait a little before ... ending
+the last run
+!update scoring
+SpeedReduction = VEH_SPD_INIT - Vimpact
+ScoreNew = ( SpeedReduction/VEH_SPD_INIT )*...
+AEB_MaxScore(CURRENT_TEST, VEH_SPD_INIT*3.6, 1)
+ScoreOld = ScoreNew + ScoreOld
+#ENDMYellow
+
+MAKE_EVENT t_event >= TOT_SIM_TIME- T_WAIT ; 
+SET_EVENT_ID 0 ! reset to default
+
+#EMBEDDED_NOTES
+#Tabulate total score and end the last run of the test
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Events; { Pedestrian Euro NCAP } End Last Run
+#Library : Events
+#DataSet : End Last Run
+#Category: Pedestrian Euro NCAP
+#FileID  : Events_ea969e12-443d-4590-84d1-e4d34c5706fc
+#Product : CarSim 2021.0
+#VehCode Events
+
+END

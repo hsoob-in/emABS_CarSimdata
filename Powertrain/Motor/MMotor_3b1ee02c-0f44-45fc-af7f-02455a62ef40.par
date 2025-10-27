@@ -1,0 +1,29 @@
+PARSFILE
+#FullDataName Powertrain: Electric Motor Torque`Max. Output 350 N-m #1`Copied 03-19-2025 17:17:21
+#CheckBox0 1    
+
+#RingCtrl0 COEFFICIENT
+MMOTOR_MAX_COEFFICIENT 350
+#RadioCtrl0 0    
+
+TC_MOTOR 0.05
+IMOTOR 0.0226
+*SCALAR 350
+
+PARSFILE Generic\tables\GenTab_5b8c0469-aae6-4203-af41-03e86e82d3cb.par
+#BlueLink0 Generic Table`Motor efficiency` Copied 03-19-2025 17:17:21` , Motor Efficiency`GenTab_5b8c0469-aae6-4203-af41-03e86e82d3cb
+
+
+#EMBEDDED_NOTES
+#Generic 20 kW electric motor.
+#END_EMBEDDED_NOTES
+
+LOG_ENTRY Used Dataset: Powertrain: Electric Motor Torque; { Copied 03-19-2025 17:17:21 } Max. Output 350 N-m #1
+#Library : Powertrain: Electric Motor Torque
+#DataSet : Max. Output 350 N-m #1
+#Category: Copied 03-19-2025 17:17:21
+#FileID  : MMotor_3b1ee02c-0f44-45fc-af7f-02455a62ef40
+#Product : CarSim 2021.0
+#VehCode Drive torque w/ electric motor
+
+END
